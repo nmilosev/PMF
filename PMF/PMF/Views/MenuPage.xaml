@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:dict="clr-namespace: PMF.Dictionaries"
+             x:Class="PMF.Views.MenuPage"
+             Padding="0,0,0,0"
+             Title="Master">
+  <StackLayout Orientation="Vertical" Padding="10,10,10,10">
+    <Label FontSize="36" Text="{x:Static dict:AppDictionary.AppName}"/>
+    <Label FontSize="11" Text="{x:Static dict:AppDictionary.Description}"/>  
+    <Label FontSize="11" Text="{x:Static dict:AppDictionary.Version}"/>
+    <Label Text="{x:Static dict:AppDictionary.PMFName}"/>
+    <Button Text="{x:Static dict:AppDictionary.ButtonNews}" Command="{Binding Command}" />
+    <Button Text="{x:Static dict:AppDictionary.ButtonSchedule}" Command="{Binding Command}" />
+    <Button Text="{x:Static dict:AppDictionary.ButtonPrograms}" Command="{Binding Command}" />
+    <Button Text="{x:Static dict:AppDictionary.ButtonHelp}" Command="{Binding Command}" />
+    <Button Text="{x:Static dict:AppDictionary.ButtonContact}" Command="{Binding Command}" />
+    <Button Text="{x:Static dict:AppDictionary.ButtonStudServices}" Command="{Binding Command}" />
+    
+  </StackLayout>
+</ContentPage>

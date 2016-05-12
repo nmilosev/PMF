@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using Xamarin.Forms;
+
+namespace PMF.Views
+{
+    public partial class LinkPage : ContentPage
+    {
+        public string Name { get; set; } = new Random().NextDouble().ToString();
+
+        public LinkPage()
+        {
+            InitializeComponent();
+            BindingContext = this;
+        }
+    }
+}

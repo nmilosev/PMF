@@ -7,11 +7,14 @@ C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.Core.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.Xml.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.Xml.Linq.dll
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Xamarin.Android.Support.Animated.Vector.Drawable.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Xamarin.Android.Support.Design.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Xamarin.Android.Support.v4.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Xamarin.Android.Support.v7.AppCompat.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Xamarin.Android.Support.v7.CardView.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Xamarin.Android.Support.v7.MediaRouter.dll
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Xamarin.Android.Support.v7.RecyclerView.dll
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Xamarin.Android.Support.Vector.Drawable.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Xamarin.Forms.Core.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Xamarin.Forms.Platform.Android.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Xamarin.Forms.Platform.dll
