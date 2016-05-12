@@ -1,0 +1,12 @@
+C:\Source\PMF\PMF\PMF\bin\Debug\PMF.dll
+C:\Source\PMF\PMF\PMF\bin\Debug\PMF.pdb
+C:\Source\PMF\PMF\PMF\bin\Debug\Xamarin.Forms.Core.dll
+C:\Source\PMF\PMF\PMF\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Source\PMF\PMF\PMF\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Source\PMF\PMF\PMF\bin\Debug\Xamarin.Forms.Core.xml
+C:\Source\PMF\PMF\PMF\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Source\PMF\PMF\PMF\obj\Debug\PMF.csprojResolveAssemblyReference.cache
+C:\Source\PMF\PMF\PMF\obj\Debug\PMF.dll
+C:\Source\PMF\PMF\PMF\obj\Debug\PMF.pdb
+C:\Source\PMF\PMF\PMF\obj\Debug\PMF.dll.mdb
+C:\Source\PMF\PMF\PMF\bin\Debug\PMF.dll.mdb

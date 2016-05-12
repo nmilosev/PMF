@@ -1,0 +1,5 @@
+C:\Source\PMF\PMF.LocalService\bin\Debug\PMF.LocalService.dll
+C:\Source\PMF\PMF.LocalService\bin\Debug\PMF.LocalService.pdb
+C:\Source\PMF\PMF.LocalService\obj\Debug\PMF.LocalService.csprojResolveAssemblyReference.cache
+C:\Source\PMF\PMF.LocalService\obj\Debug\PMF.LocalService.dll
+C:\Source\PMF\PMF.LocalService\obj\Debug\PMF.LocalService.pdb
