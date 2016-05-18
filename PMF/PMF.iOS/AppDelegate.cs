@@ -27,7 +27,7 @@ namespace PMF.iOS
             Xamarin.FormsMaps.Init();
 
             LoadApplication(new App());
-
+               
             return base.FinishedLaunching(app, options);
         }
     }

@@ -62,6 +62,15 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to PMF - Informacije.
+        /// </summary>
+        public static string AboutTitle {
+            get {
+                return ResourceManager.GetString("AboutTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Trg Dositeja Obradovića 3.
         /// </summary>
         public static string AddressLine1 {
@@ -85,6 +94,15 @@ namespace PMF.Dictionaries {
         public static string AppName {
             get {
                 return ResourceManager.GetString("AppName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Autor: Nemanja Milošević.
+        /// </summary>
+        public static string Author {
+            get {
+                return ResourceManager.GetString("Author", resourceCulture);
             }
         }
         
@@ -215,6 +233,15 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Departman za matematiku i informatiku.
+        /// </summary>
+        public static string DMI {
+            get {
+                return ResourceManager.GetString("DMI", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to http://www.dmi.rs.
         /// </summary>
         public static string DMILink {
@@ -224,11 +251,40 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Slike i vektori preuzeti sa sajtova flaticon i freepik.
+        ///Svi logotipovi korišćeni su vlasništvo njihovih kompanija.
+        ///Sva prava zadržana..
+        /// </summary>
+        public static string Images {
+            get {
+                return ResourceManager.GetString("Images", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to INFORMACIJE.
         /// </summary>
         public static string Info {
             get {
                 return ResourceManager.GetString("Info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Master rad.
+        /// </summary>
+        public static string MasterThesis {
+            get {
+                return ResourceManager.GetString("MasterThesis", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Master rad na temu: Razvoj cross-platform native mobilnih aplikacija u programskom jeziku C#.
+        /// </summary>
+        public static string MasterThesisName {
+            get {
+                return ResourceManager.GetString("MasterThesisName", resourceCulture);
             }
         }
         
@@ -305,7 +361,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Dobrodošli, studenti!.
+        ///   Looks up a localized string similar to Dobro došli, studenti!.
         /// </summary>
         public static string Welcome {
             get {

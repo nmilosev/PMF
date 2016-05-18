@@ -28,8 +28,8 @@ namespace PMF.ViewModels
             {
                 return new Command(() =>
                 {
-                    App.MasterDetailPage.DisplayAlert("Informacije!", "idem", "OK");
                     App.MasterDetailPage.IsPresented = false;
+                    App.MasterDetailPage.Detail = new NavigationPage(App.ViewLocator.AboutPage);
                 });
             }
         }

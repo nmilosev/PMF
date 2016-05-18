@@ -1,4 +1,5 @@
 using GalaSoft.MvvmLight;
+using Xamarin.Forms;
 
 namespace PMF.ViewModels
 {
@@ -30,6 +31,8 @@ namespace PMF.ViewModels
             ////    // Code runs "for real"
             ////}
         }
+
+        public Command ShowMainMenuCommand => new Command(() => { App.MasterDetailPage.IsPresented = true; });
 
         public string Test
         {

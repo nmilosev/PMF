@@ -166,7 +166,7 @@
     <value>v.0.0.0.A</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Dobrodošli, studenti!</value>
+    <value>Dobro došli, studenti!</value>
   </data>
   <data name="WelcomeMessage" xml:space="preserve">
     <value>Pristupite vašim studentskim servisima iz glavnog menija aplikacije!</value>
@@ -203,5 +203,25 @@
   </data>
   <data name="PMF" xml:space="preserve">
     <value>Prirodno-matematički fakultet</value>
+  </data>
+  <data name="AboutTitle" xml:space="preserve">
+    <value>PMF - Informacije</value>
+  </data>
+  <data name="Author" xml:space="preserve">
+    <value>Autor: Nemanja Milošević</value>
+  </data>
+  <data name="DMI" xml:space="preserve">
+    <value>Departman za matematiku i informatiku</value>
+  </data>
+  <data name="Images" xml:space="preserve">
+    <value>Slike i vektori preuzeti sa sajtova flaticon i freepik.
+Svi logotipovi korišćeni su vlasništvo njihovih kompanija.
+Sva prava zadržana.</value>
+  </data>
+  <data name="MasterThesis" xml:space="preserve">
+    <value>Master rad</value>
+  </data>
+  <data name="MasterThesisName" xml:space="preserve">
+    <value>Master rad na temu: Razvoj cross-platform native mobilnih aplikacija u programskom jeziku C#</value>
   </data>
 </root>

@@ -5,17 +5,29 @@
              xmlns:mvvm="clr-namespace: PMF"
              BindingContext="{Binding Source={x:Static mvvm:App.ViewModelLocator}, Path=Menu}"
              x:Class="PMF.Views.MenuPage"
-             Padding="0,0,0,0"
-             Title="Master"
-             Icon="menu.png">
-  
+             Padding="0,0,0,0"             
+             Icon="menu.png"
+             Title="Master">
 
+  <ContentPage.BackgroundColor>
+    <OnPlatform x:TypeArguments="Color" iOS="#DAE1E3"/>    
+  </ContentPage.BackgroundColor>
+ 
   <StackLayout Orientation="Vertical" Padding="10,10,10,10">
+    
+    <StackLayout.Margin>
+      <OnPlatform x:TypeArguments="Thickness"
+                  iOS="0,75,0,0" />
+    </StackLayout.Margin>
+
     <Label Margin="5,0,0,0" FontSize="24" Text="{x:Static dict:AppDictionary.Title}"/>
     <Label Margin="5,0,0,0" FontSize="14" Text="{x:Static dict:AppDictionary.PMFName}"/>
     <Label Margin="5,0,0,0" FontSize="14" Text="{x:Static dict:AppDictionary.UNS}"/>
     <Label Margin="5,0,0,0" FontSize="12" Text="{x:Static dict:AppDictionary.Version}"/>
     <ListView VerticalOptions="FillAndExpand" SeparatorVisibility="None" ItemsSource="{Binding MenuList}" Margin="0,20,0,0">
+      <ListView.BackgroundColor>
+        <OnPlatform x:TypeArguments="Color" iOS="#DAE1E3"/>
+      </ListView.BackgroundColor>
       <ListView.ItemTemplate>
         <DataTemplate>
           <ViewCell>
@@ -24,7 +36,11 @@
                 <TapGestureRecognizer Command="{Binding Command}" CommandParameter="{Binding Id}"/>
               </StackLayout.GestureRecognizers>
               <Image Source="{Binding Icon}" WidthRequest="36" HeightRequest="36"/>
-              <Label Text="{Binding Text}" TextColor="#9E8A95" Margin="0,2,0,0" />
+              <Label Text="{Binding Text}" Margin="0,2,0,0">
+                <Label.TextColor>
+                  <OnPlatform x:TypeArguments="Color" Android="#9E8A95"/>
+                </Label.TextColor>
+              </Label>
             </StackLayout>
           </ViewCell>
         </DataTemplate>
@@ -41,7 +57,11 @@
         <StackLayout.GestureRecognizers>
           <TapGestureRecognizer Command="{Binding InfoCommand}"/>
         </StackLayout.GestureRecognizers>
-        <Label Text="{x:Static dict:AppDictionary.Info}" TextColor="#9E8A95" Margin="80,10,10,0"/>
+        <Label Text="{x:Static dict:AppDictionary.Info}" Margin="80,10,10,0">
+            <Label.TextColor>
+              <OnPlatform x:TypeArguments="Color" Android="#9E8A95"/>
+            </Label.TextColor>          
+        </Label>
         <Image Source="question.png" WidthRequest="24" HeightRequest="24"/>
       </StackLayout>
     </StackLayout>

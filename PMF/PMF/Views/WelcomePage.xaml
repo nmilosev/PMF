@@ -8,7 +8,16 @@
              >
   
   <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
-    <Image Source="mainback.png" HorizontalOptions="Center" Margin="30,25,30,0"/>
+    <StackLayout.Margin>
+      <OnPlatform x:TypeArguments="Thickness"
+                  iOS="0,50,0,0" />
+    </StackLayout.Margin>
+    <Image Source="mainback.png" HorizontalOptions="Center" Margin="30,25,30,0">
+      <Image.GestureRecognizers>
+        <TapGestureRecognizer Command="{Binding ShowMainMenuCommand}"/>
+      </Image.GestureRecognizers>
+    </Image>
+    
     <Label Text="{x:Static dict:AppDictionary.Welcome}" HorizontalOptions="Center" Margin="20,0,20,0" FontSize="26" FontAttributes="Italic"/>
     <Label Text="{x:Static dict:AppDictionary.WelcomeMessage}" HorizontalOptions="Center" HorizontalTextAlignment="Center" Margin="20,0,20,20" FontSize="12"/>
   </StackLayout>

@@ -15,14 +15,12 @@ namespace PMF.Views
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
 
             SimpleIoc.Default.Register<ContactPage>();
+            SimpleIoc.Default.Register<AboutPage>();
+
         }
 
-        public ContactPage ContactPage
-        {
-            get
-            {
-                return ServiceLocator.Current.GetInstance<ContactPage>();
-            }
-        }
+        public ContactPage ContactPage => ServiceLocator.Current.GetInstance<ContactPage>();        
+        public AboutPage AboutPage => ServiceLocator.Current.GetInstance<AboutPage>();
+
     }
 }

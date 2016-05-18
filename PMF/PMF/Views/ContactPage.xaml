@@ -4,12 +4,19 @@
              x:Class="PMF.Views.ContactPage"
              xmlns:mvvm="clr-namespace: PMF"
              xmlns:dict="clr-namespace: PMF.Dictionaries"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
              xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
              BindingContext="{Binding Source={x:Static mvvm:App.ViewModelLocator}, Path=Contact}"
              Title="{x:Static dict:AppDictionary.ContactTitle}">
   <ScrollView>
     <StackLayout Orientation="Vertical">
-      <StackLayout Margin="10,10,10,0" BackgroundColor="#444A4D" Orientation="Vertical" HeightRequest="250" VerticalOptions="Start">
+      <StackLayout Margin="10,10,10,0" Orientation="Vertical" VerticalOptions="Start">
+        <StackLayout.BackgroundColor>
+          <OnPlatform x:TypeArguments="Color" Android="#444A4D" iOS="#D7DCDE"/>
+        </StackLayout.BackgroundColor>
+        <StackLayout.HeightRequest>
+          <OnPlatform x:TypeArguments="sys:Double" Android="250" iOS="400"/>
+        </StackLayout.HeightRequest>
         <StackLayout Orientation="Horizontal" Margin="5,5,0,0">
           <Image Source="placeholder.png" HeightRequest="25" Margin="10"/>
           <Label Text="{x:Static dict:AppDictionary.ContactVisitUs}" VerticalOptions="Center" FontSize="18"/>

@@ -13,7 +13,7 @@ namespace PMF.Views
         public ContactPage()
         {
             InitializeComponent();
-
+            
             SetupMap();
         }
         /// <summary>
