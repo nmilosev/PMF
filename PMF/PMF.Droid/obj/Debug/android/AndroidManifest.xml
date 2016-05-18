@@ -1,23 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="PMF.Droid">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="rs.ac.uns.dmi.PMF" android:installLocation="auto" android:versionCode="10" android:versionName="1.0">
   <!--suppress UsesMinSdkAttributes-->
   <uses-sdk android:minSdkVersion="15" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-  <application android:name="mono.android.app.Application" android:allowBackup="true" android:label="PMF.Droid" android:icon="@drawable/icon" android:debuggable="true">
-    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/icon" android:label="PMF" android:name="md5497de60090ed8a59ea4a3edf3145080a.MainActivity">
+  <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+  <application android:label="PMF" android:icon="@drawable/icon" android:name="mono.android.app.Application" android:allowBackup="true" android:debuggable="true">
+    <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCIokAOYuiegkHID1Wj5wvQGMXl5YHsWPo" />
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/dmi" android:label="PMF" android:screenOrientation="portrait" android:name="md5497de60090ed8a59ea4a3edf3145080a.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="PMF.Droid.mono.MonoRuntimeProvider.__mono_init__" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="rs.ac.uns.dmi.PMF.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">
       <intent-filter>
         <action android:name="mono.android.intent.action.SEPPUKU" />
-        <category android:name="mono.android.intent.category.SEPPUKU.PMF.Droid" />
+        <category android:name="mono.android.intent.category.SEPPUKU.rs.ac.uns.dmi.PMF" />
       </intent-filter>
     </receiver>
   </application>

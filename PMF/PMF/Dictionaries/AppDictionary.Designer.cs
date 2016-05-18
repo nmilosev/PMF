@@ -62,11 +62,38 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Trg Dositeja Obradovića 3.
+        /// </summary>
+        public static string AddressLine1 {
+            get {
+                return ResourceManager.GetString("AddressLine1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 21000 Novi Sad, Srbija.
+        /// </summary>
+        public static string AddressLine2 {
+            get {
+                return ResourceManager.GetString("AddressLine2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to PMF.
         /// </summary>
         public static string AppName {
             get {
                 return ResourceManager.GetString("AppName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Žiro račun: 840-1711666-19.
+        /// </summary>
+        public static string Bank {
+            get {
+                return ResourceManager.GetString("Bank", resourceCulture);
             }
         }
         
@@ -125,6 +152,60 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to info@pmf.uns.ac.rs.
+        /// </summary>
+        public static string ContactEmail {
+            get {
+                return ResourceManager.GetString("ContactEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to +381 21 454 389.
+        /// </summary>
+        public static string ContactPhone {
+            get {
+                return ResourceManager.GetString("ContactPhone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Studentska služba: .
+        /// </summary>
+        public static string ContactPhoneLabel {
+            get {
+                return ResourceManager.GetString("ContactPhoneLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PMF - Kontakt.
+        /// </summary>
+        public static string ContactTitle {
+            get {
+                return ResourceManager.GetString("ContactTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Posetite nas!.
+        /// </summary>
+        public static string ContactVisitUs {
+            get {
+                return ResourceManager.GetString("ContactVisitUs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PMF - Studentski servisi.
+        /// </summary>
+        public static string DefaultTitle {
+            get {
+                return ResourceManager.GetString("DefaultTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Aplikacija za studentske servise.
         /// </summary>
         public static string Description {
@@ -134,7 +215,52 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Prirodno-matematički fakultet Novi Sad.
+        ///   Looks up a localized string similar to http://www.dmi.rs.
+        /// </summary>
+        public static string DMILink {
+            get {
+                return ResourceManager.GetString("DMILink", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to INFORMACIJE.
+        /// </summary>
+        public static string Info {
+            get {
+                return ResourceManager.GetString("Info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Matični broj: 08104620.
+        /// </summary>
+        public static string MatNumber {
+            get {
+                return ResourceManager.GetString("MatNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PIB: 101635863.
+        /// </summary>
+        public static string PIB {
+            get {
+                return ResourceManager.GetString("PIB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Prirodno-matematički fakultet.
+        /// </summary>
+        public static string PMF {
+            get {
+                return ResourceManager.GetString("PMF", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Prirodno-matematički fakultet, Novi Sad.
         /// </summary>
         public static string PMFName {
             get {
@@ -143,11 +269,56 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 0.0a.
+        ///   Looks up a localized string similar to http://ssluzba.pmf.uns.ac.rs.
+        /// </summary>
+        public static string SSluzbaLink {
+            get {
+                return ResourceManager.GetString("SSluzbaLink", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Studentski servisi.
+        /// </summary>
+        public static string Title {
+            get {
+                return ResourceManager.GetString("Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Univerzitet u Novom Sadu.
+        /// </summary>
+        public static string UNS {
+            get {
+                return ResourceManager.GetString("UNS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to v.0.0.0.A.
         /// </summary>
         public static string Version {
             get {
                 return ResourceManager.GetString("Version", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dobrodošli, studenti!.
+        /// </summary>
+        public static string Welcome {
+            get {
+                return ResourceManager.GetString("Welcome", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pristupite vašim studentskim servisima iz glavnog menija aplikacije!.
+        /// </summary>
+        public static string WelcomeMessage {
+            get {
+                return ResourceManager.GetString("WelcomeMessage", resourceCulture);
             }
         }
     }

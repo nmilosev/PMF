@@ -2,20 +2,49 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:dict="clr-namespace: PMF.Dictionaries"
+             xmlns:mvvm="clr-namespace: PMF"
+             BindingContext="{Binding Source={x:Static mvvm:App.ViewModelLocator}, Path=Menu}"
              x:Class="PMF.Views.MenuPage"
              Padding="0,0,0,0"
-             Title="Master">
+             Title="Master"
+             Icon="menu.png">
+  
+
   <StackLayout Orientation="Vertical" Padding="10,10,10,10">
-    <Label FontSize="36" Text="{x:Static dict:AppDictionary.AppName}"/>
-    <Label FontSize="11" Text="{x:Static dict:AppDictionary.Description}"/>  
-    <Label FontSize="11" Text="{x:Static dict:AppDictionary.Version}"/>
-    <Label Text="{x:Static dict:AppDictionary.PMFName}"/>
-    <Button Text="{x:Static dict:AppDictionary.ButtonNews}" Command="{Binding Command}" />
-    <Button Text="{x:Static dict:AppDictionary.ButtonSchedule}" Command="{Binding Command}" />
-    <Button Text="{x:Static dict:AppDictionary.ButtonPrograms}" Command="{Binding Command}" />
-    <Button Text="{x:Static dict:AppDictionary.ButtonHelp}" Command="{Binding Command}" />
-    <Button Text="{x:Static dict:AppDictionary.ButtonContact}" Command="{Binding Command}" />
-    <Button Text="{x:Static dict:AppDictionary.ButtonStudServices}" Command="{Binding Command}" />
-    
+    <Label Margin="5,0,0,0" FontSize="24" Text="{x:Static dict:AppDictionary.Title}"/>
+    <Label Margin="5,0,0,0" FontSize="14" Text="{x:Static dict:AppDictionary.PMFName}"/>
+    <Label Margin="5,0,0,0" FontSize="14" Text="{x:Static dict:AppDictionary.UNS}"/>
+    <Label Margin="5,0,0,0" FontSize="12" Text="{x:Static dict:AppDictionary.Version}"/>
+    <ListView VerticalOptions="FillAndExpand" SeparatorVisibility="None" ItemsSource="{Binding MenuList}" Margin="0,20,0,0">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <StackLayout Orientation="Horizontal" Padding="0,10,10,10">
+              <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding Command}" CommandParameter="{Binding Id}"/>
+              </StackLayout.GestureRecognizers>
+              <Image Source="{Binding Icon}" WidthRequest="36" HeightRequest="36"/>
+              <Label Text="{Binding Text}" TextColor="#9E8A95" Margin="0,2,0,0" />
+            </StackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+
+    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Padding="10,10,10,10">
+      <Image Source="dmi.png" WidthRequest="40" HeightRequest="40" HorizontalOptions="Start">
+        <Image.GestureRecognizers>
+          <TapGestureRecognizer Command="{Binding DMICommand}"/>
+        </Image.GestureRecognizers>
+      </Image>
+      <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+        <StackLayout.GestureRecognizers>
+          <TapGestureRecognizer Command="{Binding InfoCommand}"/>
+        </StackLayout.GestureRecognizers>
+        <Label Text="{x:Static dict:AppDictionary.Info}" TextColor="#9E8A95" Margin="80,10,10,0"/>
+        <Image Source="question.png" WidthRequest="24" HeightRequest="24"/>
+      </StackLayout>
+    </StackLayout>
+
   </StackLayout>
 </ContentPage>

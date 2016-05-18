@@ -9,7 +9,7 @@ using Android.OS;
 
 namespace PMF.Droid
 {
-    [Activity(Label = "PMF", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "PMF", Icon = "@drawable/dmi", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.Portrait)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsApplicationActivity
     {
         protected override void OnCreate(Bundle bundle)
@@ -17,7 +17,16 @@ namespace PMF.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+
+            Xamarin.FormsMaps.Init(this, bundle);
+
             LoadApplication(new App());
+
+            Title = Dictionaries.AppDictionary.DefaultTitle;
+
+            #pragma warning disable CS0618 // Type or member is obsolete
+            ActionBar.SetIcon(new Android.Graphics.Drawables.ColorDrawable(Resources.GetColor(Android.Resource.Color.Transparent)));
+            #pragma warning restore CS0618 // Type or member is obsolete
         }
     }
 }

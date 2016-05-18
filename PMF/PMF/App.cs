@@ -10,9 +10,16 @@ namespace PMF
     public class App : Application
     {
         public static Views.MainPage MasterDetailPage;
-
+        public static ViewModels.ViewModelLocator ViewModelLocator;
+        public static Views.ViewLocator ViewLocator;
+        
+        /// <summary>
+        /// Initialize the app
+        /// </summary>
         public App()
         {
+            ViewModelLocator = new ViewModels.ViewModelLocator();
+            ViewLocator = new Views.ViewLocator();
             MasterDetailPage = new Views.MainPage();
             MainPage = MasterDetailPage;
         }

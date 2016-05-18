@@ -138,13 +138,70 @@
   <data name="ButtonStudServices" xml:space="preserve">
     <value>STUDENTSKA SLUŽBA</value>
   </data>
+  <data name="ContactTitle" xml:space="preserve">
+    <value>PMF - Kontakt</value>
+  </data>
   <data name="Description" xml:space="preserve">
     <value>Aplikacija za studentske servise</value>
   </data>
+  <data name="DMILink" xml:space="preserve">
+    <value>http://www.dmi.rs</value>
+  </data>
+  <data name="Info" xml:space="preserve">
+    <value>INFORMACIJE</value>
+  </data>
   <data name="PMFName" xml:space="preserve">
-    <value>Prirodno-matematički fakultet Novi Sad</value>
+    <value>Prirodno-matematički fakultet, Novi Sad</value>
+  </data>
+  <data name="SSluzbaLink" xml:space="preserve">
+    <value>http://ssluzba.pmf.uns.ac.rs</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Studentski servisi</value>
+  </data>
+  <data name="UNS" xml:space="preserve">
+    <value>Univerzitet u Novom Sadu</value>
   </data>
   <data name="Version" xml:space="preserve">
-    <value>0.0a</value>
+    <value>v.0.0.0.A</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Dobrodošli, studenti!</value>
+  </data>
+  <data name="WelcomeMessage" xml:space="preserve">
+    <value>Pristupite vašim studentskim servisima iz glavnog menija aplikacije!</value>
+  </data>
+  <data name="AddressLine1" xml:space="preserve">
+    <value>Trg Dositeja Obradovića 3</value>
+  </data>
+  <data name="AddressLine2" xml:space="preserve">
+    <value>21000 Novi Sad, Srbija</value>
+  </data>
+  <data name="Bank" xml:space="preserve">
+    <value>Žiro račun: 840-1711666-19</value>
+  </data>
+  <data name="ContactEmail" xml:space="preserve">
+    <value>info@pmf.uns.ac.rs</value>
+  </data>
+  <data name="ContactPhone" xml:space="preserve">
+    <value>+381 21 454 389</value>
+  </data>
+  <data name="ContactPhoneLabel" xml:space="preserve">
+    <value>Studentska služba: </value>
+  </data>
+  <data name="ContactVisitUs" xml:space="preserve">
+    <value>Posetite nas!</value>
+  </data>
+  <data name="DefaultTitle" xml:space="preserve">
+    <value>PMF - Studentski servisi</value>
+  </data>
+  <data name="MatNumber" xml:space="preserve">
+    <value>Matični broj: 08104620</value>
+  </data>
+  <data name="PIB" xml:space="preserve">
+    <value>PIB: 101635863</value>
+  </data>
+  <data name="PMF" xml:space="preserve">
+    <value>Prirodno-matematički fakultet</value>
   </data>
 </root>

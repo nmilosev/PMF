@@ -20,7 +20,8 @@ namespace PMF.UWP
         public MainPage()
         {
             this.InitializeComponent();
-
+            // TODO
+            Xamarin.FormsMaps.Init("INSERT_AUTHENTICATION_TOKEN_HERE");
             LoadApplication(new PMF.App());
         }
     }

@@ -13,19 +13,6 @@ namespace PMF.Views
         public MenuPage()
         {
             InitializeComponent();
-            BindingContext = this;
-        }
-
-        public Command Command
-        {
-            get
-            {
-                return new Command((p) =>
-                {
-                    App.MasterDetailPage.Detail = new NavigationPage(new LinkPage());
-                    App.MasterDetailPage.IsPresented = false;
-                });
-            }
-        }
+        }        
     }
 }

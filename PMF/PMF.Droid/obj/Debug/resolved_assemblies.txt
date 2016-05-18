@@ -16,9 +16,14 @@ C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Xamarin.Android.Support.v7.Medi
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Xamarin.Android.Support.v7.RecyclerView.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Xamarin.Android.Support.Vector.Drawable.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Xamarin.Forms.Core.dll
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Xamarin.Forms.Maps.Android.dll
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Xamarin.Forms.Maps.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Xamarin.Forms.Platform.Android.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Xamarin.Forms.Platform.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Xamarin.Forms.Xaml.dll
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Xamarin.GooglePlayServices.Base.dll
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Xamarin.GooglePlayServices.Basement.dll
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Xamarin.GooglePlayServices.Maps.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.Collections.Concurrent.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.Collections.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.ComponentModel.Annotations.dll
@@ -70,6 +75,9 @@ C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.Xml.XDocument.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.Xml.XmlSerializer.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.Runtime.Serialization.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.ServiceModel.Internals.dll
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Microsoft.Practices.ServiceLocation.dll
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\GalaSoft.MvvmLight.dll
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\GalaSoft.MvvmLight.Extras.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.Net.Http.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.ComponentModel.DataAnnotations.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.ComponentModel.Composition.dll
