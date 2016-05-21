@@ -5,7 +5,8 @@
              xmlns:dict="clr-namespace: PMF.Dictionaries"
              xmlns:mvvm="clr-namespace: PMF"
              BindingContext="{Binding Source={x:Static mvvm:App.ViewModelLocator}, Path=Main}"
-             >
+             Title="{x:Static dict:AppDictionary.DefaultTitle}">
+  
   
   <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
     <StackLayout.Margin>

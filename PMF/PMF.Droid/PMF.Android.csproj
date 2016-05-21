@@ -158,6 +158,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PMF.Core\PMF.Core.csproj">
+      <Project>{3B97DFE6-2A03-4166-8393-601922A47694}</Project>
+      <Name>PMF.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PMF\PMF.Xamarin.csproj">
       <Name>PMF.Xamarin</Name>
       <Project>{13F3069A-F20D-4140-8AD1-13776CB26E19}</Project>

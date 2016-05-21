@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+﻿
+using PMF.Core.Models;
 using Xamarin.Forms;
 
 namespace PMF
@@ -22,6 +19,19 @@ namespace PMF
             ViewLocator = new Views.ViewLocator();
             MasterDetailPage = new Views.MainPage();
             MainPage = MasterDetailPage;
+
+            var n = new NewsItem() { Title = "Title!", Text = "L" };
+
+            using (var odb = NDatabase.OdbFactory.Open("/sdcard/test.ndb"))
+            {
+                odb.Store(n);
+                odb.Store(n);
+                odb.Store(n);
+
+                foreach (var i in odb.AsQueryable<NewsItem>())
+                    System.Diagnostics.Debug.WriteLine(i.Title);
+            }
+                
         }
 
         protected override void OnStart()

@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using System.Linq;
 
 namespace PMF.Droid
 {
@@ -22,8 +23,16 @@ namespace PMF.Droid
 
             LoadApplication(new App());
 
-            Title = Dictionaries.AppDictionary.DefaultTitle;
-
+            HideIcon();
+            
+        }
+        /// <summary>
+        /// Warning
+        /// Can't disable the activity icon on the MainActivity from XAML
+        /// so it has to be done this way
+        /// </summary>
+        void HideIcon()
+        {            
             #pragma warning disable CS0618 // Type or member is obsolete
             ActionBar.SetIcon(new Android.Graphics.Drawables.ColorDrawable(Resources.GetColor(Android.Resource.Color.Transparent)));
             #pragma warning restore CS0618 // Type or member is obsolete

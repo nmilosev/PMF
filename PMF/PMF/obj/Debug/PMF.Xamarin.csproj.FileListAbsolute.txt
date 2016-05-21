@@ -29,5 +29,9 @@ C:\Source\PMF\PMF\PMF\obj\Debug\PMF.dll
 C:\Source\PMF\PMF\PMF\obj\Debug\PMF.pdb
 C:\Source\PMF\PMF\PMF\obj\Debug\PMF.Xamarin.csprojResolveAssemblyReference.cache
 C:\Source\PMF\PMF\PMF\obj\Debug\PMF.Views.AboutPage.xaml.g.cs
+C:\Source\PMF\PMF\PMF\bin\Debug\PMF.Core.dll
+C:\Source\PMF\PMF\PMF\bin\Debug\PMF.Core.pdb
+C:\Source\PMF\PMF\PMF\bin\Debug\NDatabase3.dll
+C:\Source\PMF\PMF\PMF\bin\Debug\NDatabase3.xml
 C:\Source\PMF\PMF\PMF\obj\Debug\PMF.dll.mdb
 C:\Source\PMF\PMF\PMF\bin\Debug\PMF.dll.mdb

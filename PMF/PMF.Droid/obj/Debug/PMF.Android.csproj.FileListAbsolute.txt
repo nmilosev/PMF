@@ -69,5 +69,10 @@ C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\xamarin.png
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\vs15.png
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\mono.png
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\fedora.png
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.Core.dll
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.Core.pdb
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.Core.dll.mdb
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\NDatabase3.dll
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\NDatabase3.xml
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\PMF.Droid.dll.mdb
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.Droid.dll.mdb

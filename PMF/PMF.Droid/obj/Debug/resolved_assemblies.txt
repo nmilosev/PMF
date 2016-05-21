@@ -2,6 +2,7 @@ C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\PMF.Droid.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\FormsViewGroup.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Mono.Android.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\mscorlib.dll
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\PMF.Core.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\PMF.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.Core.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.dll
@@ -75,6 +76,7 @@ C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.Xml.XDocument.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.Xml.XmlSerializer.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.Runtime.Serialization.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.ServiceModel.Internals.dll
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\NDatabase3.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Microsoft.Practices.ServiceLocation.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\GalaSoft.MvvmLight.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\GalaSoft.MvvmLight.Extras.dll

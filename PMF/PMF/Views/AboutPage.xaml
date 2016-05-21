@@ -27,22 +27,7 @@
       <Image Source="fedora.png" WidthRequest="120" HorizontalOptions="Center" Margin="5,10,0,0"/>
 
       <Label Text="{x:Static dict:AppDictionary.Images}" FontSize="12" Margin="10,10,10,0" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
-      
-      <!--<StackLayout Orientation="Horizontal" Padding="10,5,0,0">
-        <StackLayout.GestureRecognizers>
-          <TapGestureRecognizer Command="{Binding EmailCommand}"/>
-        </StackLayout.GestureRecognizers>
-        <Image Source="envelope.png" WidthRequest="20" HeightRequest="20"/>
-        <Label Text="{x:Static dict:AppDictionary.ContactEmail}" FontSize="14"/>
-      </StackLayout>
-      <StackLayout Orientation="Horizontal" Padding="10,5,0,0">
-        <StackLayout.GestureRecognizers>
-          <TapGestureRecognizer Command="{Binding PhoneCommand}"/>
-        </StackLayout.GestureRecognizers>
-        <Image Source="phone.png" WidthRequest="20" HeightRequest="20"/>
-        <Label Text="{Binding PhoneLabel}" FontSize="14"/>
-      </StackLayout>-->
-
+   
     </StackLayout>
   </ScrollView>
 </ContentPage>

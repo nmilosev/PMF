@@ -81,6 +81,7 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		"PMF.Droid.dll",
 		"FormsViewGroup.dll",
+		"PMF.Core.dll",
 		"PMF.dll",
 		"Xamarin.Android.Support.Animated.Vector.Drawable.dll",
 		"Xamarin.Android.Support.Design.dll",
@@ -149,6 +150,7 @@ class MonoPackageManager_Resources {
 		"System.Xml.XDocument.dll",
 		"System.Xml.XmlSerializer.dll",
 		"System.ServiceModel.Internals.dll",
+		"NDatabase3.dll",
 		"Microsoft.Practices.ServiceLocation.dll",
 		"GalaSoft.MvvmLight.dll",
 		"GalaSoft.MvvmLight.Extras.dll",
