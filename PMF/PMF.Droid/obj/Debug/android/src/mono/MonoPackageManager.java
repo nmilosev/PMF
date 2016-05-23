@@ -150,10 +150,10 @@ class MonoPackageManager_Resources {
 		"System.Xml.XDocument.dll",
 		"System.Xml.XmlSerializer.dll",
 		"System.ServiceModel.Internals.dll",
-		"NDatabase3.dll",
 		"Microsoft.Practices.ServiceLocation.dll",
 		"GalaSoft.MvvmLight.dll",
 		"GalaSoft.MvvmLight.Extras.dll",
+		"PMF.LocalService.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

@@ -4,7 +4,7 @@
              x:Class="PMF.Views.WelcomePage"             
              xmlns:dict="clr-namespace: PMF.Dictionaries"
              xmlns:mvvm="clr-namespace: PMF"
-             BindingContext="{Binding Source={x:Static mvvm:App.ViewModelLocator}, Path=Main}"
+             BindingContext="{Binding Source={StaticResource ViewModelLocator}, Path=Main}"
              Title="{x:Static dict:AppDictionary.DefaultTitle}">
   
   

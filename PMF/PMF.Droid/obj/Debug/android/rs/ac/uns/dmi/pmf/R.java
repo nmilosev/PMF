@@ -2850,14 +2850,15 @@ containing a value of this type.
         public static final int mr_ic_play_dark=0x7f0200d3;
         public static final int mr_ic_play_light=0x7f0200d4;
         public static final int newspaper=0x7f0200d5;
-        public static final int notification_template_icon_bg=0x7f0200dd;
+        public static final int notification_template_icon_bg=0x7f0200de;
         public static final int phone=0x7f0200d6;
         public static final int phonebook=0x7f0200d7;
         public static final int placeholder=0x7f0200d8;
         public static final int question=0x7f0200d9;
-        public static final int sitemap=0x7f0200da;
-        public static final int vs15=0x7f0200db;
-        public static final int xamarin=0x7f0200dc;
+        public static final int rightarrow=0x7f0200da;
+        public static final int sitemap=0x7f0200db;
+        public static final int vs15=0x7f0200dc;
+        public static final int xamarin=0x7f0200dd;
     }
     public static final class id {
         public static final int action0=0x7f0a0096;

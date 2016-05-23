@@ -1,6 +1,9 @@
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.Droid.dll
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.Droid.pdb
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\rs.ac.uns.dmi.PMF.apk
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\rs.ac.uns.dmi.PMF-Signed.apk
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\FormsViewGroup.dll
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.Core.dll
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.dll
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Xamarin.Android.Support.Animated.Vector.Drawable.dll
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Xamarin.Android.Support.Design.dll
@@ -22,6 +25,8 @@ C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Xamarin.GooglePlayServices.Maps.dll
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Microsoft.Practices.ServiceLocation.dll
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\GalaSoft.MvvmLight.dll
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.LocalService.dll
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.Core.pdb
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.pdb
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\FormsViewGroup.pdb
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\FormsViewGroup.dll.mdb
@@ -40,9 +45,11 @@ C:\Source\PMF\PMF\PMF.Droid\bin\Debug\GalaSoft.MvvmLight.pdb
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\GalaSoft.MvvmLight.xml
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.LocalService.pdb
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\PMF.Android.csprojResolveAssemblyReference.cache
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\PMF.Droid.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\PMF.Droid.pdb
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\android\bin\rs.ac.uns.dmi.PMF.apk
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable-hdpi\icon.png
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable-xhdpi\icon.png
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable-xxhdpi\icon.png
@@ -55,11 +62,6 @@ C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\phonebook.png
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\question.png
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\dmi.png
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\mainback.png
-C:\Source\PMF\PMF\PMF.Droid\obj\Debug\R.cs.flag
-C:\Source\PMF\PMF\PMF.Droid\obj\Debug\uploadflags.txt
-C:\Source\PMF\PMF\PMF.Droid\bin\Debug\rs.ac.uns.dmi.PMF.apk
-C:\Source\PMF\PMF\PMF.Droid\bin\Debug\rs.ac.uns.dmi.PMF-Signed.apk
-C:\Source\PMF\PMF\PMF.Droid\obj\Debug\android\bin\rs.ac.uns.dmi.PMF.apk
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\envelope.png
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\phone.png
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\location.png
@@ -69,10 +71,9 @@ C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\xamarin.png
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\vs15.png
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\mono.png
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\fedora.png
-C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.Core.dll
-C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.Core.pdb
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\R.cs.flag
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\uploadflags.txt
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\rightarrow.png
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.Core.dll.mdb
-C:\Source\PMF\PMF\PMF.Droid\bin\Debug\NDatabase3.dll
-C:\Source\PMF\PMF\PMF.Droid\bin\Debug\NDatabase3.xml
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\PMF.Droid.dll.mdb
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.Droid.dll.mdb

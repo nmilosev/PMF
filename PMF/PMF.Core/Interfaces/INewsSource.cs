@@ -7,12 +7,14 @@ using System.Threading.Tasks;
 
 namespace PMF.Core.Interfaces
 {
-    interface INewsSource
+    public interface INewsSource
     {
         bool RequireConnection { get; }
 
         bool IsAvailable { get; }
 
-        List<NewsItem> NewsItems { get; set; }
+        News News { get; }
+
+        void UpdateRange(int from, int to);
     }
 }

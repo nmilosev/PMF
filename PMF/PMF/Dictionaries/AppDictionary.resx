@@ -224,4 +224,7 @@ Sva prava zadržana.</value>
   <data name="MasterThesisName" xml:space="preserve">
     <value>Master rad na temu: Razvoj cross-platform native mobilnih aplikacija u programskom jeziku C#</value>
   </data>
+  <data name="NewsTitle" xml:space="preserve">
+    <value>PMF - Vesti</value>
+  </data>
 </root>

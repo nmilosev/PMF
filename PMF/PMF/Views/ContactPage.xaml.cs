@@ -16,6 +16,7 @@ namespace PMF.Views
             
             SetupMap();
         }
+
         /// <summary>
         /// No easy XAML bindings for Maps... Xamarin...
         /// </summary>

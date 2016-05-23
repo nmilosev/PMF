@@ -2491,8 +2491,8 @@ namespace PMF.Droid
 			// aapt resource value: 0x7f0200d5
 			public const int newspaper = 2130837717;
 			
-			// aapt resource value: 0x7f0200dd
-			public const int notification_template_icon_bg = 2130837725;
+			// aapt resource value: 0x7f0200de
+			public const int notification_template_icon_bg = 2130837726;
 			
 			// aapt resource value: 0x7f0200d6
 			public const int phone = 2130837718;
@@ -2507,13 +2507,16 @@ namespace PMF.Droid
 			public const int question = 2130837721;
 			
 			// aapt resource value: 0x7f0200da
-			public const int sitemap = 2130837722;
+			public const int rightarrow = 2130837722;
 			
 			// aapt resource value: 0x7f0200db
-			public const int vs15 = 2130837723;
+			public const int sitemap = 2130837723;
 			
 			// aapt resource value: 0x7f0200dc
-			public const int xamarin = 2130837724;
+			public const int vs15 = 2130837724;
+			
+			// aapt resource value: 0x7f0200dd
+			public const int xamarin = 2130837725;
 			
 			static Drawable()
 			{

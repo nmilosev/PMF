@@ -3,17 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PMF.Views.MainPage"
              xmlns:dict="clr-namespace: PMF.Dictionaries"
-             xmlns:local="clr-namespace:PMF.Views">
-
-  <MasterDetailPage.Master>
-    <local:MenuPage />
-  </MasterDetailPage.Master>  
-  <MasterDetailPage.Detail>
-    <NavigationPage>
-      <x:Arguments>
-        <local:WelcomePage/>
-      </x:Arguments>
-    </NavigationPage>
-  </MasterDetailPage.Detail>
+             xmlns:local="clr-namespace:PMF.Views"
+             DetailPage="{Binding WelcomePage, Source={StaticResource ViewLocator}"
+             MasterPage="{Binding MenuPage, Source={StaticResource ViewLocator}">
 
 </MasterDetailPage>

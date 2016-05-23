@@ -1,4 +1,6 @@
 ﻿using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Ioc;
+using PMF.Navigation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +18,7 @@ namespace PMF.ViewModels
             {
                 return new Command(() =>
                 {
-                    App.MasterDetailPage.IsPresented = false;
+                    SimpleIoc.Default.GetInstance<Navigator>().HideMenu();
                     Device.OpenUri(new Uri(Dictionaries.AppDictionary.DMILink, UriKind.Absolute));
                 });
             }
@@ -28,8 +30,20 @@ namespace PMF.ViewModels
             {
                 return new Command(() =>
                 {
-                    App.MasterDetailPage.IsPresented = false;
-                    App.MasterDetailPage.Detail = new NavigationPage(App.ViewLocator.AboutPage);
+                    SimpleIoc.Default.GetInstance<Navigator>().HideMenu();
+                    SimpleIoc.Default.GetInstance<Navigator>().Navigate(typeof(Views.AboutPage));
+                });
+            }
+        }
+        
+        public Command WelcomeCommand
+        {
+            get
+            {
+                return new Command(() =>
+                {
+                    SimpleIoc.Default.GetInstance<Navigator>().HideMenu();
+                    SimpleIoc.Default.GetInstance<Navigator>().Navigate(typeof(Views.WelcomePage));
                 });
             }
         }
@@ -51,7 +65,7 @@ namespace PMF.ViewModels
         
         public void CommandAction(string actionName)
         {
-            App.MasterDetailPage.IsPresented = false;
+            SimpleIoc.Default.GetInstance<Navigator>().HideMenu();
 
             switch (actionName)
             {
@@ -59,10 +73,13 @@ namespace PMF.ViewModels
                     Device.OpenUri(new Uri(Dictionaries.AppDictionary.SSluzbaLink, UriKind.Absolute));
                     break;
                 case "Contact":
-                    App.MasterDetailPage.Detail = new NavigationPage(App.ViewLocator.ContactPage);
+                    SimpleIoc.Default.GetInstance<Navigator>().Navigate(typeof(Views.ContactPage));
+                    break;
+                case "News":
+                    SimpleIoc.Default.GetInstance<Navigator>().Navigate(typeof(Views.NewsPage));
                     break;
                 default:
-                    App.MasterDetailPage.DisplayAlert("Komanda", actionName, "OK");
+                    (Application.Current.Resources["ViewLocator"] as Views.ViewLocator).MainPage.DisplayAlert("Command", actionName, "OK");
                     break;
             }
         }

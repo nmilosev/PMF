@@ -76,10 +76,10 @@ C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.Xml.XDocument.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.Xml.XmlSerializer.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.Runtime.Serialization.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.ServiceModel.Internals.dll
-C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\NDatabase3.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Microsoft.Practices.ServiceLocation.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\GalaSoft.MvvmLight.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\GalaSoft.MvvmLight.Extras.dll
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\PMF.LocalService.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.Net.Http.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.ComponentModel.DataAnnotations.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.ComponentModel.Composition.dll

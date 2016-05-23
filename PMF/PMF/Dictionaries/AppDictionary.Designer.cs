@@ -298,6 +298,15 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to PMF - Vesti.
+        /// </summary>
+        public static string NewsTitle {
+            get {
+                return ResourceManager.GetString("NewsTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to PIB: 101635863.
         /// </summary>
         public static string PIB {

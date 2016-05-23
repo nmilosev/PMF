@@ -2,8 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:dict="clr-namespace: PMF.Dictionaries"
-             xmlns:mvvm="clr-namespace: PMF"
-             BindingContext="{Binding Source={x:Static mvvm:App.ViewModelLocator}, Path=Menu}"
+             BindingContext="{Binding Source={StaticResource ViewModelLocator}, Path=Menu}"
              x:Class="PMF.Views.MenuPage"
              Padding="0,0,0,0"             
              Icon="menu.png"
@@ -20,7 +19,11 @@
                   iOS="0,75,0,0" />
     </StackLayout.Margin>
 
-    <Label Margin="5,0,0,0" FontSize="24" Text="{x:Static dict:AppDictionary.Title}"/>
+    <Label Margin="5,0,0,0" FontSize="24" Text="{x:Static dict:AppDictionary.Title}">
+      <Label.GestureRecognizers>
+        <TapGestureRecognizer Command="{Binding WelcomeCommand}"/>
+      </Label.GestureRecognizers>
+    </Label>
     <Label Margin="5,0,0,0" FontSize="14" Text="{x:Static dict:AppDictionary.PMFName}"/>
     <Label Margin="5,0,0,0" FontSize="14" Text="{x:Static dict:AppDictionary.UNS}"/>
     <Label Margin="5,0,0,0" FontSize="12" Text="{x:Static dict:AppDictionary.Version}"/>
