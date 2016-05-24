@@ -27,7 +27,7 @@
     <Label Margin="5,0,0,0" FontSize="14" Text="{x:Static dict:AppDictionary.PMFName}"/>
     <Label Margin="5,0,0,0" FontSize="14" Text="{x:Static dict:AppDictionary.UNS}"/>
     <Label Margin="5,0,0,0" FontSize="12" Text="{x:Static dict:AppDictionary.Version}"/>
-    <ListView VerticalOptions="FillAndExpand" SeparatorVisibility="None" ItemsSource="{Binding MenuList}" Margin="0,20,0,0">
+    <ListView VerticalOptions="FillAndExpand" SeparatorVisibility="None" ItemsSource="{Binding MenuList}" Margin="0,20,0,0" SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
       <ListView.BackgroundColor>
         <OnPlatform x:TypeArguments="Color" iOS="#DAE1E3"/>
       </ListView.BackgroundColor>
@@ -35,9 +35,6 @@
         <DataTemplate>
           <ViewCell>
             <StackLayout Orientation="Horizontal" Padding="0,10,10,10">
-              <StackLayout.GestureRecognizers>
-                <TapGestureRecognizer Command="{Binding Command}" CommandParameter="{Binding Id}"/>
-              </StackLayout.GestureRecognizers>
               <Image Source="{Binding Icon}" WidthRequest="36" HeightRequest="36"/>
               <Label Text="{Binding Text}" Margin="0,2,0,0">
                 <Label.TextColor>
