@@ -1778,6 +1778,26 @@
           }
         }
       },
+      "Toasts.Forms.Plugin/2.0.3": {
+        "compile": {
+          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.Abstractions.dll": {},
+          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.WinRT.dll": {}
+        },
+        "runtime": {
+          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.Abstractions.dll": {},
+          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.WinRT.dll": {}
+        }
+      },
+      "Xam.Plugins.Messaging/3.2.1": {
+        "compile": {
+          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Messaging.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Messaging.dll": {}
+        }
+      },
       "Xamarin.Forms/2.2.0.31": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -3443,6 +3463,26 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Toasts.Forms.Plugin/2.0.3": {
+        "compile": {
+          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.Abstractions.dll": {},
+          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.WinRT.dll": {}
+        },
+        "runtime": {
+          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.Abstractions.dll": {},
+          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.WinRT.dll": {}
+        }
+      },
+      "Xam.Plugins.Messaging/3.2.1": {
+        "compile": {
+          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Messaging.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Messaging.dll": {}
+        }
+      },
       "Xamarin.Forms/2.2.0.31": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -5064,6 +5104,26 @@
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "Toasts.Forms.Plugin/2.0.3": {
+        "compile": {
+          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.Abstractions.dll": {},
+          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.WinRT.dll": {}
+        },
+        "runtime": {
+          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.Abstractions.dll": {},
+          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.WinRT.dll": {}
+        }
+      },
+      "Xam.Plugins.Messaging/3.2.1": {
+        "compile": {
+          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Messaging.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Messaging.dll": {}
         }
       },
       "Xamarin.Forms/2.2.0.31": {
@@ -6739,6 +6799,26 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Toasts.Forms.Plugin/2.0.3": {
+        "compile": {
+          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.Abstractions.dll": {},
+          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.WinRT.dll": {}
+        },
+        "runtime": {
+          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.Abstractions.dll": {},
+          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.WinRT.dll": {}
+        }
+      },
+      "Xam.Plugins.Messaging/3.2.1": {
+        "compile": {
+          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Messaging.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Messaging.dll": {}
+        }
+      },
       "Xamarin.Forms/2.2.0.31": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -8360,6 +8440,26 @@
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "Toasts.Forms.Plugin/2.0.3": {
+        "compile": {
+          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.Abstractions.dll": {},
+          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.WinRT.dll": {}
+        },
+        "runtime": {
+          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.Abstractions.dll": {},
+          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.WinRT.dll": {}
+        }
+      },
+      "Xam.Plugins.Messaging/3.2.1": {
+        "compile": {
+          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Messaging.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Messaging.dll": {}
         }
       },
       "Xamarin.Forms/2.2.0.31": {
@@ -10035,6 +10135,26 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Toasts.Forms.Plugin/2.0.3": {
+        "compile": {
+          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.Abstractions.dll": {},
+          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.WinRT.dll": {}
+        },
+        "runtime": {
+          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.Abstractions.dll": {},
+          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.WinRT.dll": {}
+        }
+      },
+      "Xam.Plugins.Messaging/3.2.1": {
+        "compile": {
+          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Messaging.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Messaging.dll": {}
+        }
+      },
       "Xamarin.Forms/2.2.0.31": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -11656,6 +11776,26 @@
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "Toasts.Forms.Plugin/2.0.3": {
+        "compile": {
+          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.Abstractions.dll": {},
+          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.WinRT.dll": {}
+        },
+        "runtime": {
+          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.Abstractions.dll": {},
+          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.WinRT.dll": {}
+        }
+      },
+      "Xam.Plugins.Messaging/3.2.1": {
+        "compile": {
+          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Messaging.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Messaging.dll": {}
         }
       },
       "Xamarin.Forms/2.2.0.31": {
@@ -14954,6 +15094,88 @@
         "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll"
       ]
     },
+    "Toasts.Forms.Plugin/2.0.3": {
+      "sha512": "2ly4uvglDTzFpr3ShC6pNR4D44zNqMoPJBJybZcOmYTpeH/S9TW2JEcEeecmqmyQ87Uu64Tj7biaxd9QE5F5wQ==",
+      "type": "package",
+      "files": [
+        "Toasts.Forms.Plugin.2.0.3.nupkg.sha512",
+        "Toasts.Forms.Plugin.nuspec",
+        "content/portable-netcore451+wpa81/FrameStyle.xaml",
+        "content/portable-netcore451+wpa81/Icons/error.png",
+        "content/portable-netcore451+wpa81/Icons/info.png",
+        "content/portable-netcore451+wpa81/Icons/success.png",
+        "content/portable-netcore451+wpa81/Icons/warning.png",
+        "lib/MonoAndroid10/Toasts.Forms.Plugin.Abstractions.dll",
+        "lib/MonoAndroid10/Toasts.Forms.Plugin.Abstractions.pdb",
+        "lib/MonoAndroid10/Toasts.Forms.Plugin.Droid.dll",
+        "lib/MonoAndroid10/Toasts.Forms.Plugin.Droid.pdb",
+        "lib/Xamarin.iOS10/Toasts.Forms.Plugin.Abstractions.dll",
+        "lib/Xamarin.iOS10/Toasts.Forms.Plugin.Abstractions.pdb",
+        "lib/Xamarin.iOS10/Toasts.Forms.Plugin.iOS.dll",
+        "lib/portable-net45+wp8+win8+wpa81+netcore451+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Toasts.Forms.Plugin.Abstractions.dll",
+        "lib/portable-net45+wp8+win8+wpa81+netcore451+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Toasts.Forms.Plugin.Abstractions.pdb",
+        "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.Abstractions.dll",
+        "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.Abstractions.pdb",
+        "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.WinRT.dll",
+        "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.WinRT.pdb",
+        "lib/wp8/Toasts.Forms.Plugin.Abstractions.dll",
+        "lib/wp8/Toasts.Forms.Plugin.Abstractions.pdb",
+        "lib/wp8/Toasts.Forms.Plugin.WindowsPhone.dll",
+        "lib/wp8/Toasts.Forms.Plugin.WindowsPhone.pdb"
+      ]
+    },
+    "Xam.Plugins.Messaging/3.2.1": {
+      "sha512": "9WPIzUoTy1sDh/R88aPgtxzFGdhtuxuR5EbYQrpbOv5ddMmQqS94vZSXkvn9mqIIqJ366BgI53sE8aJ87dcUtQ==",
+      "type": "package",
+      "files": [
+        "Xam.Plugins.Messaging.3.2.1.nupkg.sha512",
+        "Xam.Plugins.Messaging.nuspec",
+        "lib/MonoAndroid10/Plugin.Messaging.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Messaging.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.Messaging.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.Messaging.dll",
+        "lib/MonoAndroid10/Plugin.Messaging.pdb",
+        "lib/MonoAndroid10/Plugin.Messaging.xml",
+        "lib/MonoTouch10/Plugin.Messaging.Abstractions.dll",
+        "lib/MonoTouch10/Plugin.Messaging.Abstractions.xml",
+        "lib/MonoTouch10/Plugin.Messaging.dll",
+        "lib/MonoTouch10/Plugin.Messaging.xml",
+        "lib/UAP10/Plugin.Messaging.Abstractions.dll",
+        "lib/UAP10/Plugin.Messaging.Abstractions.pdb",
+        "lib/UAP10/Plugin.Messaging.Abstractions.xml",
+        "lib/UAP10/Plugin.Messaging.dll",
+        "lib/UAP10/Plugin.Messaging.pdb",
+        "lib/UAP10/Plugin.Messaging.xml",
+        "lib/Xamarin.iOS10/Plugin.Messaging.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Messaging.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.Messaging.dll",
+        "lib/Xamarin.iOS10/Plugin.Messaging.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Messaging.Abstractions.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Messaging.Abstractions.pdb",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Messaging.Abstractions.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Messaging.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Messaging.pdb",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Messaging.xml",
+        "lib/win8/Plugin.Messaging.Abstractions.dll",
+        "lib/win8/Plugin.Messaging.Abstractions.pdb",
+        "lib/win8/Plugin.Messaging.Abstractions.xml",
+        "lib/win8/Plugin.Messaging.dll",
+        "lib/win8/Plugin.Messaging.pdb",
+        "lib/win8/Plugin.Messaging.xml",
+        "lib/wp8/Plugin.Messaging.Abstractions.dll",
+        "lib/wp8/Plugin.Messaging.Abstractions.pdb",
+        "lib/wp8/Plugin.Messaging.Abstractions.xml",
+        "lib/wp8/Plugin.Messaging.dll",
+        "lib/wp8/Plugin.Messaging.pdb",
+        "lib/wp8/Plugin.Messaging.xml",
+        "lib/wpa81/Plugin.Messaging.Abstractions.dll",
+        "lib/wpa81/Plugin.Messaging.Abstractions.pdb",
+        "lib/wpa81/Plugin.Messaging.Abstractions.xml",
+        "lib/wpa81/Plugin.Messaging.dll",
+        "lib/wpa81/Plugin.Messaging.pdb",
+        "lib/wpa81/Plugin.Messaging.xml"
+      ]
+    },
     "Xamarin.Forms/2.2.0.31": {
       "sha512": "UQ3Km0Lway+n0b9lfZczE+sPtRzMyY9oJHCKSSjsoTeEOiZfQkBDIcL7SzNYEdBCFaU9He4lnASgfRD6yHdEtg==",
       "type": "package",
@@ -15217,6 +15439,8 @@
   "projectFileDependencyGroups": {
     "": [
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0",
+      "Toasts.Forms.Plugin >= 2.0.3",
+      "Xam.Plugins.Messaging >= 3.2.1",
       "Xamarin.Forms >= 2.2.0.31",
       "Xamarin.Forms.Maps >= 2.2.0.31"
     ],

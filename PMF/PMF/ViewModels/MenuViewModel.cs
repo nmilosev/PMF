@@ -19,7 +19,7 @@ namespace PMF.ViewModels
                 return new Command(() =>
                 {
                     SimpleIoc.Default.GetInstance<Navigator>().HideMenu();
-                    Device.OpenUri(new Uri(Dictionaries.AppDictionary.DMILink, UriKind.Absolute));
+                    Plugin.Share.CrossShare.Current.OpenBrowser(Dictionaries.AppDictionary.DMILink);
                 });
             }
         }
@@ -63,14 +63,20 @@ namespace PMF.ViewModels
             }
         }
 
+        private MenuItem _selectedItem;
         public MenuItem SelectedItem
         {
             get
             {
-                return null;
+                /// 24 hours lost on this bug: if you return null iOS hangs
+                if (Device.OS == TargetPlatform.iOS)
+                    return _selectedItem;
+                else
+                    return null;
             }
             set
             {
+                _selectedItem = value;
                 CommandAction(value.Id);
                 RaisePropertyChanged();
             }
@@ -83,7 +89,7 @@ namespace PMF.ViewModels
             switch (actionName)
             {
                 case "StudService":
-                    Device.OpenUri(new Uri(Dictionaries.AppDictionary.SSluzbaLink, UriKind.Absolute));
+                    Plugin.Share.CrossShare.Current.OpenBrowser(Dictionaries.AppDictionary.SSluzbaLink);
                     break;
                 case "Contact":
                     SimpleIoc.Default.GetInstance<Navigator>().Navigate(typeof(Views.ContactPage));

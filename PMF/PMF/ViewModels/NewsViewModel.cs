@@ -17,6 +17,7 @@ namespace PMF.ViewModels
         private INewsSource _news;
 
         private bool _isRefreshing;
+
         public bool IsRefreshing
         {
             get
@@ -72,7 +73,8 @@ namespace PMF.ViewModels
             {
                 return new Command<NewsItem>((p) =>
                 {
-                    (Application.Current.Resources["ViewLocator"] as Views.ViewLocator).MainPage.DisplayAlert("News", p.Id.ToString(), "OK");
+                    CurrentNewsItem = p;
+                    SimpleIoc.Default.GetInstance<Navigation.Navigator>().NavigateModal(typeof(Views.NewsArticlePage));                    
                 });
             }
         }
@@ -88,21 +90,66 @@ namespace PMF.ViewModels
         public async void Refresh()
         {
             var news = await _news.News();
-            News = new ObservableCollection<NewsItem>(news.Items);
+            var notificator = DependencyService.Get<Plugin.Toasts.IToastNotificator>();
+
             IsRefreshing = false;
             Activity = false;
+            
+            if (news.IsDataValid)
+            {
+                News = new ObservableCollection<NewsItem>(news.Items);
+                await notificator.Notify(Plugin.Toasts.ToastNotificationType.Success,
+                Dictionaries.AppDictionary.NewsSuccessTitle, Dictionaries.AppDictionary.NewsSuccess + news.RefreshedFormatted, TimeSpan.FromSeconds(1.5));
+            }
+            else
+            {
+                await notificator.Notify(Plugin.Toasts.ToastNotificationType.Error,
+                Dictionaries.AppDictionary.Error, Dictionaries.AppDictionary.NewsError, TimeSpan.FromSeconds(1.5));
+            }
+
+           
         }
 
+        private NewsItem _selectedItem;
         public NewsItem SelectedItem
         {
             get
             {
-                return null;
+                // Xamarin bug, can't assign null if on iOS
+                if (Device.OS == TargetPlatform.iOS)
+                    return _selectedItem;
+                else
+                    return null;
             }
             set
             {
+                _selectedItem = value;
                 OpenNewsArticle.Execute(value);
                 RaisePropertyChanged();
+            }
+        }
+
+        public NewsItem CurrentNewsItem { get; set; }
+
+        public Command NewsArticleBack
+        {
+            get
+            {
+                return new Command(() => SimpleIoc.Default.GetInstance<Navigation.Navigator>().GoBackModal());
+            }
+        }
+        public Command NewsArticleShare
+        {
+            get
+            {
+                return new Command(() => Plugin.Share.CrossShare.Current.ShareLink(CurrentNewsItem.Link, title: CurrentNewsItem.Title, message: CurrentNewsItem.Title));
+            }
+        }
+        public Command NewsArticleLink
+        {
+            get
+            {
+                return new Command(() => Plugin.Share.CrossShare.Current.OpenBrowser(CurrentNewsItem.Link));
             }
         }
     }

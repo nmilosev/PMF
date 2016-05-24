@@ -24,7 +24,11 @@ namespace PMF.ViewModels
             {
                 return new Command(() =>
                 {
-                    Device.OpenUri(new Uri($"mailto:{Dictionaries.AppDictionary.ContactEmail}", UriKind.Absolute));
+                    var emailMessenger = Plugin.Messaging.CrossMessaging.Current.EmailMessenger;
+                    if (emailMessenger.CanSendEmail)
+                    {
+                        emailMessenger.SendEmail(Dictionaries.AppDictionary.ContactEmail, Dictionaries.AppDictionary.AppName, string.Empty);                        
+                    }
                 });
             }
         }
@@ -35,7 +39,9 @@ namespace PMF.ViewModels
             {
                 return new Command(() =>
                 {
-                    Device.OpenUri(new Uri($"tel:{Dictionaries.AppDictionary.ContactPhone}", UriKind.Absolute));
+                    var phoneDialer = Plugin.Messaging.CrossMessaging.Current.PhoneDialer;
+                    if (phoneDialer.CanMakePhoneCall)
+                        phoneDialer.MakePhoneCall(Dictionaries.AppDictionary.ContactPhone, Dictionaries.AppDictionary.PMFName);
                 });
             }
         }

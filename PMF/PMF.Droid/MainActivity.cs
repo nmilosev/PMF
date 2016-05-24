@@ -7,10 +7,12 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using System.Linq;
+using Xamarin.Forms;
+using Plugin.Toasts;
 
 namespace PMF.Droid
 {
-    [Activity(Label = "PMF", Icon = "@drawable/dmi", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.Portrait)]
+    [Activity(Label = "PMF", Icon = "@drawable/dmi", Theme = "@style/MyTheme", MainLauncher = true)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsApplicationActivity
     {
         protected override void OnCreate(Bundle bundle)
@@ -24,7 +26,9 @@ namespace PMF.Droid
             LoadApplication(new App());
 
             HideIcon();
-            
+
+            DependencyService.Register<ToastNotificatorImplementation>();
+            ToastNotificatorImplementation.Init(this);
         }
         /// <summary>
         /// Warning

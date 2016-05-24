@@ -230,4 +230,28 @@ Sva prava zadržana.</value>
   <data name="PleaseWait" xml:space="preserve">
     <value>Molim sačekajte...</value>
   </data>
+  <data name="Error" xml:space="preserve">
+    <value>Greška!</value>
+  </data>
+  <data name="NewsError" xml:space="preserve">
+    <value>Greška prilikom preuzimanja vesti, pokušajte ponovo kasnije...</value>
+  </data>
+  <data name="NewsSuccess" xml:space="preserve">
+    <value>Datum osvežavanja: </value>
+  </data>
+  <data name="NewsSuccessTitle" xml:space="preserve">
+    <value>Uspešno učitavanje vesti!</value>
+  </data>
+  <data name="NewsArticleTitle" xml:space="preserve">
+    <value>PMF - </value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Nazad</value>
+  </data>
+  <data name="Link" xml:space="preserve">
+    <value>Link</value>
+  </data>
+  <data name="Share" xml:space="preserve">
+    <value>Podeli</value>
+  </data>
 </root>

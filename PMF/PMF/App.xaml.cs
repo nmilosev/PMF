@@ -26,7 +26,7 @@ namespace PMF
         {
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
 
-            SimpleIoc.Default.Register<Navigation.Navigator>();
+            SimpleIoc.Default.Register<Navigation.Navigator>(true);
 
             SimpleIoc.Default.Register<INewsSource, LocalNewsSource>();
         }

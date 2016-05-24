@@ -12,41 +12,53 @@
       <ListView.ItemTemplate>
         <DataTemplate>
           <ViewCell>
+            <StackLayout Padding="10" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+              <Grid Padding="0,1,1,1" RowSpacing="1" ColumnSpacing="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <Grid.BackgroundColor>
+                  <OnPlatform x:TypeArguments="Color" Android="#212121" iOS="#E3E3E3"/>
+                </Grid.BackgroundColor>
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="*" />
+                  <RowDefinition Height="40" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="10" />
+                  <ColumnDefinition Width="*" />
+                  <ColumnDefinition Width="40" />
+                </Grid.ColumnDefinitions>
 
-            <Grid Padding="0,1,1,1" Margin="10" RowSpacing="1" ColumnSpacing="1" BackgroundColor="#212121" VerticalOptions="FillAndExpand">
+                <ContentView Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" BackgroundColor="{Binding Color}" Margin="0,-1,0,-1"/>
 
-              <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-                <RowDefinition Height="40" />
-              </Grid.RowDefinitions>
-              <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="15" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="40" />
-              </Grid.ColumnDefinitions>
+                <ContentView Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Padding="10" Margin="1,1,1,0">
+                  <ContentView.BackgroundColor>
+                    <OnPlatform x:TypeArguments="Color" Android="#2F2F2F" iOS="#FFFFFF"/>
+                  </ContentView.BackgroundColor>
+                  <StackLayout>
+                    <Label FontSize="24" Text="{Binding Title}" />
+                    <Label FontSize="11" Text="{Binding Summary}" />
+                  </StackLayout>
+                </ContentView>
 
-              <ContentView Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" BackgroundColor="{Binding Color}" Padding="10" Margin="3,3,0,3" />
+                <ContentView Grid.Row="1" Grid.Column="1" Padding="10" Margin="1,1,0,1">
+                  <ContentView.BackgroundColor>
+                    <OnPlatform x:TypeArguments="Color" Android="#2F2F2F" iOS="#FFFFFF"/>
+                  </ContentView.BackgroundColor>
+                  <StackLayout>
+                    <Label FontSize="12" Text="{Binding TimeFormatted}" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"  />
+                  </StackLayout>
+                </ContentView>
 
-              <ContentView Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" BackgroundColor="#2F2F2F" Padding="10" Margin="3,3,3,0">
-                <StackLayout>
-                  <Label FontSize="24" Text="{Binding Title}" />
-                  <Label FontSize="11" Text="{Binding Summary}" />
-                </StackLayout>
-              </ContentView>
+                <ContentView Grid.Row="1" Grid.Column="2" Padding="10" Margin="1">
+                  <ContentView.BackgroundColor>
+                    <OnPlatform x:TypeArguments="Color" Android="#2F2F2F" iOS="#FFFFFF"/>
+                  </ContentView.BackgroundColor>
+                  <StackLayout>
+                    <Image Source="rightarrow.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                  </StackLayout>
+                </ContentView>
 
-              <ContentView Grid.Row="1" Grid.Column="1" BackgroundColor="#2F2F2F" Padding="10" Margin="3,3,0,3">
-                <StackLayout>
-                  <Label FontSize="12" Text="{Binding TimeFormatted}" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"  />
-                </StackLayout>
-              </ContentView>
-
-              <ContentView Grid.Row="1" Grid.Column="2" BackgroundColor="#2F2F2F" Padding="10" Margin="3">
-                <StackLayout>
-                  <Image Source="rightarrow.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
-                </StackLayout>
-              </ContentView>
-
-            </Grid>
+              </Grid>
+            </StackLayout>
           </ViewCell>
         </DataTemplate>
       </ListView.ItemTemplate>

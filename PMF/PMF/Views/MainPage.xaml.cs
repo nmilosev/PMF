@@ -15,13 +15,20 @@ namespace PMF.Views
             InitializeComponent();
         }
 
+        //Can't bind from XAML
+        protected override bool OnBackButtonPressed()
+        {
+            IsPresented = IsPresented ? false : true; 
+            return true;
+        }
+
         // https://forums.xamarin.com/discussion/22720/masterdetailpage-with-viewfactory-custom-binding
         #region Fix for Xamarin's Master and Detail properties not being bindable
 
         public static readonly BindableProperty DetailPageProperty =
         BindableProperty.Create(propertyName: "DetailPage", declaringType: typeof(Page), returnType: typeof(Page), propertyChanged: (bindable, oldValue, newValue) =>
         {
-            ((MainPage)bindable).Detail = ((Page)newValue);
+            ((MainPage)bindable).Detail = new NavigationPage(((Page)newValue)); 
         });
 
         public Page DetailPage

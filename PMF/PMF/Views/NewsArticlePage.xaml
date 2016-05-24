@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PMF.Views.NewsArticlePage"
+             xmlns:dict="clr-namespace: PMF.Dictionaries"
+             BindingContext="{Binding Source={StaticResource ViewModelLocator}, Path=News}"
+             Title="{Binding CurrentNewsItem.Title}">
+
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness" iOS="20, 0, 20, 20" />
+  </ContentPage.Padding>
+
+  <ScrollView Padding="10">
+    
+    <StackLayout>
+      <Image Source="{Binding CurrentNewsItem.ImageURI}" HeightRequest="200" Margin="0,20,0,0" />
+      
+      <Grid HorizontalOptions="FillAndExpand" Margin="0,5,0,0" >
+        <Grid.RowDefinitions>
+          <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Label Text="{Binding CurrentNewsItem.Category}" Grid.Row="0" Grid.Column="0" FontAttributes="Bold"/>
+        <Label Text="{Binding CurrentNewsItem.TimeFormatted}" Grid.Row="0" Grid.Column="1" HorizontalOptions="End" FontAttributes="Bold"/>
+      </Grid>
+        
+      <Label FormattedText="{Binding CurrentNewsItem.Text}" VerticalOptions="Center" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" LineBreakMode="CharacterWrap" Margin="0,5,0,0" />
+      <Grid HeightRequest="50">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+
+        <Image Source="leftarrow.png" Grid.Row="0" Grid.Column="0" WidthRequest="24" HeightRequest="24" HorizontalOptions="Center" VerticalOptions="Center">
+          <Image.GestureRecognizers>
+            <TapGestureRecognizer Command="{Binding NewsArticleBack}"/>
+          </Image.GestureRecognizers>
+        </Image>
+
+        <Image Source="connections.png" Grid.Row="0" Grid.Column="1" WidthRequest="24" HeightRequest="24" HorizontalOptions="Center" VerticalOptions="Center">
+          <Image.GestureRecognizers>
+            <TapGestureRecognizer Command="{Binding NewsArticleShare}"/>
+          </Image.GestureRecognizers>
+        </Image>
+
+        <Image Source="link.png" Grid.Row="0" Grid.Column="2" WidthRequest="24" HeightRequest="24" HorizontalOptions="Center" VerticalOptions="Center">
+          <Image.GestureRecognizers>
+            <TapGestureRecognizer Command="{Binding NewsArticleLink}"/>
+          </Image.GestureRecognizers>
+        </Image>
+        
+      </Grid>
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

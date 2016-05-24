@@ -21,14 +21,17 @@ namespace PMF.Views
             SimpleIoc.Default.Register<WelcomePage>();
             SimpleIoc.Default.Register<MenuPage>();
             SimpleIoc.Default.Register<NewsPage>();
+            SimpleIoc.Default.Register<NewsArticlePage>();
         }
 
-        public MainPage MainPage => ServiceLocator.Current.GetInstance<MainPage>();
-        public MenuPage MenuPage => ServiceLocator.Current.GetInstance<MenuPage>();
         public WelcomePage WelcomePage => ServiceLocator.Current.GetInstance<WelcomePage>();
+
+        public MainPage MainPage => ServiceLocator.Current.GetInstance<MainPage>();
+        public MenuPage MenuPage => ServiceLocator.Current.GetInstance<MenuPage>();        
         public ContactPage ContactPage => ServiceLocator.Current.GetInstance<ContactPage>();
         public AboutPage AboutPage => ServiceLocator.Current.GetInstance<AboutPage>();
         public NewsPage NewsPage => ServiceLocator.Current.GetInstance<NewsPage>();
+        public NewsArticlePage NewsArticle => ServiceLocator.Current.GetInstance<NewsArticlePage>();
 
     }
 }

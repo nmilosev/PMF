@@ -107,6 +107,15 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Nazad.
+        /// </summary>
+        public static string Back {
+            get {
+                return ResourceManager.GetString("Back", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Žiro račun: 840-1711666-19.
         /// </summary>
         public static string Bank {
@@ -251,6 +260,15 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Greška!.
+        /// </summary>
+        public static string Error {
+            get {
+                return ResourceManager.GetString("Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Slike i vektori preuzeti sa sajtova flaticon i freepik.
         ///Svi logotipovi korišćeni su vlasništvo njihovih kompanija.
         ///Sva prava zadržana..
@@ -267,6 +285,15 @@ namespace PMF.Dictionaries {
         public static string Info {
             get {
                 return ResourceManager.GetString("Info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Link.
+        /// </summary>
+        public static string Link {
+            get {
+                return ResourceManager.GetString("Link", resourceCulture);
             }
         }
         
@@ -294,6 +321,42 @@ namespace PMF.Dictionaries {
         public static string MatNumber {
             get {
                 return ResourceManager.GetString("MatNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PMF - .
+        /// </summary>
+        public static string NewsArticleTitle {
+            get {
+                return ResourceManager.GetString("NewsArticleTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Greška prilikom preuzimanja vesti, pokušajte ponovo kasnije....
+        /// </summary>
+        public static string NewsError {
+            get {
+                return ResourceManager.GetString("NewsError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Datum osvežavanja: .
+        /// </summary>
+        public static string NewsSuccess {
+            get {
+                return ResourceManager.GetString("NewsSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Uspešno učitavanje vesti!.
+        /// </summary>
+        public static string NewsSuccessTitle {
+            get {
+                return ResourceManager.GetString("NewsSuccessTitle", resourceCulture);
             }
         }
         
@@ -339,6 +402,15 @@ namespace PMF.Dictionaries {
         public static string PMFName {
             get {
                 return ResourceManager.GetString("PMFName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Podeli.
+        /// </summary>
+        public static string Share {
+            get {
+                return ResourceManager.GetString("Share", resourceCulture);
             }
         }
         

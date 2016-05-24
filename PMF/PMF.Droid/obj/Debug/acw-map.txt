@@ -2,6 +2,30 @@ PMF.Droid.MainActivity, PMF.Droid;md5497de60090ed8a59ea4a3edf3145080a.MainActivi
 PMF.Droid.MainActivity, PMF.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5497de60090ed8a59ea4a3edf3145080a.MainActivity
 PMF.Droid.MainActivity;md5497de60090ed8a59ea4a3edf3145080a.MainActivity
 pmf.droid.MainActivity;md5497de60090ed8a59ea4a3edf3145080a.MainActivity
+PMF.Droid.MainApplication, PMF.Droid;md5497de60090ed8a59ea4a3edf3145080a.MainApplication
+PMF.Droid.MainApplication, PMF.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5497de60090ed8a59ea4a3edf3145080a.MainApplication
+PMF.Droid.MainApplication;md5497de60090ed8a59ea4a3edf3145080a.MainApplication
+pmf.droid.MainApplication;md5497de60090ed8a59ea4a3edf3145080a.MainApplication
+Plugin.Toasts.Crouton, Toasts.Forms.Plugin.Droid;md52d189d64b7b0ac40b59b56928c06114b.Crouton
+Plugin.Toasts.Crouton, Toasts.Forms.Plugin.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md52d189d64b7b0ac40b59b56928c06114b.Crouton
+Plugin.Toasts.Crouton;md52d189d64b7b0ac40b59b56928c06114b.Crouton
+plugin.toasts.Crouton;md52d189d64b7b0ac40b59b56928c06114b.Crouton
+Plugin.Toasts.Manager, Toasts.Forms.Plugin.Droid;md52d189d64b7b0ac40b59b56928c06114b.Manager
+Plugin.Toasts.Manager, Toasts.Forms.Plugin.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md52d189d64b7b0ac40b59b56928c06114b.Manager
+Plugin.Toasts.Manager;md52d189d64b7b0ac40b59b56928c06114b.Manager
+plugin.toasts.Manager;md52d189d64b7b0ac40b59b56928c06114b.Manager
+Plugin.Toasts.Manager/GlobalLayoutListener, Toasts.Forms.Plugin.Droid;md52d189d64b7b0ac40b59b56928c06114b.Manager_GlobalLayoutListener
+Plugin.Toasts.Manager+GlobalLayoutListener, Toasts.Forms.Plugin.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md52d189d64b7b0ac40b59b56928c06114b.Manager_GlobalLayoutListener
+Plugin.Toasts.Manager.GlobalLayoutListener;md52d189d64b7b0ac40b59b56928c06114b.Manager_GlobalLayoutListener
+plugin.toasts.Manager_GlobalLayoutListener;md52d189d64b7b0ac40b59b56928c06114b.Manager_GlobalLayoutListener
+Android.Support.CustomTabs.CustomTabsClient/CustomTabsCallbackImpl, Xamarin.Android.Support.CustomTabs;android.support.customtabs.CustomTabsClient_CustomTabsCallbackImpl
+Android.Support.CustomTabs.CustomTabsClient+CustomTabsCallbackImpl, Xamarin.Android.Support.CustomTabs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;android.support.customtabs.CustomTabsClient_CustomTabsCallbackImpl
+Android.Support.CustomTabs.CustomTabsClient.CustomTabsCallbackImpl;android.support.customtabs.CustomTabsClient_CustomTabsCallbackImpl
+android.support.customtabs.CustomTabsClient_CustomTabsCallbackImpl;android.support.customtabs.CustomTabsClient_CustomTabsCallbackImpl
+Android.Support.CustomTabs.KeepAliveService, Xamarin.Android.Support.CustomTabs;md59f70a99687498e7ba187118950981d26.KeepAliveService
+Android.Support.CustomTabs.KeepAliveService, Xamarin.Android.Support.CustomTabs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md59f70a99687498e7ba187118950981d26.KeepAliveService
+Android.Support.CustomTabs.KeepAliveService;md59f70a99687498e7ba187118950981d26.KeepAliveService
+android.support.customtabs.KeepAliveService;md59f70a99687498e7ba187118950981d26.KeepAliveService
 Android.Support.Design.Widget.Snackbar/SnackbarActionClickImplementor, Xamarin.Android.Support.Design;android.support.design.widget.Snackbar_SnackbarActionClickImplementor
 Android.Support.Design.Widget.Snackbar+SnackbarActionClickImplementor, Xamarin.Android.Support.Design, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;android.support.design.widget.Snackbar_SnackbarActionClickImplementor
 Android.Support.Design.Widget.Snackbar.SnackbarActionClickImplementor;android.support.design.widget.Snackbar_SnackbarActionClickImplementor

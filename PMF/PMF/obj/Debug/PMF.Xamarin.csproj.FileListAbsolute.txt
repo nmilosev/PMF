@@ -3,8 +3,13 @@ C:\Source\PMF\PMF\PMF\bin\Debug\PMF.pdb
 C:\Source\PMF\PMF\PMF\bin\Debug\GalaSoft.MvvmLight.dll
 C:\Source\PMF\PMF\PMF\bin\Debug\GalaSoft.MvvmLight.Extras.dll
 C:\Source\PMF\PMF\PMF\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Source\PMF\PMF\PMF\bin\Debug\Plugin.Messaging.Abstractions.dll
+C:\Source\PMF\PMF\PMF\bin\Debug\Plugin.Messaging.dll
+C:\Source\PMF\PMF\PMF\bin\Debug\Plugin.Share.Abstractions.dll
+C:\Source\PMF\PMF\PMF\bin\Debug\Plugin.Share.dll
 C:\Source\PMF\PMF\PMF\bin\Debug\PMF.Core.dll
 C:\Source\PMF\PMF\PMF\bin\Debug\PMF.LocalService.dll
+C:\Source\PMF\PMF\PMF\bin\Debug\Toasts.Forms.Plugin.Abstractions.dll
 C:\Source\PMF\PMF\PMF\bin\Debug\Xamarin.Forms.Core.dll
 C:\Source\PMF\PMF\PMF\bin\Debug\Xamarin.Forms.Maps.dll
 C:\Source\PMF\PMF\PMF\bin\Debug\Xamarin.Forms.Platform.dll
@@ -17,6 +22,15 @@ C:\Source\PMF\PMF\PMF\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
 C:\Source\PMF\PMF\PMF\bin\Debug\GalaSoft.MvvmLight.Extras.xml
 C:\Source\PMF\PMF\PMF\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 C:\Source\PMF\PMF\PMF\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Source\PMF\PMF\PMF\bin\Debug\Plugin.Messaging.pdb
+C:\Source\PMF\PMF\PMF\bin\Debug\Plugin.Messaging.xml
+C:\Source\PMF\PMF\PMF\bin\Debug\Plugin.Messaging.Abstractions.pdb
+C:\Source\PMF\PMF\PMF\bin\Debug\Plugin.Messaging.Abstractions.xml
+C:\Source\PMF\PMF\PMF\bin\Debug\Plugin.Share.pdb
+C:\Source\PMF\PMF\PMF\bin\Debug\Plugin.Share.xml
+C:\Source\PMF\PMF\PMF\bin\Debug\Plugin.Share.Abstractions.pdb
+C:\Source\PMF\PMF\PMF\bin\Debug\Plugin.Share.Abstractions.xml
+C:\Source\PMF\PMF\PMF\bin\Debug\Toasts.Forms.Plugin.Abstractions.pdb
 C:\Source\PMF\PMF\PMF\bin\Debug\Xamarin.Forms.Core.pdb
 C:\Source\PMF\PMF\PMF\bin\Debug\Xamarin.Forms.Core.xml
 C:\Source\PMF\PMF\PMF\bin\Debug\Xamarin.Forms.Maps.xml
@@ -33,6 +47,7 @@ C:\Source\PMF\PMF\PMF\obj\Debug\PMF.Views.ContactPage.xaml.g.cs
 C:\Source\PMF\PMF\PMF\obj\Debug\PMF.Views.AboutPage.xaml.g.cs
 C:\Source\PMF\PMF\PMF\obj\Debug\PMF.App.xaml.g.cs
 C:\Source\PMF\PMF\PMF\obj\Debug\PMF.Views.NewsPage.xaml.g.cs
+C:\Source\PMF\PMF\PMF\obj\Debug\PMF.Views.NewsArticlePage.xaml.g.cs
 C:\Source\PMF\PMF\PMF\obj\Debug\PMF.dll
 C:\Source\PMF\PMF\PMF\obj\Debug\PMF.pdb
 C:\Source\PMF\PMF\PMF\obj\Debug\PMF.dll.mdb

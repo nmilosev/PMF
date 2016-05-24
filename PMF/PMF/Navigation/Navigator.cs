@@ -26,6 +26,18 @@ namespace PMF.Navigation
         {
             var page = SimpleIoc.Default.GetInstance(pageType) as Page;
             _viewLocator.MainPage.Detail = new NavigationPage(page);
-        }        
+        }
+
+        public void NavigateModal(Type pageType)
+        {
+            var page = SimpleIoc.Default.GetInstance(pageType) as Page;
+            var navpage = new NavigationPage(page);
+            _viewLocator.MainPage.Navigation.PushModalAsync(navpage);
+        }
+
+        public void GoBackModal()
+        {
+            _viewLocator.MainPage.Navigation.PopModalAsync();
+        }
     }
 }
