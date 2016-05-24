@@ -12,9 +12,9 @@ namespace PMF.Core.Interfaces
         bool RequireConnection { get; }
 
         bool IsAvailable { get; }
-
-        News News { get; }
-
+        
         void UpdateRange(int from, int to);
+
+        Task<News> News();
     }
 }

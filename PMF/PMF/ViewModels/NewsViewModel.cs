@@ -15,21 +15,57 @@ namespace PMF.ViewModels
     public class NewsViewModel : ViewModelBase
     {
         private INewsSource _news;
-       
+
+        private bool _isRefreshing;
+        public bool IsRefreshing
+        {
+            get
+            {
+                return _isRefreshing;
+            }
+            set
+            {
+                _isRefreshing = value;
+                RaisePropertyChanged();
+            }
+        }
+
+        private bool _activity = true;
+        public bool Activity
+        {
+            get
+            {
+                return _activity;
+            }
+            set
+            {
+                _activity = value;
+                RaisePropertyChanged();
+            }
+        }
+
 
         public NewsViewModel()
         {
             _news = SimpleIoc.Default.GetInstance<INewsSource>();
         }
 
+        private ObservableCollection<NewsItem> _newsItems;
         public ObservableCollection<NewsItem> News
         {
             get
             {
-                return new ObservableCollection<NewsItem>(_news.News.Items);                
+                if (_newsItems == null)
+                    Refresh();
+                return _newsItems;
+            }
+            set
+            {
+                _newsItems = value;
+                RaisePropertyChanged();
             }
         }
-           
+
         public Command OpenNewsArticle
         {
             get
@@ -41,6 +77,22 @@ namespace PMF.ViewModels
             }
         }
 
+        public Command RefreshCommand
+        {
+            get
+            {
+                return new Command(Refresh);
+            }
+        }
+
+        public async void Refresh()
+        {
+            var news = await _news.News();
+            News = new ObservableCollection<NewsItem>(news.Items);
+            IsRefreshing = false;
+            Activity = false;
+        }
+
         public NewsItem SelectedItem
         {
             get
@@ -50,7 +102,7 @@ namespace PMF.ViewModels
             set
             {
                 OpenNewsArticle.Execute(value);
-                RaisePropertyChanged();         
+                RaisePropertyChanged();
             }
         }
     }

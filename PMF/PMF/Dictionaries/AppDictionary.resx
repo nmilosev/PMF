@@ -227,4 +227,7 @@ Sva prava zadržana.</value>
   <data name="NewsTitle" xml:space="preserve">
     <value>PMF - Vesti</value>
   </data>
+  <data name="PleaseWait" xml:space="preserve">
+    <value>Molim sačekajte...</value>
+  </data>
 </root>

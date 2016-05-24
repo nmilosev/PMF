@@ -5,49 +5,51 @@
              xmlns:dict="clr-namespace: PMF.Dictionaries"
              BindingContext="{Binding Source={StaticResource ViewModelLocator}, Path=News}"
              Title="{x:Static dict:AppDictionary.NewsTitle}">
+  <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Orientation="Vertical">
+    <ActivityIndicator IsRunning="{Binding Activity}" IsVisible="{Binding Activity}" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Margin="0,100,0,0"/>
+    <Label IsVisible="{Binding Activity}" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Text="{x:Static dict:AppDictionary.PleaseWait}"/>
+    <ListView VerticalOptions="FillAndExpand" SeparatorVisibility="None" ItemsSource="{Binding News}" RowHeight="180" Margin="0,5,0,0" RefreshCommand="{Binding RefreshCommand}" IsRefreshing="{Binding IsRefreshing, Mode=OneWay}" IsPullToRefreshEnabled="True" SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
 
-  <ListView VerticalOptions="FillAndExpand" SeparatorVisibility="None" ItemsSource="{Binding News}" RowHeight="180" Margin="0,5,0,0" RefreshCommand="{Binding RefreshCommand}" IsRefreshing="True" IsPullToRefreshEnabled="True" SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
-    <ListView.ItemTemplate>
-      <DataTemplate>
-        <ViewCell>
-          
-          <Grid Padding="0,1,1,1" Margin="10" RowSpacing="1" ColumnSpacing="1" BackgroundColor="#212121" VerticalOptions="FillAndExpand">
-            
-            <Grid.RowDefinitions>
-              <RowDefinition Height="*" />
-              <RowDefinition Height="40" />
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-              <ColumnDefinition Width="15" />
-              <ColumnDefinition Width="*" />
-              <ColumnDefinition Width="40" />
-            </Grid.ColumnDefinitions>
+            <Grid Padding="0,1,1,1" Margin="10" RowSpacing="1" ColumnSpacing="1" BackgroundColor="#212121" VerticalOptions="FillAndExpand">
 
-            <ContentView Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" BackgroundColor="{Binding Color}" Padding="10" Margin="3,3,0,3" />
+              <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="40" />
+              </Grid.RowDefinitions>
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="15" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="40" />
+              </Grid.ColumnDefinitions>
 
-            <ContentView Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" BackgroundColor="#2F2F2F" Padding="10" Margin="3,3,3,0">
-              <StackLayout>
-                <Label FontSize="24" Text="{Binding Title}" />
-                <Label FontSize="11" Text="{Binding Summary}" />
-              </StackLayout>
-            </ContentView>
+              <ContentView Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" BackgroundColor="{Binding Color}" Padding="10" Margin="3,3,0,3" />
 
-            <ContentView Grid.Row="1" Grid.Column="1" BackgroundColor="#2F2F2F" Padding="10" Margin="3,3,0,3">
-              <StackLayout>
-                <Label FontSize="12" Text="{Binding Time}" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"  />
-              </StackLayout>
-            </ContentView>
+              <ContentView Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" BackgroundColor="#2F2F2F" Padding="10" Margin="3,3,3,0">
+                <StackLayout>
+                  <Label FontSize="24" Text="{Binding Title}" />
+                  <Label FontSize="11" Text="{Binding Summary}" />
+                </StackLayout>
+              </ContentView>
 
-            <ContentView Grid.Row="1" Grid.Column="2" BackgroundColor="#2F2F2F" Padding="10" Margin="3">
-              <StackLayout>
-                <Image Source="rightarrow.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
-              </StackLayout>
-            </ContentView>
+              <ContentView Grid.Row="1" Grid.Column="1" BackgroundColor="#2F2F2F" Padding="10" Margin="3,3,0,3">
+                <StackLayout>
+                  <Label FontSize="12" Text="{Binding TimeFormatted}" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"  />
+                </StackLayout>
+              </ContentView>
 
-          </Grid>
-        </ViewCell>
-      </DataTemplate>
-    </ListView.ItemTemplate>
-  </ListView>
+              <ContentView Grid.Row="1" Grid.Column="2" BackgroundColor="#2F2F2F" Padding="10" Margin="3">
+                <StackLayout>
+                  <Image Source="rightarrow.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                </StackLayout>
+              </ContentView>
 
+            </Grid>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </StackLayout>
 </ContentPage>

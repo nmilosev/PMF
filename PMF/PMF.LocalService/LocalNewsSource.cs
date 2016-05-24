@@ -18,12 +18,23 @@ namespace PMF.LocalService
             }
         }
 
-        public News News => new News()
+        public async Task<News> News()
         {
-            From = 1,
-            To = 6,
-            Refreshed = DateTime.Now,
-            Items = new List<NewsItem>()
+            //simulate network delay
+            await Task.Delay(2000);
+            return NewsItems;
+        }
+
+        private News NewsItems
+        {
+            get
+            {
+                var news = new News()
+                {
+                    From = 1,
+                    To = 6,
+                    Refreshed = DateTime.Now,
+                    Items = new List<NewsItem>()
                     {
                         new NewsItem()
                         {
@@ -111,6 +122,9 @@ Curabitur vel sapien facilisis, commodo neque eu, scelerisque odio. Fusce tempor
                         }
                     }
                 };
+                return news;
+            }
+        }
 
         public bool RequireConnection
         {
@@ -119,7 +133,7 @@ Curabitur vel sapien facilisis, commodo neque eu, scelerisque odio. Fusce tempor
                 return false;
             }
         }
-
+        
         public void UpdateRange(int from, int to)
         {
             throw new NotImplementedException();

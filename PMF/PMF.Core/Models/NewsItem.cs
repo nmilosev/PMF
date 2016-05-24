@@ -13,7 +13,10 @@ namespace PMF.Core.Models
 
         public int Id { get; set; }
         public string Title { get; set; }
+
         public DateTime Time { get; set; }
+        public string TimeFormatted => Time.ToString("dd.MM.yyyy. HH:mm:ss");
+
         public string Text { get; set; }
         public string Summary { get { return Text.Length > LIMIT ? Text.Substring(0, LIMIT).TrimEnd() + EXTENDED : Text; } }
         public string Category { get; set; }
