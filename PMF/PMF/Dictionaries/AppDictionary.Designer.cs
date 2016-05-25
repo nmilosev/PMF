@@ -269,6 +269,15 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Petak.
+        /// </summary>
+        public static string Friday {
+            get {
+                return ResourceManager.GetString("Friday", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Slike i vektori preuzeti sa sajtova flaticon i freepik.
         ///Svi logotipovi korišćeni su vlasništvo njihovih kompanija.
         ///Sva prava zadržana..
@@ -285,6 +294,24 @@ namespace PMF.Dictionaries {
         public static string Info {
             get {
                 return ResourceManager.GetString("Info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Praktične vežbe.
+        /// </summary>
+        public static string Lab {
+            get {
+                return ResourceManager.GetString("Lab", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Predavanje.
+        /// </summary>
+        public static string Lecture {
+            get {
+                return ResourceManager.GetString("Lecture", resourceCulture);
             }
         }
         
@@ -321,6 +348,15 @@ namespace PMF.Dictionaries {
         public static string MatNumber {
             get {
                 return ResourceManager.GetString("MatNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ponedeljak.
+        /// </summary>
+        public static string Monday {
+            get {
+                return ResourceManager.GetString("Monday", resourceCulture);
             }
         }
         
@@ -370,6 +406,15 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ništa za danas! :-).
+        /// </summary>
+        public static string NothingForToday {
+            get {
+                return ResourceManager.GetString("NothingForToday", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to PIB: 101635863.
         /// </summary>
         public static string PIB {
@@ -406,6 +451,60 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Vežbe.
+        /// </summary>
+        public static string Practice {
+            get {
+                return ResourceManager.GetString("Practice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Subota.
+        /// </summary>
+        public static string Saturday {
+            get {
+                return ResourceManager.GetString("Saturday", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Greška prilikom preuzimanja rasporeda, pokušajte ponovo kasnije....
+        /// </summary>
+        public static string ScheduleError {
+            get {
+                return ResourceManager.GetString("ScheduleError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Raspored za dan:.
+        /// </summary>
+        public static string ScheduleFor {
+            get {
+                return ResourceManager.GetString("ScheduleFor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Uspešno učitani rasporedi!.
+        /// </summary>
+        public static string ScheduleSuccess {
+            get {
+                return ResourceManager.GetString("ScheduleSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PMF - Rasporedi.
+        /// </summary>
+        public static string ScheduleTitle {
+            get {
+                return ResourceManager.GetString("ScheduleTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Podeli.
         /// </summary>
         public static string Share {
@@ -424,11 +523,38 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Nedelja.
+        /// </summary>
+        public static string Sunday {
+            get {
+                return ResourceManager.GetString("Sunday", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Četvrak.
+        /// </summary>
+        public static string Thursday {
+            get {
+                return ResourceManager.GetString("Thursday", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Studentski servisi.
         /// </summary>
         public static string Title {
             get {
                 return ResourceManager.GetString("Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Utorak.
+        /// </summary>
+        public static string Tuesday {
+            get {
+                return ResourceManager.GetString("Tuesday", resourceCulture);
             }
         }
         
@@ -447,6 +573,15 @@ namespace PMF.Dictionaries {
         public static string Version {
             get {
                 return ResourceManager.GetString("Version", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sreda.
+        /// </summary>
+        public static string Wednesday {
+            get {
+                return ResourceManager.GetString("Wednesday", resourceCulture);
             }
         }
         

@@ -29,6 +29,7 @@ namespace PMF
             SimpleIoc.Default.Register<Navigation.Navigator>(true);
 
             SimpleIoc.Default.Register<INewsSource, LocalNewsSource>();
+            SimpleIoc.Default.Register<IScheduleSource, LocalScheduleSource>();
         }
         
         protected override void OnStart()

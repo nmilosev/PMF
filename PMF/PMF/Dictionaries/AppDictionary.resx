@@ -254,4 +254,49 @@ Sva prava zadržana.</value>
   <data name="Share" xml:space="preserve">
     <value>Podeli</value>
   </data>
+  <data name="ScheduleError" xml:space="preserve">
+    <value>Greška prilikom preuzimanja rasporeda, pokušajte ponovo kasnije...</value>
+  </data>
+  <data name="ScheduleSuccess" xml:space="preserve">
+    <value>Uspešno učitani rasporedi!</value>
+  </data>
+  <data name="ScheduleTitle" xml:space="preserve">
+    <value>PMF - Rasporedi</value>
+  </data>
+  <data name="Friday" xml:space="preserve">
+    <value>Petak</value>
+  </data>
+  <data name="Monday" xml:space="preserve">
+    <value>Ponedeljak</value>
+  </data>
+  <data name="Saturday" xml:space="preserve">
+    <value>Subota</value>
+  </data>
+  <data name="ScheduleFor" xml:space="preserve">
+    <value>Raspored za dan:</value>
+  </data>
+  <data name="Sunday" xml:space="preserve">
+    <value>Nedelja</value>
+  </data>
+  <data name="Thursday" xml:space="preserve">
+    <value>Četvrak</value>
+  </data>
+  <data name="Tuesday" xml:space="preserve">
+    <value>Utorak</value>
+  </data>
+  <data name="Wednesday" xml:space="preserve">
+    <value>Sreda</value>
+  </data>
+  <data name="Lab" xml:space="preserve">
+    <value>Praktične vežbe</value>
+  </data>
+  <data name="Lecture" xml:space="preserve">
+    <value>Predavanje</value>
+  </data>
+  <data name="Practice" xml:space="preserve">
+    <value>Vežbe</value>
+  </data>
+  <data name="NothingForToday" xml:space="preserve">
+    <value>Ništa za danas! :-)</value>
+  </data>
 </root>

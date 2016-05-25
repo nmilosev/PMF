@@ -27,11 +27,13 @@
                   <ColumnDefinition Width="40" />
                 </Grid.ColumnDefinitions>
 
-                <ContentView Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" BackgroundColor="{Binding Color}" Margin="0,-1,0,-1"/>
+                <ContentView Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" BackgroundColor="{Binding Color}">
+                  
+                </ContentView>
 
-                <ContentView Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Padding="10" Margin="1,1,1,0">
+                <ContentView Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Padding="10">
                   <ContentView.BackgroundColor>
-                    <OnPlatform x:TypeArguments="Color" Android="#2F2F2F" iOS="#FFFFFF"/>
+                    <OnPlatform x:TypeArguments="Color" Android="#474747" iOS="#FFFFFF"/>
                   </ContentView.BackgroundColor>
                   <StackLayout>
                     <Label FontSize="24" Text="{Binding Title}" />
@@ -39,18 +41,18 @@
                   </StackLayout>
                 </ContentView>
 
-                <ContentView Grid.Row="1" Grid.Column="1" Padding="10" Margin="1,1,0,1">
+                <ContentView Grid.Row="1" Grid.Column="1" Padding="10">
                   <ContentView.BackgroundColor>
-                    <OnPlatform x:TypeArguments="Color" Android="#2F2F2F" iOS="#FFFFFF"/>
+                    <OnPlatform x:TypeArguments="Color" Android="#474747" iOS="#FFFFFF"/>
                   </ContentView.BackgroundColor>
                   <StackLayout>
                     <Label FontSize="12" Text="{Binding TimeFormatted}" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"  />
                   </StackLayout>
                 </ContentView>
 
-                <ContentView Grid.Row="1" Grid.Column="2" Padding="10" Margin="1">
+                <ContentView Grid.Row="1" Grid.Column="2" Padding="10">
                   <ContentView.BackgroundColor>
-                    <OnPlatform x:TypeArguments="Color" Android="#2F2F2F" iOS="#FFFFFF"/>
+                    <OnPlatform x:TypeArguments="Color" Android="#474747" iOS="#FFFFFF"/>
                   </ContentView.BackgroundColor>
                   <StackLayout>
                     <Image Source="rightarrow.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>

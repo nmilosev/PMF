@@ -80,6 +80,10 @@ public class MonoPackageManager {
 class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		"PMF.Droid.dll",
+		"FFImageLoading.dll",
+		"FFImageLoading.Forms.dll",
+		"FFImageLoading.Forms.Droid.dll",
+		"FFImageLoading.Platform.dll",
 		"FormsViewGroup.dll",
 		"Plugin.CurrentActivity.dll",
 		"Plugin.Messaging.Abstractions.dll",

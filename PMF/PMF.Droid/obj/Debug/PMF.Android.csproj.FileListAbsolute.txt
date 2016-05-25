@@ -35,7 +35,6 @@ C:\Source\PMF\PMF\PMF.Droid\bin\Debug\GalaSoft.MvvmLight.dll
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\GalaSoft.MvvmLight.Extras.dll
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.LocalService.dll
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.Core.pdb
-C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.Core.dll.mdb
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.pdb
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\FormsViewGroup.pdb
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\FormsViewGroup.dll.mdb
@@ -102,7 +101,18 @@ C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\sitemap.png
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\question.png
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\menu.png
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\values\styles.xml
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\dotnetlogo.png
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\R.cs.flag
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\uploadflags.txt
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.Core.dll.mdb
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\freetime.png
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\FFImageLoading.dll
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\FFImageLoading.Forms.dll
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\FFImageLoading.Forms.Droid.dll
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\FFImageLoading.Platform.dll
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\FFImageLoading.xml
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\FFImageLoading.Forms.xml
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\FFImageLoading.Forms.Droid.xml
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\FFImageLoading.Platform.xml
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\PMF.Droid.dll.mdb
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.Droid.dll.mdb

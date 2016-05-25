@@ -4,6 +4,7 @@
              x:Class="PMF.Views.WelcomePage"
              xmlns:dict="clr-namespace: PMF.Dictionaries"
              xmlns:mvvm="clr-namespace: PMF"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              BindingContext="{Binding Source={StaticResource ViewModelLocator}, Path=Main}"
              Title="{x:Static dict:AppDictionary.DefaultTitle}">
 
@@ -13,11 +14,16 @@
         <OnPlatform x:TypeArguments="Thickness"
                     iOS="0,50,0,0" />
       </StackLayout.Margin>
-      <Image Source="mainback.png" HorizontalOptions="Center" Margin="30,25,30,0" >
-        <Image.GestureRecognizers>
+      <StackLayout WidthRequest="400" HeightRequest="400">
+        <StackLayout.GestureRecognizers>
           <TapGestureRecognizer Command="{Binding ShowMainMenuCommand}"/>
-        </Image.GestureRecognizers>
-      </Image>
+        </StackLayout.GestureRecognizers>
+        <ffimageloading:CachedImage HorizontalOptions="Center" Margin="20,10,20,30" VerticalOptions="Center"
+              WidthRequest="400" HeightRequest="400"
+              DownsampleToViewSize="True"
+              Source = "mainback.png" FadeAnimationEnabled="True">
+        </ffimageloading:CachedImage>
+      </StackLayout>
 
       <Label Text="{x:Static dict:AppDictionary.Welcome}" HorizontalOptions="Center" Margin="20,0,20,0" FontSize="26" FontAttributes="Italic"/>
       <Label Text="{x:Static dict:AppDictionary.WelcomeMessage}" HorizontalOptions="Center" HorizontalTextAlignment="Center" Margin="20,0,20,20" FontSize="12"/>

@@ -33,6 +33,8 @@ namespace PMF.iOS
             DependencyService.Register<ToastNotificatorImplementation>();
             ToastNotificatorImplementation.Init();
 
+            FFImageLoading.Forms.Touch.CachedImageRenderer.Init();
+
             return base.FinishedLaunching(app, options);
         }
     }

@@ -13,8 +13,6 @@ namespace PMF.Core.Interfaces
 
         bool IsAvailable { get; }
         
-        void UpdateRange(int from, int to);
-
         Task<News> News();
     }
 }

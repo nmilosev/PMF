@@ -40,8 +40,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interfaces\INewsSource.cs" />
+    <Compile Include="Interfaces\IScheduleSource.cs" />
+    <Compile Include="Models\Classroom.cs" />
     <Compile Include="Models\News.cs" />
     <Compile Include="Models\NewsItem.cs" />
+    <Compile Include="Models\Schedule.cs" />
+    <Compile Include="Models\ScheduleDay.cs" />
+    <Compile Include="Models\ScheduleItem.cs" />
+    <Compile Include="Models\ScheduleItemType.cs" />
+    <Compile Include="Models\ScheduleList.cs" />
+    <Compile Include="Models\Staff.cs" />
+    <Compile Include="Models\Subject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />

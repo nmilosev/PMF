@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PMF.Views.SchedulePage"
+             xmlns:dict="clr-namespace: PMF.Dictionaries"
+             BindingContext="{Binding Source={StaticResource ViewModelLocator}, Path=Schedule}"
+             Title="{x:Static dict:AppDictionary.ScheduleTitle}">
+  <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Orientation="Vertical">
+    <ActivityIndicator IsRunning="{Binding Activity}" IsVisible="{Binding Activity}" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Margin="0,100,0,0"/>
+    <Label IsVisible="{Binding Activity}" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Text="{x:Static dict:AppDictionary.PleaseWait}"/>
+    <ListView VerticalOptions="FillAndExpand" SeparatorVisibility="None" ItemsSource="{Binding Schedules}" RowHeight="130" Margin="0,5,0,0" RefreshCommand="{Binding RefreshCommand}" IsRefreshing="{Binding IsRefreshing, Mode=OneWay}" IsPullToRefreshEnabled="True" SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <StackLayout Padding="10" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+              <Grid Padding="1" RowSpacing="1" ColumnSpacing="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <Grid.BackgroundColor>
+                  <OnPlatform x:TypeArguments="Color" Android="#212121" iOS="#E3E3E3"/>
+                </Grid.BackgroundColor>
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="*" />
+                  <RowDefinition Height="30" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="*" />
+                  <ColumnDefinition Width="40" />
+                </Grid.ColumnDefinitions>
+
+                <ContentView Grid.Row="0" Grid.Column="0" Padding="10">
+                  <ContentView.BackgroundColor>
+                    <OnPlatform x:TypeArguments="Color" Android="#474747" iOS="#FFFFFF"/>
+                  </ContentView.BackgroundColor>
+                  <StackLayout>
+                    <Label FontSize="16" Text="{Binding Title}" LineBreakMode="WordWrap" />
+                    <Label FontSize="10" Text="{Binding Description}" LineBreakMode="TailTruncation" />
+                  </StackLayout>
+                </ContentView>
+
+                <ContentView Grid.Row="1" Grid.Column="0" Padding="10">
+                  <ContentView.BackgroundColor>
+                    <OnPlatform x:TypeArguments="Color" Android="#474747" iOS="#FFFFFF"/>
+                  </ContentView.BackgroundColor>
+                  <StackLayout>
+                    <Label FontSize="10" Text="{Binding TimeFormatted}" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"  />
+                  </StackLayout>
+                </ContentView>
+
+                <ContentView Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Padding="10">
+                  <ContentView.BackgroundColor>
+                    <OnPlatform x:TypeArguments="Color" Android="#474747" iOS="#FFFFFF"/>
+                  </ContentView.BackgroundColor>
+                  <StackLayout>
+                    <Image Source="rightarrow.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                  </StackLayout>
+                </ContentView>
+
+              </Grid>
+            </StackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </StackLayout>
+</ContentPage>

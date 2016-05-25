@@ -1,4 +1,8 @@
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\PMF.Droid.dll
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\FFImageLoading.dll
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\FFImageLoading.Forms.dll
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\FFImageLoading.Forms.Droid.dll
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\FFImageLoading.Platform.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\FormsViewGroup.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Mono.Android.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\mscorlib.dll
@@ -82,13 +86,13 @@ C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.Threading.Timer.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.Xml.ReaderWriter.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.Xml.XDocument.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.Xml.XmlSerializer.dll
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.Net.Http.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.Runtime.Serialization.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.ServiceModel.Internals.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Microsoft.Practices.ServiceLocation.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\GalaSoft.MvvmLight.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\GalaSoft.MvvmLight.Extras.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\PMF.LocalService.dll
-C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.Net.Http.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.ComponentModel.DataAnnotations.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.ComponentModel.Composition.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.Numerics.dll

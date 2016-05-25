@@ -97,6 +97,9 @@ namespace PMF.ViewModels
                 case "News":
                     SimpleIoc.Default.GetInstance<Navigator>().Navigate(typeof(Views.NewsPage));
                     break;
+                case "Schedule":
+                    SimpleIoc.Default.GetInstance<Navigator>().Navigate(typeof(Views.SchedulePage));
+                    break;
                 default:
                     (Application.Current.Resources["ViewLocator"] as Views.ViewLocator).MainPage.DisplayAlert("Command", actionName, "OK");
                     break;

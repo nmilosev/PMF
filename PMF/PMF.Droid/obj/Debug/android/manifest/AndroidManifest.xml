@@ -15,7 +15,7 @@
   <application android:label="PMF" android:icon="@drawable/icon" android:name="md5497de60090ed8a59ea4a3edf3145080a.MainApplication" android:allowBackup="true" android:debuggable="true">
     <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCIokAOYuiegkHID1Wj5wvQGMXl5YHsWPo" />
     <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
-    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/dmi" android:label="PMF" android:screenOrientation="portrait" android:theme="@style/MyTheme" android:name="md5497de60090ed8a59ea4a3edf3145080a.MainActivity">
+    <activity android:icon="@drawable/dmi" android:label="PMF" android:theme="@style/MyTheme" android:name="md5497de60090ed8a59ea4a3edf3145080a.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

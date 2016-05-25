@@ -127,10 +127,6 @@ Curabitur vel sapien facilisis, commodo neque eu, scelerisque odio. Fusce tempor
                 return false;
             }
         }
-
-        public void UpdateRange(int from, int to)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }

@@ -47,7 +47,7 @@
         </ListView.ItemTemplate>
       </ListView>
 
-      <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Padding="10,10,10,10">
+      <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,-70,0,0" Padding="10,10,10,10">
         <Image Source="dmi.png" WidthRequest="40" HeightRequest="40" HorizontalOptions="Start">
           <Image.GestureRecognizers>
             <TapGestureRecognizer Command="{Binding DMICommand}"/>

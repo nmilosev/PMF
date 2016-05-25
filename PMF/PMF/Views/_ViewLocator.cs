@@ -20,8 +20,12 @@ namespace PMF.Views
             SimpleIoc.Default.Register<AboutPage>();
             SimpleIoc.Default.Register<WelcomePage>();
             SimpleIoc.Default.Register<MenuPage>();
+
             SimpleIoc.Default.Register<NewsPage>();
             SimpleIoc.Default.Register<NewsArticlePage>();
+
+            SimpleIoc.Default.Register<SchedulePage>();
+            SimpleIoc.Default.Register<ScheduleDetailsPage>();
         }
 
         public WelcomePage WelcomePage => ServiceLocator.Current.GetInstance<WelcomePage>();
@@ -32,6 +36,9 @@ namespace PMF.Views
         public AboutPage AboutPage => ServiceLocator.Current.GetInstance<AboutPage>();
         public NewsPage NewsPage => ServiceLocator.Current.GetInstance<NewsPage>();
         public NewsArticlePage NewsArticle => ServiceLocator.Current.GetInstance<NewsArticlePage>();
+
+        public SchedulePage SchedulePage => ServiceLocator.Current.GetInstance<SchedulePage>();
+        public ScheduleDetailsPage ScheduleDetailsPage => ServiceLocator.Current.GetInstance<ScheduleDetailsPage>();
 
     }
 }

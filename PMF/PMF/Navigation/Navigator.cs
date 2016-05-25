@@ -32,12 +32,12 @@ namespace PMF.Navigation
         {
             var page = SimpleIoc.Default.GetInstance(pageType) as Page;
             var navpage = new NavigationPage(page);
-            _viewLocator.MainPage.Navigation.PushModalAsync(navpage);
+            (_viewLocator.MainPage.Detail as NavigationPage).PushAsync(page);
         }
 
         public void GoBackModal()
         {
-            _viewLocator.MainPage.Navigation.PopModalAsync();
+            (_viewLocator.MainPage.Detail as NavigationPage).PopAsync();
         }
     }
 }
