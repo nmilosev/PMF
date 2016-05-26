@@ -70,7 +70,9 @@ namespace PMF.LocalService
                         new Schedule() { Id = 3, Title = "Raspored časova - informatika prva godina master", Time = DateTime.Now, Description = "Zimski semestar 2015/2016" },
                         new Schedule() { Id = 4, Title = "Raspored časova - biologija prva godina", Time = DateTime.Now, Description = "Letnji semestar 2016/2017" }
                     },
-                    IsDataValid = true
+                    //simulate network errors
+                    IsDataValid = new Random().NextDouble() > 0.5 ? true : false
+                    //IsDataValid = true
                 };
                 return l;
             }

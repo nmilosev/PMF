@@ -299,4 +299,13 @@ Sva prava zadržana.</value>
   <data name="NothingForToday" xml:space="preserve">
     <value>Ništa za danas! :-)</value>
   </data>
+  <data name="OK" xml:space="preserve">
+    <value>U redu</value>
+  </data>
+  <data name="SessionDetails" xml:space="preserve">
+    <value>Detalji sesije</value>
+  </data>
+  <data name="SubjectDetails" xml:space="preserve">
+    <value>Detalji predmeta</value>
+  </data>
 </root>

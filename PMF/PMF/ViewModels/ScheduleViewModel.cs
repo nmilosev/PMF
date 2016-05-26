@@ -99,9 +99,7 @@ namespace PMF.ViewModels
 
             if (schedules.IsDataValid)
             {
-                Schedules = new ObservableCollection<Schedule>(schedules.Schedules);
-                await notificator.Notify(Plugin.Toasts.ToastNotificationType.Success,
-                Dictionaries.AppDictionary.ScheduleSuccess, string.Empty, TimeSpan.FromSeconds(1.5));
+                Schedules = new ObservableCollection<Schedule>(schedules.Schedules);               
             }
             else
             {

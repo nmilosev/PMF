@@ -415,6 +415,15 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to U redu.
+        /// </summary>
+        public static string OK {
+            get {
+                return ResourceManager.GetString("OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to PIB: 101635863.
         /// </summary>
         public static string PIB {
@@ -505,6 +514,15 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Detalji sesije.
+        /// </summary>
+        public static string SessionDetails {
+            get {
+                return ResourceManager.GetString("SessionDetails", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Podeli.
         /// </summary>
         public static string Share {
@@ -519,6 +537,15 @@ namespace PMF.Dictionaries {
         public static string SSluzbaLink {
             get {
                 return ResourceManager.GetString("SSluzbaLink", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Detalji predmeta.
+        /// </summary>
+        public static string SubjectDetails {
+            get {
+                return ResourceManager.GetString("SubjectDetails", resourceCulture);
             }
         }
         

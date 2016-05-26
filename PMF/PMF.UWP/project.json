@@ -1,5 +1,6 @@
 ﻿{
   "dependencies": {
+    "Acr.UserDialogs": "5.2.1",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
     "Toasts.Forms.Plugin": "2.0.3",
     "Xam.Plugins.Messaging": "3.2.1",

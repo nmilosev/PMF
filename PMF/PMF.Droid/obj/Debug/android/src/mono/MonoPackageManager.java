@@ -80,6 +80,10 @@ public class MonoPackageManager {
 class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		"PMF.Droid.dll",
+		"Acr.Support.Android.dll",
+		"Acr.UserDialogs.dll",
+		"Acr.UserDialogs.Interface.dll",
+		"AndHUD.dll",
 		"FFImageLoading.dll",
 		"FFImageLoading.Forms.dll",
 		"FFImageLoading.Forms.Droid.dll",
@@ -92,6 +96,7 @@ class MonoPackageManager_Resources {
 		"Plugin.Share.dll",
 		"PMF.Core.dll",
 		"PMF.dll",
+		"Splat.dll",
 		"Toasts.Forms.Plugin.Abstractions.dll",
 		"Toasts.Forms.Plugin.Droid.dll",
 		"Xamarin.Android.Support.Animated.Vector.Drawable.dll",

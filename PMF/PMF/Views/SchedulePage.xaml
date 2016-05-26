@@ -15,7 +15,7 @@
             <StackLayout Padding="10" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
               <Grid Padding="1" RowSpacing="1" ColumnSpacing="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
                 <Grid.BackgroundColor>
-                  <OnPlatform x:TypeArguments="Color" Android="#212121" iOS="#E3E3E3"/>
+                  <OnPlatform x:TypeArguments="Color" Android="{x:Static dict:ColorDictionary.AndroidDarkGray}" iOS="{x:Static dict:ColorDictionary.iPhoneGray}"/>
                 </Grid.BackgroundColor>
                 <Grid.RowDefinitions>
                   <RowDefinition Height="*" />
@@ -28,7 +28,7 @@
 
                 <ContentView Grid.Row="0" Grid.Column="0" Padding="10">
                   <ContentView.BackgroundColor>
-                    <OnPlatform x:TypeArguments="Color" Android="#474747" iOS="#FFFFFF"/>
+                    <OnPlatform x:TypeArguments="Color" Android="{x:Static dict:ColorDictionary.AndroidLightGray}" iOS="{x:Static dict:ColorDictionary.iPhoneWhite}"/>
                   </ContentView.BackgroundColor>
                   <StackLayout>
                     <Label FontSize="16" Text="{Binding Title}" LineBreakMode="WordWrap" />
@@ -38,7 +38,7 @@
 
                 <ContentView Grid.Row="1" Grid.Column="0" Padding="10">
                   <ContentView.BackgroundColor>
-                    <OnPlatform x:TypeArguments="Color" Android="#474747" iOS="#FFFFFF"/>
+                    <OnPlatform x:TypeArguments="Color" Android="{x:Static dict:ColorDictionary.AndroidLightGray}" iOS="{x:Static dict:ColorDictionary.iPhoneWhite}"/>
                   </ContentView.BackgroundColor>
                   <StackLayout>
                     <Label FontSize="10" Text="{Binding TimeFormatted}" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"  />
@@ -47,7 +47,7 @@
 
                 <ContentView Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Padding="10">
                   <ContentView.BackgroundColor>
-                    <OnPlatform x:TypeArguments="Color" Android="#474747" iOS="#FFFFFF"/>
+                    <OnPlatform x:TypeArguments="Color" Android="{x:Static dict:ColorDictionary.AndroidLightGray}" iOS="{x:Static dict:ColorDictionary.iPhoneWhite}"/>
                   </ContentView.BackgroundColor>
                   <StackLayout>
                     <Image Source="rightarrow.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>

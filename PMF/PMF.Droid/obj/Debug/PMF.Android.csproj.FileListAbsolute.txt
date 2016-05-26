@@ -114,6 +114,15 @@ C:\Source\PMF\PMF\PMF.Droid\bin\Debug\FFImageLoading.xml
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\FFImageLoading.Forms.xml
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\FFImageLoading.Forms.Droid.xml
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\FFImageLoading.Platform.xml
-C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.dll.mdb
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Acr.Support.Android.dll
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Acr.UserDialogs.dll
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Acr.UserDialogs.Interface.dll
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\AndHUD.dll
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Splat.dll
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Acr.UserDialogs.pdb
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Acr.UserDialogs.dll.mdb
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Acr.UserDialogs.Interface.pdb
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Acr.UserDialogs.Interface.dll.mdb
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Splat.dll.mdb
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\PMF.Droid.dll.mdb
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.Droid.dll.mdb

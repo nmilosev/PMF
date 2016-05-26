@@ -29,6 +29,8 @@ namespace PMF.Droid
 
             DependencyService.Register<ToastNotificatorImplementation>();
             ToastNotificatorImplementation.Init(this);
+
+            Acr.UserDialogs.UserDialogs.Init(this);
         }
         /// <summary>
         /// Warning

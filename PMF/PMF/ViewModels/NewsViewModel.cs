@@ -97,9 +97,7 @@ namespace PMF.ViewModels
             
             if (news.IsDataValid)
             {
-                News = new ObservableCollection<NewsItem>(news.Items);
-                await notificator.Notify(Plugin.Toasts.ToastNotificationType.Success,
-                Dictionaries.AppDictionary.NewsSuccessTitle, Dictionaries.AppDictionary.NewsSuccess + news.RefreshedFormatted, TimeSpan.FromSeconds(1.5));
+                News = new ObservableCollection<NewsItem>(news.Items);                
             }
             else
             {

@@ -58,7 +58,10 @@ C:\Source\PMF\PMF\PMF\bin\Debug\FFImageLoading.Platform.dll
 C:\Source\PMF\PMF\PMF\bin\Debug\FFImageLoading.xml
 C:\Source\PMF\PMF\PMF\bin\Debug\FFImageLoading.Forms.xml
 C:\Source\PMF\PMF\PMF\bin\Debug\FFImageLoading.Platform.xml
-C:\Source\PMF\PMF\PMF\obj\Debug\PMF.dll.mdb
-C:\Source\PMF\PMF\PMF\bin\Debug\PMF.dll.mdb
+C:\Source\PMF\PMF\PMF\obj\Debug\PMF.Dictionaries.ColorDictionary.resources
+C:\Source\PMF\PMF\PMF\bin\Debug\Acr.UserDialogs.dll
+C:\Source\PMF\PMF\PMF\bin\Debug\Acr.UserDialogs.Interface.dll
+C:\Source\PMF\PMF\PMF\bin\Debug\Splat.dll
+C:\Source\PMF\PMF\PMF\bin\Debug\Acr.UserDialogs.Interface.pdb
 C:\Source\PMF\PMF\PMF\obj\Debug\PMF.dll.mdb
 C:\Source\PMF\PMF\PMF\bin\Debug\PMF.dll.mdb

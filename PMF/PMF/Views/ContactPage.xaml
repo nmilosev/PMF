@@ -11,7 +11,7 @@
     <StackLayout Orientation="Vertical">
       <StackLayout Margin="10,10,10,0" Orientation="Vertical" VerticalOptions="Start">
         <StackLayout.BackgroundColor>
-          <OnPlatform x:TypeArguments="Color" Android="#444A4D" iOS="#D7DCDE"/>
+          <OnPlatform x:TypeArguments="Color" Android="{x:Static dict:ColorDictionary.AndroidMediumGray}" iOS="{x:Static dict:ColorDictionary.iPhoneMediumGray}"/>
         </StackLayout.BackgroundColor>
         <StackLayout.HeightRequest>
           <OnPlatform x:TypeArguments="sys:Double" Android="250" iOS="400"/>

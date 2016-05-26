@@ -33,8 +33,8 @@ namespace PMF.LocalService
                 {
                     Refreshed = DateTime.Now,
                     //simulate network errors
-                    //IsDataValid = new Random().NextDouble() > 0.5 ? true : false,
-                    IsDataValid = true,
+                    IsDataValid = new Random().NextDouble() > 0.5 ? true : false,
+                    //IsDataValid = true,
                     Items = new List<NewsItem>()
                     {
                         new NewsItem()

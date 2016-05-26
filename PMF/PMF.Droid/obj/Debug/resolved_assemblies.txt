@@ -1,4 +1,8 @@
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\PMF.Droid.dll
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Acr.Support.Android.dll
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Acr.UserDialogs.dll
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Acr.UserDialogs.Interface.dll
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\AndHUD.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\FFImageLoading.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\FFImageLoading.Forms.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\FFImageLoading.Forms.Droid.dll
@@ -13,6 +17,7 @@ C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Plugin.Share.Abstractions.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Plugin.Share.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\PMF.Core.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\PMF.dll
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Splat.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.Core.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.Xml.dll
