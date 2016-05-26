@@ -4,7 +4,7 @@
              x:Class="PMF.Views.ContactPage"
              xmlns:dict="clr-namespace: PMF.Dictionaries"
              xmlns:sys="clr-namespace:System;assembly=mscorlib"
-             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:maps="clr-namespace:PMF.CustomControls"
              BindingContext="{Binding Source={StaticResource ViewModelLocator}, Path=Contact}"
              Title="{x:Static dict:AppDictionary.ContactTitle}">
   <ScrollView>
@@ -20,7 +20,7 @@
           <Image Source="placeholder.png" HeightRequest="25" Margin="10"/>
           <Label Text="{x:Static dict:AppDictionary.ContactVisitUs}" VerticalOptions="Center" FontSize="18"/>
         </StackLayout>        
-        <maps:Map MapType="Street" x:Name="Map" Margin="5,0,5,5"/>
+        <maps:PinMap MapType="Street" Latitude="45.245411" Longitude="19.852777" PinTitle="{x:Static dict:AppDictionary.PMFName}" PinDistance="1500" NavigateImmediately="True" Margin="5,0,5,5"/>
       </StackLayout>
       <Label Text="{x:Static dict:AppDictionary.PMF}" FontSize="20" FontAttributes="Bold" Margin="10,0,0,0"/>
       <Label Text="{x:Static dict:AppDictionary.UNS}" FontSize="14" Margin="10,-5,0,0"/>

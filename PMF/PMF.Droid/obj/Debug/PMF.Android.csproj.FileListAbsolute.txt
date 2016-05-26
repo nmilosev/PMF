@@ -114,5 +114,6 @@ C:\Source\PMF\PMF\PMF.Droid\bin\Debug\FFImageLoading.xml
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\FFImageLoading.Forms.xml
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\FFImageLoading.Forms.Droid.xml
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\FFImageLoading.Platform.xml
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.dll.mdb
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\PMF.Droid.dll.mdb
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.Droid.dll.mdb

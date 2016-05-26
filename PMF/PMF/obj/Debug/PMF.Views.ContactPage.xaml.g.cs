@@ -17,12 +17,8 @@ namespace PMF.Views {
     public partial class ContactPage : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Maps.Map Map;
-        
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(ContactPage));
-            Map = this.FindByName<global::Xamarin.Forms.Maps.Map>("Map");
         }
     }
 }
