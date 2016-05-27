@@ -23,7 +23,7 @@ namespace PMF.Dictionaries {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class AppDictionary {
+    internal class AppDictionary {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -37,7 +37,7 @@ namespace PMF.Dictionaries {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Resources.ResourceManager ResourceManager {
+        internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("PMF.Dictionaries.AppDictionary", typeof(AppDictionary).GetTypeInfo().Assembly);
@@ -52,7 +52,7 @@ namespace PMF.Dictionaries {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Globalization.CultureInfo Culture {
+        internal static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -62,9 +62,9 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PMF - Informacije.
+        ///   Looks up a localized string similar to PMF - About.
         /// </summary>
-        public static string AboutTitle {
+        internal static string AboutTitle {
             get {
                 return ResourceManager.GetString("AboutTitle", resourceCulture);
             }
@@ -73,7 +73,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Trg Dositeja Obradovića 3.
         /// </summary>
-        public static string AddressLine1 {
+        internal static string AddressLine1 {
             get {
                 return ResourceManager.GetString("AddressLine1", resourceCulture);
             }
@@ -82,7 +82,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to 21000 Novi Sad, Srbija.
         /// </summary>
-        public static string AddressLine2 {
+        internal static string AddressLine2 {
             get {
                 return ResourceManager.GetString("AddressLine2", resourceCulture);
             }
@@ -91,7 +91,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to PMF.
         /// </summary>
-        public static string AppName {
+        internal static string AppName {
             get {
                 return ResourceManager.GetString("AppName", resourceCulture);
             }
@@ -100,7 +100,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Autor: Nemanja Milošević.
         /// </summary>
-        public static string Author {
+        internal static string Author {
             get {
                 return ResourceManager.GetString("Author", resourceCulture);
             }
@@ -109,7 +109,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Nazad.
         /// </summary>
-        public static string Back {
+        internal static string Back {
             get {
                 return ResourceManager.GetString("Back", resourceCulture);
             }
@@ -118,7 +118,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Žiro račun: 840-1711666-19.
         /// </summary>
-        public static string Bank {
+        internal static string Bank {
             get {
                 return ResourceManager.GetString("Bank", resourceCulture);
             }
@@ -127,7 +127,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to KONTAKT.
         /// </summary>
-        public static string ButtonContact {
+        internal static string ButtonContact {
             get {
                 return ResourceManager.GetString("ButtonContact", resourceCulture);
             }
@@ -136,7 +136,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to POMOĆ.
         /// </summary>
-        public static string ButtonHelp {
+        internal static string ButtonHelp {
             get {
                 return ResourceManager.GetString("ButtonHelp", resourceCulture);
             }
@@ -145,7 +145,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to VESTI.
         /// </summary>
-        public static string ButtonNews {
+        internal static string ButtonNews {
             get {
                 return ResourceManager.GetString("ButtonNews", resourceCulture);
             }
@@ -154,7 +154,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to STUDIJSKI PROGRAMI.
         /// </summary>
-        public static string ButtonPrograms {
+        internal static string ButtonPrograms {
             get {
                 return ResourceManager.GetString("ButtonPrograms", resourceCulture);
             }
@@ -163,7 +163,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to RASPOREDI.
         /// </summary>
-        public static string ButtonSchedule {
+        internal static string ButtonSchedule {
             get {
                 return ResourceManager.GetString("ButtonSchedule", resourceCulture);
             }
@@ -172,7 +172,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to STUDENTSKA SLUŽBA.
         /// </summary>
-        public static string ButtonStudServices {
+        internal static string ButtonStudServices {
             get {
                 return ResourceManager.GetString("ButtonStudServices", resourceCulture);
             }
@@ -181,7 +181,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to info@pmf.uns.ac.rs.
         /// </summary>
-        public static string ContactEmail {
+        internal static string ContactEmail {
             get {
                 return ResourceManager.GetString("ContactEmail", resourceCulture);
             }
@@ -190,7 +190,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to +381 21 454 389.
         /// </summary>
-        public static string ContactPhone {
+        internal static string ContactPhone {
             get {
                 return ResourceManager.GetString("ContactPhone", resourceCulture);
             }
@@ -199,7 +199,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Studentska služba: .
         /// </summary>
-        public static string ContactPhoneLabel {
+        internal static string ContactPhoneLabel {
             get {
                 return ResourceManager.GetString("ContactPhoneLabel", resourceCulture);
             }
@@ -208,7 +208,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to PMF - Kontakt.
         /// </summary>
-        public static string ContactTitle {
+        internal static string ContactTitle {
             get {
                 return ResourceManager.GetString("ContactTitle", resourceCulture);
             }
@@ -217,7 +217,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Posetite nas!.
         /// </summary>
-        public static string ContactVisitUs {
+        internal static string ContactVisitUs {
             get {
                 return ResourceManager.GetString("ContactVisitUs", resourceCulture);
             }
@@ -226,7 +226,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to PMF - Studentski servisi.
         /// </summary>
-        public static string DefaultTitle {
+        internal static string DefaultTitle {
             get {
                 return ResourceManager.GetString("DefaultTitle", resourceCulture);
             }
@@ -235,7 +235,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Aplikacija za studentske servise.
         /// </summary>
-        public static string Description {
+        internal static string Description {
             get {
                 return ResourceManager.GetString("Description", resourceCulture);
             }
@@ -244,7 +244,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Departman za matematiku i informatiku.
         /// </summary>
-        public static string DMI {
+        internal static string DMI {
             get {
                 return ResourceManager.GetString("DMI", resourceCulture);
             }
@@ -253,7 +253,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to http://www.dmi.rs.
         /// </summary>
-        public static string DMILink {
+        internal static string DMILink {
             get {
                 return ResourceManager.GetString("DMILink", resourceCulture);
             }
@@ -262,7 +262,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Greška!.
         /// </summary>
-        public static string Error {
+        internal static string Error {
             get {
                 return ResourceManager.GetString("Error", resourceCulture);
             }
@@ -271,7 +271,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Petak.
         /// </summary>
-        public static string Friday {
+        internal static string Friday {
             get {
                 return ResourceManager.GetString("Friday", resourceCulture);
             }
@@ -282,7 +282,7 @@ namespace PMF.Dictionaries {
         ///Svi logotipovi korišćeni su vlasništvo njihovih kompanija.
         ///Sva prava zadržana..
         /// </summary>
-        public static string Images {
+        internal static string Images {
             get {
                 return ResourceManager.GetString("Images", resourceCulture);
             }
@@ -291,7 +291,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to INFORMACIJE.
         /// </summary>
-        public static string Info {
+        internal static string Info {
             get {
                 return ResourceManager.GetString("Info", resourceCulture);
             }
@@ -300,16 +300,25 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Praktične vežbe.
         /// </summary>
-        public static string Lab {
+        internal static string Lab {
             get {
                 return ResourceManager.GetString("Lab", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Poslednji put osveženo: .
+        /// </summary>
+        internal static string LastRefresh {
+            get {
+                return ResourceManager.GetString("LastRefresh", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Predavanje.
         /// </summary>
-        public static string Lecture {
+        internal static string Lecture {
             get {
                 return ResourceManager.GetString("Lecture", resourceCulture);
             }
@@ -318,7 +327,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Link.
         /// </summary>
-        public static string Link {
+        internal static string Link {
             get {
                 return ResourceManager.GetString("Link", resourceCulture);
             }
@@ -327,7 +336,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Master rad.
         /// </summary>
-        public static string MasterThesis {
+        internal static string MasterThesis {
             get {
                 return ResourceManager.GetString("MasterThesis", resourceCulture);
             }
@@ -336,7 +345,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Master rad na temu: Razvoj cross-platform native mobilnih aplikacija u programskom jeziku C#.
         /// </summary>
-        public static string MasterThesisName {
+        internal static string MasterThesisName {
             get {
                 return ResourceManager.GetString("MasterThesisName", resourceCulture);
             }
@@ -345,7 +354,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Matični broj: 08104620.
         /// </summary>
-        public static string MatNumber {
+        internal static string MatNumber {
             get {
                 return ResourceManager.GetString("MatNumber", resourceCulture);
             }
@@ -354,7 +363,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Ponedeljak.
         /// </summary>
-        public static string Monday {
+        internal static string Monday {
             get {
                 return ResourceManager.GetString("Monday", resourceCulture);
             }
@@ -363,7 +372,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to PMF - .
         /// </summary>
-        public static string NewsArticleTitle {
+        internal static string NewsArticleTitle {
             get {
                 return ResourceManager.GetString("NewsArticleTitle", resourceCulture);
             }
@@ -372,7 +381,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Greška prilikom preuzimanja vesti, pokušajte ponovo kasnije....
         /// </summary>
-        public static string NewsError {
+        internal static string NewsError {
             get {
                 return ResourceManager.GetString("NewsError", resourceCulture);
             }
@@ -381,7 +390,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Datum osvežavanja: .
         /// </summary>
-        public static string NewsSuccess {
+        internal static string NewsSuccess {
             get {
                 return ResourceManager.GetString("NewsSuccess", resourceCulture);
             }
@@ -390,7 +399,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Uspešno učitavanje vesti!.
         /// </summary>
-        public static string NewsSuccessTitle {
+        internal static string NewsSuccessTitle {
             get {
                 return ResourceManager.GetString("NewsSuccessTitle", resourceCulture);
             }
@@ -399,7 +408,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to PMF - Vesti.
         /// </summary>
-        public static string NewsTitle {
+        internal static string NewsTitle {
             get {
                 return ResourceManager.GetString("NewsTitle", resourceCulture);
             }
@@ -408,7 +417,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Ništa za danas! :-).
         /// </summary>
-        public static string NothingForToday {
+        internal static string NothingForToday {
             get {
                 return ResourceManager.GetString("NothingForToday", resourceCulture);
             }
@@ -417,7 +426,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to U redu.
         /// </summary>
-        public static string OK {
+        internal static string OK {
             get {
                 return ResourceManager.GetString("OK", resourceCulture);
             }
@@ -426,7 +435,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to PIB: 101635863.
         /// </summary>
-        public static string PIB {
+        internal static string PIB {
             get {
                 return ResourceManager.GetString("PIB", resourceCulture);
             }
@@ -435,7 +444,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Molim sačekajte....
         /// </summary>
-        public static string PleaseWait {
+        internal static string PleaseWait {
             get {
                 return ResourceManager.GetString("PleaseWait", resourceCulture);
             }
@@ -444,7 +453,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Prirodno-matematički fakultet.
         /// </summary>
-        public static string PMF {
+        internal static string PMF {
             get {
                 return ResourceManager.GetString("PMF", resourceCulture);
             }
@@ -453,7 +462,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Prirodno-matematički fakultet, Novi Sad.
         /// </summary>
-        public static string PMFName {
+        internal static string PMFName {
             get {
                 return ResourceManager.GetString("PMFName", resourceCulture);
             }
@@ -462,7 +471,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Vežbe.
         /// </summary>
-        public static string Practice {
+        internal static string Practice {
             get {
                 return ResourceManager.GetString("Practice", resourceCulture);
             }
@@ -471,7 +480,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Subota.
         /// </summary>
-        public static string Saturday {
+        internal static string Saturday {
             get {
                 return ResourceManager.GetString("Saturday", resourceCulture);
             }
@@ -480,7 +489,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Greška prilikom preuzimanja rasporeda, pokušajte ponovo kasnije....
         /// </summary>
-        public static string ScheduleError {
+        internal static string ScheduleError {
             get {
                 return ResourceManager.GetString("ScheduleError", resourceCulture);
             }
@@ -489,7 +498,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Raspored za dan:.
         /// </summary>
-        public static string ScheduleFor {
+        internal static string ScheduleFor {
             get {
                 return ResourceManager.GetString("ScheduleFor", resourceCulture);
             }
@@ -498,7 +507,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Uspešno učitani rasporedi!.
         /// </summary>
-        public static string ScheduleSuccess {
+        internal static string ScheduleSuccess {
             get {
                 return ResourceManager.GetString("ScheduleSuccess", resourceCulture);
             }
@@ -507,7 +516,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to PMF - Rasporedi.
         /// </summary>
-        public static string ScheduleTitle {
+        internal static string ScheduleTitle {
             get {
                 return ResourceManager.GetString("ScheduleTitle", resourceCulture);
             }
@@ -516,7 +525,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Detalji sesije.
         /// </summary>
-        public static string SessionDetails {
+        internal static string SessionDetails {
             get {
                 return ResourceManager.GetString("SessionDetails", resourceCulture);
             }
@@ -525,7 +534,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Podeli.
         /// </summary>
-        public static string Share {
+        internal static string Share {
             get {
                 return ResourceManager.GetString("Share", resourceCulture);
             }
@@ -534,25 +543,115 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to http://ssluzba.pmf.uns.ac.rs.
         /// </summary>
-        public static string SSluzbaLink {
+        internal static string SSluzbaLink {
             get {
                 return ResourceManager.GetString("SSluzbaLink", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Predmetni asistenti.
+        /// </summary>
+        internal static string SubjectAssistaints {
+            get {
+                return ResourceManager.GetString("SubjectAssistaints", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Broj časova aktivne nastave.
+        /// </summary>
+        internal static string SubjectClasses {
+            get {
+                return ResourceManager.GetString("SubjectClasses", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sadržaj predmeta.
+        /// </summary>
+        internal static string SubjectContents {
+            get {
+                return ResourceManager.GetString("SubjectContents", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Detalji predmeta.
         /// </summary>
-        public static string SubjectDetails {
+        internal static string SubjectDetails {
             get {
                 return ResourceManager.GetString("SubjectDetails", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cilj predmeta.
+        /// </summary>
+        internal static string SubjectGoal {
+            get {
+                return ResourceManager.GetString("SubjectGoal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Preporučena literatura.
+        /// </summary>
+        internal static string SubjectLiterature {
+            get {
+                return ResourceManager.GetString("SubjectLiterature", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Greška prilikom učitavanja detalja predmeta. Pokušajte ponovo kasnije....
+        /// </summary>
+        internal static string SubjectLoadError {
+            get {
+                return ResourceManager.GetString("SubjectLoadError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Metode izvođenja nastave.
+        /// </summary>
+        internal static string SubjectMethod {
+            get {
+                return ResourceManager.GetString("SubjectMethod", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ishod predmeta.
+        /// </summary>
+        internal static string SubjectOutcome {
+            get {
+                return ResourceManager.GetString("SubjectOutcome", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stranice predmeta.
+        /// </summary>
+        internal static string SubjectPages {
+            get {
+                return ResourceManager.GetString("SubjectPages", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Predmetni profesori.
+        /// </summary>
+        internal static string SubjectProfessors {
+            get {
+                return ResourceManager.GetString("SubjectProfessors", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Nedelja.
         /// </summary>
-        public static string Sunday {
+        internal static string Sunday {
             get {
                 return ResourceManager.GetString("Sunday", resourceCulture);
             }
@@ -561,7 +660,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Četvrak.
         /// </summary>
-        public static string Thursday {
+        internal static string Thursday {
             get {
                 return ResourceManager.GetString("Thursday", resourceCulture);
             }
@@ -570,7 +669,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Studentski servisi.
         /// </summary>
-        public static string Title {
+        internal static string Title {
             get {
                 return ResourceManager.GetString("Title", resourceCulture);
             }
@@ -579,7 +678,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Utorak.
         /// </summary>
-        public static string Tuesday {
+        internal static string Tuesday {
             get {
                 return ResourceManager.GetString("Tuesday", resourceCulture);
             }
@@ -588,7 +687,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Univerzitet u Novom Sadu.
         /// </summary>
-        public static string UNS {
+        internal static string UNS {
             get {
                 return ResourceManager.GetString("UNS", resourceCulture);
             }
@@ -597,7 +696,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to v.0.0.0.A.
         /// </summary>
-        public static string Version {
+        internal static string Version {
             get {
                 return ResourceManager.GetString("Version", resourceCulture);
             }
@@ -606,7 +705,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Sreda.
         /// </summary>
-        public static string Wednesday {
+        internal static string Wednesday {
             get {
                 return ResourceManager.GetString("Wednesday", resourceCulture);
             }
@@ -615,7 +714,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Dobro došli, studenti!.
         /// </summary>
-        public static string Welcome {
+        internal static string Welcome {
             get {
                 return ResourceManager.GetString("Welcome", resourceCulture);
             }
@@ -624,7 +723,7 @@ namespace PMF.Dictionaries {
         /// <summary>
         ///   Looks up a localized string similar to Pristupite vašim studentskim servisima iz glavnog menija aplikacije!.
         /// </summary>
-        public static string WelcomeMessage {
+        internal static string WelcomeMessage {
             get {
                 return ResourceManager.GetString("WelcomeMessage", resourceCulture);
             }

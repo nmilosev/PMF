@@ -1,4 +1,4 @@
-Images, layout descriptions, binary blobs and string dictionaries can be included 
+Images, layout descriptions, binary blobs and string Dictionaries can be included 
 in your application as resource files.  Various Android APIs are designed to 
 operate on the resource IDs instead of dealing with images, strings or binary blobs 
 directly.
@@ -47,4 +47,4 @@ public class Resource {
 
 You would then use R.drawable.icon to reference the drawable/icon.png file, or Resource.layout.main 
 to reference the layout/main.xml file, or Resource.strings.first_string to reference the first 
-string in the dictionary file values/strings.xml.
+string in the Dictionary file values/strings.xml.

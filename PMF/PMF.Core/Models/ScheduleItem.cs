@@ -22,8 +22,7 @@ namespace PMF.Core.Models
 
         public int SubjectId { get; set; }
         public string SubjectTitle { get; set; }
-
-        public List<int> TeacherIds { get; set; }
+        
         public List<string> TeacherNames { get; set; }
 
         public string TeacherNamesFormatted => string.Join(", ", TeacherNames);

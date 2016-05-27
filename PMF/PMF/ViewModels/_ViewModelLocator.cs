@@ -46,6 +46,7 @@ namespace PMF.ViewModels
             SimpleIoc.Default.Register<NewsViewModel>();
             SimpleIoc.Default.Register<ScheduleViewModel>();
             SimpleIoc.Default.Register<ScheduleDetailsViewModel>();
+            SimpleIoc.Default.Register<SubjectViewModel>();
         }
 
         public MainViewModel Main => ServiceLocator.Current.GetInstance<MainViewModel>();
@@ -59,6 +60,8 @@ namespace PMF.ViewModels
         public ScheduleViewModel Schedule => ServiceLocator.Current.GetInstance<ScheduleViewModel>();
 
         public ScheduleDetailsViewModel ScheduleDetails => ServiceLocator.Current.GetInstance<ScheduleDetailsViewModel>();
+        
+        public SubjectViewModel Subject => ServiceLocator.Current.GetInstance<SubjectViewModel>();
 
         public static void Cleanup()
         {

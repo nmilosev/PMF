@@ -9,7 +9,14 @@ namespace PMF.Core.Models
         public string LastName { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
-        public string ContactData { get; set; }
+        public string Vocation { get; set; }
+
+        public string URL { get; set; }
+        public string Email { get; set; }
+
+        public string ImageURL { get; set; }
+
+        public string FullName => string.Join(" ", Title, FirstName, LastName);
 
         public List<Subject> Subjects { get; set; }
     }

@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Interfaces\INewsSource.cs" />
     <Compile Include="Interfaces\IScheduleSource.cs" />
+    <Compile Include="Interfaces\ISubjectsSource.cs" />
     <Compile Include="Models\Classroom.cs" />
     <Compile Include="Models\News.cs" />
     <Compile Include="Models\NewsItem.cs" />

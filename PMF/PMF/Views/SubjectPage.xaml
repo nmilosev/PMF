@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PMF.Views.SubjectPage"
+             xmlns:i18n="clr-namespace: PMF.Dictionaries"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             BindingContext="{Binding Source={StaticResource ViewModelLocator}, Path=Subject.Current}"
+             Title = "{i18n:Translate SubjectDetails}">
+
+  <ScrollView>
+    <StackLayout Padding="5">
+
+      <StackLayout Padding="10">
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="0,0,5,0">
+          <Label Margin="5,0,0,0" Text="{Binding Title}" FontSize="24" LineBreakMode="WordWrap" />
+          <StackLayout VerticalOptions="Center" HorizontalOptions="EndAndExpand">
+            <Label Text="{Binding Id}" FontSize="14" LineBreakMode="WordWrap" />
+          </StackLayout>
+        </StackLayout>
+        <BoxView HeightRequest="2">
+          <BoxView.Color>
+            <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:ColorDictionary.AndroidLightGray}"/>
+          </BoxView.Color>
+        </BoxView>
+        <Label Text="{Binding ESPB, StringFormat='ESPB: {0}'}" Margin="5,0,0,0" FontSize="14" LineBreakMode="WordWrap" />
+      </StackLayout>
+
+      <StackLayout Padding="10">
+        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="0,0,5,0">
+          <Label Margin="5,0,0,0" Text="{i18n:Translate SubjectProfessors}" FontSize="24" LineBreakMode="WordWrap" VerticalOptions="Center"/>
+          <StackLayout VerticalOptions="Center" HorizontalOptions="EndAndExpand" HeightRequest="30" WidthRequest="30">
+            <ffimageloading:CachedImage
+              DownsampleToViewSize="True"
+              Source = "arrowdown.png" />
+          </StackLayout>
+        </StackLayout>
+        <BoxView HeightRequest="2">
+          <BoxView.Color>
+            <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:ColorDictionary.AndroidLightGray}"/>
+          </BoxView.Color>
+        </BoxView>
+        <ListView VerticalOptions="FillAndExpand" SeparatorVisibility="None" ItemsSource="{Binding Professors}" RowHeight="110">
+          <ListView.ItemTemplate>
+            <DataTemplate>
+              <ViewCell>
+
+                <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                  <Grid.GestureRecognizers>
+                    <TapGestureRecognizer />
+                  </Grid.GestureRecognizers>
+                  <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                  </Grid.RowDefinitions>
+                  <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="80" />
+                  </Grid.ColumnDefinitions>
+
+                  <ContentView Grid.Row="0" Grid.Column="0" Padding="5">
+                    <StackLayout Spacing="0">
+                      <Label Text="{Binding FullName}" FontSize="20" LineBreakMode="WordWrap"/>
+                      <Label Text="{Binding Vocation}" FontSize="16" LineBreakMode="WordWrap"/>
+                      <StackLayout Orientation="Horizontal" HeightRequest="30" Margin="0,5,0,0">
+                        <StackLayout.GestureRecognizers>
+                          <TapGestureRecognizer Command="{Binding Source={StaticResource ViewModelLocator}, Path=Subject.Email}" CommandParameter="{Binding Email}"/>
+                        </StackLayout.GestureRecognizers>
+                        <Image Source = "envelope.png" WidthRequest="20" HeightRequest="20" VerticalOptions="Center" />
+                        <Label Text="{Binding Email}" FontSize="12" LineBreakMode="TailTruncation"/>
+                      </StackLayout>
+
+                      <StackLayout Orientation="Horizontal" HeightRequest="30" Margin="0,5,0,0">
+                        <StackLayout.GestureRecognizers>
+                          <TapGestureRecognizer Command="{Binding Source={StaticResource ViewModelLocator}, Path=Subject.URL}" CommandParameter="{Binding URL}"/>
+                        </StackLayout.GestureRecognizers>
+                        <Image WidthRequest="20" HeightRequest="20" VerticalOptions="Center" Source = "link.png" />
+                        <Label Text="{Binding URL}" FontSize="12" LineBreakMode="TailTruncation"/>
+                      </StackLayout>
+
+                    </StackLayout>
+                  </ContentView>
+
+                  <ContentView Grid.Row="0" Grid.Column="1" Padding="5">
+                    <ffimageloading:CachedImage DownsampleToViewSize="True" Source = "{Binding ImageURL}" />
+                  </ContentView>
+
+                </Grid>
+              </ViewCell>
+            </DataTemplate>
+          </ListView.ItemTemplate>
+        </ListView>
+      </StackLayout>
+
+      <StackLayout Padding="10">
+        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="0,0,5,0">
+          <Label Margin="5,0,0,0" Text="{i18n:Translate SubjectAssistaints}" FontSize="24" LineBreakMode="WordWrap" VerticalOptions="Center"/>
+          <StackLayout VerticalOptions="Center" HorizontalOptions="EndAndExpand" HeightRequest="30" WidthRequest="30">
+            <ffimageloading:CachedImage
+              DownsampleToViewSize="True"
+              Source = "arrowdown.png" />
+          </StackLayout>
+        </StackLayout>
+
+        <BoxView HeightRequest="2">
+          <BoxView.Color>
+            <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:ColorDictionary.AndroidLightGray}"/>
+          </BoxView.Color>
+        </BoxView>
+
+        <ListView VerticalOptions="FillAndExpand" SeparatorVisibility="None" ItemsSource="{Binding Assistaints}" RowHeight="110">
+          <ListView.ItemTemplate>
+            <DataTemplate>
+              <ViewCell>
+                
+                <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                  <Grid.GestureRecognizers>
+                    <TapGestureRecognizer />
+                  </Grid.GestureRecognizers>
+                  <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                  </Grid.RowDefinitions>
+                  <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="80" />
+                  </Grid.ColumnDefinitions>
+
+                  <ContentView Grid.Row="0" Grid.Column="0" Padding="5">
+                    <StackLayout Spacing="0">
+                      <Label Text="{Binding FullName}" FontSize="20" LineBreakMode="WordWrap"/>
+                      <Label Text="{Binding Vocation}" FontSize="16" LineBreakMode="WordWrap"/>
+                      <StackLayout Orientation="Horizontal" HeightRequest="30" Margin="0,5,0,0">
+                        <StackLayout.GestureRecognizers>
+                          <TapGestureRecognizer Command="{Binding Source={StaticResource ViewModelLocator}, Path=Subject.Email}" CommandParameter="{Binding Email}"/>
+                        </StackLayout.GestureRecognizers>
+                        <Image Source = "envelope.png" WidthRequest="20" HeightRequest="20" VerticalOptions="Center" />
+                        <Label Text="{Binding Email}" FontSize="12" LineBreakMode="TailTruncation"/>
+                      </StackLayout>
+
+                      <StackLayout Orientation="Horizontal" HeightRequest="30" Margin="0,5,0,0">
+                        <StackLayout.GestureRecognizers>
+                          <TapGestureRecognizer Command="{Binding Source={StaticResource ViewModelLocator}, Path=Subject.URL}" CommandParameter="{Binding URL}"/>
+                        </StackLayout.GestureRecognizers>
+                        <Image WidthRequest="20" HeightRequest="20" VerticalOptions="Center" Source = "link.png" />
+                        <Label Text="{Binding URL}" FontSize="12" LineBreakMode="TailTruncation"/>
+                      </StackLayout>
+
+                    </StackLayout>
+                  </ContentView>
+
+                  <ContentView Grid.Row="0" Grid.Column="1" Padding="5">
+                    <ffimageloading:CachedImage DownsampleToViewSize="True" Source = "{Binding ImageURL}" />
+                  </ContentView>
+
+                </Grid>
+              </ViewCell>
+            </DataTemplate>
+          </ListView.ItemTemplate>
+        </ListView>
+        
+      </StackLayout>
+
+
+      <StackLayout Padding="10">
+        <Label Margin="5,0,0,0" Text="{i18n:Translate SubjectGoal}" FontSize="24" />
+        <BoxView HeightRequest="2">
+          <BoxView.Color>
+            <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:ColorDictionary.AndroidLightGray}"/>
+          </BoxView.Color>
+        </BoxView>
+        <Label Text="{Binding Goal}" LineBreakMode="WordWrap" />
+      </StackLayout>
+
+      <StackLayout Padding="10">
+        <Label Margin="5,0,0,0" Text="{i18n:Translate SubjectOutcome}" FontSize="24" />
+        <BoxView HeightRequest="2">
+          <BoxView.Color>
+            <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:ColorDictionary.AndroidLightGray}"/>
+          </BoxView.Color>
+        </BoxView>
+        <Label Text="{Binding Outcome}" LineBreakMode="WordWrap" />
+      </StackLayout>
+
+      <StackLayout Padding="10">
+        <Label Margin="5,0,0,0" Text="{i18n:Translate SubjectContents}" FontSize="24" />
+        <BoxView HeightRequest="2">
+          <BoxView.Color>
+            <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:ColorDictionary.AndroidLightGray}"/>
+          </BoxView.Color>
+        </BoxView>
+        <Label Text="{Binding Contents}" LineBreakMode="WordWrap" />
+      </StackLayout>
+
+      <StackLayout Padding="10">
+        <Label Margin="5,0,0,0" Text="{i18n:Translate SubjectLiterature}" FontSize="24" />
+        <BoxView HeightRequest="2">
+          <BoxView.Color>
+            <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:ColorDictionary.AndroidLightGray}"/>
+          </BoxView.Color>
+        </BoxView>
+        <Label Text="{Binding Literature}" LineBreakMode="WordWrap" />
+      </StackLayout>
+
+      <StackLayout Padding="10">
+        <Label Margin="5,0,0,0" Text="{i18n:Translate SubjectClasses}" FontSize="24" />
+        <BoxView HeightRequest="2">
+          <BoxView.Color>
+            <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:ColorDictionary.AndroidLightGray}"/>
+          </BoxView.Color>
+        </BoxView>
+        <Label Text="{Binding Classes}" LineBreakMode="WordWrap" />
+      </StackLayout>
+
+      <StackLayout Padding="10">
+        <Label Margin="5,0,0,0" Text="{i18n:Translate SubjectMethod}" FontSize="24" />
+        <BoxView HeightRequest="2">
+          <BoxView.Color>
+            <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:ColorDictionary.AndroidLightGray}"/>
+          </BoxView.Color>
+        </BoxView>
+        <Label Text="{Binding Method}" LineBreakMode="WordWrap" />
+      </StackLayout>
+
+      <StackLayout Padding="10">
+        <Label Margin="5,0,0,0" Text="{i18n:Translate SubjectPages}" FontSize="24" />
+        <BoxView HeightRequest="2">
+          <BoxView.Color>
+            <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:ColorDictionary.AndroidLightGray}"/>
+          </BoxView.Color>
+        </BoxView>
+        <ListView VerticalOptions="FillAndExpand" SeparatorVisibility="None" ItemsSource="{Binding URLs}" RowHeight="40">
+          <ListView.ItemTemplate>
+            <DataTemplate>
+              <ViewCell>
+                <StackLayout Orientation="Horizontal" Margin="0,5,0,0">
+                  <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding Source={StaticResource ViewModelLocator}, Path=Subject.URL}" CommandParameter="{Binding}"/>
+                  </StackLayout.GestureRecognizers>
+                  <ffimageloading:CachedImage DownsampleToViewSize="True" WidthRequest="24" HeightRequest="24" VerticalOptions="Center" Source = "link.png" />
+                  <Label Text="{Binding}" FontSize="14" LineBreakMode="TailTruncation" VerticalOptions="Center"/>
+                </StackLayout>
+              </ViewCell>
+            </DataTemplate>
+          </ListView.ItemTemplate>
+        </ListView>
+      </StackLayout>
+
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

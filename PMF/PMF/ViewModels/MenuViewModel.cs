@@ -62,25 +62,8 @@ namespace PMF.ViewModels
                 };
             }
         }
-
-        private MenuItem _selectedItem;
-        public MenuItem SelectedItem
-        {
-            get
-            {
-                /// 24 hours lost on this bug: if you return null iOS hangs
-                if (Device.OS == TargetPlatform.iOS)
-                    return _selectedItem;
-                else
-                    return null;
-            }
-            set
-            {
-                _selectedItem = value;
-                CommandAction(value.Id);
-                RaisePropertyChanged();
-            }
-        }
+        
+        public Command MenuCommand => new Command<string>(CommandAction);
 
         public void CommandAction(string actionName)
         {

@@ -102,3 +102,4 @@ C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.ComponentModel.DataAnnot
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.ComponentModel.Composition.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.Numerics.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.ServiceModel.dll
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\sr-Latn-RS\PMF.resources.dll

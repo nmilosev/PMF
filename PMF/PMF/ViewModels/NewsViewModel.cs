@@ -44,8 +44,7 @@ namespace PMF.ViewModels
                 RaisePropertyChanged();
             }
         }
-
-
+      
         public NewsViewModel()
         {
             _news = SimpleIoc.Default.GetInstance<INewsSource>();
@@ -74,7 +73,7 @@ namespace PMF.ViewModels
                 return new Command<NewsItem>((p) =>
                 {
                     CurrentNewsItem = p;
-                    SimpleIoc.Default.GetInstance<Navigation.Navigator>().NavigateModal(typeof(Views.NewsArticlePage));                    
+                    SimpleIoc.Default.GetInstance<Navigation.Navigator>().NavigateModal(typeof(Views.NewsArticlePage));
                 });
             }
         }
@@ -94,10 +93,10 @@ namespace PMF.ViewModels
 
             IsRefreshing = false;
             Activity = false;
-            
+
             if (news.IsDataValid)
             {
-                News = new ObservableCollection<NewsItem>(news.Items);                
+                News = new ObservableCollection<NewsItem>(news.Items);
             }
             else
             {
@@ -105,7 +104,7 @@ namespace PMF.ViewModels
                 Dictionaries.AppDictionary.Error, Dictionaries.AppDictionary.NewsError, TimeSpan.FromSeconds(1.5));
             }
 
-           
+
         }
 
         private NewsItem _selectedItem;

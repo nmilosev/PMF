@@ -108,25 +108,6 @@ namespace PMF.ViewModels
             }
 
 
-        }
-
-        private Schedule _selectedItem;
-        public Schedule SelectedItem
-        {
-            get
-            {
-                // Xamarin bug, can't assign null if on iOS
-                if (Device.OS == TargetPlatform.iOS)
-                    return _selectedItem;
-                else
-                    return null;
-            }
-            set
-            {
-                _selectedItem = value;
-                OpenSchedule.Execute(value);
-                RaisePropertyChanged();
-            }
-        }        
+        }         
     }
 }

@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="LocalNewsSource.cs" />
     <Compile Include="LocalScheduleSource.cs" />
+    <Compile Include="LocalSubjectsSource.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

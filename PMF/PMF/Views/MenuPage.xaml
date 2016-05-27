@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:dict="clr-namespace: PMF.Dictionaries"
+             xmlns:i18n="clr-namespace: PMF.Dictionaries"
              BindingContext="{Binding Source={StaticResource ViewModelLocator}, Path=Menu}"
              x:Class="PMF.Views.MenuPage"
              Padding="0,0,0,0"
@@ -9,9 +9,9 @@
              Title="Master">
 
   <ContentPage.BackgroundColor>
-    <OnPlatform x:TypeArguments="Color" iOS="{x:Static dict:ColorDictionary.iPhoneMenu}"/>
+    <OnPlatform x:TypeArguments="Color" iOS="{x:Static i18n:Colors.iPhoneMenu}"/>
   </ContentPage.BackgroundColor>
-  <ScrollView>
+  <ScrollView VerticalOptions="Fill">
     <StackLayout Orientation="Vertical" Padding="10,10,10,10">
 
       <StackLayout.Margin>
@@ -19,26 +19,29 @@
                     iOS="0,75,0,0" />
       </StackLayout.Margin>
 
-      <Label Margin="5,0,0,0" FontSize="24" Text="{x:Static dict:AppDictionary.Title}">
+      <Label Margin="5,0,0,0" FontSize="24" Text="{i18n:Translate Title}">
         <Label.GestureRecognizers>
           <TapGestureRecognizer Command="{Binding WelcomeCommand}"/>
         </Label.GestureRecognizers>
       </Label>
-      <Label Margin="5,0,0,0" FontSize="14" Text="{x:Static dict:AppDictionary.PMFName}"/>
-      <Label Margin="5,0,0,0" FontSize="14" Text="{x:Static dict:AppDictionary.UNS}"/>
-      <Label Margin="5,0,0,0" FontSize="12" Text="{x:Static dict:AppDictionary.Version}"/>
-      <ListView VerticalOptions="FillAndExpand" SeparatorVisibility="None" ItemsSource="{Binding MenuList}" Margin="0,20,0,0" SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
+      <Label Margin="5,0,0,0" FontSize="14" Text="{i18n:Translate PMFName}"/>
+      <Label Margin="5,0,0,0" FontSize="14" Text="{i18n:Translate UNS}"/>
+      <Label Margin="5,0,0,0" FontSize="12" Text="{i18n:Translate Version}"/>
+      <ListView VerticalOptions="FillAndExpand" SeparatorVisibility="None" ItemsSource="{Binding MenuList}" Margin="0,20,0,0" RowHeight="50">
         <ListView.BackgroundColor>
-          <OnPlatform x:TypeArguments="Color" iOS="{x:Static dict:ColorDictionary.iPhoneMenu}"/>
+          <OnPlatform x:TypeArguments="Color" iOS="{x:Static i18n:Colors.iPhoneMenu}"/>
         </ListView.BackgroundColor>
         <ListView.ItemTemplate>
           <DataTemplate>
             <ViewCell>
               <StackLayout Orientation="Horizontal" Padding="0,10,10,10">
+                <StackLayout.GestureRecognizers>
+                  <TapGestureRecognizer Command="{Binding Source={StaticResource ViewModelLocator}, Path=Menu.MenuCommand}" CommandParameter="{Binding Id}" />
+                </StackLayout.GestureRecognizers>
                 <Image Source="{Binding Icon}" WidthRequest="36" HeightRequest="36"/>
                 <Label Text="{Binding Text}" Margin="0,2,0,0">
                   <Label.TextColor>
-                    <OnPlatform x:TypeArguments="Color" Android="{x:Static dict:ColorDictionary.DMIPurple}"/>
+                    <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.DMIPurple}"/>
                   </Label.TextColor>
                 </Label>
               </StackLayout>
@@ -47,22 +50,22 @@
         </ListView.ItemTemplate>
       </ListView>
 
-      <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,-70,0,0" Padding="10,10,10,10">
-        <Image Source="dmi.png" WidthRequest="40" HeightRequest="40" HorizontalOptions="Start">
+      <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="10">
+        <Image Source="dmi.png" WidthRequest="40" HeightRequest="40">
           <Image.GestureRecognizers>
             <TapGestureRecognizer Command="{Binding DMICommand}"/>
           </Image.GestureRecognizers>
         </Image>
-        <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+        <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
           <StackLayout.GestureRecognizers>
             <TapGestureRecognizer Command="{Binding InfoCommand}"/>
           </StackLayout.GestureRecognizers>
-          <Label Text="{x:Static dict:AppDictionary.Info}" Margin="80,10,10,0">
+          <Label Text="{i18n:Translate Info}" HorizontalOptions="End" VerticalOptions="Center">
             <Label.TextColor>
-              <OnPlatform x:TypeArguments="Color" Android="{x:Static dict:ColorDictionary.DMIPurple}"/>
+              <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.DMIPurple}"/>
             </Label.TextColor>
           </Label>
-          <Image Source="question.png" WidthRequest="24" HeightRequest="24"/>
+          <Image Source="question.png" WidthRequest="24" HeightRequest="24" HorizontalOptions="End"/>
         </StackLayout>
       </StackLayout>
 

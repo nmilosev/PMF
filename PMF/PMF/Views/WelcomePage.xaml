@@ -2,11 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PMF.Views.WelcomePage"
-             xmlns:dict="clr-namespace: PMF.Dictionaries"
+             xmlns:i18n="clr-namespace: PMF.Dictionaries"
              xmlns:mvvm="clr-namespace: PMF"
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              BindingContext="{Binding Source={StaticResource ViewModelLocator}, Path=Main}"
-             Title="{x:Static dict:AppDictionary.DefaultTitle}">
+             Title="{i18n:Translate DefaultTitle}">
 
   <ScrollView>
     <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
@@ -25,8 +25,8 @@
         </ffimageloading:CachedImage>
       </StackLayout>
 
-      <Label Text="{x:Static dict:AppDictionary.Welcome}" HorizontalOptions="Center" Margin="20,0,20,0" FontSize="26" FontAttributes="Italic"/>
-      <Label Text="{x:Static dict:AppDictionary.WelcomeMessage}" HorizontalOptions="Center" HorizontalTextAlignment="Center" Margin="20,0,20,20" FontSize="12"/>
+      <Label Text="{i18n:Translate Welcome}" HorizontalOptions="Center" Margin="20,0,20,0" FontSize="26" FontAttributes="Italic"/>
+      <Label Text="{i18n:Translate WelcomeMessage}" HorizontalOptions="Center" HorizontalTextAlignment="Center" Margin="20,0,20,20" FontSize="12"/>
     </StackLayout>
   </ScrollView>
 </ContentPage>

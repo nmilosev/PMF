@@ -46,11 +46,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppDictionary.resx</DependentUpon>
     </Compile>
-    <Compile Include="Dictionaries\ColorDictionary.Designer.cs">
+    <Compile Include="Dictionaries\AppDictionary.sr-Latn-RS.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ColorDictionary.resx</DependentUpon>
+      <DependentUpon>AppDictionary.sr-Latn-RS.resx</DependentUpon>
     </Compile>
+    <Compile Include="Dictionaries\Colors.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Colors.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Dictionaries\TranslateExtension.cs" />
     <Compile Include="Navigation\Navigator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\ContactViewModel.cs" />
@@ -59,6 +65,7 @@
     <Compile Include="ViewModels\NewsViewModel.cs" />
     <Compile Include="ViewModels\ScheduleDetailsViewModel.cs" />
     <Compile Include="ViewModels\ScheduleViewModel.cs" />
+    <Compile Include="ViewModels\SubjectViewModel.cs" />
     <Compile Include="ViewModels\_ViewModelLocator.cs" />
     <Compile Include="Views\AboutPage.xaml.cs">
       <DependentUpon>AboutPage.xaml</DependentUpon>
@@ -84,6 +91,9 @@
     <Compile Include="Views\SchedulePage.xaml.cs">
       <DependentUpon>SchedulePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\SubjectPage.xaml.cs">
+      <DependentUpon>SubjectPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\_ViewLocator.cs" />
     <Compile Include="Views\WelcomePage.xaml.cs">
       <DependentUpon>WelcomePage.xaml</DependentUpon>
@@ -94,12 +104,16 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Dictionaries\AppDictionary.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
+      <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>AppDictionary.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dictionaries\ColorDictionary.resx">
+    <EmbeddedResource Include="Dictionaries\AppDictionary.sr-Latn-RS.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>ColorDictionary.Designer.cs</LastGenOutput>
+      <LastGenOutput>AppDictionary.sr-Latn-RS.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dictionaries\Colors.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Colors.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\MainPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
@@ -240,6 +254,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\ScheduleDetailsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\SubjectPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

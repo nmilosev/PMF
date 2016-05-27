@@ -2,20 +2,23 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PMF.Views.NewsPage"
-             xmlns:dict="clr-namespace: PMF.Dictionaries"
+             xmlns:i18n="clr-namespace: PMF.Dictionaries"
              BindingContext="{Binding Source={StaticResource ViewModelLocator}, Path=News}"
-             Title="{x:Static dict:AppDictionary.NewsTitle}">
+             Title="{i18n:Translate NewsTitle}">
   <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Orientation="Vertical">
     <ActivityIndicator IsRunning="{Binding Activity}" IsVisible="{Binding Activity}" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Margin="0,100,0,0"/>
-    <Label IsVisible="{Binding Activity}" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Text="{x:Static dict:AppDictionary.PleaseWait}"/>
-    <ListView VerticalOptions="FillAndExpand" SeparatorVisibility="None" ItemsSource="{Binding News}" RowHeight="180" Margin="0,5,0,0" RefreshCommand="{Binding RefreshCommand}" IsRefreshing="{Binding IsRefreshing, Mode=OneWay}" IsPullToRefreshEnabled="True" SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
+    <Label IsVisible="{Binding Activity}" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Text="{i18n:Translate PleaseWait}"/>
+    <ListView VerticalOptions="FillAndExpand" SeparatorVisibility="None" ItemsSource="{Binding News}" RowHeight="180" Margin="0,5,0,0" RefreshCommand="{Binding RefreshCommand}" IsRefreshing="{Binding IsRefreshing, Mode=OneWay}" IsPullToRefreshEnabled="True">
       <ListView.ItemTemplate>
         <DataTemplate>
           <ViewCell>
             <StackLayout Padding="10" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+              <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding Source={StaticResource ViewModelLocator}, Path=News.OpenNewsArticle}" CommandParameter="{Binding}" />
+              </StackLayout.GestureRecognizers>
               <Grid Padding="0,1,1,1" RowSpacing="1" ColumnSpacing="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
                 <Grid.BackgroundColor>
-                  <OnPlatform x:TypeArguments="Color" Android="{x:Static dict:ColorDictionary.AndroidDarkGray}" iOS="{x:Static dict:ColorDictionary.iPhoneGray}"/>
+                  <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidDarkGray}" iOS="{x:Static i18n:Colors.iPhoneGray}"/>
                 </Grid.BackgroundColor>
                 <Grid.RowDefinitions>
                   <RowDefinition Height="*" />
@@ -33,7 +36,7 @@
 
                 <ContentView Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Padding="10">
                   <ContentView.BackgroundColor>
-                    <OnPlatform x:TypeArguments="Color" Android="{x:Static dict:ColorDictionary.AndroidLightGray}" iOS="{x:Static dict:ColorDictionary.iPhoneWhite}"/>
+                    <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" iOS="{x:Static i18n:Colors.iPhoneWhite}"/>
                   </ContentView.BackgroundColor>
                   <StackLayout>
                     <Label FontSize="24" Text="{Binding Title}" />
@@ -43,7 +46,7 @@
 
                 <ContentView Grid.Row="1" Grid.Column="1" Padding="10">
                   <ContentView.BackgroundColor>
-                    <OnPlatform x:TypeArguments="Color" Android="{x:Static dict:ColorDictionary.AndroidLightGray}" iOS="{x:Static dict:ColorDictionary.iPhoneWhite}"/>
+                    <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" iOS="{x:Static i18n:Colors.iPhoneWhite}"/>
                   </ContentView.BackgroundColor>
                   <StackLayout>
                     <Label FontSize="12" Text="{Binding TimeFormatted}" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"  />
@@ -52,7 +55,7 @@
 
                 <ContentView Grid.Row="1" Grid.Column="2" Padding="10">
                   <ContentView.BackgroundColor>
-                    <OnPlatform x:TypeArguments="Color" Android="{x:Static dict:ColorDictionary.AndroidLightGray}" iOS="{x:Static dict:ColorDictionary.iPhoneWhite}"/>
+                    <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" iOS="{x:Static i18n:Colors.iPhoneWhite}"/>
                   </ContentView.BackgroundColor>
                   <StackLayout>
                     <Image Source="rightarrow.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
