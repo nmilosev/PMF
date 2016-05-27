@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using PMF.Dictionaries;
 
 namespace PMF.Converters
 {
@@ -12,13 +13,13 @@ namespace PMF.Converters
     {
         Dictionary<int, string> Dictionary = new Dictionary<int, string>()
         {
-            { (int)DayOfWeek.Monday, Dictionaries.AppDictionary.Monday },
-            { (int)DayOfWeek.Tuesday, Dictionaries.AppDictionary.Tuesday },
-            { (int)DayOfWeek.Wednesday, Dictionaries.AppDictionary.Wednesday },
-            { (int)DayOfWeek.Thursday, Dictionaries.AppDictionary.Thursday },
-            { (int)DayOfWeek.Friday, Dictionaries.AppDictionary.Friday },
-            { (int)DayOfWeek.Saturday, Dictionaries.AppDictionary.Saturday },
-            { (int)DayOfWeek.Sunday, Dictionaries.AppDictionary.Sunday},
+            { (int)DayOfWeek.Monday, "Monday".Localize() },
+            { (int)DayOfWeek.Tuesday, "Tuesday".Localize() },
+            { (int)DayOfWeek.Wednesday, "Wednesday".Localize() },
+            { (int)DayOfWeek.Thursday, "Thursday".Localize() },
+            { (int)DayOfWeek.Friday, "Friday".Localize() },
+            { (int)DayOfWeek.Saturday, "Saturday".Localize() },
+            { (int)DayOfWeek.Sunday, "Sunday".Localize() },
         };
 
 

@@ -3,6 +3,7 @@ using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
 using PMF.Core.Interfaces;
 using PMF.Core.Models;
+using PMF.Dictionaries;
 using PMF.Navigation;
 using System;
 using System.Collections.Generic;
@@ -28,9 +29,9 @@ namespace PMF.ViewModels
         {
 
             var cfg = new ActionSheetConfig()
-                    .SetTitle(Dictionaries.AppDictionary.SessionDetails)
-                    .SetDestructive(Dictionaries.AppDictionary.OK)
-                    .SetCancel(Dictionaries.AppDictionary.SubjectDetails, () => ShowSubjectDetails(item.SubjectId));
+                    .SetTitle("SessionDetails".Localize())
+                    .SetDestructive("OK".Localize())
+                    .SetCancel("SubjectDetails".Localize(), () => ShowSubjectDetails(item.SubjectId));
 
             BuildMessage(cfg, item);
 
@@ -71,7 +72,7 @@ namespace PMF.ViewModels
 
             Subject s;
 
-            using (UserDialogs.Instance.Loading(Dictionaries.AppDictionary.PleaseWait))
+            using (UserDialogs.Instance.Loading("PleaseWait".Localize()))
             {
                 s = await subjectsData.ForId(subjectId);
             }
@@ -84,7 +85,7 @@ namespace PMF.ViewModels
             else
             {
                 await notificator.Notify(Plugin.Toasts.ToastNotificationType.Error,
-                Dictionaries.AppDictionary.Error, Dictionaries.AppDictionary.SubjectLoadError, TimeSpan.FromSeconds(1.5));
+                "Error".Localize(), "SubjectLoadError".Localize(), TimeSpan.FromSeconds(1.5));
             }
 
         }

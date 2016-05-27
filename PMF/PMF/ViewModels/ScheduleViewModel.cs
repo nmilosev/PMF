@@ -2,6 +2,7 @@
 using GalaSoft.MvvmLight.Ioc;
 using PMF.Core.Interfaces;
 using PMF.Core.Models;
+using PMF.Dictionaries;
 using PMF.Navigation;
 using PMF.Views;
 using System;
@@ -104,7 +105,7 @@ namespace PMF.ViewModels
             else
             {
                 await notificator.Notify(Plugin.Toasts.ToastNotificationType.Error,
-                Dictionaries.AppDictionary.Error, Dictionaries.AppDictionary.ScheduleError, TimeSpan.FromSeconds(1.5));
+                "Error".Localize(), "ScheduleError".Localize(), TimeSpan.FromSeconds(1.5));
             }
 
 

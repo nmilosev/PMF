@@ -13,3 +13,13 @@ C:\Source\PMF\PMF\PMF.LocalService\obj\Debug\PMF.LocalService.dll
 C:\Source\PMF\PMF\PMF.LocalService\obj\Debug\PMF.LocalService.pdb
 C:\Source\PMF\PMF\PMF.LocalService\obj\Debug\PMF.LocalService.dll.mdb
 C:\Source\PMF\PMF\PMF.LocalService\bin\Debug\PMF.LocalService.dll.mdb
+C:\Source\PMF\PMF\PMF.LocalService\obj\Debug\PMF.LocalService.dll.mdb
+C:\Source\PMF\PMF\PMF.LocalService\bin\Debug\PMF.LocalService.dll.mdb
+C:\Source\PMF\PMF\PMF.LocalService\obj\Debug\PMF.LocalService.dll.mdb
+C:\Source\PMF\PMF\PMF.LocalService\bin\Debug\PMF.LocalService.dll.mdb
+C:\Source\PMF\PMF\PMF.LocalService\obj\Debug\PMF.LocalService.dll.mdb
+C:\Source\PMF\PMF\PMF.LocalService\bin\Debug\PMF.LocalService.dll.mdb
+C:\Source\PMF\PMF\PMF.LocalService\obj\Debug\PMF.LocalService.dll.mdb
+C:\Source\PMF\PMF\PMF.LocalService\bin\Debug\PMF.LocalService.dll.mdb
+C:\Source\PMF\PMF\PMF.LocalService\obj\Debug\PMF.LocalService.dll.mdb
+C:\Source\PMF\PMF\PMF.LocalService\bin\Debug\PMF.LocalService.dll.mdb

@@ -1,16 +1,17 @@
-﻿
-using System;
+﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
 using System.Reflection;
 using System.Resources;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace PMF.Dictionaries
 {
-    [ContentProperty("Value")]
-    public class TranslateExtension : IMarkupExtension
+    public static class Translator
     {
+
         private const string ERROR = "{ Translate }";
 
         private const string DictionaryName = "PMF.Dictionaries.AppDictionary";
@@ -19,6 +20,9 @@ namespace PMF.Dictionaries
         private const string CultureInfoNameRS = "sr-Latn-RS";
         private const string CultureInfoNameEN = "en";
 
+        /// <summary>
+        /// Set current culture here!
+        /// </summary>
         private const string CurrentCulture = CultureInfoNameEN;
 
 
@@ -43,20 +47,23 @@ namespace PMF.Dictionaries
                 return _ci;
             }
         }
-
-        public string Value { get; set; }
-
-        public object ProvideValue(IServiceProvider serviceProvider)
+        
+        public static string _translate(string key)
         {
-            if (string.IsNullOrEmpty(Value))
+            if (string.IsNullOrEmpty(key))
                 return string.Empty;
 
-            var translation = ResourceManager.GetString(Value, CultureInfo);
-            
+            var translation = ResourceManager.GetString(key, CultureInfo);
+
             if (translation != null)
                 return translation;
             else
                 return ERROR;
+        }
+
+        public static string Localize(this string key)
+        {
+            return _translate(key);
         }
     }
 }

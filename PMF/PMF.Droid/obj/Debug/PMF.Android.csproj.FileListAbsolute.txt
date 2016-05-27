@@ -126,5 +126,6 @@ C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\reload.png
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\arrowdown.png
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\R.cs.flag
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\uploadflags.txt
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.Core.dll.mdb
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\PMF.Droid.dll.mdb
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.Droid.dll.mdb

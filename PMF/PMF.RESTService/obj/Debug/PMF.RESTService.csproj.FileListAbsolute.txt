@@ -1,0 +1,4 @@
+C:\Source\PMF\PMF\PMF.RESTService\bin\Debug\PMF.RESTService.dll
+C:\Source\PMF\PMF\PMF.RESTService\bin\Debug\PMF.RESTService.pdb
+C:\Source\PMF\PMF\PMF.RESTService\obj\Debug\PMF.RESTService.dll
+C:\Source\PMF\PMF\PMF.RESTService\obj\Debug\PMF.RESTService.pdb

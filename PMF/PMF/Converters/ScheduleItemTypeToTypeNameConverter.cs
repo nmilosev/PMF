@@ -1,4 +1,5 @@
 ﻿using PMF.Core.Models;
+using PMF.Dictionaries;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -13,9 +14,9 @@ namespace PMF.Converters
     {
         Dictionary<int, string> Dictionary = new Dictionary<int, string>()
         {
-            { (int)ScheduleItemType.Lecture, Dictionaries.AppDictionary.Lecture },
-            { (int)ScheduleItemType.Lab, Dictionaries.AppDictionary.Lab },
-            { (int)ScheduleItemType.Pratice, Dictionaries.AppDictionary.Practice}            
+            { (int)ScheduleItemType.Lecture, "Lecture".Localize() },
+            { (int)ScheduleItemType.Lab, "Lab".Localize() },
+            { (int)ScheduleItemType.Pratice, "Practice".Localize() }            
         };
 
 

@@ -1,5 +1,6 @@
 ﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
+using PMF.Dictionaries;
 using PMF.Navigation;
 using System;
 using System.Collections.Generic;
@@ -19,7 +20,7 @@ namespace PMF.ViewModels
                 return new Command(() =>
                 {
                     SimpleIoc.Default.GetInstance<Navigator>().HideMenu();
-                    Plugin.Share.CrossShare.Current.OpenBrowser(Dictionaries.AppDictionary.DMILink);
+                    Plugin.Share.CrossShare.Current.OpenBrowser("DMILink".Localize());
                 });
             }
         }
@@ -54,11 +55,11 @@ namespace PMF.ViewModels
             {
                 return new List<MenuItem>()
                 {
-                    new MenuItem() { Id = "News", Text = Dictionaries.AppDictionary.ButtonNews, Icon = "newspaper.png" },
-                    new MenuItem() { Id = "Schedule", Text = Dictionaries.AppDictionary.ButtonSchedule, Icon = "calendar.png" },
-                    new MenuItem() { Id = "Programs", Text = Dictionaries.AppDictionary.ButtonPrograms, Icon = "arrows.png" },
-                    new MenuItem() { Id = "Contact", Text = Dictionaries.AppDictionary.ButtonContact, Icon = "phonebook.png" },
-                    new MenuItem() { Id = "StudService", Text = Dictionaries.AppDictionary.ButtonStudServices, Icon = "sitemap.png" }
+                    new MenuItem() { Id = "News", Text = "ButtonNews".Localize(), Icon = "newspaper.png" },
+                    new MenuItem() { Id = "Schedule", Text = "ButtonSchedule".Localize(), Icon = "calendar.png" },
+                    new MenuItem() { Id = "Programs", Text = "ButtonPrograms".Localize(), Icon = "arrows.png" },
+                    new MenuItem() { Id = "Contact", Text = "ButtonContact".Localize(), Icon = "phonebook.png" },
+                    new MenuItem() { Id = "StudService", Text = "ButtonStudServices".Localize(), Icon = "sitemap.png" }
                 };
             }
         }
@@ -72,7 +73,7 @@ namespace PMF.ViewModels
             switch (actionName)
             {
                 case "StudService":
-                    Plugin.Share.CrossShare.Current.OpenBrowser(Dictionaries.AppDictionary.SSluzbaLink);
+                    Plugin.Share.CrossShare.Current.OpenBrowser("SSluzbaLink".Localize());
                     break;
                 case "Contact":
                     SimpleIoc.Default.GetInstance<Navigator>().Navigate(typeof(Views.ContactPage));
