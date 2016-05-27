@@ -20,7 +20,7 @@
         </StackLayout>
         <BoxView HeightRequest="2">
           <BoxView.Color>
-            <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:ColorDictionary.AndroidLightGray}"/>
+            <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}"/>
           </BoxView.Color>
         </BoxView>
         <Label Text="{Binding ESPB, StringFormat='ESPB: {0}'}" Margin="5,0,0,0" FontSize="14" LineBreakMode="WordWrap" />
@@ -37,7 +37,7 @@
         </StackLayout>
         <BoxView HeightRequest="2">
           <BoxView.Color>
-            <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:ColorDictionary.AndroidLightGray}"/>
+            <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}"/>
           </BoxView.Color>
         </BoxView>
         <ListView VerticalOptions="FillAndExpand" SeparatorVisibility="None" ItemsSource="{Binding Professors}" RowHeight="110">
@@ -103,7 +103,7 @@
 
         <BoxView HeightRequest="2">
           <BoxView.Color>
-            <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:ColorDictionary.AndroidLightGray}"/>
+            <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}"/>
           </BoxView.Color>
         </BoxView>
 
@@ -164,7 +164,7 @@
         <Label Margin="5,0,0,0" Text="{i18n:Translate SubjectGoal}" FontSize="24" />
         <BoxView HeightRequest="2">
           <BoxView.Color>
-            <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:ColorDictionary.AndroidLightGray}"/>
+            <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}"/>
           </BoxView.Color>
         </BoxView>
         <Label Text="{Binding Goal}" LineBreakMode="WordWrap" />
@@ -174,7 +174,7 @@
         <Label Margin="5,0,0,0" Text="{i18n:Translate SubjectOutcome}" FontSize="24" />
         <BoxView HeightRequest="2">
           <BoxView.Color>
-            <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:ColorDictionary.AndroidLightGray}"/>
+            <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}"/>
           </BoxView.Color>
         </BoxView>
         <Label Text="{Binding Outcome}" LineBreakMode="WordWrap" />
@@ -184,7 +184,7 @@
         <Label Margin="5,0,0,0" Text="{i18n:Translate SubjectContents}" FontSize="24" />
         <BoxView HeightRequest="2">
           <BoxView.Color>
-            <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:ColorDictionary.AndroidLightGray}"/>
+            <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}"/>
           </BoxView.Color>
         </BoxView>
         <Label Text="{Binding Contents}" LineBreakMode="WordWrap" />
@@ -194,7 +194,7 @@
         <Label Margin="5,0,0,0" Text="{i18n:Translate SubjectLiterature}" FontSize="24" />
         <BoxView HeightRequest="2">
           <BoxView.Color>
-            <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:ColorDictionary.AndroidLightGray}"/>
+            <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}"/>
           </BoxView.Color>
         </BoxView>
         <Label Text="{Binding Literature}" LineBreakMode="WordWrap" />
@@ -204,7 +204,7 @@
         <Label Margin="5,0,0,0" Text="{i18n:Translate SubjectClasses}" FontSize="24" />
         <BoxView HeightRequest="2">
           <BoxView.Color>
-            <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:ColorDictionary.AndroidLightGray}"/>
+            <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}"/>
           </BoxView.Color>
         </BoxView>
         <Label Text="{Binding Classes}" LineBreakMode="WordWrap" />
@@ -214,7 +214,7 @@
         <Label Margin="5,0,0,0" Text="{i18n:Translate SubjectMethod}" FontSize="24" />
         <BoxView HeightRequest="2">
           <BoxView.Color>
-            <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:ColorDictionary.AndroidLightGray}"/>
+            <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}"/>
           </BoxView.Color>
         </BoxView>
         <Label Text="{Binding Method}" LineBreakMode="WordWrap" />
@@ -224,7 +224,7 @@
         <Label Margin="5,0,0,0" Text="{i18n:Translate SubjectPages}" FontSize="24" />
         <BoxView HeightRequest="2">
           <BoxView.Color>
-            <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:ColorDictionary.AndroidLightGray}"/>
+            <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}"/>
           </BoxView.Color>
         </BoxView>
         <ListView VerticalOptions="FillAndExpand" SeparatorVisibility="None" ItemsSource="{Binding URLs}" RowHeight="40">

@@ -70,7 +70,8 @@
                         <ContentView.BackgroundColor>
                           <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" iOS="{x:Static i18n:Colors.iPhoneWhite}"/>
                         </ContentView.BackgroundColor>
-                        <Label FontSize="14" Text="{Binding TimeFormatted}" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                        <Label FontSize="14" Text="{Binding TimeFormatted}" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
+                        
                       </ContentView>
 
                       <ContentView Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1" Padding="10">

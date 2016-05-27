@@ -69,3 +69,7 @@ C:\Source\PMF\PMF\PMF\obj\Debug\PMF.dll
 C:\Source\PMF\PMF\PMF\obj\Debug\PMF.pdb
 C:\Source\PMF\PMF\PMF\obj\Debug\PMF.dll.mdb
 C:\Source\PMF\PMF\PMF\bin\Debug\PMF.dll.mdb
+C:\Source\PMF\PMF\PMF\obj\Debug\PMF.dll.mdb
+C:\Source\PMF\PMF\PMF\bin\Debug\PMF.dll.mdb
+C:\Source\PMF\PMF\PMF\obj\Debug\PMF.dll.mdb
+C:\Source\PMF\PMF\PMF\bin\Debug\PMF.dll.mdb

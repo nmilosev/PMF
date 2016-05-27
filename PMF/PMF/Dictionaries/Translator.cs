@@ -23,7 +23,7 @@ namespace PMF.Dictionaries
         /// <summary>
         /// Set current culture here!
         /// </summary>
-        private const string CurrentCulture = CultureInfoNameEN;
+        private const string CurrentCulture = CultureInfoNameRS;
 
 
         private static ResourceManager _rm;

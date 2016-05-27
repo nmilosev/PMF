@@ -80,7 +80,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 21000 Novi Sad, Srbija.
+        ///   Looks up a localized string similar to 21000 Novi Sad, Serbia.
         /// </summary>
         internal static string AddressLine2 {
             get {
@@ -98,7 +98,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Autor: Nemanja Milošević.
+        ///   Looks up a localized string similar to Author: Nemanja Milošević.
         /// </summary>
         internal static string Author {
             get {
@@ -107,7 +107,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Nazad.
+        ///   Looks up a localized string similar to Back.
         /// </summary>
         internal static string Back {
             get {
@@ -116,7 +116,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Žiro račun: 840-1711666-19.
+        ///   Looks up a localized string similar to Bank account: 840-1711666-19.
         /// </summary>
         internal static string Bank {
             get {
@@ -125,7 +125,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to KONTAKT.
+        ///   Looks up a localized string similar to CONTACT.
         /// </summary>
         internal static string ButtonContact {
             get {
@@ -134,7 +134,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to POMOĆ.
+        ///   Looks up a localized string similar to HELP.
         /// </summary>
         internal static string ButtonHelp {
             get {
@@ -143,7 +143,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to VESTI.
+        ///   Looks up a localized string similar to NEWS.
         /// </summary>
         internal static string ButtonNews {
             get {
@@ -152,7 +152,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to STUDIJSKI PROGRAMI.
+        ///   Looks up a localized string similar to PROGRAMS.
         /// </summary>
         internal static string ButtonPrograms {
             get {
@@ -161,7 +161,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RASPOREDI.
+        ///   Looks up a localized string similar to SCHEDULES.
         /// </summary>
         internal static string ButtonSchedule {
             get {
@@ -170,7 +170,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to STUDENTSKA SLUŽBA.
+        ///   Looks up a localized string similar to STUDENT SERVICES.
         /// </summary>
         internal static string ButtonStudServices {
             get {
@@ -197,7 +197,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Studentska služba: .
+        ///   Looks up a localized string similar to Student services: .
         /// </summary>
         internal static string ContactPhoneLabel {
             get {
@@ -206,7 +206,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PMF - Kontakt.
+        ///   Looks up a localized string similar to PMF - Contact.
         /// </summary>
         internal static string ContactTitle {
             get {
@@ -215,7 +215,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Posetite nas!.
+        ///   Looks up a localized string similar to Visit us!.
         /// </summary>
         internal static string ContactVisitUs {
             get {
@@ -224,7 +224,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PMF - Studentski servisi.
+        ///   Looks up a localized string similar to PMF - Student Services.
         /// </summary>
         internal static string DefaultTitle {
             get {
@@ -233,7 +233,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Aplikacija za studentske servise.
+        ///   Looks up a localized string similar to Application for Student Services.
         /// </summary>
         internal static string Description {
             get {
@@ -242,7 +242,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Departman za matematiku i informatiku.
+        ///   Looks up a localized string similar to Department of Mathematics and Informatics.
         /// </summary>
         internal static string DMI {
             get {
@@ -260,7 +260,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Greška!.
+        ///   Looks up a localized string similar to Error!.
         /// </summary>
         internal static string Error {
             get {
@@ -269,7 +269,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Petak.
+        ///   Looks up a localized string similar to Friday.
         /// </summary>
         internal static string Friday {
             get {
@@ -278,9 +278,9 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Slike i vektori preuzeti sa sajtova flaticon i freepik.
-        ///Svi logotipovi korišćeni su vlasništvo njihovih kompanija.
-        ///Sva prava zadržana..
+        ///   Looks up a localized string similar to Pictures and vectors taken from flaticons and freepik.
+        ///All logos are properties of their respective owners.
+        ///All rights reserved..
         /// </summary>
         internal static string Images {
             get {
@@ -289,7 +289,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to INFORMACIJE.
+        ///   Looks up a localized string similar to INFORMATION.
         /// </summary>
         internal static string Info {
             get {
@@ -298,7 +298,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Praktične vežbe.
+        ///   Looks up a localized string similar to Lab.
         /// </summary>
         internal static string Lab {
             get {
@@ -307,7 +307,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Poslednji put osveženo: .
+        ///   Looks up a localized string similar to Last refreshed: .
         /// </summary>
         internal static string LastRefresh {
             get {
@@ -316,7 +316,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Predavanje.
+        ///   Looks up a localized string similar to Lecture.
         /// </summary>
         internal static string Lecture {
             get {
@@ -334,7 +334,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Master rad.
+        ///   Looks up a localized string similar to Master thesis.
         /// </summary>
         internal static string MasterThesis {
             get {
@@ -343,7 +343,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Master rad na temu: Razvoj cross-platform native mobilnih aplikacija u programskom jeziku C#.
+        ///   Looks up a localized string similar to Master thesis: Native cross-platform mobile application development in C# programming language.
         /// </summary>
         internal static string MasterThesisName {
             get {
@@ -352,7 +352,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Matični broj: 08104620.
+        ///   Looks up a localized string similar to Company number: 08104620.
         /// </summary>
         internal static string MatNumber {
             get {
@@ -361,7 +361,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ponedeljak.
+        ///   Looks up a localized string similar to Monday.
         /// </summary>
         internal static string Monday {
             get {
@@ -379,7 +379,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Greška prilikom preuzimanja vesti, pokušajte ponovo kasnije....
+        ///   Looks up a localized string similar to Error fetching news, try again later....
         /// </summary>
         internal static string NewsError {
             get {
@@ -388,7 +388,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Datum osvežavanja: .
+        ///   Looks up a localized string similar to Date refreshed: .
         /// </summary>
         internal static string NewsSuccess {
             get {
@@ -397,7 +397,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Uspešno učitavanje vesti!.
+        ///   Looks up a localized string similar to Successfully loaded news!.
         /// </summary>
         internal static string NewsSuccessTitle {
             get {
@@ -406,7 +406,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PMF - Vesti.
+        ///   Looks up a localized string similar to PMF - News.
         /// </summary>
         internal static string NewsTitle {
             get {
@@ -415,7 +415,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ništa za danas! :-).
+        ///   Looks up a localized string similar to Nothing for today! :-).
         /// </summary>
         internal static string NothingForToday {
             get {
@@ -424,7 +424,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to U redu.
+        ///   Looks up a localized string similar to OK.
         /// </summary>
         internal static string OK {
             get {
@@ -442,7 +442,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Molim sačekajte....
+        ///   Looks up a localized string similar to Please wait....
         /// </summary>
         internal static string PleaseWait {
             get {
@@ -451,7 +451,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Prirodno-matematički fakultet.
+        ///   Looks up a localized string similar to Faculty of Sciences.
         /// </summary>
         internal static string PMF {
             get {
@@ -460,7 +460,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Prirodno-matematički fakultet, Novi Sad.
+        ///   Looks up a localized string similar to Faculty of Sciences, Novi Sad.
         /// </summary>
         internal static string PMFName {
             get {
@@ -469,7 +469,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Vežbe.
+        ///   Looks up a localized string similar to Practice.
         /// </summary>
         internal static string Practice {
             get {
@@ -478,7 +478,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Subota.
+        ///   Looks up a localized string similar to Saturday.
         /// </summary>
         internal static string Saturday {
             get {
@@ -487,7 +487,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Greška prilikom preuzimanja rasporeda, pokušajte ponovo kasnije....
+        ///   Looks up a localized string similar to Error while fetching schedules, please try again later....
         /// </summary>
         internal static string ScheduleError {
             get {
@@ -496,7 +496,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Raspored za dan:.
+        ///   Looks up a localized string similar to Schedule for: .
         /// </summary>
         internal static string ScheduleFor {
             get {
@@ -505,7 +505,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Uspešno učitani rasporedi!.
+        ///   Looks up a localized string similar to Sucessfully loaded schedules!.
         /// </summary>
         internal static string ScheduleSuccess {
             get {
@@ -514,7 +514,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PMF - Rasporedi.
+        ///   Looks up a localized string similar to PMF - Schedules.
         /// </summary>
         internal static string ScheduleTitle {
             get {
@@ -523,7 +523,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Detalji sesije.
+        ///   Looks up a localized string similar to Session details.
         /// </summary>
         internal static string SessionDetails {
             get {
@@ -532,7 +532,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Podeli.
+        ///   Looks up a localized string similar to Share.
         /// </summary>
         internal static string Share {
             get {
@@ -550,7 +550,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Predmetni asistenti.
+        ///   Looks up a localized string similar to Teaching Assistaints.
         /// </summary>
         internal static string SubjectAssistaints {
             get {
@@ -559,7 +559,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Broj časova aktivne nastave.
+        ///   Looks up a localized string similar to Number of classes.
         /// </summary>
         internal static string SubjectClasses {
             get {
@@ -568,7 +568,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sadržaj predmeta.
+        ///   Looks up a localized string similar to Exam Contents.
         /// </summary>
         internal static string SubjectContents {
             get {
@@ -577,7 +577,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Detalji predmeta.
+        ///   Looks up a localized string similar to Exam Details.
         /// </summary>
         internal static string SubjectDetails {
             get {
@@ -586,7 +586,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cilj predmeta.
+        ///   Looks up a localized string similar to Exam Goal.
         /// </summary>
         internal static string SubjectGoal {
             get {
@@ -595,7 +595,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Preporučena literatura.
+        ///   Looks up a localized string similar to Suggested Literature.
         /// </summary>
         internal static string SubjectLiterature {
             get {
@@ -604,7 +604,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Greška prilikom učitavanja detalja predmeta. Pokušajte ponovo kasnije....
+        ///   Looks up a localized string similar to Error while loading class details, please try again later....
         /// </summary>
         internal static string SubjectLoadError {
             get {
@@ -613,7 +613,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Metode izvođenja nastave.
+        ///   Looks up a localized string similar to Class methods.
         /// </summary>
         internal static string SubjectMethod {
             get {
@@ -622,7 +622,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ishod predmeta.
+        ///   Looks up a localized string similar to Class outcome.
         /// </summary>
         internal static string SubjectOutcome {
             get {
@@ -631,7 +631,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Stranice predmeta.
+        ///   Looks up a localized string similar to Class links.
         /// </summary>
         internal static string SubjectPages {
             get {
@@ -640,7 +640,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Predmetni profesori.
+        ///   Looks up a localized string similar to Class professors.
         /// </summary>
         internal static string SubjectProfessors {
             get {
@@ -649,7 +649,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Nedelja.
+        ///   Looks up a localized string similar to Sunday.
         /// </summary>
         internal static string Sunday {
             get {
@@ -658,7 +658,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Četvrak.
+        ///   Looks up a localized string similar to Thursday.
         /// </summary>
         internal static string Thursday {
             get {
@@ -667,7 +667,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Studentski servisi.
+        ///   Looks up a localized string similar to Student services.
         /// </summary>
         internal static string Title {
             get {
@@ -676,7 +676,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Utorak.
+        ///   Looks up a localized string similar to Tuesday.
         /// </summary>
         internal static string Tuesday {
             get {
@@ -685,7 +685,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Univerzitet u Novom Sadu.
+        ///   Looks up a localized string similar to University of Novi Sad.
         /// </summary>
         internal static string UNS {
             get {
@@ -703,7 +703,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sreda.
+        ///   Looks up a localized string similar to Wednesday.
         /// </summary>
         internal static string Wednesday {
             get {
@@ -712,7 +712,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Dobro došli, studenti!.
+        ///   Looks up a localized string similar to Welcome, students!.
         /// </summary>
         internal static string Welcome {
             get {
@@ -721,7 +721,7 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Pristupite vašim studentskim servisima iz glavnog menija aplikacije!.
+        ///   Looks up a localized string similar to Access your student services from the app main menu!.
         /// </summary>
         internal static string WelcomeMessage {
             get {

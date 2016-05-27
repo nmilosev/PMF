@@ -111,6 +111,7 @@
     <EmbeddedResource Include="Dictionaries\AppDictionary.sr-Latn-RS.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>AppDictionary.sr-Latn-RS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Dictionaries\Colors.resx">
       <Generator>ResXFileCodeGenerator</Generator>

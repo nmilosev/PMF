@@ -124,37 +124,37 @@
     <value>Trg Dositeja Obradovića 3</value>
   </data>
   <data name="AddressLine2" xml:space="preserve">
-    <value>21000 Novi Sad, Srbija</value>
+    <value>21000 Novi Sad, Serbia</value>
   </data>
   <data name="AppName" xml:space="preserve">
     <value>PMF</value>
   </data>
   <data name="Author" xml:space="preserve">
-    <value>Autor: Nemanja Milošević</value>
+    <value>Author: Nemanja Milošević</value>
   </data>
   <data name="Back" xml:space="preserve">
-    <value>Nazad</value>
+    <value>Back</value>
   </data>
   <data name="Bank" xml:space="preserve">
-    <value>Žiro račun: 840-1711666-19</value>
+    <value>Bank account: 840-1711666-19</value>
   </data>
   <data name="ButtonContact" xml:space="preserve">
-    <value>KONTAKT</value>
+    <value>CONTACT</value>
   </data>
   <data name="ButtonHelp" xml:space="preserve">
-    <value>POMOĆ</value>
+    <value>HELP</value>
   </data>
   <data name="ButtonNews" xml:space="preserve">
-    <value>VESTI</value>
+    <value>NEWS</value>
   </data>
   <data name="ButtonPrograms" xml:space="preserve">
-    <value>STUDIJSKI PROGRAMI</value>
+    <value>PROGRAMS</value>
   </data>
   <data name="ButtonSchedule" xml:space="preserve">
-    <value>RASPOREDI</value>
+    <value>SCHEDULES</value>
   </data>
   <data name="ButtonStudServices" xml:space="preserve">
-    <value>STUDENTSKA SLUŽBA</value>
+    <value>STUDENT SERVICES</value>
   </data>
   <data name="ContactEmail" xml:space="preserve">
     <value>info@pmf.uns.ac.rs</value>
@@ -163,182 +163,182 @@
     <value>+381 21 454 389</value>
   </data>
   <data name="ContactPhoneLabel" xml:space="preserve">
-    <value>Studentska služba: </value>
+    <value>Student services: </value>
   </data>
   <data name="ContactTitle" xml:space="preserve">
-    <value>PMF - Kontakt</value>
+    <value>PMF - Contact</value>
   </data>
   <data name="ContactVisitUs" xml:space="preserve">
-    <value>Posetite nas!</value>
+    <value>Visit us!</value>
   </data>
   <data name="DefaultTitle" xml:space="preserve">
-    <value>PMF - Studentski servisi</value>
+    <value>PMF - Student Services</value>
   </data>
   <data name="Description" xml:space="preserve">
-    <value>Aplikacija za studentske servise</value>
+    <value>Application for Student Services</value>
   </data>
   <data name="DMI" xml:space="preserve">
-    <value>Departman za matematiku i informatiku</value>
+    <value>Department of Mathematics and Informatics</value>
   </data>
   <data name="DMILink" xml:space="preserve">
     <value>http://www.dmi.rs</value>
   </data>
   <data name="Error" xml:space="preserve">
-    <value>Greška!</value>
+    <value>Error!</value>
   </data>
   <data name="Friday" xml:space="preserve">
-    <value>Petak</value>
+    <value>Friday</value>
   </data>
   <data name="Images" xml:space="preserve">
-    <value>Slike i vektori preuzeti sa sajtova flaticon i freepik.
-Svi logotipovi korišćeni su vlasništvo njihovih kompanija.
-Sva prava zadržana.</value>
+    <value>Pictures and vectors taken from flaticons and freepik.
+All logos are properties of their respective owners.
+All rights reserved.</value>
   </data>
   <data name="Info" xml:space="preserve">
-    <value>INFORMACIJE</value>
+    <value>INFORMATION</value>
   </data>
   <data name="Lab" xml:space="preserve">
-    <value>Praktične vežbe</value>
+    <value>Lab</value>
   </data>
   <data name="LastRefresh" xml:space="preserve">
-    <value>Poslednji put osveženo: </value>
+    <value>Last refreshed: </value>
   </data>
   <data name="Lecture" xml:space="preserve">
-    <value>Predavanje</value>
+    <value>Lecture</value>
   </data>
   <data name="Link" xml:space="preserve">
     <value>Link</value>
   </data>
   <data name="MasterThesis" xml:space="preserve">
-    <value>Master rad</value>
+    <value>Master thesis</value>
   </data>
   <data name="MasterThesisName" xml:space="preserve">
-    <value>Master rad na temu: Razvoj cross-platform native mobilnih aplikacija u programskom jeziku C#</value>
+    <value>Master thesis: Native cross-platform mobile application development in C# programming language</value>
   </data>
   <data name="MatNumber" xml:space="preserve">
-    <value>Matični broj: 08104620</value>
+    <value>Company number: 08104620</value>
   </data>
   <data name="Monday" xml:space="preserve">
-    <value>Ponedeljak</value>
+    <value>Monday</value>
   </data>
   <data name="NewsArticleTitle" xml:space="preserve">
     <value>PMF - </value>
   </data>
   <data name="NewsError" xml:space="preserve">
-    <value>Greška prilikom preuzimanja vesti, pokušajte ponovo kasnije...</value>
+    <value>Error fetching news, try again later...</value>
   </data>
   <data name="NewsSuccess" xml:space="preserve">
-    <value>Datum osvežavanja: </value>
+    <value>Date refreshed: </value>
   </data>
   <data name="NewsSuccessTitle" xml:space="preserve">
-    <value>Uspešno učitavanje vesti!</value>
+    <value>Successfully loaded news!</value>
   </data>
   <data name="NewsTitle" xml:space="preserve">
-    <value>PMF - Vesti</value>
+    <value>PMF - News</value>
   </data>
   <data name="NothingForToday" xml:space="preserve">
-    <value>Ništa za danas! :-)</value>
+    <value>Nothing for today! :-)</value>
   </data>
   <data name="OK" xml:space="preserve">
-    <value>U redu</value>
+    <value>OK</value>
   </data>
   <data name="PIB" xml:space="preserve">
     <value>PIB: 101635863</value>
   </data>
   <data name="PleaseWait" xml:space="preserve">
-    <value>Molim sačekajte...</value>
+    <value>Please wait...</value>
   </data>
   <data name="PMF" xml:space="preserve">
-    <value>Prirodno-matematički fakultet</value>
+    <value>Faculty of Sciences</value>
   </data>
   <data name="PMFName" xml:space="preserve">
-    <value>Prirodno-matematički fakultet, Novi Sad</value>
+    <value>Faculty of Sciences, Novi Sad</value>
   </data>
   <data name="Practice" xml:space="preserve">
-    <value>Vežbe</value>
+    <value>Practice</value>
   </data>
   <data name="Saturday" xml:space="preserve">
-    <value>Subota</value>
+    <value>Saturday</value>
   </data>
   <data name="ScheduleError" xml:space="preserve">
-    <value>Greška prilikom preuzimanja rasporeda, pokušajte ponovo kasnije...</value>
+    <value>Error while fetching schedules, please try again later...</value>
   </data>
   <data name="ScheduleFor" xml:space="preserve">
-    <value>Raspored za dan:</value>
+    <value>Schedule for: </value>
   </data>
   <data name="ScheduleSuccess" xml:space="preserve">
-    <value>Uspešno učitani rasporedi!</value>
+    <value>Sucessfully loaded schedules!</value>
   </data>
   <data name="ScheduleTitle" xml:space="preserve">
-    <value>PMF - Rasporedi</value>
+    <value>PMF - Schedules</value>
   </data>
   <data name="SessionDetails" xml:space="preserve">
-    <value>Detalji sesije</value>
+    <value>Session details</value>
   </data>
   <data name="Share" xml:space="preserve">
-    <value>Podeli</value>
+    <value>Share</value>
   </data>
   <data name="SSluzbaLink" xml:space="preserve">
     <value>http://ssluzba.pmf.uns.ac.rs</value>
   </data>
   <data name="SubjectAssistaints" xml:space="preserve">
-    <value>Predmetni asistenti</value>
+    <value>Teaching Assistaints</value>
   </data>
   <data name="SubjectClasses" xml:space="preserve">
-    <value>Broj časova aktivne nastave</value>
+    <value>Number of classes</value>
   </data>
   <data name="SubjectContents" xml:space="preserve">
-    <value>Sadržaj predmeta</value>
+    <value>Exam Contents</value>
   </data>
   <data name="SubjectDetails" xml:space="preserve">
-    <value>Detalji predmeta</value>
+    <value>Exam Details</value>
   </data>
   <data name="SubjectGoal" xml:space="preserve">
-    <value>Cilj predmeta</value>
+    <value>Exam Goal</value>
   </data>
   <data name="SubjectLiterature" xml:space="preserve">
-    <value>Preporučena literatura</value>
+    <value>Suggested Literature</value>
   </data>
   <data name="SubjectLoadError" xml:space="preserve">
-    <value>Greška prilikom učitavanja detalja predmeta. Pokušajte ponovo kasnije...</value>
+    <value>Error while loading class details, please try again later...</value>
   </data>
   <data name="SubjectMethod" xml:space="preserve">
-    <value>Metode izvođenja nastave</value>
+    <value>Class methods</value>
   </data>
   <data name="SubjectOutcome" xml:space="preserve">
-    <value>Ishod predmeta</value>
+    <value>Class outcome</value>
   </data>
   <data name="SubjectPages" xml:space="preserve">
-    <value>Stranice predmeta</value>
+    <value>Class links</value>
   </data>
   <data name="SubjectProfessors" xml:space="preserve">
-    <value>Predmetni profesori</value>
+    <value>Class professors</value>
   </data>
   <data name="Sunday" xml:space="preserve">
-    <value>Nedelja</value>
+    <value>Sunday</value>
   </data>
   <data name="Thursday" xml:space="preserve">
-    <value>Četvrak</value>
+    <value>Thursday</value>
   </data>
   <data name="Title" xml:space="preserve">
-    <value>Studentski servisi</value>
+    <value>Student services</value>
   </data>
   <data name="Tuesday" xml:space="preserve">
-    <value>Utorak</value>
+    <value>Tuesday</value>
   </data>
   <data name="UNS" xml:space="preserve">
-    <value>Univerzitet u Novom Sadu</value>
+    <value>University of Novi Sad</value>
   </data>
   <data name="Version" xml:space="preserve">
     <value>v.0.0.0.A</value>
   </data>
   <data name="Wednesday" xml:space="preserve">
-    <value>Sreda</value>
+    <value>Wednesday</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Dobro došli, studenti!</value>
+    <value>Welcome, students!</value>
   </data>
   <data name="WelcomeMessage" xml:space="preserve">
-    <value>Pristupite vašim studentskim servisima iz glavnog menija aplikacije!</value>
+    <value>Access your student services from the app main menu!</value>
   </data>
 </root>
