@@ -70,6 +70,7 @@ namespace PMF.LocalService
                     },
                     //simulate network errors
                     IsDataValid = new Random().NextDouble() > 0.2 ? true : false                    
+                    //IsDataValid = false
                 };
                 return l;
             }

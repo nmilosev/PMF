@@ -16,13 +16,16 @@
 
       <StackLayout.Margin>
         <OnPlatform x:TypeArguments="Thickness"
-                    iOS="0,75,0,0" />
+                    iOS="0,75,0,0" WinPhone="0,100,0,0" />
       </StackLayout.Margin>
 
       <Label Margin="5,0,0,0" FontSize="24" Text="{i18n:Translate Title}">
         <Label.GestureRecognizers>
           <TapGestureRecognizer Command="{Binding WelcomeCommand}"/>
         </Label.GestureRecognizers>
+        <Label.Margin>
+          <OnPlatform x:TypeArguments="Thickness"  WinPhone="0,20,0,0" />
+        </Label.Margin>
       </Label>
       <Label Margin="5,0,0,0" FontSize="14" Text="{i18n:Translate PMFName}"/>
       <Label Margin="5,0,0,0" FontSize="14" Text="{i18n:Translate UNS}"/>

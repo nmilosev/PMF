@@ -11,7 +11,6 @@
     <ResolvedResourceDirectory>C:\Source\PMF\PMF\PMF.Droid\obj\Debug\__library_projects__\Plugin.Messaging\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Source\PMF\PMF\PMF.Droid\obj\Debug\__library_projects__\Plugin.Share\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Source\PMF\PMF\PMF.Droid\obj\Debug\__library_projects__\Splat\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Source\PMF\PMF\PMF.Droid\obj\Debug\__library_projects__\Toasts.Forms.Plugin.Droid\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Source\PMF\PMF\PMF.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Maps.Android\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Source\PMF\PMF\PMF.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Source\PMF\PMF\PMF.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\res</ResolvedResourceDirectory>
@@ -26,7 +25,6 @@
     <ResolvedAssetDirectory>C:\Source\PMF\PMF\PMF.Droid\obj\Debug\__library_projects__\Plugin.Messaging\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>C:\Source\PMF\PMF\PMF.Droid\obj\Debug\__library_projects__\Plugin.Share\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>C:\Source\PMF\PMF\PMF.Droid\obj\Debug\__library_projects__\Splat\library_project_imports\assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>C:\Source\PMF\PMF\PMF.Droid\obj\Debug\__library_projects__\Toasts.Forms.Plugin.Droid\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>C:\Source\PMF\PMF\PMF.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Maps.Android\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>C:\Source\PMF\PMF\PMF.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>C:\Source\PMF\PMF\PMF.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\assets</ResolvedAssetDirectory>
@@ -42,7 +40,6 @@
     <ResolvedResourceDirectoryStamp>C:\Source\PMF\PMF\PMF.Droid\obj\Debug\__library_projects__\Plugin.Messaging.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Source\PMF\PMF\PMF.Droid\obj\Debug\__library_projects__\Plugin.Share.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Source\PMF\PMF\PMF.Droid\obj\Debug\__library_projects__\Splat.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Source\PMF\PMF\PMF.Droid\obj\Debug\__library_projects__\Toasts.Forms.Plugin.Droid.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Source\PMF\PMF\PMF.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Maps.Android.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Source\PMF\PMF\PMF.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Source\PMF\PMF\PMF.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>

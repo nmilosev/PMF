@@ -1,4 +1,5 @@
-﻿using GalaSoft.MvvmLight;
+﻿using Acr.UserDialogs;
+using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
 using PMF.Core.Interfaces;
 using PMF.Core.Models;
@@ -93,7 +94,6 @@ namespace PMF.ViewModels
         public async void Refresh()
         {
             var schedules = await _schedules.Schedules();
-            var notificator = DependencyService.Get<Plugin.Toasts.IToastNotificator>();
 
             IsRefreshing = false;
             Activity = false;
@@ -104,8 +104,7 @@ namespace PMF.ViewModels
             }
             else
             {
-                await notificator.Notify(Plugin.Toasts.ToastNotificationType.Error,
-                "Error".Localize(), "ScheduleError".Localize(), TimeSpan.FromSeconds(1.5));
+                UserDialogs.Instance.ErrorToast("Error".Localize(), "ScheduleError".Localize(), 1500);
             }
 
 

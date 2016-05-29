@@ -1,3 +1,4 @@
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.Droid.dll.config
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.Droid.dll
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.Droid.pdb
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\rs.ac.uns.dmi.PMF.apk
@@ -19,8 +20,6 @@ C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Plugin.Share.dll
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.Core.dll
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.dll
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Splat.dll
-C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Toasts.Forms.Plugin.Abstractions.dll
-C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Toasts.Forms.Plugin.Droid.dll
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Xamarin.Android.Support.Animated.Vector.Drawable.dll
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Xamarin.Android.Support.CustomTabs.dll
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Xamarin.Android.Support.Design.dll
@@ -54,7 +53,6 @@ C:\Source\PMF\PMF\PMF.Droid\bin\Debug\FFImageLoading.Forms.xml
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\FFImageLoading.Forms.Droid.xml
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\FFImageLoading.Platform.xml
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\FormsViewGroup.pdb
-C:\Source\PMF\PMF\PMF.Droid\bin\Debug\FormsViewGroup.dll.mdb
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Plugin.CurrentActivity.xml
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Plugin.Messaging.pdb
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Plugin.Messaging.xml
@@ -69,19 +67,12 @@ C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Plugin.Share.Abstractions.pdb
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Plugin.Share.Abstractions.xml
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Plugin.Share.Abstractions.dll.mdb
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Splat.dll.mdb
-C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Toasts.Forms.Plugin.Abstractions.pdb
-C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Toasts.Forms.Plugin.Abstractions.dll.mdb
-C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Toasts.Forms.Plugin.Droid.pdb
-C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Toasts.Forms.Plugin.Droid.dll.mdb
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Xamarin.Forms.Core.pdb
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Xamarin.Forms.Core.xml
-C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Xamarin.Forms.Core.dll.mdb
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Xamarin.Forms.Maps.xml
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Xamarin.Forms.Platform.Android.pdb
-C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Xamarin.Forms.Xaml.pdb
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Xamarin.Forms.Xaml.xml
-C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Microsoft.Practices.ServiceLocation.xml
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\GalaSoft.MvvmLight.pdb
@@ -124,9 +115,14 @@ C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\dotnetlogo.png
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\freetime.png
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\reload.png
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\arrowdown.png
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\clock.png
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\R.cs.flag
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\uploadflags.txt
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.Core.dll.mdb
-C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\clock.png
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.dll.mdb
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\FormsViewGroup.dll.mdb
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Xamarin.Forms.Core.dll.mdb
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll.mdb
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\PMF.Droid.dll.mdb
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.Droid.dll.mdb

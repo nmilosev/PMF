@@ -22,8 +22,6 @@ C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.Core.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.Xml.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.Xml.Linq.dll
-C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Toasts.Forms.Plugin.Abstractions.dll
-C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Toasts.Forms.Plugin.Droid.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Xamarin.Android.Support.Animated.Vector.Drawable.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Xamarin.Android.Support.CustomTabs.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Xamarin.Android.Support.Design.dll

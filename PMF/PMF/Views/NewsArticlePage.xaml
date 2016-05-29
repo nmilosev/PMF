@@ -8,7 +8,7 @@
              Title="{Binding CurrentNewsItem.Title}">
 
   <ContentPage.Padding>
-    <OnPlatform x:TypeArguments="Thickness" iOS="20, 0, 20, 20" />
+    <OnPlatform x:TypeArguments="Thickness" iOS="20,0,20,20" WinPhone="20,0,20,20" />
   </ContentPage.Padding>
 
   <ScrollView Padding="10">

@@ -8,7 +8,6 @@ using Android.Widget;
 using Android.OS;
 using System.Linq;
 using Xamarin.Forms;
-using Plugin.Toasts;
 
 namespace PMF.Droid
 {
@@ -26,9 +25,6 @@ namespace PMF.Droid
             LoadApplication(new App());
 
             HideIcon();
-
-            DependencyService.Register<ToastNotificatorImplementation>();
-            ToastNotificatorImplementation.Init(this);
 
             Acr.UserDialogs.UserDialogs.Init(this);
         }

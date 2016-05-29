@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
@@ -43,7 +44,7 @@ namespace PMF.UWP
 #if DEBUG
             if (System.Diagnostics.Debugger.IsAttached)
             {
-                this.DebugSettings.EnableFrameRateCounter = true;
+                //this.DebugSettings.EnableFrameRateCounter = true;
             }
 #endif
 
@@ -58,12 +59,24 @@ namespace PMF.UWP
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
+                // you'll need to add `using System.Reflection;`
+                //List<Assembly> assembliesToInclude = new List<Assembly>();
+                //Now, add in all the assemblies your app uses
+                //assembliesToInclude.Add(typeof(Plugin.Toasts.ToastNotificatorImplementation).GetTypeInfo().Assembly);
+
                 Xamarin.Forms.Forms.Init(e);
+
+                //Xamarin.Forms.DependencyService.Register<Plugin.Toasts.ToastNotificatorImplementation>();
+                //Plugin.Toasts.ToastNotificatorImplementation.Init(1);
+
+                //Xamarin.Forms.DependencyService.Register<Plugin.Toasts.IToastNotificator, Plugin.Toasts.ToastNotificatorImplementation>();
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
                     //TODO: Load state from previously suspended application
                 }
+
+                Xamarin.FormsMaps.Init("Zp0r6KnOexmtHzZkZSny~MVGQtHpmmiwbOpgR6f6gjw~AqRKiQSt_obHK9FAfxGASaIeP7GFR8VD3zuScF3SpRuXCYf0BIzQ2vSjPcH18bbb");
 
                 // Place the frame in the current Window
                 Window.Current.Content = rootFrame;

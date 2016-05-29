@@ -66,8 +66,6 @@ namespace PMF.ViewModels
 
         private async void ShowSubjectDetails(int subjectId)
         {
-            var notificator = DependencyService.Get<Plugin.Toasts.IToastNotificator>();
-
             var subjectsData = SimpleIoc.Default.GetInstance<ISubjectsSource>();
 
             Subject s;
@@ -84,8 +82,7 @@ namespace PMF.ViewModels
             }
             else
             {
-                await notificator.Notify(Plugin.Toasts.ToastNotificationType.Error,
-                "Error".Localize(), "SubjectLoadError".Localize(), TimeSpan.FromSeconds(1.5));
+                UserDialogs.Instance.ErrorToast("Error".Localize(), "SubjectLoadError".Localize(), 1500);
             }
 
         }

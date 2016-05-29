@@ -15,6 +15,10 @@
                     iOS="0,50,0,0" />
       </StackLayout.Margin>
       <StackLayout WidthRequest="400" HeightRequest="400">
+        <StackLayout.Margin>
+          <OnPlatform x:TypeArguments="Thickness"
+                      WinPhone="0,50,0,10" />
+        </StackLayout.Margin>
         <StackLayout.GestureRecognizers>
           <TapGestureRecognizer Command="{Binding ShowMainMenuCommand}"/>
         </StackLayout.GestureRecognizers>

@@ -27,6 +27,26 @@
           "lib/netcore451/Coding4Fun.Toolkit.dll": {}
         }
       },
+      "CommonServiceLocator/1.3.0": {
+        "compile": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
+        }
+      },
+      "Microsoft.Bcl/1.1.10": {
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/_._": {}
+        },
+        "runtime": {
+          "lib/win8/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.14": {},
       "Microsoft.CSharp/4.0.0": {
         "dependencies": {
           "System.Collections": "4.0.10",
@@ -51,6 +71,20 @@
         },
         "runtime": {
           "lib/netcore50/Microsoft.CSharp.dll": {}
+        }
+      },
+      "Microsoft.Net.Http/2.2.29": {
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.10",
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
         }
       },
       "Microsoft.NETCore/5.0.0": {
@@ -284,6 +318,31 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "MvvmLightLibs/5.3.0": {
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0"
+        },
+        "compile": {
+          "lib/windows81/GalaSoft.MvvmLight.Extras.dll": {},
+          "lib/windows81/GalaSoft.MvvmLight.Platform.dll": {},
+          "lib/windows81/GalaSoft.MvvmLight.dll": {}
+        },
+        "runtime": {
+          "lib/windows81/GalaSoft.MvvmLight.Extras.dll": {},
+          "lib/windows81/GalaSoft.MvvmLight.Platform.dll": {},
+          "lib/windows81/GalaSoft.MvvmLight.dll": {}
+        }
+      },
+      "Plugin.Share/4.0.0": {
+        "compile": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
         }
       },
       "Splat/1.6.2": {
@@ -1810,16 +1869,6 @@
           }
         }
       },
-      "Toasts.Forms.Plugin/2.0.3": {
-        "compile": {
-          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.Abstractions.dll": {},
-          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.WinRT.dll": {}
-        },
-        "runtime": {
-          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.Abstractions.dll": {},
-          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.WinRT.dll": {}
-        }
-      },
       "Xam.Plugins.Messaging/3.2.1": {
         "compile": {
           "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
@@ -1830,7 +1879,34 @@
           "lib/UAP10/Plugin.Messaging.dll": {}
         }
       },
-      "Xamarin.Forms/2.2.0.31": {
+      "Xamarin.FFImageLoading/2.1.0": {
+        "dependencies": {
+          "Microsoft.Net.Http": "2.2.29"
+        },
+        "compile": {
+          "lib/portable-netcore45+wpa81/FFImageLoading.Platform.dll": {},
+          "lib/portable-netcore45+wpa81/FFImageLoading.dll": {}
+        },
+        "runtime": {
+          "lib/portable-netcore45+wpa81/FFImageLoading.Platform.dll": {},
+          "lib/portable-netcore45+wpa81/FFImageLoading.dll": {}
+        }
+      },
+      "Xamarin.FFImageLoading.Forms/2.1.0": {
+        "dependencies": {
+          "Xamarin.FFImageLoading": "2.1.0",
+          "Xamarin.Forms": "1.4.4.6392"
+        },
+        "compile": {
+          "lib/uap10.0/FFImageLoading.Forms.WinUWP.dll": {},
+          "lib/uap10.0/FFImageLoading.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/FFImageLoading.Forms.WinUWP.dll": {},
+          "lib/uap10.0/FFImageLoading.Forms.dll": {}
+        }
+      },
+      "Xamarin.Forms/2.2.0.43": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
@@ -1883,6 +1959,26 @@
           "lib/netcore451/Coding4Fun.Toolkit.dll": {}
         }
       },
+      "CommonServiceLocator/1.3.0": {
+        "compile": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
+        }
+      },
+      "Microsoft.Bcl/1.1.10": {
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/_._": {}
+        },
+        "runtime": {
+          "lib/win8/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.14": {},
       "Microsoft.CSharp/4.0.0": {
         "dependencies": {
           "System.Collections": "4.0.10",
@@ -1907,6 +2003,20 @@
         },
         "runtime": {
           "lib/netcore50/Microsoft.CSharp.dll": {}
+        }
+      },
+      "Microsoft.Net.Http/2.2.29": {
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.10",
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
         }
       },
       "Microsoft.NETCore/5.0.0": {
@@ -2090,6 +2200,31 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "MvvmLightLibs/5.3.0": {
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0"
+        },
+        "compile": {
+          "lib/windows81/GalaSoft.MvvmLight.Extras.dll": {},
+          "lib/windows81/GalaSoft.MvvmLight.Platform.dll": {},
+          "lib/windows81/GalaSoft.MvvmLight.dll": {}
+        },
+        "runtime": {
+          "lib/windows81/GalaSoft.MvvmLight.Extras.dll": {},
+          "lib/windows81/GalaSoft.MvvmLight.Platform.dll": {},
+          "lib/windows81/GalaSoft.MvvmLight.dll": {}
+        }
+      },
+      "Plugin.Share/4.0.0": {
+        "compile": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
         }
       },
       "runtime.any.System.Private.DataContractSerialization/4.1.0": {
@@ -3527,16 +3662,6 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Toasts.Forms.Plugin/2.0.3": {
-        "compile": {
-          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.Abstractions.dll": {},
-          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.WinRT.dll": {}
-        },
-        "runtime": {
-          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.Abstractions.dll": {},
-          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.WinRT.dll": {}
-        }
-      },
       "Xam.Plugins.Messaging/3.2.1": {
         "compile": {
           "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
@@ -3547,7 +3672,34 @@
           "lib/UAP10/Plugin.Messaging.dll": {}
         }
       },
-      "Xamarin.Forms/2.2.0.31": {
+      "Xamarin.FFImageLoading/2.1.0": {
+        "dependencies": {
+          "Microsoft.Net.Http": "2.2.29"
+        },
+        "compile": {
+          "lib/portable-netcore45+wpa81/FFImageLoading.Platform.dll": {},
+          "lib/portable-netcore45+wpa81/FFImageLoading.dll": {}
+        },
+        "runtime": {
+          "lib/portable-netcore45+wpa81/FFImageLoading.Platform.dll": {},
+          "lib/portable-netcore45+wpa81/FFImageLoading.dll": {}
+        }
+      },
+      "Xamarin.FFImageLoading.Forms/2.1.0": {
+        "dependencies": {
+          "Xamarin.FFImageLoading": "2.1.0",
+          "Xamarin.Forms": "1.4.4.6392"
+        },
+        "compile": {
+          "lib/uap10.0/FFImageLoading.Forms.WinUWP.dll": {},
+          "lib/uap10.0/FFImageLoading.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/FFImageLoading.Forms.WinUWP.dll": {},
+          "lib/uap10.0/FFImageLoading.Forms.dll": {}
+        }
+      },
+      "Xamarin.Forms/2.2.0.43": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
@@ -3600,6 +3752,26 @@
           "lib/netcore451/Coding4Fun.Toolkit.dll": {}
         }
       },
+      "CommonServiceLocator/1.3.0": {
+        "compile": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
+        }
+      },
+      "Microsoft.Bcl/1.1.10": {
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/_._": {}
+        },
+        "runtime": {
+          "lib/win8/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.14": {},
       "Microsoft.CSharp/4.0.0": {
         "dependencies": {
           "System.Collections": "4.0.10",
@@ -3624,6 +3796,20 @@
         },
         "runtime": {
           "lib/netcore50/Microsoft.CSharp.dll": {}
+        }
+      },
+      "Microsoft.Net.Http/2.2.29": {
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.10",
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
         }
       },
       "Microsoft.NETCore/5.0.0": {
@@ -3804,6 +3990,31 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "MvvmLightLibs/5.3.0": {
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0"
+        },
+        "compile": {
+          "lib/windows81/GalaSoft.MvvmLight.Extras.dll": {},
+          "lib/windows81/GalaSoft.MvvmLight.Platform.dll": {},
+          "lib/windows81/GalaSoft.MvvmLight.dll": {}
+        },
+        "runtime": {
+          "lib/windows81/GalaSoft.MvvmLight.Extras.dll": {},
+          "lib/windows81/GalaSoft.MvvmLight.Platform.dll": {},
+          "lib/windows81/GalaSoft.MvvmLight.dll": {}
+        }
+      },
+      "Plugin.Share/4.0.0": {
+        "compile": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
         }
       },
       "runtime.aot.System.Private.DataContractSerialization/4.1.0": {
@@ -5202,16 +5413,6 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Toasts.Forms.Plugin/2.0.3": {
-        "compile": {
-          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.Abstractions.dll": {},
-          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.WinRT.dll": {}
-        },
-        "runtime": {
-          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.Abstractions.dll": {},
-          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.WinRT.dll": {}
-        }
-      },
       "Xam.Plugins.Messaging/3.2.1": {
         "compile": {
           "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
@@ -5222,7 +5423,34 @@
           "lib/UAP10/Plugin.Messaging.dll": {}
         }
       },
-      "Xamarin.Forms/2.2.0.31": {
+      "Xamarin.FFImageLoading/2.1.0": {
+        "dependencies": {
+          "Microsoft.Net.Http": "2.2.29"
+        },
+        "compile": {
+          "lib/portable-netcore45+wpa81/FFImageLoading.Platform.dll": {},
+          "lib/portable-netcore45+wpa81/FFImageLoading.dll": {}
+        },
+        "runtime": {
+          "lib/portable-netcore45+wpa81/FFImageLoading.Platform.dll": {},
+          "lib/portable-netcore45+wpa81/FFImageLoading.dll": {}
+        }
+      },
+      "Xamarin.FFImageLoading.Forms/2.1.0": {
+        "dependencies": {
+          "Xamarin.FFImageLoading": "2.1.0",
+          "Xamarin.Forms": "1.4.4.6392"
+        },
+        "compile": {
+          "lib/uap10.0/FFImageLoading.Forms.WinUWP.dll": {},
+          "lib/uap10.0/FFImageLoading.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/FFImageLoading.Forms.WinUWP.dll": {},
+          "lib/uap10.0/FFImageLoading.Forms.dll": {}
+        }
+      },
+      "Xamarin.Forms/2.2.0.43": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
@@ -5275,6 +5503,26 @@
           "lib/netcore451/Coding4Fun.Toolkit.dll": {}
         }
       },
+      "CommonServiceLocator/1.3.0": {
+        "compile": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
+        }
+      },
+      "Microsoft.Bcl/1.1.10": {
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/_._": {}
+        },
+        "runtime": {
+          "lib/win8/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.14": {},
       "Microsoft.CSharp/4.0.0": {
         "dependencies": {
           "System.Collections": "4.0.10",
@@ -5299,6 +5547,20 @@
         },
         "runtime": {
           "lib/netcore50/Microsoft.CSharp.dll": {}
+        }
+      },
+      "Microsoft.Net.Http/2.2.29": {
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.10",
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
         }
       },
       "Microsoft.NETCore/5.0.0": {
@@ -5487,6 +5749,31 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "MvvmLightLibs/5.3.0": {
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0"
+        },
+        "compile": {
+          "lib/windows81/GalaSoft.MvvmLight.Extras.dll": {},
+          "lib/windows81/GalaSoft.MvvmLight.Platform.dll": {},
+          "lib/windows81/GalaSoft.MvvmLight.dll": {}
+        },
+        "runtime": {
+          "lib/windows81/GalaSoft.MvvmLight.Extras.dll": {},
+          "lib/windows81/GalaSoft.MvvmLight.Platform.dll": {},
+          "lib/windows81/GalaSoft.MvvmLight.dll": {}
+        }
+      },
+      "Plugin.Share/4.0.0": {
+        "compile": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
         }
       },
       "runtime.any.System.Private.DataContractSerialization/4.1.0": {
@@ -6927,16 +7214,6 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Toasts.Forms.Plugin/2.0.3": {
-        "compile": {
-          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.Abstractions.dll": {},
-          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.WinRT.dll": {}
-        },
-        "runtime": {
-          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.Abstractions.dll": {},
-          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.WinRT.dll": {}
-        }
-      },
       "Xam.Plugins.Messaging/3.2.1": {
         "compile": {
           "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
@@ -6947,7 +7224,34 @@
           "lib/UAP10/Plugin.Messaging.dll": {}
         }
       },
-      "Xamarin.Forms/2.2.0.31": {
+      "Xamarin.FFImageLoading/2.1.0": {
+        "dependencies": {
+          "Microsoft.Net.Http": "2.2.29"
+        },
+        "compile": {
+          "lib/portable-netcore45+wpa81/FFImageLoading.Platform.dll": {},
+          "lib/portable-netcore45+wpa81/FFImageLoading.dll": {}
+        },
+        "runtime": {
+          "lib/portable-netcore45+wpa81/FFImageLoading.Platform.dll": {},
+          "lib/portable-netcore45+wpa81/FFImageLoading.dll": {}
+        }
+      },
+      "Xamarin.FFImageLoading.Forms/2.1.0": {
+        "dependencies": {
+          "Xamarin.FFImageLoading": "2.1.0",
+          "Xamarin.Forms": "1.4.4.6392"
+        },
+        "compile": {
+          "lib/uap10.0/FFImageLoading.Forms.WinUWP.dll": {},
+          "lib/uap10.0/FFImageLoading.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/FFImageLoading.Forms.WinUWP.dll": {},
+          "lib/uap10.0/FFImageLoading.Forms.dll": {}
+        }
+      },
+      "Xamarin.Forms/2.2.0.43": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
@@ -7000,6 +7304,26 @@
           "lib/netcore451/Coding4Fun.Toolkit.dll": {}
         }
       },
+      "CommonServiceLocator/1.3.0": {
+        "compile": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
+        }
+      },
+      "Microsoft.Bcl/1.1.10": {
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/_._": {}
+        },
+        "runtime": {
+          "lib/win8/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.14": {},
       "Microsoft.CSharp/4.0.0": {
         "dependencies": {
           "System.Collections": "4.0.10",
@@ -7024,6 +7348,20 @@
         },
         "runtime": {
           "lib/netcore50/Microsoft.CSharp.dll": {}
+        }
+      },
+      "Microsoft.Net.Http/2.2.29": {
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.10",
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
         }
       },
       "Microsoft.NETCore/5.0.0": {
@@ -7204,6 +7542,31 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "MvvmLightLibs/5.3.0": {
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0"
+        },
+        "compile": {
+          "lib/windows81/GalaSoft.MvvmLight.Extras.dll": {},
+          "lib/windows81/GalaSoft.MvvmLight.Platform.dll": {},
+          "lib/windows81/GalaSoft.MvvmLight.dll": {}
+        },
+        "runtime": {
+          "lib/windows81/GalaSoft.MvvmLight.Extras.dll": {},
+          "lib/windows81/GalaSoft.MvvmLight.Platform.dll": {},
+          "lib/windows81/GalaSoft.MvvmLight.dll": {}
+        }
+      },
+      "Plugin.Share/4.0.0": {
+        "compile": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
         }
       },
       "runtime.aot.System.Private.DataContractSerialization/4.1.0": {
@@ -8602,16 +8965,6 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Toasts.Forms.Plugin/2.0.3": {
-        "compile": {
-          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.Abstractions.dll": {},
-          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.WinRT.dll": {}
-        },
-        "runtime": {
-          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.Abstractions.dll": {},
-          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.WinRT.dll": {}
-        }
-      },
       "Xam.Plugins.Messaging/3.2.1": {
         "compile": {
           "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
@@ -8622,7 +8975,34 @@
           "lib/UAP10/Plugin.Messaging.dll": {}
         }
       },
-      "Xamarin.Forms/2.2.0.31": {
+      "Xamarin.FFImageLoading/2.1.0": {
+        "dependencies": {
+          "Microsoft.Net.Http": "2.2.29"
+        },
+        "compile": {
+          "lib/portable-netcore45+wpa81/FFImageLoading.Platform.dll": {},
+          "lib/portable-netcore45+wpa81/FFImageLoading.dll": {}
+        },
+        "runtime": {
+          "lib/portable-netcore45+wpa81/FFImageLoading.Platform.dll": {},
+          "lib/portable-netcore45+wpa81/FFImageLoading.dll": {}
+        }
+      },
+      "Xamarin.FFImageLoading.Forms/2.1.0": {
+        "dependencies": {
+          "Xamarin.FFImageLoading": "2.1.0",
+          "Xamarin.Forms": "1.4.4.6392"
+        },
+        "compile": {
+          "lib/uap10.0/FFImageLoading.Forms.WinUWP.dll": {},
+          "lib/uap10.0/FFImageLoading.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/FFImageLoading.Forms.WinUWP.dll": {},
+          "lib/uap10.0/FFImageLoading.Forms.dll": {}
+        }
+      },
+      "Xamarin.Forms/2.2.0.43": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
@@ -8675,6 +9055,26 @@
           "lib/netcore451/Coding4Fun.Toolkit.dll": {}
         }
       },
+      "CommonServiceLocator/1.3.0": {
+        "compile": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
+        }
+      },
+      "Microsoft.Bcl/1.1.10": {
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/_._": {}
+        },
+        "runtime": {
+          "lib/win8/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.14": {},
       "Microsoft.CSharp/4.0.0": {
         "dependencies": {
           "System.Collections": "4.0.10",
@@ -8699,6 +9099,20 @@
         },
         "runtime": {
           "lib/netcore50/Microsoft.CSharp.dll": {}
+        }
+      },
+      "Microsoft.Net.Http/2.2.29": {
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.10",
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
         }
       },
       "Microsoft.NETCore/5.0.0": {
@@ -8887,6 +9301,31 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "MvvmLightLibs/5.3.0": {
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0"
+        },
+        "compile": {
+          "lib/windows81/GalaSoft.MvvmLight.Extras.dll": {},
+          "lib/windows81/GalaSoft.MvvmLight.Platform.dll": {},
+          "lib/windows81/GalaSoft.MvvmLight.dll": {}
+        },
+        "runtime": {
+          "lib/windows81/GalaSoft.MvvmLight.Extras.dll": {},
+          "lib/windows81/GalaSoft.MvvmLight.Platform.dll": {},
+          "lib/windows81/GalaSoft.MvvmLight.dll": {}
+        }
+      },
+      "Plugin.Share/4.0.0": {
+        "compile": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
         }
       },
       "runtime.any.System.Private.DataContractSerialization/4.1.0": {
@@ -10327,16 +10766,6 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Toasts.Forms.Plugin/2.0.3": {
-        "compile": {
-          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.Abstractions.dll": {},
-          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.WinRT.dll": {}
-        },
-        "runtime": {
-          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.Abstractions.dll": {},
-          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.WinRT.dll": {}
-        }
-      },
       "Xam.Plugins.Messaging/3.2.1": {
         "compile": {
           "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
@@ -10347,7 +10776,34 @@
           "lib/UAP10/Plugin.Messaging.dll": {}
         }
       },
-      "Xamarin.Forms/2.2.0.31": {
+      "Xamarin.FFImageLoading/2.1.0": {
+        "dependencies": {
+          "Microsoft.Net.Http": "2.2.29"
+        },
+        "compile": {
+          "lib/portable-netcore45+wpa81/FFImageLoading.Platform.dll": {},
+          "lib/portable-netcore45+wpa81/FFImageLoading.dll": {}
+        },
+        "runtime": {
+          "lib/portable-netcore45+wpa81/FFImageLoading.Platform.dll": {},
+          "lib/portable-netcore45+wpa81/FFImageLoading.dll": {}
+        }
+      },
+      "Xamarin.FFImageLoading.Forms/2.1.0": {
+        "dependencies": {
+          "Xamarin.FFImageLoading": "2.1.0",
+          "Xamarin.Forms": "1.4.4.6392"
+        },
+        "compile": {
+          "lib/uap10.0/FFImageLoading.Forms.WinUWP.dll": {},
+          "lib/uap10.0/FFImageLoading.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/FFImageLoading.Forms.WinUWP.dll": {},
+          "lib/uap10.0/FFImageLoading.Forms.dll": {}
+        }
+      },
+      "Xamarin.Forms/2.2.0.43": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
@@ -10400,6 +10856,26 @@
           "lib/netcore451/Coding4Fun.Toolkit.dll": {}
         }
       },
+      "CommonServiceLocator/1.3.0": {
+        "compile": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
+        }
+      },
+      "Microsoft.Bcl/1.1.10": {
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/_._": {}
+        },
+        "runtime": {
+          "lib/win8/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.14": {},
       "Microsoft.CSharp/4.0.0": {
         "dependencies": {
           "System.Collections": "4.0.10",
@@ -10424,6 +10900,20 @@
         },
         "runtime": {
           "lib/netcore50/Microsoft.CSharp.dll": {}
+        }
+      },
+      "Microsoft.Net.Http/2.2.29": {
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.10",
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
         }
       },
       "Microsoft.NETCore/5.0.0": {
@@ -10604,6 +11094,31 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "MvvmLightLibs/5.3.0": {
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0"
+        },
+        "compile": {
+          "lib/windows81/GalaSoft.MvvmLight.Extras.dll": {},
+          "lib/windows81/GalaSoft.MvvmLight.Platform.dll": {},
+          "lib/windows81/GalaSoft.MvvmLight.dll": {}
+        },
+        "runtime": {
+          "lib/windows81/GalaSoft.MvvmLight.Extras.dll": {},
+          "lib/windows81/GalaSoft.MvvmLight.Platform.dll": {},
+          "lib/windows81/GalaSoft.MvvmLight.dll": {}
+        }
+      },
+      "Plugin.Share/4.0.0": {
+        "compile": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Share.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Share.dll": {}
         }
       },
       "runtime.aot.System.Private.DataContractSerialization/4.1.0": {
@@ -12002,16 +12517,6 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Toasts.Forms.Plugin/2.0.3": {
-        "compile": {
-          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.Abstractions.dll": {},
-          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.WinRT.dll": {}
-        },
-        "runtime": {
-          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.Abstractions.dll": {},
-          "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.WinRT.dll": {}
-        }
-      },
       "Xam.Plugins.Messaging/3.2.1": {
         "compile": {
           "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
@@ -12022,7 +12527,34 @@
           "lib/UAP10/Plugin.Messaging.dll": {}
         }
       },
-      "Xamarin.Forms/2.2.0.31": {
+      "Xamarin.FFImageLoading/2.1.0": {
+        "dependencies": {
+          "Microsoft.Net.Http": "2.2.29"
+        },
+        "compile": {
+          "lib/portable-netcore45+wpa81/FFImageLoading.Platform.dll": {},
+          "lib/portable-netcore45+wpa81/FFImageLoading.dll": {}
+        },
+        "runtime": {
+          "lib/portable-netcore45+wpa81/FFImageLoading.Platform.dll": {},
+          "lib/portable-netcore45+wpa81/FFImageLoading.dll": {}
+        }
+      },
+      "Xamarin.FFImageLoading.Forms/2.1.0": {
+        "dependencies": {
+          "Xamarin.FFImageLoading": "2.1.0",
+          "Xamarin.Forms": "1.4.4.6392"
+        },
+        "compile": {
+          "lib/uap10.0/FFImageLoading.Forms.WinUWP.dll": {},
+          "lib/uap10.0/FFImageLoading.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/FFImageLoading.Forms.WinUWP.dll": {},
+          "lib/uap10.0/FFImageLoading.Forms.dll": {}
+        }
+      },
+      "Xamarin.Forms/2.2.0.43": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
@@ -12143,6 +12675,124 @@
         "lib/wpa81/Coding4Fun.Toolkit.pri"
       ]
     },
+    "CommonServiceLocator/1.3.0": {
+      "sha512": "fbjO0SNwbOFPdwVfyqv+B7gIJ2CVBOFPKqn1mDDECK7KER8jFaOdcvroFYoAHa0ktPbxi5s+15qOLnA96f8GSA==",
+      "type": "package",
+      "files": [
+        "CommonServiceLocator.1.3.0.nupkg.sha512",
+        "CommonServiceLocator.nuspec",
+        "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.XML",
+        "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll",
+        "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.pdb"
+      ]
+    },
+    "Microsoft.Bcl/1.1.10": {
+      "sha512": "+tTqoh/M1pyL8El3qLy30EcwnAtyvFoDZJtdG9Cbg/WdFbh4N8kyrq198XHuEL7lnJbeD0DRO8jcX5IIOh05cQ==",
+      "type": "package",
+      "files": [
+        "License-Stable.rtf",
+        "Microsoft.Bcl.1.1.10.nupkg.sha512",
+        "Microsoft.Bcl.nuspec",
+        "lib/Xamarin.iOS10/_._",
+        "lib/monoandroid/_._",
+        "lib/monotouch/_._",
+        "lib/net40/System.IO.dll",
+        "lib/net40/System.IO.xml",
+        "lib/net40/System.Runtime.dll",
+        "lib/net40/System.Runtime.xml",
+        "lib/net40/System.Threading.Tasks.dll",
+        "lib/net40/System.Threading.Tasks.xml",
+        "lib/net40/ensureRedirect.xml",
+        "lib/net45/_._",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.IO.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.IO.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Runtime.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Runtime.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Threading.Tasks.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Threading.Tasks.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/ensureRedirect.xml",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.IO.dll",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.IO.xml",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Runtime.dll",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Runtime.xml",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Threading.Tasks.dll",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Threading.Tasks.xml",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/ensureRedirect.xml",
+        "lib/portable-net40+sl4+win8/System.IO.dll",
+        "lib/portable-net40+sl4+win8/System.IO.xml",
+        "lib/portable-net40+sl4+win8/System.Runtime.dll",
+        "lib/portable-net40+sl4+win8/System.Runtime.xml",
+        "lib/portable-net40+sl4+win8/System.Threading.Tasks.dll",
+        "lib/portable-net40+sl4+win8/System.Threading.Tasks.xml",
+        "lib/portable-net40+sl4+win8/ensureRedirect.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.IO.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.IO.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Runtime.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Runtime.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Threading.Tasks.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Threading.Tasks.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/ensureRedirect.xml",
+        "lib/portable-net40+win8+wp8+wpa81/System.IO.dll",
+        "lib/portable-net40+win8+wp8+wpa81/System.IO.xml",
+        "lib/portable-net40+win8+wp8+wpa81/System.Runtime.dll",
+        "lib/portable-net40+win8+wp8+wpa81/System.Runtime.xml",
+        "lib/portable-net40+win8+wp8+wpa81/System.Threading.Tasks.dll",
+        "lib/portable-net40+win8+wp8+wpa81/System.Threading.Tasks.xml",
+        "lib/portable-net40+win8+wp8+wpa81/ensureRedirect.xml",
+        "lib/portable-net40+win8/System.IO.dll",
+        "lib/portable-net40+win8/System.IO.xml",
+        "lib/portable-net40+win8/System.Runtime.dll",
+        "lib/portable-net40+win8/System.Runtime.xml",
+        "lib/portable-net40+win8/System.Threading.Tasks.dll",
+        "lib/portable-net40+win8/System.Threading.Tasks.xml",
+        "lib/portable-net40+win8/ensureRedirect.xml",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/portable-net45+win8+wpa81/_._",
+        "lib/portable-net451+win81+wpa81/_._",
+        "lib/portable-net451+win81/_._",
+        "lib/portable-win81+wp81+wpa81/_._",
+        "lib/sl4-windowsphone71/System.IO.dll",
+        "lib/sl4-windowsphone71/System.IO.xml",
+        "lib/sl4-windowsphone71/System.Runtime.dll",
+        "lib/sl4-windowsphone71/System.Runtime.xml",
+        "lib/sl4-windowsphone71/System.Threading.Tasks.dll",
+        "lib/sl4-windowsphone71/System.Threading.Tasks.xml",
+        "lib/sl4-windowsphone71/ensureRedirect.xml",
+        "lib/sl4/System.IO.dll",
+        "lib/sl4/System.IO.xml",
+        "lib/sl4/System.Runtime.dll",
+        "lib/sl4/System.Runtime.xml",
+        "lib/sl4/System.Threading.Tasks.dll",
+        "lib/sl4/System.Threading.Tasks.xml",
+        "lib/sl5/System.IO.dll",
+        "lib/sl5/System.IO.xml",
+        "lib/sl5/System.Runtime.dll",
+        "lib/sl5/System.Runtime.xml",
+        "lib/sl5/System.Threading.Tasks.dll",
+        "lib/sl5/System.Threading.Tasks.xml",
+        "lib/win8/_._",
+        "lib/wp8/_._",
+        "lib/wpa81/_._"
+      ]
+    },
+    "Microsoft.Bcl.Build/1.0.14": {
+      "sha512": "cDLKSvNvRa519hplsbSoYqO69TjdDIhfjtKUM0g20/nVROoWsGav9KCI9HtnGjLmdV1+TcUUDhbotcllibjPEA==",
+      "type": "package",
+      "files": [
+        "License-Stable.rtf",
+        "Microsoft.Bcl.Build.1.0.14.nupkg.sha512",
+        "Microsoft.Bcl.Build.nuspec",
+        "content/net40/_._",
+        "content/netcore45/_._",
+        "content/portable-net40+win8+sl4+wp71+wpa81/_._",
+        "content/sl4-windowsphone71/_._",
+        "content/sl4/_._",
+        "tools/Install.ps1",
+        "tools/Microsoft.Bcl.Build.Tasks.dll",
+        "tools/Microsoft.Bcl.Build.targets",
+        "tools/Uninstall.ps1"
+      ]
+    },
     "Microsoft.CSharp/4.0.0": {
       "sha512": "oWqeKUxHXdK6dL2CFjgMcaBISbkk+AqEg+yvJHE4DElNzS4QaTsCflgkkqZwVlWby1Dg9zo9n+iCAMFefFdJ/A==",
       "type": "package",
@@ -12180,6 +12830,72 @@
         "ref/wpa81/_._",
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._"
+      ]
+    },
+    "Microsoft.Net.Http/2.2.29": {
+      "sha512": "fc4CPEewJ30Xgal+fSq1lYIBt582A7eKlAL7O4HXiYAiTp2VTnA4osSvk7T2n8aS4xTCPVJusQk3yKLT0XSpkg==",
+      "type": "package",
+      "files": [
+        "License-Stable.rtf",
+        "Microsoft.Net.Http.2.2.29.nupkg.sha512",
+        "Microsoft.Net.Http.nuspec",
+        "lib/Xamarin.iOS10/System.Net.Http.Extensions.XML",
+        "lib/Xamarin.iOS10/System.Net.Http.Extensions.dll",
+        "lib/Xamarin.iOS10/System.Net.Http.Primitives.dll",
+        "lib/Xamarin.iOS10/System.Net.Http.Primitives.xml",
+        "lib/monoandroid/System.Net.Http.Extensions.XML",
+        "lib/monoandroid/System.Net.Http.Extensions.dll",
+        "lib/monoandroid/System.Net.Http.Primitives.dll",
+        "lib/monoandroid/System.Net.Http.Primitives.xml",
+        "lib/monotouch/System.Net.Http.Extensions.XML",
+        "lib/monotouch/System.Net.Http.Extensions.dll",
+        "lib/monotouch/System.Net.Http.Primitives.dll",
+        "lib/monotouch/System.Net.Http.Primitives.xml",
+        "lib/net40/System.Net.Http.Extensions.XML",
+        "lib/net40/System.Net.Http.Extensions.dll",
+        "lib/net40/System.Net.Http.Primitives.dll",
+        "lib/net40/System.Net.Http.Primitives.xml",
+        "lib/net40/System.Net.Http.WebRequest.dll",
+        "lib/net40/System.Net.Http.WebRequest.xml",
+        "lib/net40/System.Net.Http.dll",
+        "lib/net40/System.Net.Http.xml",
+        "lib/net40/ensureRedirect.xml",
+        "lib/net45/System.Net.Http.Extensions.XML",
+        "lib/net45/System.Net.Http.Extensions.dll",
+        "lib/net45/System.Net.Http.Primitives.dll",
+        "lib/net45/System.Net.Http.Primitives.xml",
+        "lib/net45/ensureRedirect.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Extensions.XML",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Extensions.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Primitives.XML",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Primitives.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/ensureRedirect.xml",
+        "lib/portable-net45+win8+wpa81/System.Net.Http.Extensions.XML",
+        "lib/portable-net45+win8+wpa81/System.Net.Http.Extensions.dll",
+        "lib/portable-net45+win8+wpa81/System.Net.Http.Primitives.dll",
+        "lib/portable-net45+win8+wpa81/System.Net.Http.Primitives.xml",
+        "lib/portable-net45+win8+wpa81/ensureRedirect.xml",
+        "lib/portable-net45+win8/System.Net.Http.Extensions.XML",
+        "lib/portable-net45+win8/System.Net.Http.Extensions.dll",
+        "lib/portable-net45+win8/System.Net.Http.Primitives.dll",
+        "lib/portable-net45+win8/System.Net.Http.Primitives.xml",
+        "lib/portable-net45+win8/ensureRedirect.xml",
+        "lib/sl4-windowsphone71/System.Net.Http.Extensions.XML",
+        "lib/sl4-windowsphone71/System.Net.Http.Extensions.dll",
+        "lib/sl4-windowsphone71/System.Net.Http.Primitives.XML",
+        "lib/sl4-windowsphone71/System.Net.Http.Primitives.dll",
+        "lib/sl4-windowsphone71/System.Net.Http.dll",
+        "lib/sl4-windowsphone71/System.Net.Http.xml",
+        "lib/win8/System.Net.Http.Extensions.XML",
+        "lib/win8/System.Net.Http.Extensions.dll",
+        "lib/win8/System.Net.Http.Primitives.dll",
+        "lib/win8/System.Net.Http.Primitives.xml",
+        "lib/wpa81/System.Net.Http.Extensions.XML",
+        "lib/wpa81/System.Net.Http.Extensions.dll",
+        "lib/wpa81/System.Net.Http.Primitives.dll",
+        "lib/wpa81/System.Net.Http.Primitives.xml"
       ]
     },
     "Microsoft.NETCore/5.0.0": {
@@ -12725,6 +13441,158 @@
         "ref/net46/Microsoft.Win32.Primitives.dll",
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._"
+      ]
+    },
+    "MvvmLightLibs/5.3.0": {
+      "sha512": "h0/CPmYeYabbUfPdXGCJWdeiWGtTP7IVNz3GU6R3Jn3TFWkikCDOSYt/L9bmrroQnZFyosTWP2Gs0LDdTl311Q==",
+      "type": "package",
+      "files": [
+        "MvvmLightLibs.5.3.0.nupkg.sha512",
+        "MvvmLightLibs.nuspec",
+        "lib/SL5/GalaSoft.MvvmLight.Extras.dll",
+        "lib/SL5/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/SL5/GalaSoft.MvvmLight.Extras.xml",
+        "lib/SL5/GalaSoft.MvvmLight.dll",
+        "lib/SL5/GalaSoft.MvvmLight.pdb",
+        "lib/SL5/GalaSoft.MvvmLight.xml",
+        "lib/SL5/System.Windows.Interactivity.dll",
+        "lib/monoandroid1/GalaSoft.MvvmLight.Extras.XML",
+        "lib/monoandroid1/GalaSoft.MvvmLight.Extras.dll",
+        "lib/monoandroid1/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/monoandroid1/GalaSoft.MvvmLight.Platform.XML",
+        "lib/monoandroid1/GalaSoft.MvvmLight.Platform.dll",
+        "lib/monoandroid1/GalaSoft.MvvmLight.Platform.pdb",
+        "lib/monoandroid1/GalaSoft.MvvmLight.XML",
+        "lib/monoandroid1/GalaSoft.MvvmLight.dll",
+        "lib/monoandroid1/GalaSoft.MvvmLight.pdb",
+        "lib/net35/GalaSoft.MvvmLight.Extras.dll",
+        "lib/net35/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/net35/GalaSoft.MvvmLight.Extras.xml",
+        "lib/net35/GalaSoft.MvvmLight.dll",
+        "lib/net35/GalaSoft.MvvmLight.pdb",
+        "lib/net35/GalaSoft.MvvmLight.xml",
+        "lib/net35/System.Windows.Interactivity.dll",
+        "lib/net35/System.Windows.Interactivity.xml",
+        "lib/net40/GalaSoft.MvvmLight.Extras.dll",
+        "lib/net40/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/net40/GalaSoft.MvvmLight.Extras.xml",
+        "lib/net40/GalaSoft.MvvmLight.dll",
+        "lib/net40/GalaSoft.MvvmLight.pdb",
+        "lib/net40/GalaSoft.MvvmLight.xml",
+        "lib/net40/System.Windows.Interactivity.dll",
+        "lib/net40/System.Windows.Interactivity.xml",
+        "lib/net45/GalaSoft.MvvmLight.Extras.dll",
+        "lib/net45/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/net45/GalaSoft.MvvmLight.Extras.xml",
+        "lib/net45/GalaSoft.MvvmLight.Platform.dll",
+        "lib/net45/GalaSoft.MvvmLight.Platform.pdb",
+        "lib/net45/GalaSoft.MvvmLight.Platform.xml",
+        "lib/net45/GalaSoft.MvvmLight.dll",
+        "lib/net45/GalaSoft.MvvmLight.pdb",
+        "lib/net45/GalaSoft.MvvmLight.xml",
+        "lib/net45/System.Windows.Interactivity.dll",
+        "lib/portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10/GalaSoft.MvvmLight.Extras.XML",
+        "lib/portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10/GalaSoft.MvvmLight.Extras.dll",
+        "lib/portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10/GalaSoft.MvvmLight.XML",
+        "lib/portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10/GalaSoft.MvvmLight.dll",
+        "lib/portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10/GalaSoft.MvvmLight.pdb",
+        "lib/windows81/GalaSoft.MvvmLight.Extras.dll",
+        "lib/windows81/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/windows81/GalaSoft.MvvmLight.Extras.xml",
+        "lib/windows81/GalaSoft.MvvmLight.Platform.dll",
+        "lib/windows81/GalaSoft.MvvmLight.Platform.pdb",
+        "lib/windows81/GalaSoft.MvvmLight.Platform.pri",
+        "lib/windows81/GalaSoft.MvvmLight.Platform.xml",
+        "lib/windows81/GalaSoft.MvvmLight.dll",
+        "lib/windows81/GalaSoft.MvvmLight.pdb",
+        "lib/windows81/GalaSoft.MvvmLight.xml",
+        "lib/wp8/GalaSoft.MvvmLight.Extras.dll",
+        "lib/wp8/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/wp8/GalaSoft.MvvmLight.Extras.xml",
+        "lib/wp8/GalaSoft.MvvmLight.Platform.dll",
+        "lib/wp8/GalaSoft.MvvmLight.Platform.pdb",
+        "lib/wp8/GalaSoft.MvvmLight.Platform.xml",
+        "lib/wp8/GalaSoft.MvvmLight.dll",
+        "lib/wp8/GalaSoft.MvvmLight.pdb",
+        "lib/wp8/GalaSoft.MvvmLight.xml",
+        "lib/wp8/System.Windows.Interactivity.dll",
+        "lib/wp81/GalaSoft.MvvmLight.Extras.dll",
+        "lib/wp81/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/wp81/GalaSoft.MvvmLight.Extras.xml",
+        "lib/wp81/GalaSoft.MvvmLight.Platform.dll",
+        "lib/wp81/GalaSoft.MvvmLight.Platform.pdb",
+        "lib/wp81/GalaSoft.MvvmLight.Platform.xml",
+        "lib/wp81/GalaSoft.MvvmLight.dll",
+        "lib/wp81/GalaSoft.MvvmLight.pdb",
+        "lib/wp81/GalaSoft.MvvmLight.xml",
+        "lib/wp81/System.Windows.Interactivity.dll",
+        "lib/wpa81/GalaSoft.MvvmLight.Extras.XML",
+        "lib/wpa81/GalaSoft.MvvmLight.Extras.dll",
+        "lib/wpa81/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/wpa81/GalaSoft.MvvmLight.Platform.XML",
+        "lib/wpa81/GalaSoft.MvvmLight.Platform.dll",
+        "lib/wpa81/GalaSoft.MvvmLight.Platform.pdb",
+        "lib/wpa81/GalaSoft.MvvmLight.Platform.pri",
+        "lib/wpa81/GalaSoft.MvvmLight.XML",
+        "lib/wpa81/GalaSoft.MvvmLight.dll",
+        "lib/wpa81/GalaSoft.MvvmLight.pdb",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.Extras.XML",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.Extras.dll",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.Platform.XML",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.Platform.dll",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.XML",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.dll",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.pdb"
+      ]
+    },
+    "Plugin.Share/4.0.0": {
+      "sha512": "1Gvy/tJdFFXI6bKRHobWgUbgqa81ycqbdODkXmHjfy5oXBGhOMO2zgjkB25/oqu3AgJUcP8x+yKlSuHvZeW+fw==",
+      "type": "package",
+      "files": [
+        "Plugin.Share.4.0.0.nupkg.sha512",
+        "Plugin.Share.nuspec",
+        "lib/MonoAndroid10/Plugin.Share.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Share.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.Share.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.Share.dll",
+        "lib/MonoAndroid10/Plugin.Share.pdb",
+        "lib/MonoAndroid10/Plugin.Share.xml",
+        "lib/UAP10/Plugin.Share.Abstractions.dll",
+        "lib/UAP10/Plugin.Share.Abstractions.pdb",
+        "lib/UAP10/Plugin.Share.Abstractions.xml",
+        "lib/UAP10/Plugin.Share.dll",
+        "lib/UAP10/Plugin.Share.pdb",
+        "lib/UAP10/Plugin.Share.xml",
+        "lib/Xamarin.iOS10/Plugin.Share.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Share.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.Share.dll",
+        "lib/Xamarin.iOS10/Plugin.Share.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Share.Abstractions.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Share.Abstractions.pdb",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Share.Abstractions.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Share.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Share.pdb",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Share.xml",
+        "lib/win8/Plugin.Share.Abstractions.dll",
+        "lib/win8/Plugin.Share.Abstractions.pdb",
+        "lib/win8/Plugin.Share.Abstractions.xml",
+        "lib/win8/Plugin.Share.dll",
+        "lib/win8/Plugin.Share.pdb",
+        "lib/win8/Plugin.Share.xml",
+        "lib/wp8/Plugin.Share.Abstractions.dll",
+        "lib/wp8/Plugin.Share.Abstractions.pdb",
+        "lib/wp8/Plugin.Share.Abstractions.xml",
+        "lib/wp8/Plugin.Share.dll",
+        "lib/wp8/Plugin.Share.pdb",
+        "lib/wp8/Plugin.Share.xml",
+        "lib/wpa81/Plugin.Share.Abstractions.dll",
+        "lib/wpa81/Plugin.Share.Abstractions.pdb",
+        "lib/wpa81/Plugin.Share.Abstractions.xml",
+        "lib/wpa81/Plugin.Share.dll",
+        "lib/wpa81/Plugin.Share.pdb",
+        "lib/wpa81/Plugin.Share.xml"
       ]
     },
     "runtime.any.System.Private.DataContractSerialization/4.1.0": {
@@ -15439,36 +16307,6 @@
         "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll"
       ]
     },
-    "Toasts.Forms.Plugin/2.0.3": {
-      "sha512": "2ly4uvglDTzFpr3ShC6pNR4D44zNqMoPJBJybZcOmYTpeH/S9TW2JEcEeecmqmyQ87Uu64Tj7biaxd9QE5F5wQ==",
-      "type": "package",
-      "files": [
-        "Toasts.Forms.Plugin.2.0.3.nupkg.sha512",
-        "Toasts.Forms.Plugin.nuspec",
-        "content/portable-netcore451+wpa81/FrameStyle.xaml",
-        "content/portable-netcore451+wpa81/Icons/error.png",
-        "content/portable-netcore451+wpa81/Icons/info.png",
-        "content/portable-netcore451+wpa81/Icons/success.png",
-        "content/portable-netcore451+wpa81/Icons/warning.png",
-        "lib/MonoAndroid10/Toasts.Forms.Plugin.Abstractions.dll",
-        "lib/MonoAndroid10/Toasts.Forms.Plugin.Abstractions.pdb",
-        "lib/MonoAndroid10/Toasts.Forms.Plugin.Droid.dll",
-        "lib/MonoAndroid10/Toasts.Forms.Plugin.Droid.pdb",
-        "lib/Xamarin.iOS10/Toasts.Forms.Plugin.Abstractions.dll",
-        "lib/Xamarin.iOS10/Toasts.Forms.Plugin.Abstractions.pdb",
-        "lib/Xamarin.iOS10/Toasts.Forms.Plugin.iOS.dll",
-        "lib/portable-net45+wp8+win8+wpa81+netcore451+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Toasts.Forms.Plugin.Abstractions.dll",
-        "lib/portable-net45+wp8+win8+wpa81+netcore451+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Toasts.Forms.Plugin.Abstractions.pdb",
-        "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.Abstractions.dll",
-        "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.Abstractions.pdb",
-        "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.WinRT.dll",
-        "lib/portable-netcore451+wpa81/Toasts.Forms.Plugin.WinRT.pdb",
-        "lib/wp8/Toasts.Forms.Plugin.Abstractions.dll",
-        "lib/wp8/Toasts.Forms.Plugin.Abstractions.pdb",
-        "lib/wp8/Toasts.Forms.Plugin.WindowsPhone.dll",
-        "lib/wp8/Toasts.Forms.Plugin.WindowsPhone.pdb"
-      ]
-    },
     "Xam.Plugins.Messaging/3.2.1": {
       "sha512": "9WPIzUoTy1sDh/R88aPgtxzFGdhtuxuR5EbYQrpbOv5ddMmQqS94vZSXkvn9mqIIqJ366BgI53sE8aJ87dcUtQ==",
       "type": "package",
@@ -15521,11 +16359,69 @@
         "lib/wpa81/Plugin.Messaging.xml"
       ]
     },
-    "Xamarin.Forms/2.2.0.31": {
-      "sha512": "UQ3Km0Lway+n0b9lfZczE+sPtRzMyY9oJHCKSSjsoTeEOiZfQkBDIcL7SzNYEdBCFaU9He4lnASgfRD6yHdEtg==",
+    "Xamarin.FFImageLoading/2.1.0": {
+      "sha512": "KyTUXzIHqkOLXsanmD93bPUJj38tLcBwcehFYtO9Dxops5heKWReVtDu31MBE2B4EoASeFkklZhk/qIZpOh8DQ==",
       "type": "package",
       "files": [
-        "Xamarin.Forms.2.2.0.31.nupkg.sha512",
+        "Xamarin.FFImageLoading.2.1.0.nupkg.sha512",
+        "Xamarin.FFImageLoading.nuspec",
+        "lib/MonoAndroid10/FFImageLoading.Platform.dll",
+        "lib/MonoAndroid10/FFImageLoading.Platform.xml",
+        "lib/MonoAndroid10/FFImageLoading.dll",
+        "lib/MonoAndroid10/FFImageLoading.xml",
+        "lib/Xamarin.iOS10/FFImageLoading.Platform.dll",
+        "lib/Xamarin.iOS10/FFImageLoading.Platform.xml",
+        "lib/Xamarin.iOS10/FFImageLoading.dll",
+        "lib/Xamarin.iOS10/FFImageLoading.xml",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoTouch10+MonoAndroid10+xamarinmac20+xamarinios10/FFImageLoading.Platform.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoTouch10+MonoAndroid10+xamarinmac20+xamarinios10/FFImageLoading.Platform.xml",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoTouch10+MonoAndroid10+xamarinmac20+xamarinios10/FFImageLoading.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoTouch10+MonoAndroid10+xamarinmac20+xamarinios10/FFImageLoading.xml",
+        "lib/portable-netcore45+wpa81/FFImageLoading.Platform.dll",
+        "lib/portable-netcore45+wpa81/FFImageLoading.Platform.xml",
+        "lib/portable-netcore45+wpa81/FFImageLoading.dll",
+        "lib/portable-netcore45+wpa81/FFImageLoading.xml",
+        "lib/portable-wp8/FFImageLoading.Platform.dll",
+        "lib/portable-wp8/FFImageLoading.Platform.xml",
+        "lib/portable-wp8/FFImageLoading.dll",
+        "lib/portable-wp8/FFImageLoading.xml"
+      ]
+    },
+    "Xamarin.FFImageLoading.Forms/2.1.0": {
+      "sha512": "1PjoTyEFDbyqAnps3YRVyGlTvjsUCtB8ahIKxjaKbbJ08v8JRnB2pk9Nfvs5sXG9VuTz5ef9k+ZR13L8iTvjsg==",
+      "type": "package",
+      "files": [
+        "Xamarin.FFImageLoading.Forms.2.1.0.nupkg.sha512",
+        "Xamarin.FFImageLoading.Forms.nuspec",
+        "lib/MonoAndroid10/FFImageLoading.Forms.Droid.dll",
+        "lib/MonoAndroid10/FFImageLoading.Forms.Droid.xml",
+        "lib/MonoAndroid10/FFImageLoading.Forms.dll",
+        "lib/MonoAndroid10/FFImageLoading.Forms.xml",
+        "lib/Xamarin.iOS10/FFImageLoading.Forms.Touch.dll",
+        "lib/Xamarin.iOS10/FFImageLoading.Forms.Touch.xml",
+        "lib/Xamarin.iOS10/FFImageLoading.Forms.dll",
+        "lib/Xamarin.iOS10/FFImageLoading.Forms.xml",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoTouch10+MonoAndroid10+xamarinmac20+xamarinios10/FFImageLoading.Forms.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoTouch10+MonoAndroid10+xamarinmac20+xamarinios10/FFImageLoading.Forms.xml",
+        "lib/portable-netcore45+wpa81/FFImageLoading.Forms.WinRT.dll",
+        "lib/portable-netcore45+wpa81/FFImageLoading.Forms.WinRT.xml",
+        "lib/portable-netcore45+wpa81/FFImageLoading.Forms.dll",
+        "lib/portable-netcore45+wpa81/FFImageLoading.Forms.xml",
+        "lib/portable-wp8/FFImageLoading.Forms.WinSL.dll",
+        "lib/portable-wp8/FFImageLoading.Forms.WinSL.xml",
+        "lib/portable-wp8/FFImageLoading.Forms.dll",
+        "lib/portable-wp8/FFImageLoading.Forms.xml",
+        "lib/uap10.0/FFImageLoading.Forms.WinUWP.dll",
+        "lib/uap10.0/FFImageLoading.Forms.WinUWP.xml",
+        "lib/uap10.0/FFImageLoading.Forms.dll",
+        "lib/uap10.0/FFImageLoading.Forms.xml"
+      ]
+    },
+    "Xamarin.Forms/2.2.0.43": {
+      "sha512": "36wtyGuqYFHChceqLKVoP+QW31uekBteDZJu+uDZ8TsSwj7Q74e9ybs0t0CoOFrsTUG4zzAJAI/34Bah+s7KcA==",
+      "type": "package",
+      "files": [
+        "Xamarin.Forms.2.2.0.43.nupkg.sha512",
         "Xamarin.Forms.nuspec",
         "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/ICSharpCode.Decompiler.dll",
         "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/ICSharpCode.NRefactory.CSharp.dll",
@@ -15785,9 +16681,11 @@
     "": [
       "Acr.UserDialogs >= 5.2.1",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0",
-      "Toasts.Forms.Plugin >= 2.0.3",
+      "MvvmLightLibs >= 5.3.0",
+      "Plugin.Share >= 4.0.0",
       "Xam.Plugins.Messaging >= 3.2.1",
-      "Xamarin.Forms >= 2.2.0.31",
+      "Xamarin.FFImageLoading.Forms >= 2.1.0",
+      "Xamarin.Forms >= 2.2.0.43",
       "Xamarin.Forms.Maps >= 2.2.0.31"
     ],
     "UAP,Version=v10.0": []

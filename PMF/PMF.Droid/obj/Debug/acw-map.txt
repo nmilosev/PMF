@@ -122,18 +122,6 @@ FFImageLoading.Drawables.SelfDisposingAsyncDrawable, FFImageLoading.Platform;md5
 FFImageLoading.Drawables.SelfDisposingAsyncDrawable, FFImageLoading.Platform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54ada4fbe4a5955f6151fa282d30cfc48.SelfDisposingAsyncDrawable
 FFImageLoading.Drawables.SelfDisposingAsyncDrawable;md54ada4fbe4a5955f6151fa282d30cfc48.SelfDisposingAsyncDrawable
 ffimageloading.drawables.SelfDisposingAsyncDrawable;md54ada4fbe4a5955f6151fa282d30cfc48.SelfDisposingAsyncDrawable
-Plugin.Toasts.Crouton, Toasts.Forms.Plugin.Droid;md52d189d64b7b0ac40b59b56928c06114b.Crouton
-Plugin.Toasts.Crouton, Toasts.Forms.Plugin.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md52d189d64b7b0ac40b59b56928c06114b.Crouton
-Plugin.Toasts.Crouton;md52d189d64b7b0ac40b59b56928c06114b.Crouton
-plugin.toasts.Crouton;md52d189d64b7b0ac40b59b56928c06114b.Crouton
-Plugin.Toasts.Manager, Toasts.Forms.Plugin.Droid;md52d189d64b7b0ac40b59b56928c06114b.Manager
-Plugin.Toasts.Manager, Toasts.Forms.Plugin.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md52d189d64b7b0ac40b59b56928c06114b.Manager
-Plugin.Toasts.Manager;md52d189d64b7b0ac40b59b56928c06114b.Manager
-plugin.toasts.Manager;md52d189d64b7b0ac40b59b56928c06114b.Manager
-Plugin.Toasts.Manager/GlobalLayoutListener, Toasts.Forms.Plugin.Droid;md52d189d64b7b0ac40b59b56928c06114b.Manager_GlobalLayoutListener
-Plugin.Toasts.Manager+GlobalLayoutListener, Toasts.Forms.Plugin.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md52d189d64b7b0ac40b59b56928c06114b.Manager_GlobalLayoutListener
-Plugin.Toasts.Manager.GlobalLayoutListener;md52d189d64b7b0ac40b59b56928c06114b.Manager_GlobalLayoutListener
-plugin.toasts.Manager_GlobalLayoutListener;md52d189d64b7b0ac40b59b56928c06114b.Manager_GlobalLayoutListener
 Android.Support.CustomTabs.CustomTabsClient/CustomTabsCallbackImpl, Xamarin.Android.Support.CustomTabs;android.support.customtabs.CustomTabsClient_CustomTabsCallbackImpl
 Android.Support.CustomTabs.CustomTabsClient+CustomTabsCallbackImpl, Xamarin.Android.Support.CustomTabs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;android.support.customtabs.CustomTabsClient_CustomTabsCallbackImpl
 Android.Support.CustomTabs.CustomTabsClient.CustomTabsCallbackImpl;android.support.customtabs.CustomTabsClient_CustomTabsCallbackImpl

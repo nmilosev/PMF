@@ -11,8 +11,8 @@
     <AssemblyName>PMF.UWP</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-    <TargetPlatformVersion>10.0.10586.0</TargetPlatformVersion>
-    <TargetPlatformMinVersion>10.0.10586.0</TargetPlatformMinVersion>
+    <TargetPlatformVersion>10.0.10240.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
     <FileAlignment>512</FileAlignment>
@@ -75,6 +75,7 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <ErrorReport>prompt</ErrorReport>
     <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>false</UseDotNetNativeToolchain>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <OutputPath>bin\x86\Release\</OutputPath>
@@ -108,6 +109,34 @@
     <None Include="Windows_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="arrowdown.png" />
+    <Content Include="arrows.png" />
+    <Content Include="calendar.png" />
+    <Content Include="calendarday.png" />
+    <Content Include="clock.png" />
+    <Content Include="connections.png" />
+    <Content Include="csharp.png" />
+    <Content Include="dmi.png" />
+    <Content Include="dotnetlogo.png" />
+    <Content Include="envelope.png" />
+    <Content Include="fedora.png" />
+    <Content Include="freetime.png" />
+    <Content Include="leftarrow.png" />
+    <Content Include="link.png" />
+    <Content Include="location.png" />
+    <Content Include="mainback.png" />
+    <Content Include="menu.png" />
+    <Content Include="mono.png" />
+    <Content Include="newspaper.png" />
+    <Content Include="phone.png" />
+    <Content Include="phonebook.png" />
+    <Content Include="placeholder.png" />
+    <Content Include="question.png" />
+    <Content Include="reload.png" />
+    <Content Include="rightarrow.png" />
+    <Content Include="sitemap.png" />
+    <Content Include="vs15.png" />
+    <Content Include="xamarin.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

@@ -18,7 +18,7 @@
               </StackLayout.GestureRecognizers>
               <Grid Padding="1" RowSpacing="1" ColumnSpacing="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
                 <Grid.BackgroundColor>
-                  <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidDarkGray}" iOS="{x:Static i18n:Colors.iPhoneGray}"/>
+                  <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidDarkGray}" iOS="{x:Static i18n:Colors.iPhoneGray}" WinPhone="{x:Static i18n:Colors.iPhoneGray}"/>
                 </Grid.BackgroundColor>
                 <Grid.RowDefinitions>
                   <RowDefinition Height="*" />
@@ -31,7 +31,7 @@
 
                 <ContentView Grid.Row="0" Grid.Column="0" Padding="10">
                   <ContentView.BackgroundColor>
-                    <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" iOS="{x:Static i18n:Colors.iPhoneWhite}"/>
+                    <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" iOS="{x:Static i18n:Colors.iPhoneWhite}" WinPhone="{x:Static i18n:Colors.iPhoneWhite}"/>
                   </ContentView.BackgroundColor>
                   <StackLayout>
                     <Label FontSize="16" Text="{Binding Title}" LineBreakMode="WordWrap" />
@@ -41,7 +41,7 @@
 
                 <ContentView Grid.Row="1" Grid.Column="0" Padding="10">
                   <ContentView.BackgroundColor>
-                    <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" iOS="{x:Static i18n:Colors.iPhoneWhite}"/>
+                    <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" iOS="{x:Static i18n:Colors.iPhoneWhite}" WinPhone="{x:Static i18n:Colors.iPhoneWhite}"/>
                   </ContentView.BackgroundColor>
                   <StackLayout>
                     <Label FontSize="10" Text="{Binding TimeFormatted}" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"  />
@@ -50,7 +50,7 @@
 
                 <ContentView Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Padding="10">
                   <ContentView.BackgroundColor>
-                    <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" iOS="{x:Static i18n:Colors.iPhoneWhite}"/>
+                    <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" iOS="{x:Static i18n:Colors.iPhoneWhite}" WinPhone="{x:Static i18n:Colors.iPhoneWhite}"/>
                   </ContentView.BackgroundColor>
                   <StackLayout>
                     <Image Source="rightarrow.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
