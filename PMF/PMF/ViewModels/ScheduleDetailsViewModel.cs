@@ -64,7 +64,7 @@ namespace PMF.ViewModels
 
         }
 
-        private async void ShowSubjectDetails(int subjectId)
+        private async void ShowSubjectDetails(string subjectId)
         {
             var subjectsData = SimpleIoc.Default.GetInstance<ISubjectsSource>();
 
@@ -75,7 +75,7 @@ namespace PMF.ViewModels
                 s = await subjectsData.ForId(subjectId, Dictionaries.Translator.CurrentCultureCode);
             }
 
-            if (subjectsData.IsModelValid)
+            if (subjectsData.IsDataValid)
             {
                 SimpleIoc.Default.GetInstance<SubjectViewModel>().Current = s;
                 SimpleIoc.Default.GetInstance<Navigator>().NavigateModal(typeof(Views.SubjectPage));

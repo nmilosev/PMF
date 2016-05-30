@@ -469,6 +469,15 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Odaberite departman.
+        /// </summary>
+        internal static string PickDepartment {
+            get {
+                return ResourceManager.GetString("PickDepartment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Please wait....
         /// </summary>
         internal static string PleaseWait {
@@ -501,6 +510,15 @@ namespace PMF.Dictionaries {
         internal static string Practice {
             get {
                 return ResourceManager.GetString("Practice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Detalji studijskog programa.
+        /// </summary>
+        internal static string ProgramDetailsTitle {
+            get {
+                return ResourceManager.GetString("ProgramDetailsTitle", resourceCulture);
             }
         }
         

@@ -95,7 +95,7 @@ namespace PMF.ViewModels
             IsRefreshing = false;
             Activity = false;
 
-            if (news.IsDataValid)
+            if (_news.IsDataValid)
             {
                 News = new ObservableCollection<NewsItem>(news.Items);
             }

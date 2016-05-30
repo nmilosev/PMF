@@ -1,5 +1,7 @@
-﻿using GalaSoft.MvvmLight;
+﻿using Acr.UserDialogs;
+using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
+using PMF.Core.Interfaces;
 using PMF.Dictionaries;
 using PMF.Navigation;
 using System;
@@ -67,14 +69,14 @@ namespace PMF.ViewModels
         
         public Command MenuCommand => new Command<string>(CommandAction);
 
-        public void CommandAction(string actionName)
+        public async void CommandAction(string actionName)
         {
             SimpleIoc.Default.GetInstance<Navigator>().HideMenu();
 
             switch (actionName)
             {
                 case "StudService":
-                    Plugin.Share.CrossShare.Current.OpenBrowser("SSluzbaLink".Localize());
+                    await Plugin.Share.CrossShare.Current.OpenBrowser("SSluzbaLink".Localize());
                     break;
                 case "Contact":
                     SimpleIoc.Default.GetInstance<Navigator>().Navigate(typeof(Views.ContactPage));
@@ -88,8 +90,22 @@ namespace PMF.ViewModels
                 case "FAQ":
                     SimpleIoc.Default.GetInstance<Navigator>().Navigate(typeof(Views.FAQPage));
                     break;
+                case "Programs":
+                    var departments = SimpleIoc.Default.GetInstance<IDepartmentsSource>();
+
+                    using (UserDialogs.Instance.Loading("PleaseWait".Localize()))
+                    {
+                        (Application.Current.Resources["ViewModelLocator"] as ViewModelLocator).Programs.Departments =
+                        new System.Collections.ObjectModel.ObservableCollection<Core.Models.Department>(await departments.Departments(Translator.CurrentCultureCode));
+                    }
+
+                    if (departments.IsDataValid)
+                        SimpleIoc.Default.GetInstance<Navigator>().Navigate(typeof(Views.DepartmentsPage));
+                    else
+                        UserDialogs.Instance.ErrorToast("Error".Localize(), "ProgramsError".Localize(), 1500);                                        
+                    break;
                 default:
-                    (Application.Current.Resources["ViewLocator"] as Views.ViewLocator).MainPage.DisplayAlert("Command", actionName, "OK");
+                    await (Application.Current.Resources["ViewLocator"] as Views.ViewLocator).MainPage.DisplayAlert("Command", actionName, "OK");
                     break;
             }
         }

@@ -39,14 +39,21 @@
     <!-- A reference to the entire .NET Framework is automatically included -->
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IDepartmentsSource.cs" />
     <Compile Include="Interfaces\IFAQSource.cs" />
     <Compile Include="Interfaces\INewsSource.cs" />
+    <Compile Include="Interfaces\_InterfaceBase.cs" />
+    <Compile Include="Interfaces\IProgramsSource.cs" />
     <Compile Include="Interfaces\IScheduleSource.cs" />
     <Compile Include="Interfaces\ISubjectsSource.cs" />
     <Compile Include="Models\Classroom.cs" />
+    <Compile Include="Models\Department.cs" />
     <Compile Include="Models\FAQ.cs" />
+    <Compile Include="Models\Module.cs" />
     <Compile Include="Models\News.cs" />
     <Compile Include="Models\NewsItem.cs" />
+    <Compile Include="Models\Program.cs" />
+    <Compile Include="Models\ProgramType.cs" />
     <Compile Include="Models\QA.cs" />
     <Compile Include="Models\Schedule.cs" />
     <Compile Include="Models\ScheduleDay.cs" />

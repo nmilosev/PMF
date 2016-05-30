@@ -65,6 +65,7 @@
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\MenuViewModel.cs" />
     <Compile Include="ViewModels\NewsViewModel.cs" />
+    <Compile Include="ViewModels\ProgramsViewModel.cs" />
     <Compile Include="ViewModels\ScheduleDetailsViewModel.cs" />
     <Compile Include="ViewModels\ScheduleViewModel.cs" />
     <Compile Include="ViewModels\SubjectViewModel.cs" />
@@ -74,6 +75,9 @@
     </Compile>
     <Compile Include="Views\ContactPage.xaml.cs">
       <DependentUpon>ContactPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DepartmentsPage.xaml.cs">
+      <DependentUpon>DepartmentsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\FAQPage.xaml.cs">
       <DependentUpon>FAQPage.xaml</DependentUpon>
@@ -89,6 +93,12 @@
     </Compile>
     <Compile Include="Views\NewsPage.xaml.cs">
       <DependentUpon>NewsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProgramDetailsPage.xaml.cs">
+      <DependentUpon>ProgramDetailsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProgramsPage.xaml.cs">
+      <DependentUpon>ProgramsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ScheduleDetailsPage.xaml.cs">
       <DependentUpon>ScheduleDetailsPage.xaml</DependentUpon>
@@ -268,6 +278,24 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\FAQPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\DepartmentsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\ProgramsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\ProgramDetailsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

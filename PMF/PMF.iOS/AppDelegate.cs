@@ -5,7 +5,6 @@ using System.Linq;
 using Foundation;
 using UIKit;
 using Xamarin.Forms;
-using Plugin.Toasts;
 
 namespace PMF.iOS
 {
@@ -29,10 +28,7 @@ namespace PMF.iOS
             Xamarin.FormsMaps.Init();
 
             LoadApplication(new App());
-
-            DependencyService.Register<ToastNotificatorImplementation>();
-            ToastNotificatorImplementation.Init();
-
+            
             FFImageLoading.Forms.Touch.CachedImageRenderer.Init();
 
             return base.FinishedLaunching(app, options);

@@ -83,7 +83,7 @@ namespace PMF.ViewModels
             IsRefreshing = false;
             Activity = false;
 
-            if (faqs.IsDataValid)
+            if (_faq.IsDataValid)
             {
                 FAQ = new ObservableCollection<QA>(faqs.QuestionsAndAnswers);
             }

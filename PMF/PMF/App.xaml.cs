@@ -33,6 +33,10 @@ namespace PMF
             SimpleIoc.Default.Register<ISubjectsSource, LocalSubjectsSource>();
 
             SimpleIoc.Default.Register<IFAQSource, LocalFAQSource>();
+
+            SimpleIoc.Default.Register<IDepartmentsSource, LocalDepartmentSource>();
+
+            SimpleIoc.Default.Register<IProgramsSource, LocalProgramsSource>();
         }
         
         protected override void OnStart()

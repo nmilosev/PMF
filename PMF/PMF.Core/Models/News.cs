@@ -12,7 +12,5 @@ namespace PMF.Core.Models
 
         public DateTime Refreshed { get; set; }
         public string RefreshedFormatted => Refreshed.ToString("dd.MM.yyyy. HH:mm:ss");
-        
-        public bool IsDataValid { get; set; }
     }
 }

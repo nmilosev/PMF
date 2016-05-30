@@ -18,6 +18,9 @@ namespace PMF.LocalService
             }
         }
 
+        //simulate network errors
+        public bool IsDataValid => new Random().NextDouble() > 0.2 ? true : false;
+
         public async Task<News> News(string langCode)
         {
             //simulate network delay for up to 3 seconds
@@ -32,8 +35,6 @@ namespace PMF.LocalService
                 var news = new News()
                 {
                     Refreshed = DateTime.Now,
-                    //simulate network errors
-                    IsDataValid = new Random().NextDouble() > 0.2 ? true : false,
                     Items = new List<NewsItem>()
                     {
                         new NewsItem()

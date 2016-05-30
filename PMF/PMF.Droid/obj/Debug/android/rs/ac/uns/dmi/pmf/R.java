@@ -2975,18 +2975,20 @@ containing a value of this type.
         public static final int mr_ic_play_dark=0x7f0200de;
         public static final int mr_ic_play_light=0x7f0200df;
         public static final int newspaper=0x7f0200e0;
-        public static final int notification_template_icon_bg=0x7f0200ec;
+        public static final int notification_template_icon_bg=0x7f0200ee;
         public static final int phone=0x7f0200e1;
         public static final int phonebook=0x7f0200e2;
         public static final int placeholder=0x7f0200e3;
-        public static final int question=0x7f0200e4;
-        public static final int reload=0x7f0200e5;
-        public static final int rightarrow=0x7f0200e6;
-        public static final int roundedbg=0x7f0200e7;
-        public static final int roundedbgdark=0x7f0200e8;
-        public static final int sitemap=0x7f0200e9;
-        public static final int vs15=0x7f0200ea;
-        public static final int xamarin=0x7f0200eb;
+        public static final int programicon=0x7f0200e4;
+        public static final int programsbcg=0x7f0200e5;
+        public static final int question=0x7f0200e6;
+        public static final int reload=0x7f0200e7;
+        public static final int rightarrow=0x7f0200e8;
+        public static final int roundedbg=0x7f0200e9;
+        public static final int roundedbgdark=0x7f0200ea;
+        public static final int sitemap=0x7f0200eb;
+        public static final int vs15=0x7f0200ec;
+        public static final int xamarin=0x7f0200ed;
     }
     public static final class id {
         public static final int action0=0x7f0a009a;

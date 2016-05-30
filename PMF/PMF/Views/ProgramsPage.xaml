@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PMF.Views.ProgramsPage"
+             xmlns:i18n="clr-namespace: PMF.Dictionaries"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             BindingContext="{Binding Source={StaticResource ViewModelLocator}, Path=Programs}"
+             Title="{i18n:Translate ChooseProgram}"
+             ItemsSource="{Binding Programs}">
+  <TabbedPage.ItemTemplate>
+    <DataTemplate>
+      <ContentPage Title="{Binding Title}">
+        <ContentPage.Icon>
+          <OnPlatform x:TypeArguments="FileImageSource" iOS="calendarday.png"/>
+        </ContentPage.Icon>
+        <StackLayout VerticalOptions="FillAndExpand">
+          <ListView ItemsSource="{Binding Programs}" RowHeight="150" VerticalOptions="FillAndExpand" SeparatorVisibility="None" Margin="0,10,0,0" HasUnevenRows="True">
+            <ListView.ItemTemplate>
+              <DataTemplate>
+                <ViewCell>
+                  <StackLayout Padding="10,0,10,10" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                    <StackLayout.GestureRecognizers>
+                      <TapGestureRecognizer CommandParameter="{Binding}" Command="{Binding Source={StaticResource ViewModelLocator}, Path=Programs.OpenProgramDetails}" />
+                    </StackLayout.GestureRecognizers>
+                    <Grid Padding="1" RowSpacing="1" ColumnSpacing="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                      <Grid.BackgroundColor>
+                        <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidDarkGray}" iOS="{x:Static i18n:Colors.iPhoneGray}" WinPhone="{x:Static i18n:Colors.iPhoneGray}" />
+                      </Grid.BackgroundColor>
+                      <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                      </Grid.RowDefinitions>
+                      <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="65" />
+                      </Grid.ColumnDefinitions>
+                      <ContentView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="1" Padding="10">
+                        <ContentView.BackgroundColor>
+                          <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" iOS="{x:Static i18n:Colors.iPhoneWhite}" WinPhone="{x:Static i18n:Colors.iPhoneWhite}"/>
+                        </ContentView.BackgroundColor>
+                        <StackLayout Spacing="3">
+                          <Label FontSize="18" Text="{Binding Name}" LineBreakMode="CharacterWrap" Margin="0,0,5,0"/>
+                          <StackLayout Orientation="Horizontal">
+                            <Label Text="{i18n:Translate ProgramTitle}" FontSize="14" LineBreakMode="CharacterWrap"/>
+                            <Label FontSize="14" Text="{Binding Title}" LineBreakMode="CharacterWrap" Margin="0,0,5,0"/>
+                          </StackLayout>
+                          <StackLayout Orientation="Horizontal">
+                            <Label Text="{i18n:Translate YearsOfStudy}" FontSize="14" LineBreakMode="CharacterWrap"/>
+                            <Label FontSize="14" Text="{Binding Years}" LineBreakMode="CharacterWrap" Margin="0,0,10,0"/>
+                          </StackLayout>
+                        </StackLayout>
+                      </ContentView>
+                      <ContentView Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="1" Padding="0,10,10,10" Margin="-2,0,0,0">
+                        <ContentView.BackgroundColor>
+                          <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" iOS="{x:Static i18n:Colors.iPhoneWhite}" WinPhone="{x:Static i18n:Colors.iPhoneWhite}"/>
+                        </ContentView.BackgroundColor>
+                        <ffimageloading:CachedImage HorizontalOptions="Center" VerticalOptions="Center"
+                            DownsampleToViewSize="True"
+                            Source = "programicon.png" FadeAnimationEnabled="True">
+                        </ffimageloading:CachedImage>
+                      </ContentView>
+                    </Grid>
+                  </StackLayout>
+                </ViewCell>
+              </DataTemplate>
+            </ListView.ItemTemplate>
+          </ListView>
+        </StackLayout>
+      </ContentPage>
+    </DataTemplate>
+  </TabbedPage.ItemTemplate>
+
+</TabbedPage>

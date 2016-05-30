@@ -2604,8 +2604,8 @@ namespace PMF.Droid
 			// aapt resource value: 0x7f0200e0
 			public const int newspaper = 2130837728;
 			
-			// aapt resource value: 0x7f0200ec
-			public const int notification_template_icon_bg = 2130837740;
+			// aapt resource value: 0x7f0200ee
+			public const int notification_template_icon_bg = 2130837742;
 			
 			// aapt resource value: 0x7f0200e1
 			public const int phone = 2130837729;
@@ -2617,28 +2617,34 @@ namespace PMF.Droid
 			public const int placeholder = 2130837731;
 			
 			// aapt resource value: 0x7f0200e4
-			public const int question = 2130837732;
+			public const int programicon = 2130837732;
 			
 			// aapt resource value: 0x7f0200e5
-			public const int reload = 2130837733;
+			public const int programsbcg = 2130837733;
 			
 			// aapt resource value: 0x7f0200e6
-			public const int rightarrow = 2130837734;
+			public const int question = 2130837734;
 			
 			// aapt resource value: 0x7f0200e7
-			public const int roundedbg = 2130837735;
+			public const int reload = 2130837735;
 			
 			// aapt resource value: 0x7f0200e8
-			public const int roundedbgdark = 2130837736;
+			public const int rightarrow = 2130837736;
 			
 			// aapt resource value: 0x7f0200e9
-			public const int sitemap = 2130837737;
+			public const int roundedbg = 2130837737;
 			
 			// aapt resource value: 0x7f0200ea
-			public const int vs15 = 2130837738;
+			public const int roundedbgdark = 2130837738;
 			
 			// aapt resource value: 0x7f0200eb
-			public const int xamarin = 2130837739;
+			public const int sitemap = 2130837739;
+			
+			// aapt resource value: 0x7f0200ec
+			public const int vs15 = 2130837740;
+			
+			// aapt resource value: 0x7f0200ed
+			public const int xamarin = 2130837741;
 			
 			static Drawable()
 			{

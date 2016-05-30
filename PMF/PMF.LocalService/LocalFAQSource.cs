@@ -26,14 +26,15 @@ namespace PMF.LocalService
             }
         }
 
+        //simulate network errors
+        public bool IsDataValid => new Random().NextDouble() > 0.2 ? true : false;
+
         public async Task<FAQ> FAQ(string langCode)
         {
             //sim network delay
             await Task.Delay((int)(3000 * new Random().NextDouble()));
             var f = new FAQ()
             {
-                //simulate network errors
-                IsDataValid = new Random().NextDouble() > 0.2 ? true : false,
                 QuestionsAndAnswers = new List<QA> ()
                 {
                     new QA()

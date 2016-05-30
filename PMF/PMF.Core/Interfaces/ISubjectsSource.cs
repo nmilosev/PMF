@@ -7,14 +7,8 @@ using System.Threading.Tasks;
 
 namespace PMF.Core.Interfaces
 {
-    public interface ISubjectsSource
+    public interface ISubjectsSource : InterfaceBase
     {
-        Task<Subject> ForId(int id, string langCode);
-
-        bool RequireConnection { get; }
-        
-        bool IsModelValid { get; }
-
-        bool IsAvailable { get; }
+        Task<Subject> ForId(string id, string langCode);
     }
 }

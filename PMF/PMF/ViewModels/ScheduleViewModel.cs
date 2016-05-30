@@ -98,7 +98,7 @@ namespace PMF.ViewModels
             IsRefreshing = false;
             Activity = false;
 
-            if (schedules.IsDataValid)
+            if (_schedules.IsDataValid)
             {
                 Schedules = new ObservableCollection<Schedule>(schedules.Schedules);               
             }

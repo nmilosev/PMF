@@ -7,12 +7,10 @@ using System.Threading.Tasks;
 
 namespace PMF.Core.Interfaces
 {
-    public interface INewsSource
+    public interface INewsSource : InterfaceBase
     {
-        bool RequireConnection { get; }
-
-        bool IsAvailable { get; }
         
         Task<News> News(string langCode);
+
     }
 }

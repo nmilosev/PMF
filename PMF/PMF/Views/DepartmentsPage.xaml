@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PMF.Views.DepartmentsPage"
+             xmlns:i18n="clr-namespace: PMF.Dictionaries"
+             BindingContext="{Binding Source={StaticResource ViewModelLocator}, Path=Programs}"
+             Title="{i18n:Translate PickDepartment}">
+  <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Orientation="Vertical">
+    <ListView VerticalOptions="FillAndExpand" SeparatorVisibility="None" ItemsSource="{Binding Departments}" RowHeight="100" Margin="0,5,0,0">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <StackLayout Padding="10" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+              <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding Source={StaticResource ViewModelLocator}, Path=Programs.OpenDepartmentsPrograms}" CommandParameter="{Binding}" />
+              </StackLayout.GestureRecognizers>
+              <Grid Padding="1" RowSpacing="1" ColumnSpacing="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <Grid.BackgroundColor>
+                  <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidDarkGray}" iOS="{x:Static i18n:Colors.iPhoneGray}" WinPhone="{x:Static i18n:Colors.iPhoneGray}"/>
+                </Grid.BackgroundColor>
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="8" />
+                  <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <ContentView Grid.Row="0" Grid.Column="0" Padding="10" BackgroundColor="{Binding Color}"/>
+
+                <ContentView Grid.Row="0" Grid.Column="1" Padding="10">
+                  <Label Text="{Binding Name}" FontSize="20" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" />
+                </ContentView>
+                
+              </Grid>
+            </StackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </StackLayout>
+</ContentPage>

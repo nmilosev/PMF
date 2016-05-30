@@ -7,11 +7,8 @@ using System.Threading.Tasks;
 
 namespace PMF.Core.Interfaces
 {
-    public interface IScheduleSource
+    public interface IScheduleSource : InterfaceBase
     {
-        bool RequireConnection { get; }
-
-        bool IsAvailable { get; }
 
         Task<ScheduleList> Schedules(string langCode);
 

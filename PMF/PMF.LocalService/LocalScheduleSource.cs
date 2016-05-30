@@ -51,13 +51,13 @@ namespace PMF.LocalService
                                 new ScheduleDay() { DayOfTheWeek = (int) DayOfWeek.Tuesday },
                                 new ScheduleDay() { DayOfTheWeek = (int) DayOfWeek.Wednesday, Items = new List<ScheduleItem>() {
                                     new ScheduleItem() {
-                                        Color = "#3C404A", FromHour=14, FromMinute=15, ToHour=17, ToMinute=0, LocationId = 1, Location = "RC 59/3 - treći sprat", Type = (int) ScheduleItemType.Lecture, SubjectId = 1, SubjectTitle = "Baze podataka 1", TeacherNames = new List<string>() { "dr Miloš Racković" }
+                                        Color = "#3C404A", FromHour=14, FromMinute=15, ToHour=17, ToMinute=0, LocationId = 1, Location = "RC 59/3 - treći sprat", Type = (int) ScheduleItemType.Lecture, SubjectId = "IA221", SubjectTitle = "Baze podataka 1", TeacherNames = new List<string>() { "dr Miloš Racković" }
                                     },
                                     new ScheduleItem() {
-                                        Color = "#995E57", FromHour=18, FromMinute=0, ToHour=19, ToMinute=30, LocationId = 2, Location = "RC 59/3 - treći sprat", Type = (int) ScheduleItemType.Lab, SubjectId = 1, SubjectTitle = "Operativni Sistemi 1", TeacherNames = new List<string>() { "dr Zoran Budimac" }
+                                        Color = "#995E57", FromHour=18, FromMinute=0, ToHour=19, ToMinute=30, LocationId = 2, Location = "RC 59/3 - treći sprat", Type = (int) ScheduleItemType.Lab, SubjectId = "IA222", SubjectTitle = "Operativni Sistemi 1", TeacherNames = new List<string>() { "dr Zoran Budimac" }
                                     },
                                     new ScheduleItem() {
-                                        Color = "#4D464C", FromHour=18, FromMinute=0, ToHour=19, ToMinute=30, LocationId = 3, Location = "RC 10", Type = (int) ScheduleItemType.Pratice, SubjectId = 1, SubjectTitle = "Razvoj zasnovan na komponentama", TeacherNames = new List<string>() { "dr Srđan Škrbić" }
+                                        Color = "#4D464C", FromHour=18, FromMinute=0, ToHour=19, ToMinute=30, LocationId = 3, Location = "RC 10", Type = (int) ScheduleItemType.Pratice, SubjectId = "IA223", SubjectTitle = "Razvoj zasnovan na komponentama", TeacherNames = new List<string>() { "dr Srđan Škrbić" }
                                     }
                                 } },
                                 new ScheduleDay() { DayOfTheWeek = (int) DayOfWeek.Thursday },
@@ -67,13 +67,15 @@ namespace PMF.LocalService
                         new Schedule() { Id = 2, Title = "Raspored časova - matematika 1. godina", Time = DateTime.Now, Description = "Zimski semestar 2015/2016" },
                         new Schedule() { Id = 3, Title = "Raspored časova - informatika 1. godina master", Time = DateTime.Now, Description = "Zimski semestar 2015/2016" },
                         new Schedule() { Id = 4, Title = "Raspored časova - biologija 1. godina", Time = DateTime.Now, Description = "Letnji semestar 2016/2017" }
-                    },
-                    //simulate network errors
-                    IsDataValid = new Random().NextDouble() > 0.2 ? true : false                    
-                    //IsDataValid = false
+                    }
+                    
                 };
                 return l;
             }
         }
+
+        //simulate network errors
+        public bool IsDataValid => new Random().NextDouble() > 0.2 ? true : false;
+
     }
 }

@@ -43,7 +43,6 @@ C:\Source\PMF\PMF\PMF.Droid\bin\Debug\GalaSoft.MvvmLight.dll
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\GalaSoft.MvvmLight.Extras.dll
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.LocalService.dll
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.Core.pdb
-C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.Core.dll.mdb
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.pdb
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Acr.UserDialogs.pdb
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Acr.UserDialogs.dll.mdb
@@ -125,6 +124,8 @@ C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\home.png
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\faq.png
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\R.cs.flag
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\uploadflags.txt
-C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.dll.mdb
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\programsbcg.png
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.Core.dll.mdb
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\programicon.png
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\PMF.Droid.dll.mdb
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.Droid.dll.mdb

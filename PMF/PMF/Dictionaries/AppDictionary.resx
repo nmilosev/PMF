@@ -350,4 +350,10 @@ All rights reserved.</value>
   <data name="WelcomeMessage" xml:space="preserve">
     <value>Access your student services from the app main menu!</value>
   </data>
+  <data name="PickDepartment" xml:space="preserve">
+    <value>Odaberite departman</value>
+  </data>
+  <data name="ProgramDetailsTitle" xml:space="preserve">
+    <value>Detalji studijskog programa</value>
+  </data>
 </root>

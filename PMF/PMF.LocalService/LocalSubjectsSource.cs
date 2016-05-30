@@ -34,7 +34,10 @@ namespace PMF.LocalService
             }
         }
 
-        public async Task<Subject> ForId(int id, string langCode)
+        //simulate network errors
+        public bool IsDataValid => new Random().NextDouble() > 0.2 ? true : false;
+
+        public async Task<Subject> ForId(string id, string langCode)
         {
             //simulate network delay
             await Task.Delay((int)(3000 * new Random().NextDouble()));

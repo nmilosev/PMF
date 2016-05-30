@@ -6,7 +6,7 @@ namespace PMF.Core.Models
     {
         public string Id { get; set; }
         public string Title { get; set; }
-        
+
         public List<Staff> Professors { get; set; }
         public List<Staff> Assistaints { get; set; }
         public double ESPB { get; set; }
@@ -16,6 +16,12 @@ namespace PMF.Core.Models
         public string Literature { get; set; }
         public string Method { get; set; }
         public string Classes { get; set; }
+
+        //stuff for study programs:
+        public int Semester { get; set; }
+
+        // map of semester priority
+        public Dictionary<int, int> SemesterPriorityMap { get; set; }
 
         public List<string> URLs { get; set; }
     }

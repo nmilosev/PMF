@@ -8,7 +8,6 @@ namespace PMF.Core.Models
 {
     public class FAQ
     {
-        public bool IsDataValid { get; set; }
         public List<QA> QuestionsAndAnswers { get; set; }
     }
 }

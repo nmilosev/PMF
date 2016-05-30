@@ -7,12 +7,8 @@ using System.Threading.Tasks;
 
 namespace PMF.Core.Interfaces
 {
-    public interface IFAQSource
+    public interface IFAQSource : InterfaceBase
     {
-        bool RequireConnection { get; }
-
-        bool IsAvailable { get; }
-
         Task<FAQ> FAQ (string langCode);
     }
 }

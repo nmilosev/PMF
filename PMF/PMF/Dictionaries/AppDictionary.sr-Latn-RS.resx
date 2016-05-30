@@ -350,4 +350,25 @@ Sva prava zadržana.</value>
   <data name="FAQTitle" xml:space="preserve">
     <value>Često postavljena pitanja</value>
   </data>
+  <data name="ProgramsError" xml:space="preserve">
+    <value>Greška prilikom učitavanja studijskih programa. Pokušajte ponovo kasnije...</value>
+  </data>
+  <data name="BScPrograms" xml:space="preserve">
+    <value>OSNOVNE</value>
+  </data>
+  <data name="ChooseProgram" xml:space="preserve">
+    <value>Odaberite studijski program</value>
+  </data>
+  <data name="MScPrograms" xml:space="preserve">
+    <value>MASTER</value>
+  </data>
+  <data name="PhDPrograms" xml:space="preserve">
+    <value>DOKTORSKE</value>
+  </data>
+  <data name="ProgramTitle" xml:space="preserve">
+    <value>Zvanje:</value>
+  </data>
+  <data name="YearsOfStudy" xml:space="preserve">
+    <value>Godine studiranja:</value>
+  </data>
 </root>

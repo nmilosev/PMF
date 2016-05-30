@@ -41,8 +41,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LocalDepartmentSource.cs" />
     <Compile Include="LocalFAQSource.cs" />
     <Compile Include="LocalNewsSource.cs" />
+    <Compile Include="LocalProgramsSource.cs" />
     <Compile Include="LocalScheduleSource.cs" />
     <Compile Include="LocalSubjectsSource.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
