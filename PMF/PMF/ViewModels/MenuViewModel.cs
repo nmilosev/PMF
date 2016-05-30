@@ -58,8 +58,9 @@ namespace PMF.ViewModels
                     new MenuItem() { Id = "News", Text = "ButtonNews".Localize(), Icon = "newspaper.png" },
                     new MenuItem() { Id = "Schedule", Text = "ButtonSchedule".Localize(), Icon = "calendar.png" },
                     new MenuItem() { Id = "Programs", Text = "ButtonPrograms".Localize(), Icon = "arrows.png" },
-                    new MenuItem() { Id = "Contact", Text = "ButtonContact".Localize(), Icon = "phonebook.png" },
-                    new MenuItem() { Id = "StudService", Text = "ButtonStudServices".Localize(), Icon = "sitemap.png" }
+                    new MenuItem() { Id = "StudService", Text = "ButtonStudServices".Localize(), Icon = "sitemap.png" },
+                    new MenuItem() { Id = "FAQ", Text = "ButtonFAQ".Localize(), Icon = "faq.png" },
+                    new MenuItem() { Id = "Contact", Text = "ButtonContact".Localize(), Icon = "phonebook.png" }
                 };
             }
         }
@@ -83,6 +84,9 @@ namespace PMF.ViewModels
                     break;
                 case "Schedule":
                     SimpleIoc.Default.GetInstance<Navigator>().Navigate(typeof(Views.SchedulePage));
+                    break;
+                case "FAQ":
+                    SimpleIoc.Default.GetInstance<Navigator>().Navigate(typeof(Views.FAQPage));
                     break;
                 default:
                     (Application.Current.Resources["ViewLocator"] as Views.ViewLocator).MainPage.DisplayAlert("Command", actionName, "OK");

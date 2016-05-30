@@ -26,7 +26,7 @@ namespace PMF.LocalService
             }
         }
 
-        public async Task<ScheduleList> Schedules()
+        public async Task<ScheduleList> Schedules(string langCode)
         {
             //simulate network delay for up to 3 seconds
             await Task.Delay((int)(3000 * new Random().NextDouble()));
@@ -44,7 +44,7 @@ namespace PMF.LocalService
                         new Schedule()
                         {
                             Id = 1,
-                            Title = "Raspored časova - informatika treća godina",
+                            Title = "Raspored časova - informatika 3. godina",
                             Time = DateTime.Now, Description = "Zimski semestar 2015/2016",
                             Days = new List<ScheduleDay>() {
                                 new ScheduleDay() { DayOfTheWeek = (int) DayOfWeek.Monday },
@@ -64,9 +64,9 @@ namespace PMF.LocalService
                                 new ScheduleDay() { DayOfTheWeek = (int) DayOfWeek.Friday },
                             }
                         },
-                        new Schedule() { Id = 2, Title = "Raspored časova - matematika prva godina", Time = DateTime.Now, Description = "Zimski semestar 2015/2016" },
-                        new Schedule() { Id = 3, Title = "Raspored časova - informatika prva godina master", Time = DateTime.Now, Description = "Zimski semestar 2015/2016" },
-                        new Schedule() { Id = 4, Title = "Raspored časova - biologija prva godina", Time = DateTime.Now, Description = "Letnji semestar 2016/2017" }
+                        new Schedule() { Id = 2, Title = "Raspored časova - matematika 1. godina", Time = DateTime.Now, Description = "Zimski semestar 2015/2016" },
+                        new Schedule() { Id = 3, Title = "Raspored časova - informatika 1. godina master", Time = DateTime.Now, Description = "Zimski semestar 2015/2016" },
+                        new Schedule() { Id = 4, Title = "Raspored časova - biologija 1. godina", Time = DateTime.Now, Description = "Letnji semestar 2016/2017" }
                     },
                     //simulate network errors
                     IsDataValid = new Random().NextDouble() > 0.2 ? true : false                    

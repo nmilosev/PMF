@@ -72,7 +72,7 @@ namespace PMF.ViewModels
 
             using (UserDialogs.Instance.Loading("PleaseWait".Localize()))
             {
-                s = await subjectsData.ForId(subjectId);
+                s = await subjectsData.ForId(subjectId, Dictionaries.Translator.CurrentCultureCode);
             }
 
             if (subjectsData.IsModelValid)

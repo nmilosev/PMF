@@ -141,6 +141,9 @@
   <data name="ButtonContact" xml:space="preserve">
     <value>CONTACT</value>
   </data>
+  <data name="ButtonFAQ" xml:space="preserve">
+    <value>ČESTO POSTAVLJENA PITANJA</value>
+  </data>
   <data name="ButtonHelp" xml:space="preserve">
     <value>HELP</value>
   </data>
@@ -185,6 +188,12 @@
   </data>
   <data name="Error" xml:space="preserve">
     <value>Error!</value>
+  </data>
+  <data name="FAQError" xml:space="preserve">
+    <value>Greška prilikom učitavanja pitanja i odgovora. Pokušajte ponovo kasnije...</value>
+  </data>
+  <data name="FAQTitle" xml:space="preserve">
+    <value>F.A.Q.</value>
   </data>
   <data name="Friday" xml:space="preserve">
     <value>Friday</value>

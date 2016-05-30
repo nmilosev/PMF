@@ -18,7 +18,7 @@ namespace PMF.LocalService
             }
         }
 
-        public async Task<News> News()
+        public async Task<News> News(string langCode)
         {
             //simulate network delay for up to 3 seconds
             await Task.Delay((int)(3000 * new Random().NextDouble()));

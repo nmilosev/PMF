@@ -27,6 +27,7 @@
               DownsampleToViewSize="True"
               Source = "mainback.png" FadeAnimationEnabled="True">
         </ffimageloading:CachedImage>
+        
       </StackLayout>
 
       <Label Text="{i18n:Translate Welcome}" HorizontalOptions="Center" Margin="20,0,20,0" FontSize="26" FontAttributes="Italic"/>

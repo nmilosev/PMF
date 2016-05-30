@@ -25,7 +25,8 @@ namespace PMF.Dictionaries
         /// </summary>
         private const string CurrentCulture = CultureInfoNameRS;
 
-
+        public static string CurrentCultureCode => CurrentCulture;
+        
         private static ResourceManager _rm;
         private static ResourceManager ResourceManager
         {

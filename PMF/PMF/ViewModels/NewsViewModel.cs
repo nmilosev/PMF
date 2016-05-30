@@ -46,7 +46,7 @@ namespace PMF.ViewModels
                 RaisePropertyChanged();
             }
         }
-      
+
         public NewsViewModel()
         {
             _news = SimpleIoc.Default.GetInstance<INewsSource>();
@@ -90,7 +90,7 @@ namespace PMF.ViewModels
 
         public async void Refresh()
         {
-            var news = await _news.News();
+            var news = await _news.News(Dictionaries.Translator.CurrentCultureCode);
 
             IsRefreshing = false;
             Activity = false;
@@ -105,25 +105,6 @@ namespace PMF.ViewModels
             }
 
 
-        }
-
-        private NewsItem _selectedItem;
-        public NewsItem SelectedItem
-        {
-            get
-            {
-                // Xamarin bug, can't assign null if on iOS
-                if (Device.OS == TargetPlatform.iOS)
-                    return _selectedItem;
-                else
-                    return null;
-            }
-            set
-            {
-                _selectedItem = value;
-                OpenNewsArticle.Execute(value);
-                RaisePropertyChanged();
-            }
         }
 
         public NewsItem CurrentNewsItem { get; set; }

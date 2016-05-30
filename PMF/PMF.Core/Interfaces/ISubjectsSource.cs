@@ -9,7 +9,7 @@ namespace PMF.Core.Interfaces
 {
     public interface ISubjectsSource
     {
-        Task<Subject> ForId(int id);
+        Task<Subject> ForId(int id, string langCode);
 
         bool RequireConnection { get; }
         

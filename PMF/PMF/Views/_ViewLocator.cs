@@ -28,6 +28,8 @@ namespace PMF.Views
             SimpleIoc.Default.Register<ScheduleDetailsPage>();
             
             SimpleIoc.Default.Register<SubjectPage>();
+            
+            SimpleIoc.Default.Register<FAQPage>();
         }
 
         public WelcomePage WelcomePage => ServiceLocator.Current.GetInstance<WelcomePage>();
@@ -43,6 +45,8 @@ namespace PMF.Views
         public ScheduleDetailsPage ScheduleDetailsPage => ServiceLocator.Current.GetInstance<ScheduleDetailsPage>();
         
         public SubjectPage SubjectPage => ServiceLocator.Current.GetInstance<SubjectPage>();
+
+        public FAQPage FAQPage => ServiceLocator.Current.GetInstance<FAQPage>();
 
     }
 }

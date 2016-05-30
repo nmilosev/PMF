@@ -31,6 +31,8 @@ namespace PMF
             SimpleIoc.Default.Register<INewsSource, LocalNewsSource>();
             SimpleIoc.Default.Register<IScheduleSource, LocalScheduleSource>();
             SimpleIoc.Default.Register<ISubjectsSource, LocalSubjectsSource>();
+
+            SimpleIoc.Default.Register<IFAQSource, LocalFAQSource>();
         }
         
         protected override void OnStart()

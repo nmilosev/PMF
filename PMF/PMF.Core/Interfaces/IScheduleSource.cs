@@ -13,7 +13,7 @@ namespace PMF.Core.Interfaces
 
         bool IsAvailable { get; }
 
-        Task<ScheduleList> Schedules();
+        Task<ScheduleList> Schedules(string langCode);
 
     }
 }

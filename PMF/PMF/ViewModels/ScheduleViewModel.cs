@@ -93,7 +93,7 @@ namespace PMF.ViewModels
 
         public async void Refresh()
         {
-            var schedules = await _schedules.Schedules();
+            var schedules = await _schedules.Schedules(Dictionaries.Translator.CurrentCultureCode);
 
             IsRefreshing = false;
             Activity = false;

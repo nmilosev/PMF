@@ -341,4 +341,13 @@ Sva prava zadržana.</value>
   <data name="SubjectPages" xml:space="preserve">
     <value>Stranice predmeta</value>
   </data>
+  <data name="ButtonFAQ" xml:space="preserve">
+    <value>ČESTO POSTAVLJENA PITANJA</value>
+  </data>
+  <data name="FAQError" xml:space="preserve">
+    <value>Greška prilikom učitavanja pitanja i odgovora. Pokušajte ponovo kasnije...</value>
+  </data>
+  <data name="FAQTitle" xml:space="preserve">
+    <value>Često postavljena pitanja</value>
+  </data>
 </root>

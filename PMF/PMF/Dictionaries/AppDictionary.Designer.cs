@@ -134,6 +134,15 @@ namespace PMF.Dictionaries {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ČESTO POSTAVLJENA PITANJA.
+        /// </summary>
+        internal static string ButtonFAQ {
+            get {
+                return ResourceManager.GetString("ButtonFAQ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to HELP.
         /// </summary>
         internal static string ButtonHelp {
@@ -265,6 +274,24 @@ namespace PMF.Dictionaries {
         internal static string Error {
             get {
                 return ResourceManager.GetString("Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Greška prilikom učitavanja pitanja i odgovora. Pokušajte ponovo kasnije....
+        /// </summary>
+        internal static string FAQError {
+            get {
+                return ResourceManager.GetString("FAQError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to F.A.Q..
+        /// </summary>
+        internal static string FAQTitle {
+            get {
+                return ResourceManager.GetString("FAQTitle", resourceCulture);
             }
         }
         

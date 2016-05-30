@@ -13,6 +13,6 @@ namespace PMF.Core.Interfaces
 
         bool IsAvailable { get; }
         
-        Task<News> News();
+        Task<News> News(string langCode);
     }
 }

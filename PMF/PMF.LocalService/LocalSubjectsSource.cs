@@ -34,7 +34,7 @@ namespace PMF.LocalService
             }
         }
 
-        public async Task<Subject> ForId(int id)
+        public async Task<Subject> ForId(int id, string langCode)
         {
             //simulate network delay
             await Task.Delay((int)(3000 * new Random().NextDouble()));
