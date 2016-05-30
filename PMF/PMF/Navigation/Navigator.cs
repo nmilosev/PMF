@@ -39,5 +39,14 @@ namespace PMF.Navigation
         {
             (_viewLocator.MainPage.Detail as NavigationPage).PopAsync();
         }
+
+        public void GoForwardCarousel(Type page)
+        {
+            var cp = SimpleIoc.Default.GetInstance(page) as CarouselPage;
+            var current = cp.Children.IndexOf(cp.CurrentPage);
+
+            if (current < cp.Children.Count - 1)
+                cp.CurrentPage = cp.Children[current + 1];
+        }
     }
 }

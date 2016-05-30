@@ -1,0 +1,5 @@
+C:\Source\PMF\PMF\PMF.RESTService\bin\Release\PMF.RESTService.dll
+C:\Source\PMF\PMF\PMF.RESTService\bin\Release\PMF.RESTService.pdb
+C:\Source\PMF\PMF\PMF.RESTService\obj\Release\PMF.RESTService.csprojResolveAssemblyReference.cache
+C:\Source\PMF\PMF\PMF.RESTService\obj\Release\PMF.RESTService.dll
+C:\Source\PMF\PMF\PMF.RESTService\obj\Release\PMF.RESTService.pdb

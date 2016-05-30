@@ -1,0 +1,6 @@
+C:\Source\PMF\PMF\PMF.Core\bin\Release\PMF.Core.dll
+C:\Source\PMF\PMF\PMF.Core\bin\Release\PMF.Core.pdb
+C:\Source\PMF\PMF\PMF.Core\obj\Release\PMF.Core.dll
+C:\Source\PMF\PMF\PMF.Core\obj\Release\PMF.Core.pdb
+C:\Source\PMF\PMF\PMF.Core\obj\Release\PMF.Core.dll.mdb
+C:\Source\PMF\PMF\PMF.Core\bin\Release\PMF.Core.dll.mdb

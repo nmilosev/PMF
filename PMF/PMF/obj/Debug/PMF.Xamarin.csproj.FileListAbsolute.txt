@@ -63,11 +63,11 @@ C:\Source\PMF\PMF\PMF\obj\Debug\PMF.Views.SchedulePage.xaml.g.cs
 C:\Source\PMF\PMF\PMF\obj\Debug\PMF.Views.ScheduleDetailsPage.xaml.g.cs
 C:\Source\PMF\PMF\PMF\obj\Debug\PMF.Views.SubjectPage.xaml.g.cs
 C:\Source\PMF\PMF\PMF\obj\Debug\PMF.Views.FAQPage.xaml.g.cs
-C:\Source\PMF\PMF\PMF\obj\Debug\sr-Latn-RS\PMF.resources.dll
-C:\Source\PMF\PMF\PMF\obj\Debug\PMF.dll
-C:\Source\PMF\PMF\PMF\obj\Debug\PMF.pdb
 C:\Source\PMF\PMF\PMF\obj\Debug\PMF.Views.DepartmentsPage.xaml.g.cs
 C:\Source\PMF\PMF\PMF\obj\Debug\PMF.Views.ProgramsPage.xaml.g.cs
 C:\Source\PMF\PMF\PMF\obj\Debug\PMF.Views.ProgramDetailsPage.xaml.g.cs
+C:\Source\PMF\PMF\PMF\obj\Debug\sr-Latn-RS\PMF.resources.dll
+C:\Source\PMF\PMF\PMF\obj\Debug\PMF.dll
+C:\Source\PMF\PMF\PMF\obj\Debug\PMF.pdb
 C:\Source\PMF\PMF\PMF\obj\Debug\PMF.dll.mdb
 C:\Source\PMF\PMF\PMF\bin\Debug\PMF.dll.mdb

@@ -371,4 +371,13 @@ Sva prava zadržana.</value>
   <data name="YearsOfStudy" xml:space="preserve">
     <value>Godine studiranja:</value>
   </data>
+  <data name="MandatoryClasses" xml:space="preserve">
+    <value>Obavezni predmeti</value>
+  </data>
+  <data name="ProgramGoals" xml:space="preserve">
+    <value>Ciljevi programa</value>
+  </data>
+  <data name="ProgramPurpose" xml:space="preserve">
+    <value>Svrha programa</value>
+  </data>
 </root>

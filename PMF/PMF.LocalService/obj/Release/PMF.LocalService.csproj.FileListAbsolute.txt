@@ -1,0 +1,15 @@
+C:\Source\PMF\PMF\PMF.LocalService\bin\Release\PMF.LocalService.dll
+C:\Source\PMF\PMF\PMF.LocalService\bin\Release\PMF.LocalService.pdb
+C:\Source\PMF\PMF\PMF.LocalService\bin\Release\PMF.Core.dll
+C:\Source\PMF\PMF\PMF.LocalService\bin\Release\Xamarin.iOS.dll
+C:\Source\PMF\PMF\PMF.LocalService\bin\Release\System.dll
+C:\Source\PMF\PMF\PMF.LocalService\bin\Release\System.Core.dll
+C:\Source\PMF\PMF\PMF.LocalService\bin\Release\System.Xml.dll
+C:\Source\PMF\PMF\PMF.LocalService\bin\Release\Mono.Dynamic.Interpreter.dll
+C:\Source\PMF\PMF\PMF.LocalService\bin\Release\PMF.Core.pdb
+C:\Source\PMF\PMF\PMF.LocalService\bin\Release\Xamarin.iOS.xml
+C:\Source\PMF\PMF\PMF.LocalService\obj\Release\PMF.LocalService.csprojResolveAssemblyReference.cache
+C:\Source\PMF\PMF\PMF.LocalService\obj\Release\PMF.LocalService.dll
+C:\Source\PMF\PMF\PMF.LocalService\obj\Release\PMF.LocalService.pdb
+C:\Source\PMF\PMF\PMF.LocalService\obj\Release\PMF.LocalService.dll.mdb
+C:\Source\PMF\PMF\PMF.LocalService\bin\Release\PMF.LocalService.dll.mdb

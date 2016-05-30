@@ -77,8 +77,9 @@ namespace PMF.ViewModels
         {
             get
             {
-                return new Command<Program>(async (p) => {
-                    
+                return new Command<Program>(async (p) =>
+                {
+
                     bool loadingOk = false;
 
                     using (UserDialogs.Instance.Loading("PleaseWait".Localize()))
@@ -98,11 +99,15 @@ namespace PMF.ViewModels
                     {
                         UserDialogs.Instance.ErrorToast("Error".Localize(), "ProgramsError".Localize(), 1500);
                     }
-                });                
+                });
             }
         }
 
         public Program CurrentProgram { get; set; }
 
+
+        public Command NextCarouselPage => new Command(() => SimpleIoc.Default.GetInstance<Navigator>().GoForwardCarousel(typeof(Views.ProgramDetailsPage)));
+      
+        
     }
 }
