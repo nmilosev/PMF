@@ -93,10 +93,19 @@ namespace PMF.ViewModels
                             CurrentProgram = program;
 
                             CurrentModules = new ObservableCollection<ModuleViewModel>();
+                            CurrentModuleNames = new List<string>();
+                            CurrentSemesters = new List<string>();
+
                             foreach (var m in program.Modules)
                             {
-                                var mvm = new ModuleViewModel(m.ModuleSubjects) { Id = m.Id, Name = m.Name };                                
+                                var mvm = new ModuleViewModel(m.ModuleSubjects) { Id = m.Id, Name = m.Name };
                                 CurrentModules.Add(mvm);
+                                CurrentModuleNames.Add(m.Name);
+                            }
+
+                            foreach (var s in Enumerable.Range(1, p.Years * 2))
+                            {
+                                CurrentSemesters.Add($"{s}. {"Semester".Localize()}");
                             }
 
                             SimpleIoc.Default.GetInstance<Navigator>().NavigateModal(typeof(Views.ProgramDetailsPage));
@@ -146,10 +155,40 @@ namespace PMF.ViewModels
             public string Name { get; set; }
 
             public ModuleViewModel(IEnumerable<Subject> s) : base(s)
-            {                
+            {
             }
         }
 
+        public List<string> CurrentModuleNames { get; set; }
+        public List<string> CurrentSemesters { get; set; }
+
+        public int CurrentModuleId { get; set; }
+        public int CurrentSemesterId { get; set; }
+
+        public Command OpenWizardResults => new Command(() =>
+        {
+            using (UserDialogs.Instance.Loading("PleaseWait".Localize()))
+            {
+                var semester = CurrentSemesterId + 1;
+
+                var programMandatoryClasses = CurrentProgram.MandatorySubjects.Where(s => s.Semester == semester).ToList();
+                var programOptionalClasses = CurrentProgram.OptionalSubjects.Where(s => s.Semester == semester).ToList();
+                var moduleClasses = CurrentModules[CurrentModuleId].Where(s => s.Semester == semester).ToList();
+
+                var vm = new ObservableCollection<WizardViewModel.SubjectWizardViewModel>()
+                {
+                    new WizardViewModel.SubjectWizardViewModel(programMandatoryClasses, autoCheck: true) { Title = "MandatoryClasses".Localize() },
+                    new WizardViewModel.SubjectWizardViewModel(moduleClasses, autoCheck: true) { Title = "ModulesClasses".Localize() },
+                    new WizardViewModel.SubjectWizardViewModel(programOptionalClasses) { Title = "OptionalClasses".Localize() },
+                };
+
+                (Application.Current.Resources["ViewModelLocator"] as ViewModelLocator).Wizard.CurrentSubjects = vm;
+
+            }
+
+            SimpleIoc.Default.GetInstance<Navigator>().NavigateModal(typeof(Views.WizardPage));
+
+        });
 
     }
 }

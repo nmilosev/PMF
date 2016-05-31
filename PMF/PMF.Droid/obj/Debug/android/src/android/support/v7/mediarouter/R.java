@@ -2975,7 +2975,7 @@ containing a value of this type.
         public static int mr_ic_play_dark=0x7f0200de;
         public static int mr_ic_play_light=0x7f0200df;
         public static int newspaper=0x7f0200e0;
-        public static int notification_template_icon_bg=0x7f0200ee;
+        public static int notification_template_icon_bg=0x7f0200ef;
         public static int phone=0x7f0200e1;
         public static int phonebook=0x7f0200e2;
         public static int placeholder=0x7f0200e3;
@@ -2987,8 +2987,9 @@ containing a value of this type.
         public static int roundedbg=0x7f0200e9;
         public static int roundedbgdark=0x7f0200ea;
         public static int sitemap=0x7f0200eb;
-        public static int vs15=0x7f0200ec;
-        public static int xamarin=0x7f0200ed;
+        public static int star=0x7f0200ec;
+        public static int vs15=0x7f0200ed;
+        public static int xamarin=0x7f0200ee;
     }
     public static final class id {
         public static int action0=0x7f0a009a;

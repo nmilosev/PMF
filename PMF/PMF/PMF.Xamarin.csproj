@@ -40,6 +40,7 @@
     </Compile>
     <Compile Include="Converters\IntToDayNameConverter.cs" />
     <Compile Include="Converters\ScheduleItemTypeToTypeNameConverter.cs" />
+    <Compile Include="CustomControls\ExtendedPicker.cs" />
     <Compile Include="CustomControls\PinMap.cs" />
     <Compile Include="Dictionaries\AppDictionary.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -69,6 +70,7 @@
     <Compile Include="ViewModels\ScheduleDetailsViewModel.cs" />
     <Compile Include="ViewModels\ScheduleViewModel.cs" />
     <Compile Include="ViewModels\SubjectViewModel.cs" />
+    <Compile Include="ViewModels\WizardViewModel.cs" />
     <Compile Include="ViewModels\_ViewModelLocator.cs" />
     <Compile Include="Views\AboutPage.xaml.cs">
       <DependentUpon>AboutPage.xaml</DependentUpon>
@@ -108,6 +110,9 @@
     </Compile>
     <Compile Include="Views\SubjectPage.xaml.cs">
       <DependentUpon>SubjectPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WizardPage.xaml.cs">
+      <DependentUpon>WizardPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\_ViewLocator.cs" />
     <Compile Include="Views\WelcomePage.xaml.cs">
@@ -296,6 +301,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\ProgramDetailsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\WizardPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

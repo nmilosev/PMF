@@ -342,7 +342,7 @@ Sva prava zadržana.</value>
     <value>Stranice predmeta</value>
   </data>
   <data name="ButtonFAQ" xml:space="preserve">
-    <value>ČESTO POSTAVLJENA PITANJA</value>
+    <value>PITANJA I ODGOVORI</value>
   </data>
   <data name="FAQError" xml:space="preserve">
     <value>Greška prilikom učitavanja pitanja i odgovora. Pokušajte ponovo kasnije...</value>
@@ -388,5 +388,14 @@ Sva prava zadržana.</value>
   </data>
   <data name="ModulesClasses" xml:space="preserve">
     <value>Predmeti sa modula</value>
+  </data>
+  <data name="ButtonWizard" xml:space="preserve">
+    <value>ŠTA DA UZMEM?</value>
+  </data>
+  <data name="Wizard" xml:space="preserve">
+    <value>Čarobnjak</value>
+  </data>
+  <data name="Semester" xml:space="preserve">
+    <value>semestar</value>
   </data>
 </root>

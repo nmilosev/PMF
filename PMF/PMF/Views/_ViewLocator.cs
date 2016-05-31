@@ -34,6 +34,8 @@ namespace PMF.Views
             SimpleIoc.Default.Register<DepartmentsPage>();
             SimpleIoc.Default.Register<ProgramsPage>();
             SimpleIoc.Default.Register<ProgramDetailsPage>();
+
+            SimpleIoc.Default.Register<WizardPage>();
         }
 
         public WelcomePage WelcomePage => ServiceLocator.Current.GetInstance<WelcomePage>();
@@ -56,8 +58,7 @@ namespace PMF.Views
         public ProgramsPage ProgramsPage => ServiceLocator.Current.GetInstance<ProgramsPage>();
         public ProgramDetailsPage ProgramDetailsPage => ServiceLocator.Current.GetInstance<ProgramDetailsPage>();
 
-
-
+        public WizardPage Wizard => ServiceLocator.Current.GetInstance<WizardPage>();
 
     }
 }

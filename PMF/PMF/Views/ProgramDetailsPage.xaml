@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PMF.Views.ProgramDetailsPage"
              xmlns:i18n="clr-namespace: PMF.Dictionaries"
+             xmlns:custom="clr-namespace: PMF.CustomControls"
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              BindingContext="{Binding Source={StaticResource ViewModelLocator}, Path=Programs.CurrentProgram}"
              Title="{i18n:Translate ProgramDetailsTitle}">
@@ -261,6 +262,13 @@
     <StackLayout>
       <StackLayout Orientation="Horizontal" Padding="20,10,20,0" Spacing="0" Margin="0,5,0,0">
         <Label Text="{i18n:Translate ModulesClasses}" FontSize="20"/>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" Padding="0">
+          <StackLayout.GestureRecognizers>
+            <TapGestureRecognizer Command = "{Binding Source={StaticResource ViewModelLocator}, Path=Programs.NextCarouselPage}"/>
+          </StackLayout.GestureRecognizers>
+          <Label HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End" FontSize="13" Text="{i18n:Translate Wizard}" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" />
+          <Image Source="rightarrow.png" HeightRequest="16" WidthRequest="16" VerticalOptions="CenterAndExpand" HorizontalOptions="End"/>
+        </StackLayout>
       </StackLayout>
       <BoxView HeightRequest="2" Margin="10,5,10,5">
         <BoxView.BackgroundColor>
@@ -355,6 +363,61 @@
           </DataTemplate>
         </ListView.ItemTemplate>
       </ListView>
+    </StackLayout>
+  </ContentPage>
+
+  <ContentPage>
+    <StackLayout Padding="10">
+      <Grid Padding="1" RowSpacing="1" ColumnSpacing="1" HorizontalOptions="FillAndExpand" Margin="0,10,0,0">
+        <Grid.BackgroundColor>
+          <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidDarkGray}" iOS="{x:Static i18n:Colors.iPhoneGray}" WinPhone="{x:Static i18n:Colors.iPhoneGray}" />
+        </Grid.BackgroundColor>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+          <RowDefinition/>
+          <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <ffimageloading:CachedImage Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" HorizontalOptions="CenterAndExpand" Source = "wizard.png" FadeAnimationEnabled="True" Margin="10,5" />
+        <Label Grid.Row="0" Grid.Column="1" Text="Dobrodošli u PMF čarobnjak za predmete!" HorizontalTextAlignment="Center" VerticalOptions="Center" Margin="10,10,10,0" FontSize="16"/>
+        <Label Grid.Row="1" Grid.Column="1" Text="PMF čarobnjak će Vam pomoći da odaberete predmete za sledeći semestar!" HorizontalTextAlignment="Center" VerticalOptions="Start" Margin="0" FontSize="14"/>
+
+      </Grid>
+      <Grid RowSpacing="1" ColumnSpacing="1" HorizontalOptions="FillAndExpand" Margin="0,10,0,0" Padding="10" VerticalOptions="FillAndExpand">
+        <Grid.BackgroundColor>
+          <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidDarkGray}" iOS="{x:Static i18n:Colors.iPhoneGray}" WinPhone="{x:Static i18n:Colors.iPhoneGray}" />
+        </Grid.BackgroundColor>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="25"/>
+          <RowDefinition Height="30"/>
+          <RowDefinition Height="25"/>
+          <RowDefinition Height="45"/>
+          <RowDefinition Height="25"/>
+          <RowDefinition Height="45"/>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="45"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Text="Studijski program" VerticalOptions="Center" FontSize="14"/>
+        <Label Grid.Row="1" Text="{Binding Name}" VerticalOptions="Center" FontSize="18"/>
+
+        <Label Grid.Row="2" Text="Modul" VerticalOptions="Center" FontSize="14"/>
+        <custom:ExtendedPicker HorizontalOptions="FillAndExpand" Grid.Row="3" ItemsSource="{Binding Source={StaticResource ViewModelLocator}, Path=Programs.CurrentModuleNames}" SelectedIndex="{Binding Source={StaticResource ViewModelLocator}, Path=Programs.CurrentModuleId, Mode=TwoWay}"/>
+        
+        <Label Grid.Row="4" Text="Semestar" VerticalOptions="Center" FontSize="14"/>
+        <custom:ExtendedPicker HorizontalOptions="FillAndExpand" Grid.Row="5" ItemsSource="{Binding Source={StaticResource ViewModelLocator}, Path=Programs.CurrentSemesters}" SelectedIndex="{Binding Source={StaticResource ViewModelLocator}, Path=Programs.CurrentSemesterId, Mode=TwoWay}"/>
+
+        <Button Grid.Row="7" Text="Prikaži prerporučene predmete" VerticalOptions="CenterAndExpand" Command="{Binding Source={StaticResource ViewModelLocator}, Path=Programs.OpenWizardResults}"/>
+      </Grid>
+
+
+
     </StackLayout>
   </ContentPage>
 
