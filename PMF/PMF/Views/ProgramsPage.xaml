@@ -11,7 +11,7 @@
     <DataTemplate>
       <ContentPage Title="{Binding Title}">
         <ContentPage.Icon>
-          <OnPlatform x:TypeArguments="FileImageSource" iOS="calendarday.png"/>
+          <OnPlatform x:TypeArguments="FileImageSource" iOS="arrows.png"/>
         </ContentPage.Icon>
         <StackLayout VerticalOptions="FillAndExpand">
           <ListView ItemsSource="{Binding Programs}" RowHeight="150" VerticalOptions="FillAndExpand" SeparatorVisibility="None" Margin="0,10,0,0" HasUnevenRows="True">

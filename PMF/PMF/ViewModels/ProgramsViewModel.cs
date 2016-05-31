@@ -91,6 +91,14 @@ namespace PMF.ViewModels
                         {
                             loadingOk = true;
                             CurrentProgram = program;
+
+                            CurrentModules = new ObservableCollection<ModuleViewModel>();
+                            foreach (var m in program.Modules)
+                            {
+                                var mvm = new ModuleViewModel(m.ModuleSubjects) { Id = m.Id, Name = m.Name };                                
+                                CurrentModules.Add(mvm);
+                            }
+
                             SimpleIoc.Default.GetInstance<Navigator>().NavigateModal(typeof(Views.ProgramDetailsPage));
                         }
                     }
@@ -105,9 +113,43 @@ namespace PMF.ViewModels
 
         public Program CurrentProgram { get; set; }
 
-
         public Command NextCarouselPage => new Command(() => SimpleIoc.Default.GetInstance<Navigator>().GoForwardCarousel(typeof(Views.ProgramDetailsPage)));
-      
-        
+
+        public Command OpenSubjectDetails => new Command<Subject>(async (p) =>
+        {
+            var subjectsData = SimpleIoc.Default.GetInstance<ISubjectsSource>();
+
+            Subject s;
+
+            using (UserDialogs.Instance.Loading("PleaseWait".Localize()))
+            {
+                s = await subjectsData.ForId(p.Id, Dictionaries.Translator.CurrentCultureCode);
+            }
+
+            if (subjectsData.IsDataValid)
+            {
+                SimpleIoc.Default.GetInstance<SubjectViewModel>().Current = s;
+                SimpleIoc.Default.GetInstance<Navigator>().NavigateModal(typeof(Views.SubjectPage));
+            }
+            else
+            {
+                UserDialogs.Instance.ErrorToast("Error".Localize(), "SubjectLoadError".Localize(), 1500);
+            }
+
+        });
+
+        public ObservableCollection<ModuleViewModel> CurrentModules { get; set; }
+
+        public class ModuleViewModel : ObservableCollection<Subject>
+        {
+            public int Id { get; set; }
+            public string Name { get; set; }
+
+            public ModuleViewModel(IEnumerable<Subject> s) : base(s)
+            {                
+            }
+        }
+
+
     }
 }

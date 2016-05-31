@@ -380,4 +380,13 @@ Sva prava zadržana.</value>
   <data name="ProgramPurpose" xml:space="preserve">
     <value>Svrha programa</value>
   </data>
+  <data name="OptionalClasses" xml:space="preserve">
+    <value>Izborni predmeti</value>
+  </data>
+  <data name="Modules" xml:space="preserve">
+    <value>Moduli</value>
+  </data>
+  <data name="ModulesClasses" xml:space="preserve">
+    <value>Predmeti sa modula</value>
+  </data>
 </root>

@@ -6,7 +6,10 @@
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              BindingContext="{Binding Source={StaticResource ViewModelLocator}, Path=Programs.CurrentProgram}"
              Title="{i18n:Translate ProgramDetailsTitle}">
-  
+
+
+  <!-- Description: -->
+
   <ContentPage>
     <ScrollView>
       <StackLayout>
@@ -33,7 +36,7 @@
               <Label Text="{i18n:Translate YearsOfStudy}" FontSize="14" LineBreakMode="CharacterWrap"/>
               <Label FontSize="14" Text="{Binding Years}" LineBreakMode="CharacterWrap" />
             </StackLayout>
-          </StackLayout>          
+          </StackLayout>
         </Grid>
         <StackLayout Padding="20,10,20,10" Spacing="0" Margin="0,-20,0,0">
           <Label Text="{i18n:Translate ProgramGoals}" FontSize="20"/>
@@ -60,26 +63,299 @@
           <Label HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End" Text="{i18n:Translate MandatoryClasses}" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" />
           <Image Source="rightarrow.png" HeightRequest="30" WidthRequest="30" VerticalOptions="CenterAndExpand" HorizontalOptions="End"/>
         </StackLayout>
-        
+
       </StackLayout>
     </ScrollView>
   </ContentPage>
+
+  <!-- Mandatory: -->
+
   <ContentPage>
-    <ContentPage.Padding>
-      <OnPlatform x:TypeArguments="Thickness" iOS="0,40,0,0" Android="0,40,0,0" />
-    </ContentPage.Padding>
     <StackLayout>
-      <Label Text="Red" FontSize="Medium" HorizontalOptions="Center" />
-      <BoxView Color="Red" WidthRequest="200" HeightRequest="200" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+      <StackLayout Orientation="Horizontal" Padding="20,10,20,0" Spacing="0" Margin="0,5,0,0">
+        <Label Text="{i18n:Translate MandatoryClasses}" FontSize="20"/>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" Padding="0">
+          <StackLayout.GestureRecognizers>
+            <TapGestureRecognizer Command = "{Binding Source={StaticResource ViewModelLocator}, Path=Programs.NextCarouselPage}"/>
+          </StackLayout.GestureRecognizers>
+          <Label HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End" FontSize="13" Text="{i18n:Translate OptionalClasses}" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" />
+          <Image Source="rightarrow.png" HeightRequest="16" WidthRequest="16" VerticalOptions="CenterAndExpand" HorizontalOptions="End"/>
+        </StackLayout>
+      </StackLayout>
+      <BoxView HeightRequest="2" Margin="10,5,10,5">
+        <BoxView.BackgroundColor>
+          <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" />
+        </BoxView.BackgroundColor>
+      </BoxView>
+      <ListView ItemsSource="{Binding MandatorySubjects}" RowHeight="150" VerticalOptions="FillAndExpand" SeparatorVisibility="None" HasUnevenRows="True">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <StackLayout Orientation="Horizontal" Padding="10" HorizontalOptions="FillAndExpand">
+                <StackLayout.GestureRecognizers>
+                  <TapGestureRecognizer Command="{Binding Source={StaticResource ViewModelLocator}, Path=Programs.OpenSubjectDetails}" CommandParameter="{Binding}" />
+                </StackLayout.GestureRecognizers>
+                <Grid Padding="1" RowSpacing="1" ColumnSpacing="1" HorizontalOptions="FillAndExpand">
+                  <Grid.BackgroundColor>
+                    <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidDarkGray}" iOS="{x:Static i18n:Colors.iPhoneGray}" WinPhone="{x:Static i18n:Colors.iPhoneGray}" />
+                  </Grid.BackgroundColor>
+                  <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="40"/>
+                  </Grid.ColumnDefinitions>
+                  <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                  </Grid.RowDefinitions>
+
+                  <ContentView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="1" Padding="10">
+                    <ContentView.BackgroundColor>
+                      <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" iOS="{x:Static i18n:Colors.iPhoneWhite}" WinPhone="{x:Static i18n:Colors.iPhoneWhite}"/>
+                    </ContentView.BackgroundColor>
+                    <Label Text="{Binding Id}" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"/>
+                  </ContentView>
+
+
+                  <ContentView Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Padding="10">
+                    <ContentView.BackgroundColor>
+                      <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" iOS="{x:Static i18n:Colors.iPhoneWhite}" WinPhone="{x:Static i18n:Colors.iPhoneWhite}"/>
+                    </ContentView.BackgroundColor>
+                    <Label Text="{Binding Title}"/>
+                  </ContentView>
+
+
+                  <ContentView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Padding="10">
+                    <ContentView.BackgroundColor>
+                      <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" iOS="{x:Static i18n:Colors.iPhoneWhite}" WinPhone="{x:Static i18n:Colors.iPhoneWhite}"/>
+                    </ContentView.BackgroundColor>
+                    <StackLayout Spacing="3" Orientation="Horizontal">
+                      <Label Text="Semestar:" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"  />
+                      <Label Text="{Binding Semester}" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"/>
+                    </StackLayout>
+                  </ContentView>
+
+                  <ContentView Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="1" Padding="10">
+                    <ContentView.BackgroundColor>
+                      <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" iOS="{x:Static i18n:Colors.iPhoneWhite}" WinPhone="{x:Static i18n:Colors.iPhoneWhite}"/>
+                    </ContentView.BackgroundColor>
+                    <StackLayout Spacing="3" Orientation="Horizontal">
+                      <Label Text="ESPB:" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"/>
+                      <Label Text="{Binding ESPB}" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"/>
+                    </StackLayout>
+                  </ContentView>
+
+                  <ContentView Grid.Row="0" Grid.Column="3" Grid.RowSpan="2" Padding="10">
+                    <ContentView.BackgroundColor>
+                      <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" iOS="{x:Static i18n:Colors.iPhoneWhite}" WinPhone="{x:Static i18n:Colors.iPhoneWhite}"/>
+                    </ContentView.BackgroundColor>
+                    <Image Source="rightarrow.png" VerticalOptions="Center" HorizontalOptions="Center"/>
+                  </ContentView>
+
+                </Grid>
+              </StackLayout>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
     </StackLayout>
   </ContentPage>
+
+  <!-- Optional: -->
+
   <ContentPage>
-    <ContentPage.Padding>
-      <OnPlatform x:TypeArguments="Thickness" iOS="0,40,0,0" Android="0,40,0,0" />
-    </ContentPage.Padding>
     <StackLayout>
-      <Label Text="Red" FontSize="Medium" HorizontalOptions="Center" />
-      <BoxView Color="Red" WidthRequest="200" HeightRequest="200" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+      <StackLayout Orientation="Horizontal" Padding="20,10,20,0" Spacing="0" Margin="0,5,0,0">
+        <Label Text="{i18n:Translate OptionalClasses}" FontSize="20"/>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" Padding="0">
+          <StackLayout.GestureRecognizers>
+            <TapGestureRecognizer Command = "{Binding Source={StaticResource ViewModelLocator}, Path=Programs.NextCarouselPage}"/>
+          </StackLayout.GestureRecognizers>
+          <Label HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End" FontSize="13" Text="{i18n:Translate Modules}" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" />
+          <Image Source="rightarrow.png" HeightRequest="16" WidthRequest="16" VerticalOptions="CenterAndExpand" HorizontalOptions="End"/>
+        </StackLayout>
+      </StackLayout>
+      <BoxView HeightRequest="2" Margin="10,5,10,5">
+        <BoxView.BackgroundColor>
+          <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" />
+        </BoxView.BackgroundColor>
+      </BoxView>
+      <ListView ItemsSource="{Binding OptionalSubjects}" RowHeight="150" VerticalOptions="FillAndExpand" SeparatorVisibility="None" HasUnevenRows="True">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <StackLayout Orientation="Horizontal" Padding="10" HorizontalOptions="FillAndExpand">
+                <StackLayout.GestureRecognizers>
+                  <TapGestureRecognizer Command="{Binding Source={StaticResource ViewModelLocator}, Path=Programs.OpenSubjectDetails}" CommandParameter="{Binding}" />
+                </StackLayout.GestureRecognizers>
+                <Grid Padding="1" RowSpacing="1" ColumnSpacing="1" HorizontalOptions="FillAndExpand">
+                  <Grid.BackgroundColor>
+                    <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidDarkGray}" iOS="{x:Static i18n:Colors.iPhoneGray}" WinPhone="{x:Static i18n:Colors.iPhoneGray}" />
+                  </Grid.BackgroundColor>
+                  <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="40"/>
+                  </Grid.ColumnDefinitions>
+                  <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                  </Grid.RowDefinitions>
+
+                  <ContentView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="1" Padding="10">
+                    <ContentView.BackgroundColor>
+                      <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" iOS="{x:Static i18n:Colors.iPhoneWhite}" WinPhone="{x:Static i18n:Colors.iPhoneWhite}"/>
+                    </ContentView.BackgroundColor>
+                    <Label Text="{Binding Id}" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"/>
+                  </ContentView>
+
+
+                  <ContentView Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Padding="10">
+                    <ContentView.BackgroundColor>
+                      <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" iOS="{x:Static i18n:Colors.iPhoneWhite}" WinPhone="{x:Static i18n:Colors.iPhoneWhite}"/>
+                    </ContentView.BackgroundColor>
+                    <Label Text="{Binding Title}"/>
+                  </ContentView>
+
+
+                  <ContentView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Padding="10">
+                    <ContentView.BackgroundColor>
+                      <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" iOS="{x:Static i18n:Colors.iPhoneWhite}" WinPhone="{x:Static i18n:Colors.iPhoneWhite}"/>
+                    </ContentView.BackgroundColor>
+                    <StackLayout Spacing="3" Orientation="Horizontal">
+                      <Label Text="Semestar:" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"  />
+                      <Label Text="{Binding Semester}" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"/>
+                    </StackLayout>
+                  </ContentView>
+
+                  <ContentView Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="1" Padding="10">
+                    <ContentView.BackgroundColor>
+                      <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" iOS="{x:Static i18n:Colors.iPhoneWhite}" WinPhone="{x:Static i18n:Colors.iPhoneWhite}"/>
+                    </ContentView.BackgroundColor>
+                    <StackLayout Spacing="3" Orientation="Horizontal">
+                      <Label Text="ESPB:" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"/>
+                      <Label Text="{Binding ESPB}" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"/>
+                    </StackLayout>
+                  </ContentView>
+
+                  <ContentView Grid.Row="0" Grid.Column="3" Grid.RowSpan="2" Padding="10">
+                    <ContentView.BackgroundColor>
+                      <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" iOS="{x:Static i18n:Colors.iPhoneWhite}" WinPhone="{x:Static i18n:Colors.iPhoneWhite}"/>
+                    </ContentView.BackgroundColor>
+                    <Image Source="rightarrow.png" VerticalOptions="Center" HorizontalOptions="Center"/>
+                  </ContentView>
+
+                </Grid>
+              </StackLayout>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
     </StackLayout>
   </ContentPage>
+
+  <!--Modules:-->
+  <ContentPage>
+    <StackLayout>
+      <StackLayout Orientation="Horizontal" Padding="20,10,20,0" Spacing="0" Margin="0,5,0,0">
+        <Label Text="{i18n:Translate ModulesClasses}" FontSize="20"/>
+      </StackLayout>
+      <BoxView HeightRequest="2" Margin="10,5,10,5">
+        <BoxView.BackgroundColor>
+          <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" />
+        </BoxView.BackgroundColor>
+      </BoxView>
+      <ListView ItemsSource="{Binding Source={StaticResource ViewModelLocator}, Path=Programs.CurrentModules}" IsGroupingEnabled="True" RowHeight="150" VerticalOptions="FillAndExpand" SeparatorVisibility="None" HasUnevenRows="True">
+        <ListView.GroupHeaderTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <StackLayout>
+                <StackLayout Orientation="Horizontal" Padding="20,0,20,0" Spacing="0" Margin="0,5,0,0" HorizontalOptions="FillAndExpand">
+                  <Label Text="{Binding Name}" FontSize="16" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+                <BoxView HeightRequest="2" Margin="20,5,20,5">
+                  <BoxView.BackgroundColor>
+                    <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" />
+                  </BoxView.BackgroundColor>
+                </BoxView>
+              </StackLayout>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.GroupHeaderTemplate>
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <StackLayout Orientation="Horizontal" Padding="10" HorizontalOptions="FillAndExpand">
+                <StackLayout.GestureRecognizers>
+                  <TapGestureRecognizer Command="{Binding Source={StaticResource ViewModelLocator}, Path=Programs.OpenSubjectDetails}" CommandParameter="{Binding}" />
+                </StackLayout.GestureRecognizers>
+                <Grid Padding="1" RowSpacing="1" ColumnSpacing="1" HorizontalOptions="FillAndExpand">
+                  <Grid.BackgroundColor>
+                    <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidDarkGray}" iOS="{x:Static i18n:Colors.iPhoneGray}" WinPhone="{x:Static i18n:Colors.iPhoneGray}" />
+                  </Grid.BackgroundColor>
+                  <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="40"/>
+                  </Grid.ColumnDefinitions>
+                  <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                  </Grid.RowDefinitions>
+
+                  <ContentView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="1" Padding="10">
+                    <ContentView.BackgroundColor>
+                      <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" iOS="{x:Static i18n:Colors.iPhoneWhite}" WinPhone="{x:Static i18n:Colors.iPhoneWhite}"/>
+                    </ContentView.BackgroundColor>
+                    <Label Text="{Binding Id}" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"/>
+                  </ContentView>
+
+
+                  <ContentView Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Padding="10">
+                    <ContentView.BackgroundColor>
+                      <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" iOS="{x:Static i18n:Colors.iPhoneWhite}" WinPhone="{x:Static i18n:Colors.iPhoneWhite}"/>
+                    </ContentView.BackgroundColor>
+                    <Label Text="{Binding Title}"/>
+                  </ContentView>
+
+
+                  <ContentView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Padding="10">
+                    <ContentView.BackgroundColor>
+                      <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" iOS="{x:Static i18n:Colors.iPhoneWhite}" WinPhone="{x:Static i18n:Colors.iPhoneWhite}"/>
+                    </ContentView.BackgroundColor>
+                    <StackLayout Spacing="3" Orientation="Horizontal">
+                      <Label Text="Semestar:" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"  />
+                      <Label Text="{Binding Semester}" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"/>
+                    </StackLayout>
+                  </ContentView>
+
+                  <ContentView Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="1" Padding="10">
+                    <ContentView.BackgroundColor>
+                      <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" iOS="{x:Static i18n:Colors.iPhoneWhite}" WinPhone="{x:Static i18n:Colors.iPhoneWhite}"/>
+                    </ContentView.BackgroundColor>
+                    <StackLayout Spacing="3" Orientation="Horizontal">
+                      <Label Text="ESPB:" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"/>
+                      <Label Text="{Binding ESPB}" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"/>
+                    </StackLayout>
+                  </ContentView>
+
+                  <ContentView Grid.Row="0" Grid.Column="3" Grid.RowSpan="2" Padding="10">
+                    <ContentView.BackgroundColor>
+                      <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" iOS="{x:Static i18n:Colors.iPhoneWhite}" WinPhone="{x:Static i18n:Colors.iPhoneWhite}"/>
+                    </ContentView.BackgroundColor>
+                    <Image Source="rightarrow.png" VerticalOptions="Center" HorizontalOptions="Center"/>
+                  </ContentView>
+
+                </Grid>
+              </StackLayout>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </StackLayout>
+  </ContentPage>
+
 </CarouselPage>
