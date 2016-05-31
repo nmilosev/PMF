@@ -131,6 +131,9 @@ C:\Source\PMF\PMF\PMF.Droid\obj\Debug\uploadflags.txt
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\wizard.png
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\unchecked.png
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\res\drawable\checked.png
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Syncfusion.SfChart.Android.dll
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Syncfusion.SfChart.XForms.Android.dll
+C:\Source\PMF\PMF\PMF.Droid\bin\Debug\Syncfusion.SfChart.XForms.dll
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.dll.mdb
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\PMF.Droid.dll.mdb
 C:\Source\PMF\PMF\PMF.Droid\bin\Debug\PMF.Droid.dll.mdb

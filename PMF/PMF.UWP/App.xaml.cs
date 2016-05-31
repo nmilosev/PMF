@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Syncfusion.SfChart.XForms.UWP;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -75,7 +76,7 @@ namespace PMF.UWP
                 {
                     //TODO: Load state from previously suspended application
                 }
-
+                new SfChartRenderer();
                 Xamarin.FormsMaps.Init("Zp0r6KnOexmtHzZkZSny~MVGQtHpmmiwbOpgR6f6gjw~AqRKiQSt_obHK9FAfxGASaIeP7GFR8VD3zuScF3SpRuXCYf0BIzQ2vSjPcH18bbb");
 
                 // Place the frame in the current Window

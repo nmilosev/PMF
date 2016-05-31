@@ -38,7 +38,14 @@ namespace PMF.ViewModels
                 });
             }
         }
-        
+
+        public Command StudentServicesCommand => new Command(() =>
+            {
+                var navigator = SimpleIoc.Default.GetInstance<Navigator>();
+                navigator.HideMenu();
+                navigator.Navigate(typeof(Views.StudentServicesPage));
+            });
+
         public Command WelcomeCommand
         {
             get
@@ -66,7 +73,7 @@ namespace PMF.ViewModels
                 };
             }
         }
-        
+
         public Command MenuCommand => new Command<string>(CommandAction);
 
         public async void CommandAction(string actionName)
@@ -102,20 +109,20 @@ namespace PMF.ViewModels
                     if (departments.IsDataValid)
                         SimpleIoc.Default.GetInstance<Navigator>().Navigate(typeof(Views.DepartmentsPage));
                     else
-                        UserDialogs.Instance.ErrorToast("Error".Localize(), "ProgramsError".Localize(), 1500);                                        
+                        UserDialogs.Instance.ErrorToast("Error".Localize(), "ProgramsError".Localize(), 1500);
                     break;
                 default:
                     await (Application.Current.Resources["ViewLocator"] as Views.ViewLocator).MainPage.DisplayAlert("Command", actionName, "OK");
                     break;
             }
         }
-      
+
     }
 
     public class MenuItem
     {
         public string Id { get; set; }
-        
+
         public string Text { get; set; }
 
         public string Icon { get; set; }

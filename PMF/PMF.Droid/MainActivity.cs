@@ -22,6 +22,8 @@ namespace PMF.Droid
 
             Xamarin.FormsMaps.Init(this, bundle);
 
+            new Syncfusion.SfChart.XForms.Droid.SfChartRenderer();
+
             LoadApplication(new App());
 
             HideIcon();

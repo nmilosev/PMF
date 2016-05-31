@@ -247,3 +247,7 @@ C:\Source\PMF\PMF\PMF.UWP\obj\x86\Debug\Splat.pri.xml
 C:\Source\PMF\PMF\PMF.UWP\obj\x86\Debug\Xamarin.Forms.Platform.UAP.pri.xml
 C:\Source\PMF\PMF\PMF.UWP\obj\x86\Debug\Xamarin.Forms.Maps.UWP.pri.xml
 C:\Source\PMF\PMF\PMF.UWP\obj\x86\Debug\ProjectArchitectures.txt
+C:\Source\PMF\PMF\PMF.UWP\bin\x86\Debug\Syncfusion.SfChart.UWP.dll
+C:\Source\PMF\PMF\PMF.UWP\bin\x86\Debug\Syncfusion.SfChart.XForms.UWP.dll
+C:\Source\PMF\PMF\PMF.UWP\bin\x86\Debug\Syncfusion.SfChart.XForms.dll
+C:\Source\PMF\PMF\PMF.UWP\obj\x86\Debug\Syncfusion.SfChart.UWP.pri.xml

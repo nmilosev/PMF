@@ -108,6 +108,15 @@
     <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\Splat\1.6.2\lib\NetCore45\Splat.dll">
       <PackagePath>Splat.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\Syncfusion.Xamarin.SfChart\14.1.0.46\lib\uap10.0\Syncfusion.SfChart.UWP.dll">
+      <PackagePath>Syncfusion.SfChart.UWP.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\Syncfusion.Xamarin.SfChart\14.1.0.46\lib\uap10.0\Syncfusion.SfChart.XForms.UWP.dll">
+      <PackagePath>Syncfusion.SfChart.XForms.UWP.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\Syncfusion.Xamarin.SfChart\14.1.0.46\lib\uap10.0\Syncfusion.SfChart.XForms.dll">
+      <PackagePath>Syncfusion.SfChart.XForms.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\System.AppContext\4.0.0\lib\netcore50\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
     </AppxPackagedFile>
@@ -587,6 +596,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\Coding4Fun.Toolkit.Controls\2.1.6\lib\netcore451\Coding4Fun.Toolkit.Controls\Themes\Generic.xbf">
       <PackagePath>Coding4Fun.Toolkit.Controls\Themes\Generic.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\Syncfusion.Xamarin.SfChart\14.1.0.46\lib\uap10.0\Syncfusion.SfChart.UWP\Syncfusion.SfChart.UWP.xr.xml">
+      <PackagePath>Syncfusion.SfChart.UWP\Syncfusion.SfChart.UWP.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\Syncfusion.Xamarin.SfChart\14.1.0.46\lib\uap10.0\Syncfusion.SfChart.UWP\Properties\Syncfusion.SfChart.UWP_2015.rd.xml">
+      <PackagePath>Syncfusion.SfChart.UWP\Properties\Syncfusion.SfChart.UWP_2015.rd.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\Xamarin.Forms\2.2.0.43\lib\uap10.0\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>

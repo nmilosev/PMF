@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PMF.Views.StudentServicesPage"
+             xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
+             Title="PMF - Studentska služba"
+             >
+  
+  <ContentPage Title="Ispiti">
+    <chart:SfChart>
+      <chart:SfChart.ChartBehaviors>
+        <chart:ChartZoomPanBehavior ZoomMode="XY"/>
+      </chart:SfChart.ChartBehaviors>
+      <chart:SfChart.PrimaryAxis>
+        <chart:CategoryAxis LabelRotationAngle = "-90">
+          <chart:CategoryAxis.Title>
+            <chart:ChartAxisTitle/>
+          </chart:CategoryAxis.Title>
+        </chart:CategoryAxis>
+      </chart:SfChart.PrimaryAxis>
+      <chart:SfChart.SecondaryAxis>
+        <chart:NumericalAxis Maximum="10.5" Minimum="5.5" Interval="1">
+          <chart:NumericalAxis.Title>
+            <chart:ChartAxisTitle/>
+          </chart:NumericalAxis.Title>
+        </chart:NumericalAxis>
+      </chart:SfChart.SecondaryAxis>
+
+      <chart:SfChart.Series>
+        <chart:StackingColumnSeries
+            EnableAnimation="True"
+            ItemsSource="{Binding ExamsData}"
+            XBindingPath="Title"
+            AnimationDuration="2"
+            YBindingPath="Grade"
+            DataMarkerPosition = "Top"
+            EnableDataPointSelection = "False"
+            Color="#280046"
+            >
+          <chart:StackingColumnSeries.DataMarker>
+            <chart:ChartDataMarker>
+              <chart:ChartDataMarker.LabelStyle>
+                <chart:DataMarkerLabelStyle LabelPosition = "Center"/>
+              </chart:ChartDataMarker.LabelStyle>
+            </chart:ChartDataMarker>
+          </chart:StackingColumnSeries.DataMarker>
+        </chart:StackingColumnSeries>
+      </chart:SfChart.Series>
+    </chart:SfChart>
+
+  </ContentPage>
+
+  <ContentPage Title="ESPB">
+    <chart:SfChart>
+      <chart:SfChart.ChartBehaviors>
+        <chart:ChartZoomPanBehavior ZoomMode="XY"/>
+      </chart:SfChart.ChartBehaviors>
+      <chart:SfChart.PrimaryAxis>
+        <chart:CategoryAxis LabelRotationAngle = "-90">
+          <chart:CategoryAxis.Title>
+            <chart:ChartAxisTitle/>
+          </chart:CategoryAxis.Title>
+        </chart:CategoryAxis>
+      </chart:SfChart.PrimaryAxis>
+      <chart:SfChart.SecondaryAxis>
+        <chart:NumericalAxis Maximum="11" Minimum="3.5" Interval="1">
+          <chart:NumericalAxis.Title>
+            <chart:ChartAxisTitle/>
+          </chart:NumericalAxis.Title>
+        </chart:NumericalAxis>
+      </chart:SfChart.SecondaryAxis>
+
+      <chart:SfChart.Series>
+        <chart:FastLineSeries
+            EnableAnimation="True"
+            ItemsSource="{Binding ExamsData}"
+            XBindingPath="Title"
+            YBindingPath="ESPB"
+            AnimationDuration="2"
+            EnableDataPointSelection = "False"
+            Color="#280046"/>          
+        
+      </chart:SfChart.Series>
+    </chart:SfChart>
+  </ContentPage>
+  
+</TabbedPage>

@@ -63,6 +63,7 @@
         <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
           <StackLayout.GestureRecognizers>
             <TapGestureRecognizer Command="{Binding InfoCommand}"/>
+            <TapGestureRecognizer Command="{Binding StudentServicesCommand}" NumberOfTapsRequired="2"/>
           </StackLayout.GestureRecognizers>
           <Label Text="{i18n:Translate Info}" HorizontalOptions="End" VerticalOptions="Center">
             <Label.TextColor>

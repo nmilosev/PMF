@@ -36,6 +36,8 @@ namespace PMF.Views
             SimpleIoc.Default.Register<ProgramDetailsPage>();
 
             SimpleIoc.Default.Register<WizardPage>();
+
+            SimpleIoc.Default.Register<StudentServicesPage>();
         }
 
         public WelcomePage WelcomePage => ServiceLocator.Current.GetInstance<WelcomePage>();
@@ -59,6 +61,8 @@ namespace PMF.Views
         public ProgramDetailsPage ProgramDetailsPage => ServiceLocator.Current.GetInstance<ProgramDetailsPage>();
 
         public WizardPage Wizard => ServiceLocator.Current.GetInstance<WizardPage>();
+
+        public StudentServicesPage StudentServices => ServiceLocator.Current.GetInstance<StudentServicesPage>();
 
     }
 }

@@ -27,6 +27,8 @@ namespace PMF.iOS
 
             Xamarin.FormsMaps.Init();
 
+            new Syncfusion.SfChart.XForms.iOS.Renderers.SfChartRenderer();
+
             LoadApplication(new App());
             
             FFImageLoading.Forms.Touch.CachedImageRenderer.Init();

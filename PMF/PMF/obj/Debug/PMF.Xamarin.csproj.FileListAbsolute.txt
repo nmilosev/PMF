@@ -70,6 +70,10 @@ C:\Source\PMF\PMF\PMF\obj\Debug\sr-Latn-RS\PMF.resources.dll
 C:\Source\PMF\PMF\PMF\obj\Debug\PMF.dll
 C:\Source\PMF\PMF\PMF\obj\Debug\PMF.pdb
 C:\Source\PMF\PMF\PMF\obj\Debug\PMF.Views.WizardPage.xaml.g.cs
+C:\Source\PMF\PMF\PMF\bin\Debug\Syncfusion.SfChart.XForms.dll
+C:\Source\PMF\PMF\PMF\obj\Debug\PMF.Views.StudentServicesPage.xaml.g.cs
+C:\Source\PMF\PMF\PMF\obj\Debug\PMF.dll.mdb
+C:\Source\PMF\PMF\PMF\bin\Debug\PMF.dll.mdb
 C:\Source\PMF\PMF\PMF\obj\Debug\PMF.dll.mdb
 C:\Source\PMF\PMF\PMF\bin\Debug\PMF.dll.mdb
 C:\Source\PMF\PMF\PMF\obj\Debug\PMF.dll.mdb

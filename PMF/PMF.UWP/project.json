@@ -4,6 +4,7 @@
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
     "MvvmLightLibs": "5.3.0",
     "Plugin.Share": "4.0.0",
+    "Syncfusion.Xamarin.SfChart": "14.1.0.46",
     "Xam.Plugins.Messaging": "3.2.1",
     "Xamarin.FFImageLoading.Forms": "2.1.0",
     "Xamarin.Forms": "2.2.0.43",

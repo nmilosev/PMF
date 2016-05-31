@@ -18,6 +18,9 @@ C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Plugin.Share.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\PMF.Core.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\PMF.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Splat.dll
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Syncfusion.SfChart.Android.dll
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Syncfusion.SfChart.XForms.Android.dll
+C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\Syncfusion.SfChart.XForms.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.Core.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.dll
 C:\Source\PMF\PMF\PMF.Droid\obj\Debug\assemblies\System.Xml.dll

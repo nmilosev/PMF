@@ -11,6 +11,7 @@
     <ResolvedResourceDirectory>C:\Source\PMF\PMF\PMF.Droid\obj\Debug\__library_projects__\Plugin.Messaging\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Source\PMF\PMF\PMF.Droid\obj\Debug\__library_projects__\Plugin.Share\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Source\PMF\PMF\PMF.Droid\obj\Debug\__library_projects__\Splat\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Source\PMF\PMF\PMF.Droid\obj\Debug\__library_projects__\Syncfusion.SfChart.Android\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Source\PMF\PMF\PMF.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Maps.Android\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Source\PMF\PMF\PMF.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Source\PMF\PMF\PMF.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\res</ResolvedResourceDirectory>
@@ -40,6 +41,7 @@
     <ResolvedResourceDirectoryStamp>C:\Source\PMF\PMF\PMF.Droid\obj\Debug\__library_projects__\Plugin.Messaging.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Source\PMF\PMF\PMF.Droid\obj\Debug\__library_projects__\Plugin.Share.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Source\PMF\PMF\PMF.Droid\obj\Debug\__library_projects__\Splat.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Source\PMF\PMF\PMF.Droid\obj\Debug\__library_projects__\Syncfusion.SfChart.Android.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Source\PMF\PMF\PMF.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Maps.Android.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Source\PMF\PMF\PMF.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Source\PMF\PMF\PMF.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
