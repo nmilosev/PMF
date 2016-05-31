@@ -6,7 +6,7 @@
              xmlns:custom="clr-namespace: PMF.CustomControls"
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              BindingContext="{Binding Source={StaticResource ViewModelLocator}, Path=Wizard}"
-             Title="Preporučeni predmeti">
+             Title="{i18n:Translate RecommendedClasses}">
   <StackLayout>
     <ListView ItemsSource="{Binding CurrentSubjects}" IsGroupingEnabled="True" RowHeight="150" VerticalOptions="FillAndExpand" SeparatorVisibility="None" HasUnevenRows="True" Margin="0,10,0,0">
       <ListView.GroupHeaderTemplate>
@@ -79,7 +79,7 @@
                     <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" iOS="{x:Static i18n:Colors.iPhoneWhite}" WinPhone="{x:Static i18n:Colors.iPhoneWhite}"/>
                   </ContentView.BackgroundColor>
                   <StackLayout Spacing="3" Orientation="Horizontal">
-                    <Label Text="ESPB:" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"/>
+                    <Label Text="{i18n:Translate ESPB}" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"/>
                     <Label Text="{Binding Subject.ESPB}" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"/>
                   </StackLayout>
                 </ContentView>
@@ -97,11 +97,12 @@
         </DataTemplate>
       </ListView.ItemTemplate>
     </ListView>
-    <StackLayout HeightRequest="60">
-      <Label HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" Text="Pritisnite predmet dva puta brzo za detalje..." FontAttributes="Italic" />
-      <StackLayout Orientation="Horizontal">
-        
-        <Label Text="{Binding CurrentESPB}" />
+    <StackLayout HeightRequest="80">
+      <Label HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" Text="{i18n:Translate TapTwiceDetails}" FontAttributes="Italic" />
+      <StackLayout Orientation="Horizontal" Margin="10,0,10,0" Spacing="3">
+        <Button Text="{i18n:Translate SaveList}" VerticalOptions="Center" Command="{Binding SaveList}"/>
+        <Label Text="{i18n:Translate ESPB}" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End" VerticalOptions="EndAndExpand" VerticalTextAlignment="Center"/>
+        <Label Text="{Binding CurrentESPB}" FontSize="28" VerticalOptions="EndAndExpand" VerticalTextAlignment="Center"/>
       </StackLayout>
 
     </StackLayout>

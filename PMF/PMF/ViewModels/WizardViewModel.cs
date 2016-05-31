@@ -1,5 +1,7 @@
-﻿using GalaSoft.MvvmLight;
+﻿using Acr.UserDialogs;
+using GalaSoft.MvvmLight;
 using PMF.Core.Models;
+using PMF.Dictionaries;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -13,6 +15,10 @@ namespace PMF.ViewModels
     public class WizardViewModel : ViewModelBase
     {
         public ObservableCollection<SubjectWizardViewModel> CurrentSubjects { get; set; }
+
+        public Program CurrentProgram { get; set; }
+        public string CurrentModuleName { get; set; }
+        public int Semester { get; set; }
 
         public class SubjectCheck : ViewModelBase
         {
@@ -89,5 +95,35 @@ namespace PMF.ViewModels
                 }
             }
         }
+
+        public Command SaveList => new Command(() =>
+        {
+            var cfg = new ActionSheetConfig()
+                    .SetTitle("SendListTitle".Localize())
+                    .Add("SendListMessage".Localize())
+                    .SetDestructive("OK".Localize(), () =>
+                    {
+                        var messenger = Plugin.Share.CrossShare.Current;
+                        var sb = new StringBuilder();
+                        sb.AppendLine(CurrentProgram.Name);
+                        sb.AppendLine(CurrentModuleName);
+                        sb.AppendLine($"{"SemesterCap".Localize()}: {Semester}");
+                        sb.AppendLine(string.Empty);
+                        foreach (var group in CurrentSubjects)
+                            foreach (var checkedSubject in group)
+                                if (checkedSubject.IsChecked)
+                                {
+                                    var s = checkedSubject.Subject;
+                                    sb.AppendLine($"{s.Id} - {s.Title} - {"ESPB".Localize()}{s.ESPB}");
+                                }
+                        sb.AppendLine(string.Empty);
+                        sb.AppendLine($"{"ESPB".Localize()}{CurrentESPB}");
+
+                        messenger.Share(sb.ToString(), "AppName".Localize());
+
+                    });
+
+            UserDialogs.Instance.ActionSheet(cfg);
+        });
     }
 }

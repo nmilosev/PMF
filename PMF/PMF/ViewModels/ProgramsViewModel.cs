@@ -183,6 +183,9 @@ namespace PMF.ViewModels
                 };
 
                 (Application.Current.Resources["ViewModelLocator"] as ViewModelLocator).Wizard.CurrentSubjects = vm;
+                (Application.Current.Resources["ViewModelLocator"] as ViewModelLocator).Wizard.Semester = semester;
+                (Application.Current.Resources["ViewModelLocator"] as ViewModelLocator).Wizard.CurrentModuleName = CurrentModuleNames[CurrentModuleId];
+                (Application.Current.Resources["ViewModelLocator"] as ViewModelLocator).Wizard.CurrentProgram = CurrentProgram;
 
             }
 

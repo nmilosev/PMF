@@ -132,7 +132,7 @@
                       <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" iOS="{x:Static i18n:Colors.iPhoneWhite}" WinPhone="{x:Static i18n:Colors.iPhoneWhite}"/>
                     </ContentView.BackgroundColor>
                     <StackLayout Spacing="3" Orientation="Horizontal">
-                      <Label Text="Semestar:" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"  />
+                      <Label Text="{i18n:Translate SemesterPick}" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"  />
                       <Label Text="{Binding Semester}" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"/>
                     </StackLayout>
                   </ContentView>
@@ -142,7 +142,7 @@
                       <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" iOS="{x:Static i18n:Colors.iPhoneWhite}" WinPhone="{x:Static i18n:Colors.iPhoneWhite}"/>
                     </ContentView.BackgroundColor>
                     <StackLayout Spacing="3" Orientation="Horizontal">
-                      <Label Text="ESPB:" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"/>
+                      <Label Text="{i18n:Translate ESPB}" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"/>
                       <Label Text="{Binding ESPB}" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"/>
                     </StackLayout>
                   </ContentView>
@@ -226,7 +226,7 @@
                       <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" iOS="{x:Static i18n:Colors.iPhoneWhite}" WinPhone="{x:Static i18n:Colors.iPhoneWhite}"/>
                     </ContentView.BackgroundColor>
                     <StackLayout Spacing="3" Orientation="Horizontal">
-                      <Label Text="Semestar:" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"  />
+                      <Label Text="{i18n:Translate SemesterPick}" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"  />
                       <Label Text="{Binding Semester}" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"/>
                     </StackLayout>
                   </ContentView>
@@ -236,7 +236,7 @@
                       <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" iOS="{x:Static i18n:Colors.iPhoneWhite}" WinPhone="{x:Static i18n:Colors.iPhoneWhite}"/>
                     </ContentView.BackgroundColor>
                     <StackLayout Spacing="3" Orientation="Horizontal">
-                      <Label Text="ESPB:" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"/>
+                      <Label Text="{i18n:Translate ESPB}" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"/>
                       <Label Text="{Binding ESPB}" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"/>
                     </StackLayout>
                   </ContentView>
@@ -335,7 +335,7 @@
                       <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" iOS="{x:Static i18n:Colors.iPhoneWhite}" WinPhone="{x:Static i18n:Colors.iPhoneWhite}"/>
                     </ContentView.BackgroundColor>
                     <StackLayout Spacing="3" Orientation="Horizontal">
-                      <Label Text="Semestar:" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"  />
+                      <Label Text="{i18n:Translate SemesterPick}" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"  />
                       <Label Text="{Binding Semester}" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"/>
                     </StackLayout>
                   </ContentView>
@@ -345,7 +345,7 @@
                       <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidLightGray}" iOS="{x:Static i18n:Colors.iPhoneWhite}" WinPhone="{x:Static i18n:Colors.iPhoneWhite}"/>
                     </ContentView.BackgroundColor>
                     <StackLayout Spacing="3" Orientation="Horizontal">
-                      <Label Text="ESPB:" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"/>
+                      <Label Text="{i18n:Translate ESPB}" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"/>
                       <Label Text="{Binding ESPB}" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"/>
                     </StackLayout>
                   </ContentView>
@@ -382,8 +382,8 @@
         </Grid.RowDefinitions>
 
         <ffimageloading:CachedImage Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" HorizontalOptions="CenterAndExpand" Source = "wizard.png" FadeAnimationEnabled="True" Margin="10,5" />
-        <Label Grid.Row="0" Grid.Column="1" Text="Dobrodošli u PMF čarobnjak za predmete!" HorizontalTextAlignment="Center" VerticalOptions="Center" Margin="10,10,10,0" FontSize="16"/>
-        <Label Grid.Row="1" Grid.Column="1" Text="PMF čarobnjak će Vam pomoći da odaberete predmete za sledeći semestar!" HorizontalTextAlignment="Center" VerticalOptions="Start" Margin="0" FontSize="14"/>
+        <Label Grid.Row="0" Grid.Column="1" Text="{i18n:Translate WizardWelcome}" HorizontalTextAlignment="Center" VerticalOptions="Center" Margin="10,10,10,0" FontSize="16"/>
+        <Label Grid.Row="1" Grid.Column="1" Text="{i18n:Translate WizardDesc}" HorizontalTextAlignment="Center" VerticalOptions="Start" Margin="0" FontSize="14"/>
 
       </Grid>
       <Grid RowSpacing="1" ColumnSpacing="1" HorizontalOptions="FillAndExpand" Margin="0,10,0,0" Padding="10" VerticalOptions="FillAndExpand">
@@ -404,16 +404,16 @@
           <RowDefinition Height="45"/>
         </Grid.RowDefinitions>
 
-        <Label Grid.Row="0" Text="Studijski program" VerticalOptions="Center" FontSize="14"/>
+        <Label Grid.Row="0" Text="{i18n:Translate StudyProgram}" VerticalOptions="Center" FontSize="14"/>
         <Label Grid.Row="1" Text="{Binding Name}" VerticalOptions="Center" FontSize="18"/>
 
-        <Label Grid.Row="2" Text="Modul" VerticalOptions="Center" FontSize="14"/>
+        <Label Grid.Row="2" Text="{i18n:Translate Module}" VerticalOptions="Center" FontSize="14"/>
         <custom:ExtendedPicker HorizontalOptions="FillAndExpand" Grid.Row="3" ItemsSource="{Binding Source={StaticResource ViewModelLocator}, Path=Programs.CurrentModuleNames}" SelectedIndex="{Binding Source={StaticResource ViewModelLocator}, Path=Programs.CurrentModuleId, Mode=TwoWay}"/>
         
-        <Label Grid.Row="4" Text="Semestar" VerticalOptions="Center" FontSize="14"/>
+        <Label Grid.Row="4" Text="{i18n:Translate SemesterCap}" VerticalOptions="Center" FontSize="14"/>
         <custom:ExtendedPicker HorizontalOptions="FillAndExpand" Grid.Row="5" ItemsSource="{Binding Source={StaticResource ViewModelLocator}, Path=Programs.CurrentSemesters}" SelectedIndex="{Binding Source={StaticResource ViewModelLocator}, Path=Programs.CurrentSemesterId, Mode=TwoWay}"/>
 
-        <Button Grid.Row="7" Text="Prikaži prerporučene predmete" VerticalOptions="CenterAndExpand" Command="{Binding Source={StaticResource ViewModelLocator}, Path=Programs.OpenWizardResults}"/>
+        <Button Grid.Row="7" Text="{i18n:Translate ShowRecommended}" VerticalOptions="CenterAndExpand" Command="{Binding Source={StaticResource ViewModelLocator}, Path=Programs.OpenWizardResults}"/>
       </Grid>
 
 

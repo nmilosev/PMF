@@ -398,4 +398,46 @@ Sva prava zadržana.</value>
   <data name="Semester" xml:space="preserve">
     <value>semestar</value>
   </data>
+  <data name="ESPB" xml:space="preserve">
+    <value>ESPB: </value>
+  </data>
+  <data name="Module" xml:space="preserve">
+    <value>Modul</value>
+  </data>
+  <data name="RecommendedClasses" xml:space="preserve">
+    <value>Preporučeni predmeti</value>
+  </data>
+  <data name="SemesterCap" xml:space="preserve">
+    <value>Semestar</value>
+  </data>
+  <data name="SemesterPick" xml:space="preserve">
+    <value>Semestar:</value>
+  </data>
+  <data name="SaveList" xml:space="preserve">
+    <value>Snimi listu predmeta</value>
+  </data>
+  <data name="ShowRecommended" xml:space="preserve">
+    <value>Prikaži preporučene predmete</value>
+  </data>
+  <data name="StudyProgram" xml:space="preserve">
+    <value>Studijski program</value>
+  </data>
+  <data name="TapTwiceDetails" xml:space="preserve">
+    <value>Pritisnite predmet dva puta brzo za njegove detalje...</value>
+  </data>
+  <data name="WizardDesc" xml:space="preserve">
+    <value>PMF čarobnjak će Vam pomoći da odaberete predmete za sledeći semestar!</value>
+  </data>
+  <data name="WizardWelcome" xml:space="preserve">
+    <value>Dobrodošli u PMF čarobnjak za predmete!</value>
+  </data>
+  <data name="SendListMessage" xml:space="preserve">
+    <value>Ukoliko se pojavi dijalog, odaberite vašu aplikaciju za slanje mejlova ili bilo koju drugu aplikaciju za hvatanje beleški ukoliko želite da snimite listu lokalno.</value>
+  </data>
+  <data name="SendListTitle" xml:space="preserve">
+    <value>Slanje na e-mail</value>
+  </data>
+  <data name="NotSupported" xml:space="preserve">
+    <value>Vaš telefon ne podržava ovu opciju...</value>
+  </data>
 </root>
