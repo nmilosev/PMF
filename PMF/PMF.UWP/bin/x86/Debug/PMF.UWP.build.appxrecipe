@@ -423,11 +423,17 @@
     <AppxPackagedFile Include="C:\Source\PMF\PMF\PMF.UWP\arrows.png">
       <PackagePath>arrows.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\PMF\PMF\PMF.UWP\arrowssmall.png">
+      <PackagePath>arrowssmall.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Source\PMF\PMF\PMF.UWP\calendar.png">
       <PackagePath>calendar.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Source\PMF\PMF\PMF.UWP\calendarday.png">
       <PackagePath>calendarday.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\PMF\PMF\PMF.UWP\checked.png">
+      <PackagePath>checked.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Source\PMF\PMF\PMF.UWP\clock.png">
       <PackagePath>clock.png</PackagePath>
@@ -447,11 +453,17 @@
     <AppxPackagedFile Include="C:\Source\PMF\PMF\PMF.UWP\envelope.png">
       <PackagePath>envelope.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\PMF\PMF\PMF.UWP\faq.png">
+      <PackagePath>faq.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Source\PMF\PMF\PMF.UWP\fedora.png">
       <PackagePath>fedora.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Source\PMF\PMF\PMF.UWP\freetime.png">
       <PackagePath>freetime.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\PMF\PMF\PMF.UWP\home.png">
+      <PackagePath>home.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Source\PMF\PMF\PMF.UWP\leftarrow.png">
       <PackagePath>leftarrow.png</PackagePath>
@@ -483,6 +495,12 @@
     <AppxPackagedFile Include="C:\Source\PMF\PMF\PMF.UWP\placeholder.png">
       <PackagePath>placeholder.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\PMF\PMF\PMF.UWP\programicon.png">
+      <PackagePath>programicon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\PMF\PMF\PMF.UWP\programsbcg.png">
+      <PackagePath>programsbcg.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Source\PMF\PMF\PMF.UWP\question.png">
       <PackagePath>question.png</PackagePath>
     </AppxPackagedFile>
@@ -495,8 +513,14 @@
     <AppxPackagedFile Include="C:\Source\PMF\PMF\PMF.UWP\sitemap.png">
       <PackagePath>sitemap.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\PMF\PMF\PMF.UWP\unchecked.png">
+      <PackagePath>unchecked.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Source\PMF\PMF\PMF.UWP\vs15.png">
       <PackagePath>vs15.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Source\PMF\PMF\PMF.UWP\wizard.png">
+      <PackagePath>wizard.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Source\PMF\PMF\PMF.UWP\xamarin.png">
       <PackagePath>xamarin.png</PackagePath>

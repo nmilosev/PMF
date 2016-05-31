@@ -111,16 +111,20 @@
   <ItemGroup>
     <Content Include="arrowdown.png" />
     <Content Include="arrows.png" />
+    <Content Include="arrowssmall.png" />
     <Content Include="calendar.png" />
     <Content Include="calendarday.png" />
+    <Content Include="checked.png" />
     <Content Include="clock.png" />
     <Content Include="connections.png" />
     <Content Include="csharp.png" />
     <Content Include="dmi.png" />
     <Content Include="dotnetlogo.png" />
     <Content Include="envelope.png" />
+    <Content Include="faq.png" />
     <Content Include="fedora.png" />
     <Content Include="freetime.png" />
+    <Content Include="home.png" />
     <Content Include="leftarrow.png" />
     <Content Include="link.png" />
     <Content Include="location.png" />
@@ -131,11 +135,15 @@
     <Content Include="phone.png" />
     <Content Include="phonebook.png" />
     <Content Include="placeholder.png" />
+    <Content Include="programicon.png" />
+    <Content Include="programsbcg.png" />
     <Content Include="question.png" />
     <Content Include="reload.png" />
     <Content Include="rightarrow.png" />
     <Content Include="sitemap.png" />
+    <Content Include="unchecked.png" />
     <Content Include="vs15.png" />
+    <Content Include="wizard.png" />
     <Content Include="xamarin.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />

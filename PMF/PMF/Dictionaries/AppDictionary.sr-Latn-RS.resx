@@ -438,6 +438,12 @@ Sva prava zadržana.</value>
     <value>Slanje na e-mail</value>
   </data>
   <data name="NotSupported" xml:space="preserve">
-    <value>Vaš telefon ne podržava ovu opciju...</value>
+    <value>Vaš uređaj ne podržava ovu opciju...</value>
+  </data>
+  <data name="CopiedToClipboard" xml:space="preserve">
+    <value>Kopirano u memoriju uređaja...</value>
+  </data>
+  <data name="Clipboard" xml:space="preserve">
+    <value>Memorija</value>
   </data>
 </root>

@@ -101,7 +101,7 @@
                     <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidDarkGray}" iOS="{x:Static i18n:Colors.iPhoneGray}" WinPhone="{x:Static i18n:Colors.iPhoneGray}" />
                   </Grid.BackgroundColor>
                   <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="75"/>
                     <ColumnDefinition />
                     <ColumnDefinition />
                     <ColumnDefinition Width="40"/>
@@ -195,7 +195,7 @@
                     <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidDarkGray}" iOS="{x:Static i18n:Colors.iPhoneGray}" WinPhone="{x:Static i18n:Colors.iPhoneGray}" />
                   </Grid.BackgroundColor>
                   <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="75"/>
                     <ColumnDefinition />
                     <ColumnDefinition />
                     <ColumnDefinition Width="40"/>
@@ -304,7 +304,7 @@
                     <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidDarkGray}" iOS="{x:Static i18n:Colors.iPhoneGray}" WinPhone="{x:Static i18n:Colors.iPhoneGray}" />
                   </Grid.BackgroundColor>
                   <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="75"/>
                     <ColumnDefinition />
                     <ColumnDefinition />
                     <ColumnDefinition Width="40"/>

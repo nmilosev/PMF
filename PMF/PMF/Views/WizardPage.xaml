@@ -38,7 +38,7 @@
                   <OnPlatform x:TypeArguments="Color" Android="{x:Static i18n:Colors.AndroidDarkGray}" iOS="{x:Static i18n:Colors.iPhoneGray}" WinPhone="{x:Static i18n:Colors.iPhoneGray}" />
                 </Grid.BackgroundColor>
                 <Grid.ColumnDefinitions>
-                  <ColumnDefinition Width="60"/>
+                  <ColumnDefinition Width="75"/>
                   <ColumnDefinition />
                   <ColumnDefinition />
                   <ColumnDefinition Width="40"/>
@@ -97,12 +97,12 @@
         </DataTemplate>
       </ListView.ItemTemplate>
     </ListView>
-    <StackLayout HeightRequest="80">
+    <StackLayout Margin="10,0,10,15">
       <Label HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" Text="{i18n:Translate TapTwiceDetails}" FontAttributes="Italic" />
       <StackLayout Orientation="Horizontal" Margin="10,0,10,0" Spacing="3">
         <Button Text="{i18n:Translate SaveList}" VerticalOptions="Center" Command="{Binding SaveList}"/>
-        <Label Text="{i18n:Translate ESPB}" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End" VerticalOptions="EndAndExpand" VerticalTextAlignment="Center"/>
-        <Label Text="{Binding CurrentESPB}" FontSize="28" VerticalOptions="EndAndExpand" VerticalTextAlignment="Center"/>
+        <Label Text="{i18n:Translate ESPB}" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"/>
+        <Label Text="{Binding CurrentESPB}" FontSize="28" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"/>
       </StackLayout>
 
     </StackLayout>

@@ -117,11 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="WizardDesc" xml:space="preserve">
+    <value>PMF čarobnjak će Vam pomoći da odaberete predmete za sledeći semestar!</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>Dobro došli, studenti!</value>
   </data>
   <data name="SubjectAssistaints" xml:space="preserve">
     <value>Predmetni asistenti</value>
+  </data>
+  <data name="MandatoryClasses" xml:space="preserve">
+    <value>Obavezni predmeti</value>
   </data>
   <data name="SubjectClasses" xml:space="preserve">
     <value>Broj časova aktivne nastave</value>
@@ -132,8 +138,14 @@
   <data name="AddressLine2" xml:space="preserve">
     <value>21000 Novi Sad, Srbija</value>
   </data>
+  <data name="ShowRecommended" xml:space="preserve">
+    <value>Prikaži preporučene predmete</value>
+  </data>
   <data name="MasterThesis" xml:space="preserve">
     <value>Master rad</value>
+  </data>
+  <data name="TapTwiceDetails" xml:space="preserve">
+    <value>Pritisnite predmet dva puta brzo za njegove detalje...</value>
   </data>
   <data name="SubjectContents" xml:space="preserve">
     <value>Sadržaj predmeta</value>
@@ -147,11 +159,20 @@
   <data name="Tuesday" xml:space="preserve">
     <value>Utorak</value>
   </data>
+  <data name="ModulesClasses" xml:space="preserve">
+    <value>Predmeti sa modula</value>
+  </data>
+  <data name="Module" xml:space="preserve">
+    <value>Modul</value>
+  </data>
   <data name="Monday" xml:space="preserve">
     <value>Ponedeljak</value>
   </data>
   <data name="Thursday" xml:space="preserve">
     <value>Četvrak</value>
+  </data>
+  <data name="ChooseProgram" xml:space="preserve">
+    <value>Odaberite studijski program</value>
   </data>
   <data name="Practice" xml:space="preserve">
     <value>Vežbe</value>
@@ -176,11 +197,23 @@ Sva prava zadržana.</value>
   <data name="NewsSuccessTitle" xml:space="preserve">
     <value>Uspešno učitavanje vesti!</value>
   </data>
+  <data name="ProgramTitle" xml:space="preserve">
+    <value>Zvanje:</value>
+  </data>
   <data name="SubjectProfessors" xml:space="preserve">
     <value>Predmetni profesori</value>
   </data>
+  <data name="ProgramGoals" xml:space="preserve">
+    <value>Ciljevi programa</value>
+  </data>
+  <data name="FAQTitle" xml:space="preserve">
+    <value>Često postavljena pitanja</value>
+  </data>
   <data name="SSluzbaLink" xml:space="preserve">
     <value>http://ssluzba.pmf.uns.ac.rs</value>
+  </data>
+  <data name="FAQError" xml:space="preserve">
+    <value>Greška prilikom učitavanja pitanja i odgovora. Pokušajte ponovo kasnije...</value>
   </data>
   <data name="DMILink" xml:space="preserve">
     <value>http://www.dmi.rs</value>
@@ -188,8 +221,14 @@ Sva prava zadržana.</value>
   <data name="NewsSuccess" xml:space="preserve">
     <value>Datum osvežavanja: </value>
   </data>
+  <data name="Wizard" xml:space="preserve">
+    <value>Čarobnjak</value>
+  </data>
   <data name="MatNumber" xml:space="preserve">
     <value>Matični broj: 08104620</value>
+  </data>
+  <data name="YearsOfStudy" xml:space="preserve">
+    <value>Godine studiranja:</value>
   </data>
   <data name="Sunday" xml:space="preserve">
     <value>Nedelja</value>
@@ -197,8 +236,14 @@ Sva prava zadržana.</value>
   <data name="LastRefresh" xml:space="preserve">
     <value>Poslednji put osveženo: </value>
   </data>
+  <data name="ButtonWizard" xml:space="preserve">
+    <value>ŠTA DA UZMEM?</value>
+  </data>
   <data name="ScheduleSuccess" xml:space="preserve">
     <value>Uspešno učitani rasporedi!</value>
+  </data>
+  <data name="NotSupported" xml:space="preserve">
+    <value>Vaš uređaj ne podržava ovu opciju...</value>
   </data>
   <data name="AboutTitle" xml:space="preserve">
     <value>PMF - Informacije</value>
@@ -209,11 +254,20 @@ Sva prava zadržana.</value>
   <data name="SubjectMethod" xml:space="preserve">
     <value>Metode izvođenja nastave</value>
   </data>
+  <data name="ButtonFAQ" xml:space="preserve">
+    <value>PITANJA I ODGOVORI</value>
+  </data>
   <data name="ButtonStudServices" xml:space="preserve">
     <value>STUDENTSKA SLUŽBA</value>
   </data>
+  <data name="WizardWelcome" xml:space="preserve">
+    <value>Dobrodošli u PMF čarobnjak za predmete!</value>
+  </data>
   <data name="PleaseWait" xml:space="preserve">
     <value>Molim sačekajte...</value>
+  </data>
+  <data name="SendListMessage" xml:space="preserve">
+    <value>Ukoliko se pojavi dijalog, odaberite vašu aplikaciju za slanje mejlova ili bilo koju drugu aplikaciju za hvatanje beleški ukoliko želite da snimite listu lokalno.</value>
   </data>
   <data name="SubjectPages" xml:space="preserve">
     <value>Stranice predmeta</value>
@@ -223,6 +277,9 @@ Sva prava zadržana.</value>
   </data>
   <data name="SubjectDetails" xml:space="preserve">
     <value>Detalji predmeta</value>
+  </data>
+  <data name="StudyProgram" xml:space="preserve">
+    <value>Studijski program</value>
   </data>
   <data name="SubjectLoadError" xml:space="preserve">
     <value>Greška prilikom učitavanja detalja predmeta. Pokušajte ponovo kasnije...</value>
@@ -251,8 +308,14 @@ Sva prava zadržana.</value>
   <data name="Share" xml:space="preserve">
     <value>Podeli</value>
   </data>
+  <data name="SemesterCap" xml:space="preserve">
+    <value>Semestar</value>
+  </data>
   <data name="ButtonPrograms" xml:space="preserve">
     <value>STUDIJSKI PROGRAMI</value>
+  </data>
+  <data name="ProgramsError" xml:space="preserve">
+    <value>Greška prilikom učitavanja studijskih programa. Pokušajte ponovo kasnije...</value>
   </data>
   <data name="SessionDetails" xml:space="preserve">
     <value>Detalji sesije</value>
@@ -263,8 +326,26 @@ Sva prava zadržana.</value>
   <data name="ScheduleFor" xml:space="preserve">
     <value>Raspored za dan:</value>
   </data>
+  <data name="OptionalClasses" xml:space="preserve">
+    <value>Izborni predmeti</value>
+  </data>
+  <data name="ProgramPurpose" xml:space="preserve">
+    <value>Svrha programa</value>
+  </data>
   <data name="Version" xml:space="preserve">
     <value>v.0.0.0.A</value>
+  </data>
+  <data name="SemesterPick" xml:space="preserve">
+    <value>Semestar:</value>
+  </data>
+  <data name="SendListTitle" xml:space="preserve">
+    <value>Slanje na e-mail</value>
+  </data>
+  <data name="SaveList" xml:space="preserve">
+    <value>Snimi listu predmeta</value>
+  </data>
+  <data name="RecommendedClasses" xml:space="preserve">
+    <value>Preporučeni predmeti</value>
   </data>
   <data name="SubjectOutcome" xml:space="preserve">
     <value>Ishod predmeta</value>
@@ -275,8 +356,14 @@ Sva prava zadržana.</value>
   <data name="ButtonNews" xml:space="preserve">
     <value>VESTI</value>
   </data>
+  <data name="Modules" xml:space="preserve">
+    <value>Moduli</value>
+  </data>
   <data name="AppName" xml:space="preserve">
     <value>PMF</value>
+  </data>
+  <data name="PhDPrograms" xml:space="preserve">
+    <value>DOKTORSKE</value>
   </data>
   <data name="Saturday" xml:space="preserve">
     <value>Subota</value>
@@ -293,6 +380,9 @@ Sva prava zadržana.</value>
   <data name="NewsArticleTitle" xml:space="preserve">
     <value>PMF - </value>
   </data>
+  <data name="Semester" xml:space="preserve">
+    <value>semestar</value>
+  </data>
   <data name="ContactEmail" xml:space="preserve">
     <value>info@pmf.uns.ac.rs</value>
   </data>
@@ -305,11 +395,20 @@ Sva prava zadržana.</value>
   <data name="ContactPhone" xml:space="preserve">
     <value>+381 21 454 389</value>
   </data>
+  <data name="Clipboard" xml:space="preserve">
+    <value>Memorija</value>
+  </data>
   <data name="MasterThesisName" xml:space="preserve">
     <value>Master rad na temu: Razvoj cross-platform native mobilnih aplikacija u programskom jeziku C#</value>
   </data>
+  <data name="BScPrograms" xml:space="preserve">
+    <value>OSNOVNE</value>
+  </data>
   <data name="NothingForToday" xml:space="preserve">
     <value>Ništa za danas! :-)</value>
+  </data>
+  <data name="CopiedToClipboard" xml:space="preserve">
+    <value>Kopirano u memoriju uređaja...</value>
   </data>
   <data name="ContactVisitUs" xml:space="preserve">
     <value>Posetite nas!</value>
@@ -323,6 +422,9 @@ Sva prava zadržana.</value>
   <data name="DefaultTitle" xml:space="preserve">
     <value>PMF - Studentski servisi</value>
   </data>
+  <data name="ESPB" xml:space="preserve">
+    <value>ESPB: </value>
+  </data>
   <data name="Back" xml:space="preserve">
     <value>Nazad</value>
   </data>
@@ -334,6 +436,9 @@ Sva prava zadržana.</value>
   </data>
   <data name="Link" xml:space="preserve">
     <value>Link</value>
+  </data>
+  <data name="MScPrograms" xml:space="preserve">
+    <value>MASTER</value>
   </data>
   <data name="ContactPhoneLabel" xml:space="preserve">
     <value>Studentska služba: </value>

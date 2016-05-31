@@ -141,6 +141,8 @@ C:\Source\PMF\PMF\PMF.iOS\obj\iPhoneSimulator\Debug\optimized\
 C:\Source\PMF\PMF\PMF.iOS\obj\iPhoneSimulator\Debug\PMF.iOS.csprojResolveAssemblyReference.cache
 C:\Source\PMF\PMF\PMF.iOS\obj\iPhoneSimulator\Debug\PMFiOS.exe
 C:\Source\PMF\PMF\PMF.iOS\obj\iPhoneSimulator\Debug\PMFiOS.pdb
-C:\Source\PMF\PMF\PMF.iOS\bin\iPhoneSimulator\Debug\PMF.dll.mdb
+C:\Source\PMF\PMF\PMF.iOS\obj\iPhoneSimulator\Debug\optimized\checked.png
+C:\Source\PMF\PMF\PMF.iOS\obj\iPhoneSimulator\Debug\optimized\unchecked.png
+C:\Source\PMF\PMF\PMF.iOS\obj\iPhoneSimulator\Debug\optimized\wizard.png
 C:\Source\PMF\PMF\PMF.iOS\obj\iPhoneSimulator\Debug\PMFiOS.exe.mdb
 C:\Source\PMF\PMF\PMF.iOS\bin\iPhoneSimulator\Debug\PMFiOS.exe.mdb

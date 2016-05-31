@@ -14,7 +14,19 @@ namespace PMF.ViewModels
 {
     public class WizardViewModel : ViewModelBase
     {
-        public ObservableCollection<SubjectWizardViewModel> CurrentSubjects { get; set; }
+        private ObservableCollection<SubjectWizardViewModel> _currentSubjects;
+        public ObservableCollection<SubjectWizardViewModel> CurrentSubjects
+        {
+            get
+            {
+                return _currentSubjects;
+            }
+            set
+            {
+                _currentSubjects = value;
+                RaisePropertyChanged();
+            }
+        }
 
         public Program CurrentProgram { get; set; }
         public string CurrentModuleName { get; set; }
@@ -98,32 +110,61 @@ namespace PMF.ViewModels
 
         public Command SaveList => new Command(() =>
         {
+
+            if (Device.OS == TargetPlatform.iOS || Device.OS == TargetPlatform.WinPhone)
+            {
+                _saveList();
+                return;
+            }
+
             var cfg = new ActionSheetConfig()
                     .SetTitle("SendListTitle".Localize())
                     .Add("SendListMessage".Localize())
                     .SetDestructive("OK".Localize(), () =>
                     {
-                        var messenger = Plugin.Share.CrossShare.Current;
-                        var sb = new StringBuilder();
-                        sb.AppendLine(CurrentProgram.Name);
-                        sb.AppendLine(CurrentModuleName);
-                        sb.AppendLine($"{"SemesterCap".Localize()}: {Semester}");
-                        sb.AppendLine(string.Empty);
-                        foreach (var group in CurrentSubjects)
-                            foreach (var checkedSubject in group)
-                                if (checkedSubject.IsChecked)
-                                {
-                                    var s = checkedSubject.Subject;
-                                    sb.AppendLine($"{s.Id} - {s.Title} - {"ESPB".Localize()}{s.ESPB}");
-                                }
-                        sb.AppendLine(string.Empty);
-                        sb.AppendLine($"{"ESPB".Localize()}{CurrentESPB}");
-
-                        messenger.Share(sb.ToString(), "AppName".Localize());
-
+                        _saveList();
+                    })
+                    .SetCancel("Clipboard".Localize(), () =>
+                    {
+                        _saveList(toClipboard: true);
                     });
 
             UserDialogs.Instance.ActionSheet(cfg);
         });
+
+        private void _saveList(bool toClipboard=false)
+        {
+            var messenger = Plugin.Share.CrossShare.Current;
+            var sb = new StringBuilder();
+            sb.AppendLine(CurrentProgram.Name);
+            sb.AppendLine(CurrentModuleName);
+            sb.AppendLine($"{"SemesterCap".Localize()}: {Semester}");
+            sb.AppendLine(string.Empty);
+            foreach (var group in CurrentSubjects)
+                foreach (var checkedSubject in group)
+                    if (checkedSubject.IsChecked)
+                    {
+                        var s = checkedSubject.Subject;
+                        sb.AppendLine($"{s.Id} - {s.Title} - {"ESPB".Localize()}{s.ESPB}");
+                    }
+            sb.AppendLine(string.Empty);
+            sb.AppendLine($"{"ESPB".Localize()}{CurrentESPB}");
+
+            if (!toClipboard)
+                messenger.Share(sb.ToString(), "AppName".Localize());
+            else
+            {
+                if (messenger.SupportsClipboard)
+                {
+                    messenger.SetClipboardText(sb.ToString());
+                    UserDialogs.Instance.ErrorToast("CopiedToClipboard".Localize());
+                }
+                else
+                {
+                    UserDialogs.Instance.ErrorToast("Error".Localize(), "NotSupported".Localize());
+                }
+            }
+
+        }
     }
 }

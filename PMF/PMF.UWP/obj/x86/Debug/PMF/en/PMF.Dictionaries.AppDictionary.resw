@@ -179,8 +179,14 @@ All rights reserved.</value>
   <data name="SubjectProfessors" xml:space="preserve">
     <value>Class professors</value>
   </data>
+  <data name="FAQTitle" xml:space="preserve">
+    <value>F.A.Q.</value>
+  </data>
   <data name="SSluzbaLink" xml:space="preserve">
     <value>http://ssluzba.pmf.uns.ac.rs</value>
+  </data>
+  <data name="FAQError" xml:space="preserve">
+    <value>Greška prilikom učitavanja pitanja i odgovora. Pokušajte ponovo kasnije...</value>
   </data>
   <data name="DMILink" xml:space="preserve">
     <value>http://www.dmi.rs</value>
@@ -197,17 +203,26 @@ All rights reserved.</value>
   <data name="LastRefresh" xml:space="preserve">
     <value>Last refreshed: </value>
   </data>
+  <data name="ProgramDetailsTitle" xml:space="preserve">
+    <value>Detalji studijskog programa</value>
+  </data>
   <data name="ScheduleSuccess" xml:space="preserve">
     <value>Sucessfully loaded schedules!</value>
   </data>
   <data name="AboutTitle" xml:space="preserve">
     <value>PMF - About</value>
   </data>
+  <data name="PickDepartment" xml:space="preserve">
+    <value>Odaberite departman</value>
+  </data>
   <data name="Wednesday" xml:space="preserve">
     <value>Wednesday</value>
   </data>
   <data name="SubjectMethod" xml:space="preserve">
     <value>Class methods</value>
+  </data>
+  <data name="ButtonFAQ" xml:space="preserve">
+    <value>ČESTO POSTAVLJENA PITANJA</value>
   </data>
   <data name="ButtonStudServices" xml:space="preserve">
     <value>STUDENT SERVICES</value>
