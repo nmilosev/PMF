@@ -1,4 +1,0 @@
-C:\Source\PMF\PMF\PMF.Core\PMF.Core.csproj;neutral
-C:\Source\PMF\PMF\PMF.LocalService\PMF.LocalService.csproj;neutral
-C:\Source\PMF\PMF\PMF.UWP\PMF.UWP.csproj;x86
-C:\Source\PMF\PMF\PMF\PMF.Xamarin.csproj;neutral
