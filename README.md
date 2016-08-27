@@ -4,6 +4,8 @@ Application for Student Services for the Faculty of Sciences of Novi Sad, Serbia
 
 MSc Thesis - Nemanja Milosevic (nmilosev@uns.ac.rs)
 
+Thesis: https://github.com/nmilosev/msc
+
 # Screenshots
 
 | Android 6.0|iOS 9.3| Windows 10 UWP|
@@ -33,6 +35,8 @@ This application uses (thank you!) the following libraries:
 - Acr.UserDialogs
 - CrossShare - SharePlugin
 - FFImageLoading
+
+Developed and tested on all platforms with Fedora 24 Workstation and Oracle VirtualBox.
 
 # License
 
