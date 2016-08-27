@@ -6,6 +6,10 @@ MSc Thesis - Native cross-platform mobile application development in C# programm
 
 Thesis: https://github.com/nmilosev/msc
 
+# Demo
+
+![Demo](https://github.com/nmilosev/PMF/raw/master/screenshots/demo.gif)
+
 # Screenshots
 
 | Android 6.0|iOS 9.3| Windows 10 UWP|
