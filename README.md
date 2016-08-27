@@ -2,7 +2,7 @@
 
 Application for Student Services for the Faculty of Sciences of Novi Sad, Serbia
 
-MSc Thesis - Nemanja Milosevic (nmilosev@uns.ac.rs)
+MSc Thesis - Native cross-platform mobile application development in C# programming language - Nemanja Milosevic (nmilosev@uns.ac.rs)
 
 Thesis: https://github.com/nmilosev/msc
 
