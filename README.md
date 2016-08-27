@@ -8,7 +8,7 @@ Thesis: https://github.com/nmilosev/msc
 
 # Demo
 
-![Demo](https://github.com/nmilosev/PMF/raw/master/screenshots/demo2.gif)
+![Demo](https://github.com/nmilosev/PMF/raw/master/screenshots/demo3.gif)
 
 # Screenshots
 
